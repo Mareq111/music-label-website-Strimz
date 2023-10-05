@@ -65,11 +65,11 @@
 
       <div class="title-name-artist">
         <h1 class="album-name">Flashback From 2001</h1>
-       <hr>
+        <hr class="hr-line" />
         <h2 class="artist-name">MarQezzi</h2>
         <div class="buttons-actions">
           <button id="listen-now-btn">
-            <i class="bx bx-play play-btn"></i>Listen Now
+            <i class="bx bx-play listen-now-btn"></i>Listen Now
           </button>
           <a class="share-music" href="#"
             ><i class="bx bx-share-alt share-btn"></i>Share</a
@@ -79,152 +79,253 @@
     </section>
     <!-- section 2 with choose audio player  -->
     <section class="section2">
-      <h3 id="h3-section2">Choose a streaming platform</h3>
+      <h3 id="h3-section2">On streaming platforms now</h3>
       <div class="choose-player">
-        <div class="music-app-choose" id="box-1"><i class="bx bxl-youtube"></i></div>
-        <div class="music-app-choose" id="box-2"><i class="bx bxl-spotify"></i></div>
-        <div class="music-app-choose" id="box-3"><i class="bx bxl-apple"></i></div>
-        <div class="music-app-choose" id="box-4"><i class="bx bxl-soundcloud"></i></div>
-        <div class="music-app-choose" id="box-5"><i class="bx bxl-deezer"></i></div>
+        <div class="music-app-choose" id="box-1">
+          <i class="bx bxl-youtube"></i>
+        </div>
+        <div class="music-app-choose" id="box-2">
+          <i class="bx bxl-spotify"></i>
+        </div>
+        <div class="music-app-choose" id="box-3">
+          <i class="bx bxl-apple"></i>
+        </div>
+        <div class="music-app-choose" id="box-4">
+          <i class="bx bxl-soundcloud"></i>
+        </div>
+        <div class="music-app-choose" id="box-5">
+          <i class="bx bxl-deezer"></i>
+        </div>
       </div>
     </section>
     <!--section 3 tracklist  -->
     <section class="section3">
       <div class="list-time-songs">
+        <button class="play-btn">
+          <i class="bx bx-play play-song-big-icon"></i>
+        </button>
         <h4 id="h4-section3">Track List</h4>
-        <p id="quantity-of-songs-and-time">10 songs<i class='bx bxs-circle'></i></i>34 minutes</p>
-  
+        <p id="quantity-of-songs-and-time">
+          10 songs<i class="bx bxs-circle"></i>34 minutes
+        </p>
       </div>
-     
+      <hr class="hr-line" id="hr-line2" />
+
       <!-- tack-1 -->
-      <div class="song-1">
-        <span class="song-number">1</span>
-        <i id="play-song-1" class="bx bx-play"></i>
-        <div class="name-song-aritst">
-          <span class="song-title">Summer Breeze</span>
-          <span class="artist-name">Marqezzi</span>
+      <div class="song">
+        <div class="right-side">
+          <span class="song-number">1</span>
+
+          <button class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+          </button>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Summer Breeze</h5>
+            <p class="artist-name">Marqezzi</p>
+          </div>
         </div>
-        <div class="time-and-share">
-          <span id="time-1">2:49</span>
-          <i id="share-song-1" class="bx bx-share-alt"></i>
+        <div class="left-side">
+          <time class="song-duration">2:49</time>
+          <a class="anchor-dots" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
         </div>
       </div>
       <!-- tack-2 -->
+      <div class="song">
+        <div class="right-side">
+          <span class="song-number">2</span>
 
-      <div class="song-2">
-        <span class="song-number">2</span>
-        <i id="play-song-1" class="bx bx-play"></i>
-        <div class="name-song-aritst">
-          <span class="song-title">Millenium Muzik</span>
-          <span class="artist-name">Marqezzi</span>
+          <button class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+          </button>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Millenium Muzik</h5>
+            <p class="artist-name">Marqezzi</p>
+          </div>
         </div>
-        <div class="time-and-share">
-          <span id="time-2">3:21</span>
-          <i id="share-song-2" class="bx bx-share-alt"></i>
+        <div class="left-side">
+          <time class="song-duration">3:21</time>
+          <a class="anchor-dots" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
         </div>
       </div>
+
       <!-- tack-3 -->
-      <div class="song-3">
-        <span class="song-number">3</span>
-        <i id="play-song-3" class="bx bx-play"></i>
-        <div class="name-song-aritst">
-          <span class="song-title">Easy Livin</span>
-          <span class="artist-name">Marqezzi</span>
+      <div class="song">
+        <div class="right-side">
+          <span class="song-number">3</span>
+
+          <button class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+          </button>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Easy Livin</h5>
+            <p class="artist-name">Marqezzi</p>
+          </div>
         </div>
-        <div class="time-and-share">
-          <span id="time-3">2:39</span>
-          <i id="share-song-3" class="bx bx-share-alt"></i>
+        <div class="left-side">
+          <time class="song-duration">2:39</time>
+          <a class="anchor-dots" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
         </div>
       </div>
+
       <!-- tack-4 -->
-      <div class="song-4">
-        <span class="song-number">4</span>
-        <i id="play-song-4" class="bx bx-play"></i>
-        <div class="name-song-aritst">
-          <span class="song-title">Won't Stop</span>
-          <span class="artist-name">Marqezzi</span>
+      <div class="song">
+        <div class="right-side">
+          <span class="song-number">4</span>
+
+          <button class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+          </button>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Won't Stop</h5>
+            <p class="artist-name">Marqezzi</p>
+          </div>
         </div>
-        <div class="time-and-share">
-          <span id="time-4">4:38</span>
-          <i id="share-song-4" class="bx bx-share-alt"></i>
+        <div class="left-side">
+          <time class="song-duration">4:38</time>
+          <a class="anchor-dots" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
         </div>
       </div>
+
       <!-- tack-5 -->
-      <div class="song-5">
-        <span class="song-number">5</span>
-        <i id="play-song-5" class="bx bx-play"></i>
-        <div class="name-song-aritst">
-          <span class="song-title">Memoriez</span>
-          <span class="artist-name">Marqezzi ft. KitKudi</span>
+      <div class="song">
+        <div class="right-side">
+          <span class="song-number">5</span>
+
+          <button class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+          </button>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Memoriez</h5>
+            <p class="artist-name">Marqezzi ft. KitKudi</p>
+          </div>
         </div>
-        <div class="time-and-share">
-          <span id="time-5">3:29</span>
-          <i id="share-song-5" class="bx bx-share-alt"></i>
+        <div class="left-side">
+          <time class="song-duration">3:29</time>
+          <a class="anchor-dots" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
         </div>
       </div>
+
       <!-- tack-6 -->
-      <div class="song-6">
-        <span class="song-number">6</span>
-        <i id="play-song-6" class="bx bx-play"></i>
-        <div class="name-song-aritst">
-          <span class="song-title">Dare He Go</span>
-          <span class="artist-name">Marqezzi</span>
+      <div class="song">
+        <div class="right-side">
+          <span class="song-number">6</span>
+
+          <button class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+          </button>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Dare He Go</h5>
+            <p class="artist-name">Marqezzi</p>
+          </div>
         </div>
-        <div class="time-and-share">
-          <span id="time-6">2:47</span>
-          <i id="share-song-6" class="bx bx-share-alt"></i>
+        <div class="left-side">
+          <time class="song-duration">2:47</time>
+          <a class="anchor-dots" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
         </div>
       </div>
+
       <!-- tack-7 -->
-      <div class="song-7">
-        <span class="song-number">7</span>
-        <i id="play-song-7" class="bx bx-play"></i>
-        <div class="name-song-aritst">
-          <span class="song-title">Enjoy The View</span>
-          <span class="artist-name">Marqezzi</span>
+      <div class="song">
+        <div class="right-side">
+          <span class="song-number">7</span>
+
+          <button class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+          </button>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Enjoy The View</h5>
+            <p class="artist-name">Marqezzi</p>
+          </div>
         </div>
-        <div class="time-and-share">
-          <span id="time-7">3:33</span>
-          <i id="share-song-7" class="bx bx-share-alt"></i>
+        <div class="left-side">
+          <time class="song-duration">3:33</time>
+          <a class="anchor-dots" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
         </div>
       </div>
+
       <!-- tack-8 -->
-      <div class="song-8">
-        <span class="song-number">8</span>
-        <i id="play-song-8" class="bx bx-play"></i>
-        <div class="name-song-aritst">
-          <span class="song-title">Neon Icon</span>
-          <span class="artist-name">Marqezzi</span>
+      <div class="song">
+        <div class="right-side">
+          <span class="song-number">8</span>
+
+          <button class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+          </button>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Neon Icon</h5>
+            <p class="artist-name">Marqezzi</p>
+          </div>
         </div>
-        <div class="time-and-share">
-          <span id="time-8">4:07</span>
-          <i id="share-song-8" class="bx bx-share-alt"></i>
+        <div class="left-side">
+          <time class="song-duration">4:07</time>
+          <a class="anchor-dots" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
         </div>
       </div>
+
       <!-- tack-9 -->
-      <div class="song-9">
-        <span class="song-number">9</span>
-        <i id="play-song-9" class="bx bx-play"></i>
-        <div class="name-song-aritst">
-          <span class="song-title">Urban Legends</span>
-          <span class="artist-name">Marqezzi</span>
+      <div class="song">
+        <div class="right-side">
+          <span class="song-number">9</span>
+
+          <button class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+          </button>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Urban Legends</h5>
+            <p class="artist-name">Marqezzi</p>
+          </div>
         </div>
-        <div class="time-and-share">
-          <span id="time-9">3:03</span>
-          <i id="share-song-9" class="bx bx-share-alt"></i>
+        <div class="left-side">
+          <time class="song-duration">3:03</time>
+          <a class="anchor-dots" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
         </div>
       </div>
+
       <!-- tack-10 -->
-      <div class="song-10">
-        <span class="song-number">10</span>
-        <i id="play-song-10" class="bx bx-play"></i>
-        <div class="name-song-aritst">
-          <span class="song-title">Flashback from 2001</span>
-          <span class="artist-name">Marqezzi</span>
+      <div class="song">
+        <div class="right-side">
+          <span class="song-number">10</span>
+          <button class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+          </button>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Flashback from 2001</h5>
+            <p class="artist-name">Marqezzi</p>
+          </div>
         </div>
-        <div class="time-and-share">
-          <span id="time-10">4:16</span>
-          <i id="share-song-10" class="bx bx-share-alt"></i>
+        <div class="left-side">
+          <time class="song-duration">4:16</time>
+          <a class="anchor-dots" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
         </div>
       </div>
     </section>
