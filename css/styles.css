@@ -66,6 +66,19 @@ html {
 #nav-a-9 {
   cursor: pointer;
 }
+#nav-a-1:hover,
+#nav-a-2:hover,
+#nav-a-3:hover,
+#nav-a-4:hover,
+#nav-a-5:hover,
+#nav-a-6:hover,
+#nav-a-7:hover,
+#nav-a-8:hover,
+#nav-a-9:hover {
+  transition: 0.1s ease-in-out;
+  transform: scale(1.2);
+  color: #dcdcdc;
+}
 
 .section1 {
   display: flex;
@@ -115,6 +128,14 @@ html {
   font-weight: 600;
 }
 
+hr {
+  border: none;
+  width: 60%;
+  background-color: #f2f2f2;
+  height: 0.05rem;
+  opacity: 0.1;
+}
+
 .buttons-actions {
   display: flex;
   gap: 5%;
@@ -122,17 +143,18 @@ html {
 }
 
 #listen-now-btn {
-  border-radius: 0.2rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  background-color: #85ab7b;
-  color: #f2f2f2;
-  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #85ab7b;
+  color: #f2f2f2;
   width: 50%;
   height: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+  letter-spacing: 0.04rem;
   border: 0;
   /* box-shadow: 1px 0 5px 1px rgba(0, 0, 0, 0.6); */
 }
@@ -141,15 +163,16 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #26acac;
+  color: #f2f2f2;
   width: 40%;
   height: 2.5rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 0.8rem;
-  background-color: #26acac;
-  color: #f2f2f2;
-  text-decoration: none;
   border-radius: 0.2rem;
+  letter-spacing: 0.04rem;
+  text-decoration: none;
   /*  box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.6); */
 }
 
@@ -157,6 +180,75 @@ html {
 .share-btn {
   font-size: 1rem;
   padding-right: 0.5rem;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 6rem;
+}
+
+#h3-section2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 50vw;
+  padding-bottom: 1rem;
+}
+
+.choose-player {
+  display: flex;
+  width: 50vw;
+  height: 3rem;
+  background-color: #120f10;
+  border: 0.1rem dotted #367983;
+  opacity: 0.8;
+}
+
+.music-app-choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  transition: 0.1s ease-in-out;
+}
+.music-app-choose:hover {
+  color: #85ab7b;
+  transform: scale(1.2);
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem;
+}
+
+.list-time-songs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50vw;
+  height: 10%;
+  padding-bottom: 1rem;
+  gap: 2rem;
+}
+
+#h4-section3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+#quantity-of-songs-and-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  text-transform: lowercase;
+  gap: 0.5rem;
+}
+
+.bxs-circle {
+  font-size: 0.3rem;
+  color: #26acac;
 }
 
 .album-covers {
