@@ -355,7 +355,99 @@ html {
   color: #26acac;
 }
 
-.album-covers {
-  width: 50px;
-  height: 50px;
+.section4 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem;
+  gap: 0.5rem;
+}
+
+#h5-section4 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.albums-chooser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+  gap: 2rem;
+}
+
+.album {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 6rem;
+  height: 12rem;
+  gap: 0.5rem;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+.album:hover {
+  transform: scale(1.1);
+}
+
+.album-cover {
+  width: 6rem;
+  height: 6rem;
+}
+
+.album .album-cover {
+  transition: box-shadow 0.3s ease;
+}
+.album:hover #album-cover-flashback-deluxe {
+  box-shadow: 0 0 8px rgba(210, 146, 164, 0.5);
+}
+.album:hover #dots-separator-album-1 {
+  color: rgb(210, 146, 164);
+}
+.album:hover #album-cover-arena-of-autumnn {
+  box-shadow: 0 0 8px rgba(185, 169, 71, 0.5);
+}
+.album:hover #dots-separator-album-2 {
+  color: rgb(185, 169, 71);
+}
+.album:hover #album-cover-airwaves {
+  box-shadow: 0 0 8px rgba(51, 145, 196, 0.5);
+}
+.album:hover #dots-separator-album-3 {
+  color: rgb(51, 145, 196);
+}
+.album:hover #album-cover-king-of {
+  box-shadow: 0 0 8px rgba(181, 133, 94, 0.5);
+}
+.album:hover #dots-separator-album-4 {
+  color: rgb(181, 133, 94);
+}
+
+.content-small {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  width: 100%;
+  height: 1rem;
+  margin-top: auto;
+}
+
+.song-title-small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.date-small {
+  font-weight: 400;
+  font-size: 0.6rem;
+}
+
+.dots-separator-album {
+  color: #26acac;
 }/*# sourceMappingURL=styles.css.map */
