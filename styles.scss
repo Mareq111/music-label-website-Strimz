@@ -383,6 +383,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 12rem;
     gap: 2rem;
@@ -421,6 +422,7 @@ html {
         box-shadow: 0 0 8px $shadow-flashback-deluxe;
     }
     &:hover #dots-separator-album-1 {
+        transition-delay: 300ms;
         color: $color-flashback-deluxe;
     }
 
@@ -429,6 +431,7 @@ html {
         box-shadow: 0 0 8px $shadow-arena-of-autumnn;
     }
     &:hover #dots-separator-album-2 {
+        transition-delay: 300ms;
         color: $color-arena-of-autumnn;
     }
 
@@ -437,6 +440,7 @@ html {
         box-shadow: 0 0 8px $shadow-airwaves;
     }
     &:hover #dots-separator-album-3 {
+        transition-delay: 300ms;
         color: $color-airwaves;
     }
 
@@ -445,6 +449,7 @@ html {
         box-shadow: 0 0 8px $shadow-king-of-for-and-muds;
     }
     &:hover #dots-separator-album-4 {
+        transition-delay: 300ms;
         color: $color-king-of-for-and-muds;
     }
 }
@@ -476,3 +481,104 @@ html {
 }
 
 // footer
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2rem 6rem;
+}
+
+.hr-line-footer {
+    width: 60%;
+    border: none;
+    background-color: $white;
+    height: 0.05rem;
+    opacity: 0.1;
+}
+
+.footer-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 3rem;
+    padding: 2rem 4rem;
+}
+.footer-a-1,
+.footer-a-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: auto;
+}
+
+.nav-a-footer {
+    color: $amulet-green-400;
+}
+
+.nav-a-footer {
+    color: $grey;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.description-and-email-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    border-bottom: 0.1rem solid $white;
+    gap: 0.5rem;
+}
+#email-input-description {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: $grey;
+}
+.input-wth-btn {
+    width: 100%;
+    height: 1.5rem;
+}
+#input-email {
+    width: 80%;
+    font-size: 0.8rem;
+    background-color: transparent;
+    padding: 0 0.5rem;
+    color: $white;
+    border: none;
+    margin-right: 0;
+    &:focus {
+        outline: none;
+        color: $white;
+    }
+}
+#send-btn {
+    border: 0;
+    background-color: transparent;
+    color: $eastern-blue-500;
+    padding: 0;
+    margin-left: 0;
+    width: 10%;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    &:focus {
+        transform: scale(1.1);
+        color: $amulet-green-400;
+    }
+}
+
+.footer-p-and-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

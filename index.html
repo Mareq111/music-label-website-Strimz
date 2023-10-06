@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#26acac" />
+    <meta
+      name="description"
+      content="I made this website for my portfolio, Marek Szulc"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
 
     <!-- icons link -->
@@ -68,7 +73,7 @@
         <hr class="hr-line" />
         <h2 class="artist-name">El Double O</h2>
         <div class="buttons-actions">
-          <button id="listen-now-btn">
+          <button id="listen-now-btn" aria-label="Listen Now">
             <i class="bx bx-play listen-now-btn"></i>Listen Now
           </button>
           <a class="share-music" href="#"
@@ -101,7 +106,7 @@
     <!--section 3 tracklist  -->
     <section class="section3">
       <div class="list-time-songs">
-        <button class="play-btn">
+        <button class="play-btn" aria-label="Listen all songs now ">
           <i class="bx bx-play play-song-big-icon"></i>
         </button>
         <h4 id="h4-section3">Track List</h4>
@@ -116,7 +121,7 @@
         <div class="right-side">
           <span class="song-number">1</span>
 
-          <button class="play-btn-song">
+          <button class="play-btn-song" aria-label="Listen song 1">
             <i class="bx bx-play play-song-icon"></i>
           </button>
 
@@ -137,7 +142,7 @@
         <div class="right-side">
           <span class="song-number">2</span>
 
-          <button class="play-btn-song">
+          <button class="play-btn-song" aria-label="Listen song 2">
             <i class="bx bx-play play-song-icon"></i>
           </button>
 
@@ -159,7 +164,7 @@
         <div class="right-side">
           <span class="song-number">3</span>
 
-          <button class="play-btn-song">
+          <button class="play-btn-song" aria-label="Listen song 3">
             <i class="bx bx-play play-song-icon"></i>
           </button>
 
@@ -181,7 +186,7 @@
         <div class="right-side">
           <span class="song-number">4</span>
 
-          <button class="play-btn-song">
+          <button class="play-btn-song" aria-label="Listen song 4">
             <i class="bx bx-play play-song-icon"></i>
           </button>
 
@@ -203,7 +208,7 @@
         <div class="right-side">
           <span class="song-number">5</span>
 
-          <button class="play-btn-song">
+          <button class="play-btn-song" aria-label="Listen song 5">
             <i class="bx bx-play play-song-icon"></i>
           </button>
 
@@ -225,7 +230,7 @@
         <div class="right-side">
           <span class="song-number">6</span>
 
-          <button class="play-btn-song">
+          <button class="play-btn-song" aria-label="Listen song 6">
             <i class="bx bx-play play-song-icon"></i>
           </button>
 
@@ -247,7 +252,7 @@
         <div class="right-side">
           <span class="song-number">7</span>
 
-          <button class="play-btn-song">
+          <button class="play-btn-song" aria-label="Listen song 7">
             <i class="bx bx-play play-song-icon"></i>
           </button>
 
@@ -269,7 +274,7 @@
         <div class="right-side">
           <span class="song-number">8</span>
 
-          <button class="play-btn-song">
+          <button class="play-btn-song" aria-label="Listen song 8">
             <i class="bx bx-play play-song-icon"></i>
           </button>
 
@@ -291,7 +296,7 @@
         <div class="right-side">
           <span class="song-number">9</span>
 
-          <button class="play-btn-song">
+          <button class="play-btn-song" aria-label="Listen song 9">
             <i class="bx bx-play play-song-icon"></i>
           </button>
 
@@ -312,7 +317,7 @@
       <div class="song">
         <div class="right-side">
           <span class="song-number">10</span>
-          <button class="play-btn-song">
+          <button class="play-btn-song" aria-label="Listen song 10">
             <i class="bx bx-play play-song-icon"></i>
           </button>
 
@@ -416,7 +421,87 @@
       </div>
     </section>
 
-    <footer></footer>
+    <footer>
+      <hr class="hr-line-footer" />
+      <div class="footer-top">
+        <div class="footer-a-1">
+          <a class="nav-a-footer" href="#">Home</a>
+          <a class="nav-a-footer" href="#">Music</a>
+          <a class="nav-a-footer" href="#">Videos</a>
+          <a class="nav-a-footer" href="#">Tour</a>
+        </div>
+        <div class="footer-a-2">
+          <a class="nav-a-footer" href="#">About</a>
+          <a class="nav-a-footer" href="#">Contact Us</a>
+          <a class="nav-a-footer" href="#">Privacy Policy</a>
+        </div>
+
+        <div class="description-and-email-input">
+          <p id="email-input-description">Stay current with our latest news</p>
+          <div class="input-wth-btn">
+            <input
+              id="input-email"
+              type="email"
+              name="user_email"
+              required
+              placeholder="Email"
+            />
+            <button
+              id="send-btn"
+              type="submit"
+              aria-label="Subscribe Newsletter"
+            >
+              <i class="bx bxs-send"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr class="hr-line-footer" />
+        <div class="footer-p-and-nav">
+          <p>2023 ©, All Rights Reserved</p>
+          <nav class="bottom-nav">
+            <!-- change nav -->
+            <a class="nav-a" id="nav-a-1" href="#"
+              ><i class="bx bxl-soundcloud"></i
+            ></a>
+            <a class="nav-a" id="nav-a-2" href="#"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+            <a class="nav-a" id="nav-a-3" href="#"
+              ><i class="bx bxl-apple"></i
+            ></a>
+            <a class="nav-a" id="nav-a-4" href="#"
+              ><i class="bx bxl-deezer"></i
+            ></a>
+            <a class="nav-a" id="nav-a-5" href="#"
+              ><i class="bx bxl-tiktok"></i
+            ></a>
+            <a class="nav-a" id="nav-a-6" href="#"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a class="nav-a" id="nav-a-7" href="#"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a class="nav-a" id="nav-a-8" href="#"
+              ><i class="bx bxl-discord"></i
+            ></a>
+            <a class="nav-a" id="nav-a-9" href="#"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </nav>
+        </div>
+        <div>
+          <p>
+            This website was made as a projects to my portfolio. Check out
+            <a href="#">my website</a>
+            to see my other projects.
+          </p>
+          <p>Made By Marek Szulc</p>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

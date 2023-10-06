@@ -373,6 +373,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 12rem;
   gap: 2rem;
@@ -404,24 +405,28 @@ html {
   box-shadow: 0 0 8px rgba(210, 146, 164, 0.5);
 }
 .album:hover #dots-separator-album-1 {
+  transition-delay: 300ms;
   color: rgb(210, 146, 164);
 }
 .album:hover #album-cover-arena-of-autumnn {
   box-shadow: 0 0 8px rgba(185, 169, 71, 0.5);
 }
 .album:hover #dots-separator-album-2 {
+  transition-delay: 300ms;
   color: rgb(185, 169, 71);
 }
 .album:hover #album-cover-airwaves {
   box-shadow: 0 0 8px rgba(51, 145, 196, 0.5);
 }
 .album:hover #dots-separator-album-3 {
+  transition-delay: 300ms;
   color: rgb(51, 145, 196);
 }
 .album:hover #album-cover-king-of {
   box-shadow: 0 0 8px rgba(181, 133, 94, 0.5);
 }
 .album:hover #dots-separator-album-4 {
+  transition-delay: 300ms;
   color: rgb(181, 133, 94);
 }
 
@@ -450,4 +455,110 @@ html {
 
 .dots-separator-album {
   color: #26acac;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem 6rem;
+}
+
+.hr-line-footer {
+  width: 60%;
+  border: none;
+  background-color: #f2f2f2;
+  height: 0.05rem;
+  opacity: 0.1;
+}
+
+.footer-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: 3rem;
+  padding: 2rem 4rem;
+}
+
+.footer-a-1,
+.footer-a-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: auto;
+}
+
+.nav-a-footer {
+  color: #85ab7b;
+}
+
+.nav-a-footer {
+  color: #dcdcdc;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.description-and-email-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  border-bottom: 0.1rem solid #f2f2f2;
+  gap: 0.5rem;
+}
+
+#email-input-description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #dcdcdc;
+}
+
+.input-wth-btn {
+  width: 100%;
+  height: 1.5rem;
+}
+
+#input-email {
+  width: 80%;
+  font-size: 0.8rem;
+  background-color: transparent;
+  padding: 0 0.5rem;
+  color: #f2f2f2;
+  border: none;
+  margin-right: 0;
+}
+#input-email:focus {
+  outline: none;
+  color: #f2f2f2;
+}
+
+#send-btn {
+  border: 0;
+  background-color: transparent;
+  color: #26acac;
+  padding: 0;
+  margin-left: 0;
+  width: 10%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+#send-btn:focus {
+  transform: scale(1.1);
+  color: #85ab7b;
+}
+
+.footer-p-and-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
