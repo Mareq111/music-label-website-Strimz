@@ -468,7 +468,7 @@ footer {
 }
 
 .hr-line-footer {
-  width: 60%;
+  width: 100%;
   border: none;
   background-color: #f2f2f2;
   height: 0.05rem;
@@ -484,7 +484,7 @@ footer {
   width: 100%;
   height: auto;
   gap: 3rem;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
 }
 
 .footer-a-1,
@@ -505,6 +505,11 @@ footer {
   text-transform: uppercase;
   font-size: 0.8rem;
   text-decoration: none;
+}
+.nav-a-footer:hover {
+  transition: 0.1s ease-in-out;
+  transform: scale(1.05);
+  color: #85ab7b;
 }
 
 .description-and-email-input {
@@ -557,8 +562,99 @@ footer {
   color: #85ab7b;
 }
 
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
 .footer-p-and-nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 2rem 2rem;
+}
+
+.bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-a {
+  padding: 0 0.2rem;
+}
+
+#bottom-nav-a-1,
+#bottom-nav-a-2,
+#bottom-nav-a-3,
+#bottom-nav-a-4,
+#bottom-nav-a-5,
+#bottom-nav-a-6,
+#bottom-nav-a-7,
+#bottom-nav-a-8,
+#bottom-nav-a-9 {
+  cursor: pointer;
+}
+#bottom-nav-a-1:hover,
+#bottom-nav-a-2:hover,
+#bottom-nav-a-3:hover,
+#bottom-nav-a-4:hover,
+#bottom-nav-a-5:hover,
+#bottom-nav-a-6:hover,
+#bottom-nav-a-7:hover,
+#bottom-nav-a-8:hover,
+#bottom-nav-a-9:hover {
+  transition: 0.1s ease-in-out;
+  transform: scale(1.2);
+  color: #85ab7b;
+}
+
+.time-and-rights {
+  font-size: 0.8rem;
+  color: #dcdcdc;
+  font-size: 600;
+}
+
+.about-me {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+#description-about-me {
+  font-size: 0.8rem;
+  width: 50%;
+  padding-bottom: 1rem;
+}
+
+#anchor-description-about-me {
+  text-decoration: none;
+  color: #26acac;
+  transition: 0.1s ease-in-out;
+}
+#anchor-description-about-me:hover {
+  color: #85ab7b;
+}
+
+#my-name-is {
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+}
+
+.my-social {
+  font-size: 2rem;
+  color: #367983;
+  transition: 0.1s ease-in-out;
+}
+.my-social:hover {
+  color: #85ab7b;
 }/*# sourceMappingURL=styles.css.map */
