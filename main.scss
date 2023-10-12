@@ -175,7 +175,7 @@ html {
     width: 100%;
     height: 6rem;
     background-color: $black-900;
-    border: 0.2rem dotted $ming-blue-600;
+    /* border-top: 0.2rem solid $ming-blue-600; */
     opacity: 0.8;
 }
 
@@ -573,6 +573,92 @@ footer {
     cursor: pointer;
     &:focus {
         transform: scale(1.1);
+        color: $amulet-green-400;
+    }
+}
+//bottom footer
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.footer-p-and-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.nav-a {
+    padding: 0 0.5rem;
+}
+
+#bottom-nav-a-1,
+#bottom-nav-a-2,
+#bottom-nav-a-3,
+#bottom-nav-a-4,
+#bottom-nav-a-5,
+#bottom-nav-a-6,
+#bottom-nav-a-7,
+#bottom-nav-a-8,
+#bottom-nav-a-9 {
+    font-size: 1.4rem;
+    color: $grey-500;
+    cursor: pointer;
+
+    &:hover {
+        transition: 0.1s ease-in-out;
+        transform: scale(1.2);
+        color: $amulet-green-400;
+    }
+}
+.time-and-rights {
+    font-size: 1rem;
+    color: $grey-500;
+    font-size: 600;
+}
+//about me
+.about-me {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+}
+#description-about-me {
+    font-size: 1rem;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+#anchor-description-about-me {
+    text-decoration: none;
+    color: $eastern-blue-500;
+    transition: 0.1s ease-in-out;
+    &:hover {
+        color: $amulet-green-400;
+    }
+}
+
+#my-name-is {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+.my-social {
+    font-size: 3rem;
+    color: $ming-blue-600;
+    transition: 0.1s ease-in-out;
+    &:hover {
         color: $amulet-green-400;
     }
 }
