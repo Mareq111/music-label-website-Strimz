@@ -11,6 +11,7 @@
 $white: #f2f2f2;
 $grey: #dcdcdc;
 $black-900: #120f10;
+$black-700: #1c1b1b;
 $eastern-blue-500: #26acac;
 $amulet-green-400: #85ab7b;
 $ming-blue-600: #367983;
@@ -27,6 +28,13 @@ $color-airwaves: rgba(51, 145, 196, 1);
 
 $shadow-king-of-for-and-muds: rgba(181, 133, 94, 0.5);
 $color-king-of-for-and-muds: rgba(181, 133, 94, 1);
+
+//other shadows
+
+$shadow-black: rgba(30, 29, 29, 0.6);
+$shadow-black-transparent: rgba(0, 0, 0, 0.8);
+
+//styling
 
 html {
     font-family: "Nunito Sans", sans-serif;
@@ -48,21 +56,23 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $shadow-black-transparent;
+    backdrop-filter: blur(0.5rem);
     width: 100%;
-    height: 2rem;
-    padding: 2rem;
+    height: 1rem;
+    padding: 1.5rem;
     position: fixed;
+    z-index: 2;
 }
 
-#logo {
-    width: 1.3rem;
-    height: 1.3rem;
+#logo,
+#dropdown-menu-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
-.bx-menu-alt-left {
-    cursor: pointer;
-}
 .top-nav {
     position: absolute;
     display: flex;
@@ -72,7 +82,9 @@ html {
     right: 0;
     position: fixed;
 }
+//hide for small screens
 .nav-a {
+    display: none;
     color: $white;
     margin: 0.2rem 0;
 }
@@ -98,7 +110,7 @@ html {
 
 .section1 {
     display: flex;
-    padding: 4rem 6rem;
+    width: 100vw;
 }
 
 .album-and-figcaption {
@@ -106,6 +118,7 @@ html {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-top: 6rem;
 }
 #fig {
     padding-bottom: 0.5rem;
@@ -114,14 +127,6 @@ html {
     font-weight: 500;
     color: $white;
     letter-spacing: 0.04rem;
-}
-
-#main-album-cover {
-    display: flex;
-    width: 18rem;
-    height: 18rem;
-    box-shadow: 0px 2px 8px 1px rgba(30, 29, 29, 0.6); //change color
-    margin-right: 3rem;
 }
 
 .title-name-artist {
@@ -136,11 +141,6 @@ html {
     font-size: 1.7rem;
     font-weight: 800;
 }
-.artist-name {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
 .hr-line {
     border: none;
     width: 60%;
@@ -148,7 +148,37 @@ html {
     height: 0.05rem;
     opacity: 0.1;
 }
-
+.album-artist-name {
+    height: auto;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.album-summary-description {
+    display: list-item;
+    color: $white;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: transparent;
+    width: 8rem;
+    &:hover {
+        background-color: $grey;
+        color: $ming-blue-600;
+        box-shadow: 0 0 4px $shadow-black;
+    }
+}
+.album-description {
+    width: 80%;
+    padding-top: 1rem;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+.p-in-details {
+    padding: 0.5rem;
+    /*  background-color:  #767979  ; */
+    border-radius: 1%;
+    box-shadow: 0 0 8px $shadow-black;
+}
+/* 
 .buttons-actions {
     display: flex;
     gap: 5%;
@@ -168,7 +198,7 @@ html {
     border-radius: 0.2rem;
     letter-spacing: 0.04rem;
     border: 0;
-    /* box-shadow: 1px 0 5px 1px rgba(0, 0, 0, 0.6); */
+   
 }
 .share-music {
     display: flex;
@@ -184,18 +214,17 @@ html {
     border-radius: 0.2rem;
     letter-spacing: 0.04rem;
     text-decoration: none;
-    /*  box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.6); */
 }
 
 .listen-now-btn,
 .share-btn {
     font-size: 1rem;
     padding-right: 0.5rem;
-}
+} */
 
 //section 2
 
-.section2 {
+/* .section2 {
     display: flex;
     flex-direction: column;
     padding: 1rem 6rem;
@@ -226,9 +255,9 @@ html {
         transform: scale(1.2);
     }
 }
-
+ */
 //section 3 tracklist
-.section3 {
+/* .section3 {
     display: flex;
     flex-direction: column;
     padding: 2rem 6rem;
@@ -363,11 +392,11 @@ html {
         transform: scale(1.1) rotate(1turn);
         color: $eastern-blue-500;
     }
-}
+} */
 
 //section 4 other albums might you like
 
-.section4 {
+/* .section4 {
     display: flex;
     flex-direction: column;
     padding: 2rem 6rem;
@@ -409,10 +438,10 @@ html {
 .album-cover {
     width: 6rem;
     height: 6rem;
-}
+} */
 
 // hover for album covers and dots separators
-.album {
+/* .album {
     .album-cover {
         transition: box-shadow 0.3s ease;
     }
@@ -478,11 +507,11 @@ html {
 
 .dots-separator-album {
     color: $eastern-blue-500;
-}
+} */
 
 // footer
 //top footer
-footer {
+/* footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -667,3 +696,4 @@ footer {
         color: $amulet-green-400;
     }
 }
+ */

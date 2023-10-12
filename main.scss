@@ -1,0 +1,171 @@
+//font
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//colors variety
+$white: #f2f2f2;
+$grey-500: #dcdcdc;
+$grey-700: #3e3c3c;
+$black-900: #120f10;
+$black-700: #1c1b1b;
+$black-600: #120f10;
+$eastern-blue-500: #26acac;
+$amulet-green-400: #85ab7b;
+$ming-blue-600: #367983;
+
+//mini- albums shadows and more
+$shadow-flashback-deluxe: rgba(210, 146, 164, 0.5);
+$color-flashback-deluxe: rgba(210, 146, 164, 1);
+
+$shadow-arena-of-autumnn: rgba(185, 169, 71, 0.5);
+$color-arena-of-autumnn: rgba(185, 169, 71, 1);
+
+$shadow-airwaves: rgba(51, 145, 196, 0.5);
+$color-airwaves: rgba(51, 145, 196, 1);
+
+$shadow-king-of-for-and-muds: rgba(181, 133, 94, 0.5);
+$color-king-of-for-and-muds: rgba(181, 133, 94, 1);
+
+//other shadows
+
+$shadow-black: rgba(30, 29, 29, 0.6);
+$shadow-black-transparent: rgba(0, 0, 0, 0.8);
+
+//styling
+
+html {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: $black-900;
+    color: $white;
+}
+
+#background-album-cover {
+    position: absolute;
+    width: 100vw;
+    height: 40rem;
+    filter: blur(0.4rem);
+    z-index: -2;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $shadow-black-transparent;
+    backdrop-filter: blur(0.5rem);
+    width: 100%;
+    height: 1rem;
+    padding: 1.5rem;
+    position: fixed;
+    z-index: 2;
+}
+
+#logo,
+#dropdown-menu-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+//hide not added nav
+
+//section 1
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 4rem 1rem;
+}
+#main-album-cover {
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 2px 8px 1px $shadow-black;
+}
+
+#fig-album-released {
+    padding-bottom: 0.5rem;
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: $white;
+    letter-spacing: 0.04rem;
+}
+.title-name-artist {
+    padding-top: 1.5rem;
+    width: 100%;
+}
+.album-name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid $grey-700;
+    width: 100%;
+}
+
+.album-artist-name {
+    padding-top: 0.5rem;
+    height: auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.album-summary-description {
+    display: list-item;
+    color: $white;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: transparent;
+    width: 100%;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $grey-500;
+        color: $ming-blue-600;
+        box-shadow: 0 0 4px $shadow-black;
+    }
+}
+
+.album-description {
+    line-height: 1.6rem;
+    height: auto;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.p-in-details {
+    padding: 1rem;
+    border-radius: 1%;
+
+    background-color: $black-600;
+    box-shadow: $shadow-black;
+}
+
+//idk
+.hr-line {
+    border: none;
+    width: 10rem;
+    background-color: $white;
+    height: 0.05rem;
+    opacity: 0.1;
+    margin: 0.5rem 0;
+}
+
+// test
+img {
+    width: 3rem;
+    height: 3rem;
+}

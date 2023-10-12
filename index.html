@@ -8,7 +8,8 @@
       name="description"
       content="I made this website for my portfolio, Marek Szulc"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <link rel="stylesheet" href="/css/styles.css" /> -->
+    <link rel="stylesheet" href="/css/main.css" />
 
     <!-- icons link -->
     <link
@@ -32,7 +33,7 @@
       />
       <div class="top-content">
         <img id="logo" src="/img/logo.png" alt="" />
-        <i class="bx bx-menu-alt-left"></i>
+        <i class="bx bx-menu-alt-left" id="dropdown-menu-icon"></i>
       </div>
     </div>
     <nav class="top-nav">
@@ -58,7 +59,9 @@
     <section class="section1">
       <div class="album-and-figcaption">
         <div class="fig-div">
-          <figcaption id="fig">Album Released - October 3, 2023</figcaption>
+          <figcaption name="album-release" id="fig-album-released">
+            Album Released - October 3, 2023
+          </figcaption>
         </div>
 
         <img
@@ -70,10 +73,31 @@
 
       <div class="title-name-artist">
         <h1 class="album-name">Flashback From 2001</h1>
-        <hr class="hr-line" />
-        <h2 class="artist-name">El Double O</h2>
-        <p></p>
-        <!--  <div class="buttons-actions">
+        <h2 class="album-artist-name">El Double O</h2>
+
+        <details class="album-description" name="album-description">
+          <summary class="album-summary-description">
+            Album Introduction
+          </summary>
+          <div name="album-introduction" class="p-in-details">
+            <p id="p_1-in-introduction">
+              Flashback from 2001 is a musical journey by artist El Double O
+              that takes the listener back to the vibe of the 2000s while
+              infusing it with the best elements of the present day.
+            </p>
+            <br />
+            <p id="p_2-in-introduction">
+              This album is a passionate and creative project that transports
+              listeners on an intriguing journey through the past decade,
+              reimagining it and creating something fresh and innovative.
+            </p>
+            <br />
+            <p id="p_3-in-introduction">If you're reading this, I hope you have a great day!</p>
+          </div>
+        </details>
+      </div>
+
+      <!--  <div class="buttons-actions">
           <button id="listen-now-btn" aria-label="Listen Now">
             <i class="bx bx-play listen-now-btn"></i>Listen Now
           </button>
@@ -81,8 +105,8 @@
             ><i class="bx bx-share-alt share-btn"></i>Share</a
           >
         </div> -->
-      </div>
     </section>
+
     <!-- section 2 with choose audio player  -->
     <section class="section2">
       <h3 id="h3-section2">On streaming platforms now</h3>
