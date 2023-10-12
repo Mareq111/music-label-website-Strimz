@@ -364,7 +364,10 @@
     </section>
     <!-- section 4 other albums might you like -->
     <section class="section4">
-      <h5 id="h5-section4">Other Releases by El Double O</h5>
+      <h5 id="h5-section4">
+        Other Releases by <br id="break-other-relas" />
+        <span class="name-tag">El Double O</span>
+      </h5>
       <div class="albums-chooser">
         <!-- first album FLASHBACK FROM 2001 DELUXE EDITION -->
 
@@ -380,7 +383,7 @@
           <div class="content-small">
             <p class="date-small">Released</p>
             <i
-              class="bx bx-dots-horizontal-rounded dots-separator-album"
+              class="bx bx-dots-horizontal-rounded | dots-separator-album"
               id="dots-separator-album-1"
             ></i>
 
@@ -449,6 +452,7 @@
       </div>
     </section>
 
+    <!-- footer -->
     <footer>
       <hr class="hr-line-footer" />
       <div class="footer-top">
@@ -465,17 +469,19 @@
         </div>
 
         <div class="description-and-email-input">
-          <p id="email-input-description">Stay current with our latest news</p>
+          <p class="email-input-description">
+            Stay current with our latest news
+          </p>
           <div class="input-wth-btn">
             <input
-              id="input-email"
+              class="input-email"
               type="email"
               name="user_email"
               required
               placeholder="Email"
             />
             <button
-              id="send-btn"
+              class="send-btn"
               type="submit"
               aria-label="Subscribe Newsletter"
             >

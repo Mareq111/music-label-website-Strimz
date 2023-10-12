@@ -376,49 +376,49 @@ html {
   color: #26acac;
 }
 
-/* .section4 {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 6rem;
-    gap: 0.5rem;
-}
-#h5-section4 {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding-bottom: 1rem;
-}
-.albums-chooser {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 12rem;
-    gap: 2rem;
+.section4 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem;
+  gap: 0.5rem;
 }
 
-//only album
+#h5-section4 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.albums-chooser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 12rem;
+  gap: 2rem;
+}
 
 .album {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 6rem;
-    height: 12rem;
-    gap: 0.5rem;
-    transition: 0.1s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-        transform: scale(1.1);
-    }
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 6rem;
+  height: 12rem;
+  gap: 0.5rem;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+.album:hover {
+  transform: scale(1.1);
 }
 
 .album-cover {
-    width: 6rem;
-    height: 6rem;
-} */
+  width: 6rem;
+  height: 6rem;
+}
+
 /* .album {
     .album-cover {
         transition: box-shadow 0.3s ease;
@@ -486,133 +486,137 @@ html {
 .dots-separator-album {
     color: $eastern-blue-500;
 } */
-/* footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 2rem 6rem;
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem 6rem;
 }
 
 .hr-line-footer {
-    width: 100%;
-    border: none;
-    background-color: $white;
-    height: 0.05rem;
-    opacity: 0.1;
+  width: 100%;
+  border: none;
+  background-color: #f2f2f2;
+  height: 0.05rem;
+  opacity: 0.1;
 }
 
 .footer-top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    gap: 3rem;
-    padding: 2rem 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: 3rem;
+  padding: 2rem 2rem;
 }
+
 .footer-a-1,
 .footer-a-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: auto;
 }
 
 .nav-a-footer {
-    color: $amulet-green-400;
+  color: #85ab7b;
 }
 
 .nav-a-footer {
-    color: $grey;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    text-decoration: none;
-
-    &:hover {
-        transition: 0.1s ease-in-out;
-        transform: scale(1.05);
-        color: $amulet-green-400;
-    }
+  color: #dcdcdc;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.nav-a-footer:hover {
+  transition: 0.1s ease-in-out;
+  transform: scale(1.05);
+  color: #85ab7b;
 }
 
 .description-and-email-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: auto;
-    border-bottom: 0.1rem solid $white;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  border-bottom: 0.1rem solid #f2f2f2;
+  gap: 0.5rem;
 }
-#email-input-description {
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: $grey;
+
+.email-input-description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #dcdcdc;
 }
+
 .input-wth-btn {
-    width: 100%;
-    height: 1.5rem;
+  width: 100%;
+  height: 1.5rem;
 }
+
 #input-email {
-    width: 80%;
-    font-size: 0.8rem;
-    background-color: transparent;
-    padding: 0 0.5rem;
-    color: $white;
-    border: none;
-    margin-right: 0;
-    &:focus {
-        outline: none;
-        color: $white;
-    }
+  width: 80%;
+  font-size: 0.8rem;
+  background-color: transparent;
+  padding: 0 0.5rem;
+  color: #f2f2f2;
+  border: none;
+  margin-right: 0;
 }
-#send-btn {
-    border: 0;
-    background-color: transparent;
-    color: $eastern-blue-500;
-    padding: 0;
-    margin-left: 0;
-    width: 10%;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    &:focus {
-        transform: scale(1.1);
-        color: $amulet-green-400;
-    }
+#input-email:focus {
+  outline: none;
+  color: #f2f2f2;
 }
-//bottom footer
+
+.send-btn {
+  border: 0;
+  background-color: transparent;
+  color: #26acac;
+  padding: 0;
+  margin-left: 0;
+  width: 10%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.send-btn:focus {
+  transform: scale(1.1);
+  color: #85ab7b;
+}
 
 .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
 }
 
 .footer-p-and-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 2rem 2rem;
 }
+
 .bottom-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-a {
-    padding: 0 0.2rem;
+  padding: 0 0.2rem;
 }
 
 #bottom-nav-a-1,
@@ -624,51 +628,62 @@ html {
 #bottom-nav-a-7,
 #bottom-nav-a-8,
 #bottom-nav-a-9 {
-    cursor: pointer;
-    &:hover {
-        transition: 0.1s ease-in-out;
-        transform: scale(1.2);
-        color: $amulet-green-400;
-    }
+  cursor: pointer;
 }
+#bottom-nav-a-1:hover,
+#bottom-nav-a-2:hover,
+#bottom-nav-a-3:hover,
+#bottom-nav-a-4:hover,
+#bottom-nav-a-5:hover,
+#bottom-nav-a-6:hover,
+#bottom-nav-a-7:hover,
+#bottom-nav-a-8:hover,
+#bottom-nav-a-9:hover {
+  transition: 0.1s ease-in-out;
+  transform: scale(1.2);
+  color: #85ab7b;
+}
+
 .time-and-rights {
-    font-size: 0.8rem;
-    color: $grey;
-    font-size: 600;
+  font-size: 0.8rem;
+  color: #dcdcdc;
+  font-size: 600;
 }
-//about me
+
 .about-me {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
 }
+
 #description-about-me {
-    font-size: 0.8rem;
-    width: 50%;
-    padding-bottom: 1rem;
+  font-size: 0.8rem;
+  width: 50%;
+  padding-bottom: 1rem;
 }
+
 #anchor-description-about-me {
-    text-decoration: none;
-    color: $eastern-blue-500;
-    transition: 0.1s ease-in-out;
-    &:hover {
-        color: $amulet-green-400;
-    }
+  text-decoration: none;
+  color: #26acac;
+  transition: 0.1s ease-in-out;
+}
+#anchor-description-about-me:hover {
+  color: #85ab7b;
 }
 
 #my-name-is {
-    font-size: 0.8rem;
-    padding: 0.5rem 0;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
 }
+
 .my-social {
-    font-size: 2rem;
-    color: $ming-blue-600;
-    transition: 0.1s ease-in-out;
-    &:hover {
-        color: $amulet-green-400;
-    }
+  font-size: 2rem;
+  color: #367983;
+  transition: 0.1s ease-in-out;
 }
- *//*# sourceMappingURL=styles.css.map */
+.my-social:hover {
+  color: #85ab7b;
+}/*# sourceMappingURL=styles.css.map */

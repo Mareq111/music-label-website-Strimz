@@ -352,19 +352,227 @@ html {
         color: $eastern-blue-500;
     }
 }
+//section 4 other albums might you like
 
-//idk
-.hr-line {
-    border: none;
-    width: 10rem;
-    background-color: $white;
-    height: 0.05rem;
-    opacity: 0.1;
-    margin: 0.5rem 0;
+.section4 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 4rem 1rem;
+    gap: 0.5rem;
+}
+#h5-section4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+/* #break-other-relas {
+    display: none;
+} */
+.name-tag {
+    color: $eastern-blue-500;
 }
 
-// test
-img {
-    width: 3rem;
-    height: 3rem;
+.albums-chooser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+}
+
+//only album
+.album-cover {
+    width: 14rem;
+    height: auto;
+}
+.album {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 14rem;
+    height: auto;
+    gap: 0.5rem;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+// hover for album covers and dots separators
+.album {
+    .album-cover {
+        transition: box-shadow 0.3s ease;
+    }
+
+    //1 album flashback deluxe
+    &:hover #album-cover-flashback-deluxe {
+        box-shadow: 0 0 8px $shadow-flashback-deluxe;
+    }
+    &:hover #dots-separator-album-1 {
+        transition-delay: 300ms;
+        color: $color-flashback-deluxe;
+    }
+
+    // 2 album arena of autumnn
+    &:hover #album-cover-arena-of-autumnn {
+        box-shadow: 0 0 8px $shadow-arena-of-autumnn;
+    }
+    &:hover #dots-separator-album-2 {
+        transition-delay: 300ms;
+        color: $color-arena-of-autumnn;
+    }
+
+    // 3 album airwaves
+    &:hover #album-cover-airwaves {
+        box-shadow: 0 0 8px $shadow-airwaves;
+    }
+    &:hover #dots-separator-album-3 {
+        transition-delay: 300ms;
+        color: $color-airwaves;
+    }
+
+    //4 album king of
+    &:hover #album-cover-king-of {
+        box-shadow: 0 0 8px $shadow-king-of-for-and-muds;
+    }
+    &:hover #dots-separator-album-4 {
+        transition-delay: 300ms;
+        color: $color-king-of-for-and-muds;
+    }
+}
+
+.content-small {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.2rem;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+
+.song-title-small {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.date-small {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.dots-separator-album {
+    color: $eastern-blue-500;
+    font-size: 1.4rem;
+}
+// footer
+
+//top footer
+
+.hr-line-footer {
+    width: 100%;
+    border: none;
+    background-color: $grey-600;
+    height: 0.05rem;
+    opacity: 0.1;
+}
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 0rem 1rem;
+}
+.footer-top {
+    display: flex;
+    flex-direction: column; // higher res change to row
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+.footer-a-1,
+.footer-a-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: auto;
+}
+
+.nav-a-footer {
+    color: $amulet-green-400;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+        color: $grey-600;
+    }
+}
+.description-and-email-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    border-bottom: 0.1rem solid $white;
+    gap: 0.5rem;
+    width: 100%;
+    height: auto;
+}
+.email-input-description {
+    padding: 2rem 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $grey-600;
+}
+
+.input-wth-btn {
+    width: 100%;
+    height: auto;
+}
+
+.input-email {
+    width: 80%;
+    height: auto;
+    font-size: 1.4rem;
+    background-color: transparent;
+    color: $white;
+    border: none;
+    margin-right: 0;
+    padding: 1rem 0;
+    &:focus {
+        outline: none;
+        color: $white;
+    }
+}
+.send-btn {
+    border: 0;
+    background-color: transparent;
+    color: $eastern-blue-500;
+    padding: 0;
+    margin-left: 0;
+    width: auto;
+    height: auto;
+    transition: 0.2s ease-in-out;
+    font-size: 1.4rem;
+    cursor: pointer;
+    &:focus {
+        transform: scale(1.1);
+        color: $amulet-green-400;
+    }
 }

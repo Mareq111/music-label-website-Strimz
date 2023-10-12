@@ -224,7 +224,7 @@ html {
 
 //section 2
 
- .section2 {
+.section2 {
     display: flex;
     flex-direction: column;
     padding: 1rem 6rem;
@@ -255,11 +255,9 @@ html {
         transform: scale(1.2);
     }
 }
- 
-
 
 //section 3 tracklist
- .section3 {
+.section3 {
     display: flex;
     flex-direction: column;
     padding: 2rem 6rem;
@@ -394,11 +392,11 @@ html {
         transform: scale(1.1) rotate(1turn);
         color: $eastern-blue-500;
     }
-} 
+}
 
 //section 4 other albums might you like
 
-/* .section4 {
+.section4 {
     display: flex;
     flex-direction: column;
     padding: 2rem 6rem;
@@ -440,7 +438,7 @@ html {
 .album-cover {
     width: 6rem;
     height: 6rem;
-} */
+}
 
 // hover for album covers and dots separators
 /* .album {
@@ -513,7 +511,7 @@ html {
 
 // footer
 //top footer
-/* footer {
+footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -577,7 +575,7 @@ html {
     border-bottom: 0.1rem solid $white;
     gap: 0.5rem;
 }
-#email-input-description {
+.email-input-description {
     font-size: 0.8rem;
     font-weight: 400;
     color: $grey;
@@ -599,7 +597,7 @@ html {
         color: $white;
     }
 }
-#send-btn {
+.send-btn {
     border: 0;
     background-color: transparent;
     color: $eastern-blue-500;
@@ -698,4 +696,3 @@ html {
         color: $amulet-green-400;
     }
 }
- */
