@@ -203,38 +203,41 @@ html {
     font-size: 1rem;
     padding-right: 0.5rem;
 } */
-/* .section2 {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 6rem;
+.section2 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 6rem;
 }
+
 #h3-section2 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    width: 50vw;
-    padding-bottom: 1rem;
-    font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 50vw;
+  padding-bottom: 1rem;
+  font-weight: 800;
 }
+
 .choose-player {
-    display: flex;
-    width: 50vw;
-    height: 3rem;
-    background-color: $black-900;
-    border: 0.1rem dotted $ming-blue-600;
-    opacity: 0.8;
+  display: flex;
+  width: 50vw;
+  height: 3rem;
+  background-color: #120f10;
+  border: 0.1rem dotted #367983;
+  opacity: 0.8;
 }
+
 .music-app-choose {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    transition: 0.1s ease-in-out;
-    &:hover {
-        color: $amulet-green-400;
-        transform: scale(1.2);
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  transition: 0.1s ease-in-out;
 }
- */
+.music-app-choose:hover {
+  color: #85ab7b;
+  transform: scale(1.2);
+}
+
 /* .section3 {
     display: flex;
     flex-direction: column;
