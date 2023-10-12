@@ -10,6 +10,7 @@
 //colors variety
 $white: #f2f2f2;
 $grey-500: #dcdcdc;
+$grey-600: #8d8c8c;
 $grey-700: #3e3c3c;
 $black-900: #120f10;
 $black-700: #1c1b1b;
@@ -86,7 +87,7 @@ html {
     align-items: flex-start;
     width: 100%;
     height: auto;
-    padding: 4rem 1rem 2rem 1rem;
+    padding: 4rem 1rem 0 1rem;
 }
 #main-album-cover {
     display: flex;
@@ -158,11 +159,9 @@ html {
 .section2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: auto;
-    padding: 0 1rem 2rem 1rem;
+    padding: 2rem 1rem;
 }
 #h3-section2 {
     font-size: 1.4rem;
@@ -197,6 +196,161 @@ html {
 #box-4,
 #box-5 {
     font-size: 1.5rem;
+}
+
+//section 3 tracklist
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+}
+.list-time-songs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+}
+.play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $amulet-green-400;
+    min-width: 3rem;
+    min-height: 3rem;
+    border-radius: 20%;
+    border: 0;
+    opacity: 1;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.5;
+        border-radius: 28%;
+        .play-song-big-icon {
+            color: $white;
+        }
+    }
+
+    .play-song-big-icon {
+        font-size: 1.4rem;
+    }
+}
+#h4-section3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.quantity-of-songs-and-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 40%;
+}
+.bxs-circle {
+    font-size: 0.6rem;
+    color: $eastern-blue-500;
+}
+#hr-line2 {
+    border: none;
+    width: 100%;
+    background-color: $grey-700;
+    height: 0.05rem;
+    opacity: 0.1;
+    margin: 0.5rem 0;
+}
+
+//only tracks
+
+//tack-1
+.song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+//only left side song
+.l_side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0.5rem; */
+}
+
+.song-number {
+    font-size: 0.8rem;
+    width: 1rem;
+    font-weight: 600;
+}
+.play-btn-song {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 25%;
+    border: 0;
+    opacity: 1;
+    transition: 0.2s ease-in;
+    color: $eastern-blue-500;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+        .play-song-icon {
+            color: $white;
+        }
+    }
+
+    .play-song-icon {
+        font-size: 1.4rem;
+    }
+}
+.song-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+.artist-name {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: $grey-600;
+}
+
+// only right side song
+.r_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 0.5rem;
+}
+.song-duration {
+    font-size: 0.8rem;
+}
+
+.anchor-dots {
+    color: $ming-blue-600;
+    font-size: 1.4rem;
+    transition: 0.3s ease-in;
+    &:hover {
+        transform: scale(1.1) rotate(1turn);
+        color: $eastern-blue-500;
+    }
 }
 
 //idk

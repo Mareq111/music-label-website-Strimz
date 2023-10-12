@@ -238,142 +238,144 @@ html {
   transform: scale(1.2);
 }
 
-/* .section3 {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 6rem;
-    gap: 0.5rem;
+.section3 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem;
+  gap: 0.5rem;
 }
+
 .list-time-songs {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 50vw;
-    height: 3rem;
-    padding-bottom: 1rem;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50vw;
+  height: 3rem;
+  padding-bottom: 1rem;
+  gap: 2rem;
 }
+
 .play-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $amulet-green-400;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 25%;
-    border: 0;
-    opacity: 1;
-    transition: 0.2s ease-in;
-    cursor: pointer;
-
-    &:hover {
-        opacity: 0.5;
-        border-radius: 28%;
-        .play-song-big-icon {
-            color: $white;
-        }
-    }
-
-    .play-song-big-icon {
-        font-size: 1.4rem;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #85ab7b;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 25%;
+  border: 0;
+  opacity: 1;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+.play-btn:hover {
+  opacity: 0.5;
+  border-radius: 28%;
+}
+.play-btn:hover .play-song-big-icon {
+  color: #f2f2f2;
+}
+.play-btn .play-song-big-icon {
+  font-size: 1.4rem;
 }
 
 #h4-section3 {
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-#quantity-of-songs-and-time {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7rem;
-    text-transform: lowercase;
-    gap: 0.5rem;
-    font-weight: 400;
-}
-.bxs-circle {
-    font-size: 0.3rem;
-    color: $eastern-blue-500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-//only tracks
+#quantity-of-songs-and-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  text-transform: lowercase;
+  gap: 0.5rem;
+  font-weight: 400;
+}
+
+.bxs-circle {
+  font-size: 0.3rem;
+  color: #26acac;
+}
 
 .song {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
 }
-//only right side song
+
 .right-side {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
+
 .song-number {
-    font-size: 0.8rem;
-    width: 1rem;
+  font-size: 0.8rem;
+  width: 1rem;
 }
 
 .play-btn-song {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 25%;
-    border: 0;
-    opacity: 1;
-    transition: 0.2s ease-in;
-    color: $eastern-blue-500;
-    cursor: pointer;
-    &:hover {
-        opacity: 0.8;
-
-        .play-song-icon {
-            color: $white;
-        }
-    }
-
-    .play-song-icon {
-        font-size: 1.2rem;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 25%;
+  border: 0;
+  opacity: 1;
+  transition: 0.2s ease-in;
+  color: #26acac;
+  cursor: pointer;
+}
+.play-btn-song:hover {
+  opacity: 0.8;
+}
+.play-btn-song:hover .play-song-icon {
+  color: #f2f2f2;
+}
+.play-btn-song .play-song-icon {
+  font-size: 1.2rem;
 }
 
 .song-title {
-    font-weight: 600;
-    font-size: 0.8rem;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
+
 .artist-name {
-    font-weight: 400;
-    font-size: 0.6rem;
+  font-weight: 400;
+  font-size: 0.6rem;
 }
-// only left side song
+
 .left-side {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  gap: 0.5rem;
 }
+
 .song-duration {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
 }
 
 .anchor-dots {
-    color: $ming-blue-600;
-    font-size: 1rem;
-    transition: 0.3s ease-in;
-    &:hover {
-        transform: scale(1.1) rotate(1turn);
-        color: $eastern-blue-500;
-    }
-} */
+  color: #367983;
+  font-size: 1rem;
+  transition: 0.3s ease-in;
+}
+.anchor-dots:hover {
+  transform: scale(1.1) rotate(1turn);
+  color: #26acac;
+}
+
 /* .section4 {
     display: flex;
     flex-direction: column;
