@@ -62,22 +62,43 @@ html {
     background-color: $shadow-black-transparent;
     backdrop-filter: blur(0.5rem);
     width: 100%;
-    height: 1rem;
-    padding: 1.5rem;
+    height: 3.5rem;
+    padding: 0 1rem;
     position: fixed;
     z-index: 2;
 }
 
 #logo,
 #dropdown-menu-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.75rem;
     cursor: pointer;
 }
 
-//hide not added nav
+//hide not added nav for small screens
+/* .nav-a {
+    display: none;
+    color: $white;
+    margin: 0.2rem 0;
+}
 
+#nav-a-1,
+#nav-a-2,
+#nav-a-3,
+#nav-a-4,
+#nav-a-5,
+#nav-a-6,
+#nav-a-7,
+#nav-a-8,
+#nav-a-9 {
+    cursor: pointer;
+    &:hover {
+        transition: 0.1s ease-in-out;
+        transform: scale(1.2);
+        color: $grey;
+    }
+} */
 //section 1
 
 .section1 {
@@ -530,6 +551,7 @@ footer {
         color: $grey-600;
     }
 }
+
 .description-and-email-input {
     display: flex;
     flex-direction: column;
@@ -669,5 +691,99 @@ footer {
     transition: 0.1s ease-in-out;
     &:hover {
         color: $amulet-green-400;
+    }
+}
+
+@media (min-width: 425px) {
+    #background-album-cover {
+        height: 45rem;
+    }
+    .top-content {
+        padding: 0 2rem;
+    }
+    //section 1
+    .section1 {
+        padding: 4rem 2rem 0 2rem;
+    }
+    .album-description {
+        font-size: 0.9rem;
+    }
+    // section 2
+    .section2 {
+        padding: 2rem;
+    }
+    #box-1,
+    #box-2,
+    #box-3,
+    #box-4,
+    #box-5 {
+        font-size: 1.8rem;
+    }
+    //section 3 tracklist
+    .section3 {
+        padding: 2rem;
+    }
+    .play-btn {
+        min-height: 3.5rem;
+        min-width: 3.5rem;
+    }
+    .song {
+        height: 3.5rem;
+    }
+    .song-number {
+        font-size: 0.9rem;
+    }
+    .play-btn-song {
+        width: 3rem;
+        height: 3rem;
+
+        .play-song-icon {
+            font-size: 1.6rem;
+        }
+    }
+    .song-title {
+        font-size: 1.2rem;
+    }
+    .artist-name {
+        font-size: 1rem;
+    }
+    .song-duration {
+        font-size: 1rem;
+    }
+    .anchor-dots {
+        font-size: 1.6rem;
+    }
+    //section 4 other albums might you like
+    .section4 {
+        padding: 0 2rem 4rem 2rem;
+    }
+    //top footer
+    footer {
+        padding: 0rem 2rem;
+    }
+    .nav-a-footer {
+        font-size: 1.6rem;
+    }
+    //footer boottom
+
+    #bottom-nav-a-1,
+    #bottom-nav-a-2,
+    #bottom-nav-a-3,
+    #bottom-nav-a-4,
+    #bottom-nav-a-5,
+    #bottom-nav-a-6,
+    #bottom-nav-a-7,
+    #bottom-nav-a-8,
+    #bottom-nav-a-9 {
+        font-size: 1.8rem;
+    }
+    .time-and-rights {
+        font-size: 1.2rem;
+    }
+    //about me
+    #description-about-me {
+        font-size: 1.2rem;
+        width: 80%;
+        padding-bottom: 1.5rem;
     }
 }
