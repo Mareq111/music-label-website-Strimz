@@ -111,6 +111,10 @@ html {
   text-transform: uppercase;
 }
 
+.name-artist-in-p {
+  color: #85ab7b;
+}
+
 .p-in-details {
   padding: 1rem;
   border-radius: 1%;
@@ -343,21 +347,25 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+  min-height: 20rem;
   gap: 2rem;
 }
 
 .album-cover {
   width: 14rem;
   height: auto;
+  min-height: 14rem;
+  min-width: 14rem;
 }
 
 .album {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   width: 14rem;
   height: auto;
@@ -611,11 +619,12 @@ footer {
 
 #anchor-description-about-me {
   text-decoration: none;
-  color: #26acac;
+  color: #dcdcdc;
+  border: 0.1rem solid #367983;
   transition: 0.1s ease-in-out;
 }
 #anchor-description-about-me:hover {
-  color: #85ab7b;
+  color: #26acac;
 }
 
 #my-name-is {

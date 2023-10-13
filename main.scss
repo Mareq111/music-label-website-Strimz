@@ -147,6 +147,10 @@ html {
     text-transform: uppercase;
 }
 
+.name-artist-in-p {
+    color: $amulet-green-400;
+}
+
 .p-in-details {
     padding: 1rem;
     border-radius: 1%;
@@ -377,10 +381,11 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    min-height: 20rem;
     gap: 2rem;
 }
 
@@ -388,10 +393,13 @@ html {
 .album-cover {
     width: 14rem;
     height: auto;
+    min-height: 14rem;
+    min-width: 14rem;
 }
 .album {
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     width: 14rem;
     height: auto;
@@ -643,10 +651,11 @@ footer {
 }
 #anchor-description-about-me {
     text-decoration: none;
-    color: $eastern-blue-500;
+    color: $grey-500;
+    border: 0.1rem solid $ming-blue-600;
     transition: 0.1s ease-in-out;
     &:hover {
-        color: $amulet-green-400;
+        color: $eastern-blue-500;
     }
 }
 
