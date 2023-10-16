@@ -98,7 +98,7 @@ html {
   font-size: 1.6rem;
   font-weight: 800;
   padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid #3e3c3c;
+  /* border-bottom: 0.1rem solid $grey-700 *; */
   width: 100%;
 }
 
@@ -745,5 +745,66 @@ footer {
     font-size: 1.2rem;
     width: 80%;
     padding-bottom: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #background-album-cover {
+    transform: translateY(-16rem);
+    height: auto;
+    /*     max-height: 50rem; */
+  }
+  #main-album-cover {
+    width: 100%;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .album-and-figcaption {
+    width: 100%;
+    padding: 0;
+  }
+  .title-name-artist {
+    padding-top: 6rem;
+    width: 100%;
+  }
+  .album-name {
+    font-size: 1.8rem;
+  }
+  .album-artist-name {
+    font-size: 1.4rem;
+  }
+  .section2 {
+    background-color: #120f10;
+    margin-top: 4rem;
+  }
+  #h3-section2 {
+    font-size: 1.6rem;
+  }
+  .section3 {
+    padding: 2rem;
+    background-color: #120f10;
+  }
+  #h4-section3 {
+    font-size: 1.6rem;
+  }
+  .play-btn {
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+  }
+  .quantity-of-songs-and-time {
+    font-size: 1rem;
+  }
+  .bxs-circle {
+    font-size: 0.8rem;
+  }
+  #h5-section4 {
+    font-size: 1.6rem;
+  }
+  .section4 {
+    padding: 2rem 2rem 4rem 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
