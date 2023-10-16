@@ -165,7 +165,6 @@ html {
   width: 100%;
   height: 6rem;
   background-color: #120f10;
-  /* border-top: 0.2rem solid $ming-blue-600; */
   opacity: 0.8;
 }
 
@@ -358,9 +357,6 @@ html {
   padding-bottom: 1rem;
 }
 
-/* #break-other-relas {
-    display: none;
-} */
 .name-tag {
   color: #26acac;
 }
@@ -751,7 +747,6 @@ footer {
   #background-album-cover {
     transform: translateY(-16rem);
     height: auto;
-    /*     max-height: 50rem; */
   }
   #main-album-cover {
     width: 100%;
@@ -798,6 +793,9 @@ footer {
   .quantity-of-songs-and-time {
     font-size: 1rem;
   }
+  .list-time-songs {
+    width: 50%;
+  }
   .bxs-circle {
     font-size: 0.8rem;
   }
@@ -806,5 +804,88 @@ footer {
   }
   .section4 {
     padding: 2rem 2rem 4rem 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section1 {
+    gap: 3rem;
+    padding: 4rem 4rem 0 4rem;
+  }
+  .album-name {
+    font-size: 2.2rem;
+  }
+  .album-artist-name {
+    font-size: 1.8rem;
+  }
+  .album-description {
+    font-size: 1rem;
+  }
+  .section2 {
+    padding: 4rem 4rem 0 4rem;
+  }
+  #h3-section2 {
+    font-size: 2rem;
+  }
+  .choose-player {
+    width: 80%;
+  }
+  .section3 {
+    padding: 4rem 4rem 0 4rem;
+  }
+  /* .list-time-songs {
+      width: 50%;
+
+  } */
+  .play-btn {
+    min-width: 4rem;
+    min-height: 4rem;
+  }
+  #h4-section3 {
+    font-size: 2rem;
+  }
+  .list-time-songs {
+    padding: 2rem;
+  }
+  .section4 {
+    padding: 4rem 4rem;
+  }
+  #h5-section4 {
+    font-size: 2rem;
+  }
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 4rem;
+  }
+  .footer-a-1,
+  .footer-a-2 {
+    gap: 1rem;
+  }
+  .description-and-email-input {
+    width: 40%;
+    gap: 1rem;
+  }
+  .email-input-description {
+    padding: 0;
+  }
+  .footer-p-and-nav {
+    padding-top: 2rem;
+  }
+  .nav-a {
+    padding: 0 1rem;
+  }
+  #bottom-nav-a-1,
+  #bottom-nav-a-2,
+  #bottom-nav-a-3,
+  #bottom-nav-a-4,
+  #bottom-nav-a-5,
+  #bottom-nav-a-6,
+  #bottom-nav-a-7,
+  #bottom-nav-a-8,
+  #bottom-nav-a-9 {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
