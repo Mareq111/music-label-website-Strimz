@@ -33,7 +33,7 @@ $shadow-king-of-for-and-muds: rgba(181, 133, 94, 0.5);
 $color-king-of-for-and-muds: rgba(181, 133, 94, 1);
 
 //other shadows
-
+$shadow-green: rgba(133, 171, 123, 0.4);
 $shadow-black: rgba(30, 29, 29, 0.6);
 $shadow-black-transparent: rgba(0, 0, 0, 0.8);
 
@@ -73,7 +73,168 @@ html {
     width: 1.75rem;
     height: 1.75rem;
     font-size: 1.75rem;
+    transition: ease-in-out 0.2s;
     cursor: pointer;
+    &:hover {
+        color: $grey-500;
+    }
+}
+
+//toggle menu
+
+.toggle-menu {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: $black-600;
+    transform: translateY(3.5rem);
+    color: $grey-500;
+    z-index: 2;
+    transition: ease-in-out 1s;
+    border-radius: 0 0 5% 5%;
+    box-shadow: 0px 3px 4px $shadow-green;
+}
+
+.toggle-menu.active {
+    display: block;
+}
+
+.all-inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.toggle_menu-a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.nav-a-toggle-menu {
+    text-decoration: none;
+    color: $amulet-green-400;
+    transition: 0.2s ease-in-out;
+    &:hover {
+        text-decoration: underline 0.2rem $eastern-blue-500;
+    }
+}
+
+//right side toggle menu
+.toggle-column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    gap: 0.5rem;
+}
+
+#toggle-menu-a-1,
+#toggle-menu-a-2,
+#toggle-menu-a-3,
+#toggle-menu-a-4,
+#toggle-menu-a-5,
+#toggle-menu-a-6,
+#toggle-menu-a-7,
+#toggle-menu-a-8,
+#toggle-menu-a-9 {
+    color: $white;
+    font-size: 1.75rem;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+        color: $grey-500;
+    }
+}
+
+/* .toggle-column-left {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column wrap;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    width: 40vw;
+  }
+
+  .toggle-a {
+    font-size: 1rem;
+    color: $grey-600;
+    text-decoration: none;
+    max-width: 100%;
+  }
+
+  #loginToggle {
+    font-size: 0.8rem;
+    color: $black-600;
+  }
+
+  .toggle-h {
+    border-bottom: $amulet-green-400 solid 0.1rem;
+    padding-bottom: 0.2rem;
+    width: 100%;
+    font-size: 1.1rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+
+  .toggle-p {
+    font-size: 0.8rem;
+  }
+
+  .toggle-row-ul {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+   
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  } */
+
+/* bottom navigation */
+.bottom-navigation-only {
+    height: 49.8%;
+    width: 100vw;
+}
+
+.bottom-nav-ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    font-size: 0.9rem;
+    padding: 0 1.5rem;
+    width: 100vw;
+    height: auto;
+}
+
+.bottom-li-nav {
+    margin: 1rem;
+    gap: 1.5rem;
+}
+
+#bottom-li-nav-about,
+#bottom-li-nav-jobs,
+#bottom-li-nav-appren {
+    cursor: pointer;
+}
+
+#bottom-li-nav-about {
+    color: $amulet-green-400;
 }
 
 //section 1
@@ -682,6 +843,14 @@ footer {
     .top-content {
         padding: 0 2rem;
     }
+    //toggle menu
+    .all-inside {
+        padding: 2rem;
+    }
+    .toggle_menu-a {
+        font-size: 1.4rem;
+    }
+
     //section 1
     .section1 {
         padding: 4rem 2rem 0 2rem;
@@ -779,6 +948,12 @@ footer {
     #main-album-cover {
         width: 100%;
     }
+    //toggle menu
+    .toggle-menu {
+        width: 60%;
+        right: 0;
+    }
+    //section1
     .section1 {
         display: flex;
         flex-direction: row;
@@ -844,6 +1019,29 @@ footer {
 
 @media (min-width: 1024px) {
     //nav top
+
+    //toggle menu
+    .toggle-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        right: 0;
+        padding: 1.5rem;
+    }
+    .toggle_menu-a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        font-size: 1.4rem;
+    }
+
+    // social icons are hidden
+    .toggle-column-right {
+        display: none;
+    }
+
     //hide this nav for small screens
     .top-nav-desktop {
         display: flex;
@@ -984,6 +1182,14 @@ footer {
     #nav-a-8,
     #nav-a-9 {
         font-size: 2rem;
+    }
+    //toggle menu
+    .toggle-menu {
+        width: 20%;
+        transform: translateY(4rem);
+    }
+    .toggle_menu-a {
+        font-size: 1.6rem;
     }
     //menu
     .top-content {

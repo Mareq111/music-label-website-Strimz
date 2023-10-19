@@ -72,6 +72,118 @@ html {
     font-size: 1.5rem;
     cursor: pointer;
 }
+//toggle menu 
+
+.toggle-menu {
+    display: none;
+    position: absolute;
+    transform: translateY(55%);
+    width: 100vw;
+    height: auto;
+    min-height: 30vw;
+    background-color: $blue-ocean-700;
+    color: $green-addictional-50;
+    font-size: 0.8rem;
+    z-index: 2;
+    transition: ease-in 2s;
+  }
+
+  .toggle-menu.active {
+    display: block;
+  }
+
+  .all-inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .toggle-column-left {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    width: 40vw;
+  }
+
+  .toggle-a {
+    font-size: 1rem;
+    color: $grey;
+    text-decoration: none;
+    max-width: 100%;
+  }
+
+  #loginToggle {
+    font-size: 0.8rem;
+    color: $ming-blue-600;
+  }
+
+  .toggle-h {
+    border-bottom: $amulet-green-400 solid 0.1rem;
+    padding-bottom: 0.2rem;
+    width: 100%;
+    font-size: 1.1rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+
+  .toggle-p {
+    font-size: 0.8rem;
+  }
+
+  .toggle-row-ul {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* bottom navigation */
+  .bottom-navigation-only {
+    height: 49.8%;
+    width: 100vw;
+  }
+
+  .bottom-nav-ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    font-size: 0.9rem;
+    padding: 0 1.5rem;
+    width: 100vw;
+    height: auto;
+  }
+
+  .bottom-li-nav {
+    margin: 1rem;
+    gap: 1.5rem;
+  }
+
+  #bottom-li-nav-about,
+  #bottom-li-nav-jobs,
+  #bottom-li-nav-appren {
+    cursor: pointer;
+  }
+
+  #bottom-li-nav-about {
+    color: $amulet-green-400;
+  }
+
+
+
+
+
+//end menu toggle
 
 .top-nav {
     position: absolute;
