@@ -47,6 +47,7 @@ html {
 }
 
 .toggle-menu {
+  display: none;
   position: fixed;
   width: 100%;
   height: auto;
@@ -54,12 +55,14 @@ html {
   transform: translateY(3.5rem);
   color: #dcdcdc;
   z-index: 2;
-  transition: ease-in-out 1s;
   border-radius: 0 0 5% 5%;
-  box-shadow: 0px 3px 4px rgba(133, 171, 123, 0.4);
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.8);
+  opacity: 0;
 }
 
 .toggle-menu.active {
+  transition: 0.2s ease-in-out;
+  opacity: 1;
   display: block;
 }
 
@@ -86,10 +89,12 @@ html {
 .nav-a-toggle-menu {
   text-decoration: none;
   color: #85ab7b;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .nav-a-toggle-menu:hover {
-  text-decoration: underline 0.2rem #26acac;
+  /* text-decoration: underline 0.2rem $eastern-blue-500; */
+  transform: scale(1.05);
+  color: #8d8c8c;
 }
 
 .toggle-column-right {
