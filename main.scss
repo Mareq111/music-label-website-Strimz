@@ -384,8 +384,6 @@ html {
     }
 }
 
-//end test btn
-
 //visible but hidden after click btn
 .play-song-big-icon {
     font-size: 1.4rem;
@@ -405,7 +403,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
     font-weight: 400;
     width: 40%;
@@ -426,14 +424,6 @@ html {
 //only tracks
 
 //tack-1
-.song {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 3rem;
-    margin-bottom: 1rem;
-}
 
 //only left side song
 .l_side {
@@ -444,20 +434,68 @@ html {
 }
 
 .song-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.8rem;
-    width: 1rem;
+    width: 1.2rem;
     font-weight: 600;
+}
+.song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s linear;
+    padding-right: 0.5rem;
+
+    & .load-song-small2-icon {
+        display: none;
+    }
+}
+//TODO  zrob zeby play btn zmienil sie na loading kołko gdy sie kliknie w cały div i zeby song title nie wychodziło poza div
+.song-clicked {
+    cursor: pointer;
+    box-shadow: inset 1.5rem 0 1px 0px /*  $shadow-black-transparent */ $ming-blue-600;
+    color: $white;
+    & {
+        .load-song-small2-icon {
+            display: none;
+        }
+    }
+    & .song-title,
+    .song-duration {
+        opacity: 0.5;
+    }
+    & .artist-name {
+        color: $amulet-green-400;
+    }
+    & .play-song-icon {
+        display: none;
+    }
+    .load-song-small2-icon {
+        display: block;
+        font-size: 1.2rem;
+        color: $grey-500;
+
+        animation: loading 3s linear infinite;
+    }
 }
 
 //! small btn for any song  with animation after click
-
 .play-btn-song {
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border: 0;
     opacity: 1;
     transition: 0.2s ease-in;
@@ -479,10 +517,13 @@ html {
         .play-song-icon {
             display: none;
         }
+        .load-song-small2-icon {
+            display: none;
+        }
         .load-song-small-icon {
             font-size: 1.2rem;
             color: $grey-500;
-            display: flex;
+            display: block;
             animation: loading 3s linear infinite;
         }
     }
@@ -514,6 +555,7 @@ html {
     color: $ming-blue-600;
     font-size: 1.4rem;
     transition: 0.3s ease-in;
+    z-index: 1;
     &:hover {
         transform: scale(1.1) rotate(1turn);
         color: $eastern-blue-500;
@@ -902,6 +944,9 @@ footer {
         .play-song-icon {
             font-size: 1.6rem;
         }
+    }
+    .quantity-of-songs-and-time {
+        font-size: 0.8rem;
     }
     .song-title {
         font-size: 1.2rem;

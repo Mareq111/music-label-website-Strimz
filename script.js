@@ -14,6 +14,21 @@ logoClick?.addEventListener("click", () => {
   window.scroll({ top: 0, behavior: "smooth" });
 });
 
-//? test btn
+/* //? test btn
 
 const playBtn = document.getElementById("playBtn");
+ */
+
+// song div after click it asa button
+
+const songDivs = document.querySelectorAll(".song");
+
+songDivs.forEach((songDiv) => {
+  songDiv.addEventListener("click", () => {
+    if (!songDiv.classList.contains("song-clicked")) {
+      songDiv.classList.add("song-clicked");
+    } else {
+      songDiv.classList.remove("song-clicked");
+    }
+  });
+});
