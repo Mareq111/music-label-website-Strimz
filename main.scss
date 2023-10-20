@@ -90,7 +90,6 @@ html {
     background-color: $black-600;
     transform: translateY(3.5rem);
     color: $grey-500;
-    z-index: 2;
 
     border-radius: 0 0 5% 5%;
     box-shadow: 1px 3px 15px $shadow-black-transparent;
@@ -101,6 +100,7 @@ html {
     transition: 0.2s ease-in-out;
     opacity: 1;
     display: block;
+    z-index: 2;
 }
 
 .all-inside {
@@ -161,54 +161,6 @@ html {
         color: $grey-500;
     }
 }
-
-/* .toggle-column-left {
-    display: flex;
-    justify-content: flex-end;
-    flex-flow: column wrap;
-    padding: 1.5rem;
-    gap: 1.5rem;
-    width: 40vw;
-  }
-
-  .toggle-a {
-    font-size: 1rem;
-    color: $grey-600;
-    text-decoration: none;
-    max-width: 100%;
-  }
-
-  #loginToggle {
-    font-size: 0.8rem;
-    color: $black-600;
-  }
-
-  .toggle-h {
-    border-bottom: $amulet-green-400 solid 0.1rem;
-    padding-bottom: 0.2rem;
-    width: 100%;
-    font-size: 1.1rem;
-    margin: 0;
-    margin-bottom: 0.5rem;
-    cursor: pointer;
-  }
-
-  .toggle-p {
-    font-size: 0.8rem;
-  }
-
-  .toggle-row-ul {
-    width: 60%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-   
-    flex-flow: column nowrap;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  } */
 
 /* bottom navigation */
 .bottom-navigation-only {
@@ -392,6 +344,9 @@ html {
     padding: 1rem;
     gap: 1rem;
 }
+
+//! The btn for starting to listen to music at the first one with an animation after click
+
 .play-btn {
     display: flex;
     justify-content: center;
@@ -404,7 +359,11 @@ html {
     opacity: 1;
     transition: 0.2s ease-in;
     cursor: pointer;
-
+    & {
+        .load-song-big-icon {
+            display: none;
+        }
+    }
     &:hover {
         opacity: 0.5;
         border-radius: 28%;
@@ -412,10 +371,29 @@ html {
             color: $white;
         }
     }
-
-    .play-song-big-icon {
-        font-size: 1.4rem;
+    &:focus {
+        .play-song-big-icon {
+            display: none;
+        }
+        .load-song-big-icon {
+            font-size: 1.2rem;
+            color: $white;
+            display: flex;
+            animation: loading 3s linear forwards;
+        }
     }
+}
+
+//end test btn
+
+//visible but hidden after click btn
+.play-song-big-icon {
+    font-size: 1.4rem;
+}
+
+//hidden but visible after click btn
+.load-song-big-icon {
+    font-size: 1.4rem;
 }
 #h4-section3 {
     font-size: 1.4rem;
@@ -470,30 +448,46 @@ html {
     width: 1rem;
     font-weight: 600;
 }
+
+//! small btn for any song  with animation after click
+
 .play-btn-song {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 25%;
+    width: 3rem;
+    height: 3rem;
     border: 0;
     opacity: 1;
     transition: 0.2s ease-in;
     color: $eastern-blue-500;
+    font-size: 1.5rem;
     cursor: pointer;
+    & {
+        .load-song-small-icon {
+            display: none;
+        }
+    }
     &:hover {
-        opacity: 0.8;
+        opacity: 0.5;
         .play-song-icon {
             color: $white;
         }
     }
-
-    .play-song-icon {
-        font-size: 1.4rem;
+    &:focus {
+        .play-song-icon {
+            display: none;
+        }
+        .load-song-small-icon {
+            font-size: 1.2rem;
+            color: $grey-500;
+            display: flex;
+            animation: loading 3s linear infinite;
+        }
     }
 }
+
 .song-title {
     font-weight: 600;
     font-size: 1rem;
@@ -839,6 +833,18 @@ footer {
         color: $amulet-green-400;
     }
 }
+// animation
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 //media queries for 425px screens
 
@@ -1098,6 +1104,10 @@ footer {
     .album-description {
         font-size: 1rem;
     }
+    .album-description {
+        width: 90%;
+    }
+
     //section 2
     .section2 {
         padding: 4rem 4rem 0 4rem;
@@ -1228,6 +1238,9 @@ footer {
     }
     .album-description {
         font-size: 1rem;
+    }
+    .album-description {
+        width: 85%;
     }
 
     //section2
