@@ -591,12 +591,12 @@ html {
   transition-delay: 300ms;
   color: rgb(185, 169, 71);
 }
-.album:hover #album-cover-galaktkitty {
-  box-shadow: 0 0 8px rgba(50, 23, 78, 0.5);
+.album:hover #album-cover-flashback-normal {
+  box-shadow: 0 0 8px rgba(211, 142, 122, 0.5);
 }
 .album:hover #dots-separator-album-3 {
   transition-delay: 300ms;
-  color: rgb(175, 160, 212);
+  color: rgb(235, 152, 120);
 }
 .album:hover #album-cover-king-of {
   box-shadow: 0 0 8px rgba(181, 133, 94, 0.5);
@@ -1342,4 +1342,4 @@ footer {
     color: #367983;
     transition: 0.1s ease-in-out;
   }
-}/*# sourceMappingURL=mediaque.css.map */
+}/*# sourceMappingURL=Galaktkitty.css.map */

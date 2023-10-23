@@ -569,6 +569,11 @@ html {
   transform: scale(1.1);
 }
 
+.album-a-next-page {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
 .album .album-cover {
   transition: box-shadow 0.3s ease;
 }
