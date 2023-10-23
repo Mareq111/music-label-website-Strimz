@@ -19,16 +19,14 @@ logoClick?.addEventListener("click", () => {
 const playBtn = document.getElementById("playBtn");
  */
 
-// song div after click it asa button
+// song div after click it asa button - ternary operator
 
 const songDivs = document.querySelectorAll(".song");
 
 songDivs.forEach((songDiv) => {
   songDiv.addEventListener("click", () => {
-    if (!songDiv.classList.contains("song-clicked")) {
-      songDiv.classList.add("song-clicked");
-    } else {
-      songDiv.classList.remove("song-clicked");
-    }
+    songDiv.classList.contains("song-clicked")
+      ? songDiv.classList.remove("song-clicked")
+      : songDiv.classList.add("song-clicked");
   });
 });
