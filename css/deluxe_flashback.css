@@ -577,12 +577,12 @@ html {
 .album .album-cover {
   transition: box-shadow 0.3s ease;
 }
-.album:hover #album-cover-flashback-deluxe {
-  box-shadow: 0 0 8px rgba(210, 146, 164, 0.5);
+.album:hover #album-cover-flashback-normal {
+  box-shadow: 0 0 8px rgba(211, 142, 122, 0.5);
 }
-.album:hover #dots-separator-album-1 {
+.album:hover #dots-separator-album-3 {
   transition-delay: 300ms;
-  color: rgb(210, 146, 164);
+  color: rgb(235, 152, 120);
 }
 .album:hover #album-cover-arena-of-autumnn {
   box-shadow: 0 0 8px rgba(185, 169, 71, 0.5);
@@ -594,7 +594,7 @@ html {
 .album:hover #album-cover-galaktkitty {
   box-shadow: 0 0 8px rgba(50, 23, 78, 0.5);
 }
-.album:hover #dots-separator-album-3 {
+.album:hover #dots-separator-album-1 {
   transition-delay: 300ms;
   color: rgb(175, 160, 212);
 }
@@ -1342,4 +1342,4 @@ footer {
     color: #367983;
     transition: 0.1s ease-in-out;
   }
-}/*# sourceMappingURL=mediaque.css.map */
+}/*# sourceMappingURL=deluxe_flashback.css.map */
