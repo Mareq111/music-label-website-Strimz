@@ -220,7 +220,8 @@ html {
   width: 100%;
   text-transform: uppercase;
 }
-.album-summary-description:hover {
+
+.focused {
   background-color: #dcdcdc;
   color: #367983;
   box-shadow: 0 0 4px rgba(30, 29, 29, 0.6);
@@ -584,19 +585,19 @@ html {
   transition-delay: 300ms;
   color: rgb(210, 146, 164);
 }
-.album:hover #album-cover-arena-of-autumnn {
-  box-shadow: 0 0 8px rgba(185, 169, 71, 0.5);
-}
-.album:hover #dots-separator-album-2 {
-  transition-delay: 300ms;
-  color: rgb(185, 169, 71);
-}
 .album:hover #album-cover-flashback-normal {
   box-shadow: 0 0 8px rgba(211, 142, 122, 0.5);
 }
 .album:hover #dots-separator-album-3 {
   transition-delay: 300ms;
   color: rgb(235, 152, 120);
+}
+.album:hover #album-cover-arena-of-autumnn {
+  box-shadow: 0 0 8px rgba(185, 169, 71, 0.5);
+}
+.album:hover #dots-separator-album-2 {
+  transition-delay: 300ms;
+  color: rgb(185, 169, 71);
 }
 .album:hover #album-cover-king-of {
   box-shadow: 0 0 8px rgba(181, 133, 94, 0.5);
@@ -1342,4 +1343,4 @@ footer {
     color: #367983;
     transition: 0.1s ease-in-out;
   }
-}/*# sourceMappingURL=Galaktkitty.css.map */
+}/*# sourceMappingURL=galaktkitty.css.map */

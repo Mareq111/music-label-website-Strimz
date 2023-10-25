@@ -251,11 +251,12 @@ html {
     background-color: transparent;
     width: 100%;
     text-transform: uppercase;
-    &:hover {
-        background-color: $grey-500;
-        color: $ming-blue-600;
-        box-shadow: 0 0 4px $shadow-black;
-    }
+}
+
+.focused {
+    background-color: $grey-500;
+    color: $ming-blue-600;
+    box-shadow: 0 0 4px $shadow-black;
 }
 
 .album-description {
@@ -268,7 +269,7 @@ html {
 }
 
 .name-artist-in-p {
-    color: $amulet-green-400;
+    color: $eastern-blue-500;
 }
 
 .p-in-details {

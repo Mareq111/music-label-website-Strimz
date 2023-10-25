@@ -251,11 +251,11 @@ html {
     background-color: transparent;
     width: 100%;
     text-transform: uppercase;
-    &:hover {
-        background-color: $grey-500;
-        color: $ming-blue-600;
-        box-shadow: 0 0 4px $shadow-black;
-    }
+}
+.focused {
+    background-color: $grey-500;
+    color: $ming-blue-600;
+    box-shadow: 0 0 4px $shadow-black;
 }
 
 .album-description {
@@ -636,23 +636,21 @@ html {
         transition-delay: 300ms;
         color: $color-flashback-deluxe;
     }
-
-    // 2 album arena of autumnn
-    &:hover #album-cover-arena-of-autumnn {
-        box-shadow: 0 0 8px $shadow-arena-of-autumnn;
-    }
-    &:hover #dots-separator-album-2 {
-        transition-delay: 300ms;
-        color: $color-arena-of-autumnn;
-    }
-
-    // 3 album flashback normal
+    // 2 album flashback normal
     &:hover #album-cover-flashback-normal {
         box-shadow: 0 0 8px $shadow-flashback-normal;
     }
     &:hover #dots-separator-album-3 {
         transition-delay: 300ms;
         color: $color-flashback-normal;
+    }
+    // 3 album arena of autumnn
+    &:hover #album-cover-arena-of-autumnn {
+        box-shadow: 0 0 8px $shadow-arena-of-autumnn;
+    }
+    &:hover #dots-separator-album-2 {
+        transition-delay: 300ms;
+        color: $color-arena-of-autumnn;
     }
 
     //4 album king of

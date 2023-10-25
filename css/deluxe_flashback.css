@@ -220,7 +220,8 @@ html {
   width: 100%;
   text-transform: uppercase;
 }
-.album-summary-description:hover {
+
+.focused {
   background-color: #dcdcdc;
   color: #367983;
   box-shadow: 0 0 4px rgba(30, 29, 29, 0.6);
@@ -236,7 +237,7 @@ html {
 }
 
 .name-artist-in-p {
-  color: #85ab7b;
+  color: #26acac;
 }
 
 .p-in-details {
