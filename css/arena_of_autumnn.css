@@ -16,7 +16,7 @@ html {
   position: absolute;
   width: 100vw;
   height: 40rem;
-  filter: blur(0.4rem);
+  filter: blur(0.6rem);
   z-index: -2;
 }
 
@@ -92,7 +92,6 @@ html {
   transition: 0.1s ease-in-out;
 }
 .nav-a-toggle-menu:hover {
-  /* text-decoration: underline 0.2rem $eastern-blue-500; */
   transform: scale(1.05);
   color: #8d8c8c;
 }

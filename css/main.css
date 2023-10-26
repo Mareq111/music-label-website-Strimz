@@ -16,7 +16,7 @@ html {
   position: absolute;
   width: 100vw;
   height: 40rem;
-  filter: blur(0.4rem);
+  filter: blur(0.6rem);
   z-index: -2;
 }
 
@@ -504,6 +504,10 @@ html {
 }
 
 .song-duration {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
   font-size: 0.8rem;
 }
 
@@ -909,6 +913,10 @@ footer {
     font-size: 1rem;
   }
   .song-duration {
+    /*   display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; */
     font-size: 1rem;
   }
   .anchor-dots {

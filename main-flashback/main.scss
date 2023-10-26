@@ -54,7 +54,7 @@ html {
     position: absolute;
     width: 100vw;
     height: 40rem;
-    filter: blur(0.4rem);
+    filter: blur(0.6rem);
     z-index: -2;
 }
 
@@ -550,7 +550,12 @@ html {
     width: 20%;
     gap: 0.5rem;
 }
+//! add display itp zeby było columnowo te odliczanie 
 .song-duration {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
     font-size: 0.8rem;
 }
 
@@ -963,7 +968,12 @@ footer {
     .artist-name {
         font-size: 1rem;
     }
+    //! test czy ten display pomaga a chyba nie 
     .song-duration {
+      /*   display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; */
         font-size: 1rem;
     }
     .anchor-dots {

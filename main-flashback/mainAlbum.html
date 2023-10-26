@@ -288,10 +288,42 @@
       <hr class="hr-line" id="hr-line2" />
 
       <!-- tack-1 -->
-      <div class="song">
+
+      <div class="song" id="audioContainer">
+        <audio
+          id="myAudio"
+          class="audio-song"
+          src="/songs/main-flashback/1.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">1</span>
+          <button class="play-btn-song" aria-label="Listen song 1">
+            <i class="bx bx-play play-song-icon"></i>
+            <i class="bx bx-loader-alt | load-song-small-icon"></i>
+            <i class="bx bx-loader-alt | load-song-small2-icon"></i>
+          </button>
 
+          <div class="name-song-aritst">
+            <h5 class="song-title">Summer Breeze</h5>
+            <p class="artist-name">El Double O</p>
+          </div>
+        </div>
+        <div class="r_side">
+          <!-- set time duration for song -->
+          <time class="song-duration" id="trackDuration">0:08</time>
+
+          <a class="anchor-dots" aria-label="Check out more info" href="#"
+            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- <div class="song">
+        <audio id="summerBreeze" class="audio-song"  src="/songs/main-flashback/1.m4a"></audio>
+      
+        <div class="l_side">
+          <span class="song-number">1</span>
           <button class="play-btn-song" aria-label="Listen song 1">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
@@ -309,7 +341,8 @@
             ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
           ></a>
         </div>
-      </div>
+      </div> -->
+
       <!-- tack-2 -->
       <div class="song">
         <div class="l_side">
