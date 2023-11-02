@@ -504,10 +504,6 @@ html {
 }
 
 .song-duration {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
   font-size: 0.8rem;
 }
 
@@ -914,9 +910,9 @@ footer {
   }
   .song-duration {
     /*   display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
     font-size: 1rem;
   }
   .anchor-dots {

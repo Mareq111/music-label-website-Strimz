@@ -254,8 +254,8 @@ html {
 
 .focused {
     background-color: $grey-500;
-        color: $ming-blue-600;
-        box-shadow: 0 0 4px $shadow-black;
+    color: $ming-blue-600;
+    box-shadow: 0 0 4px $shadow-black;
 }
 
 .album-description {
@@ -461,10 +461,11 @@ html {
         display: none;
     }
 }
-//TODO  zrob zeby play btn zmienil sie na loading kołko gdy sie kliknie w cały div i zeby song title nie wychodziło poza div
+
+//! if is clicked song Div this 'animations' is add & after song is removed
 .song-clicked {
     cursor: pointer;
-    box-shadow: inset 1.5rem 0 1px 0px /*  $shadow-black-transparent */ $ming-blue-600;
+    box-shadow: inset 1.5rem 0 1px 0px $ming-blue-600;
     color: $white;
     & {
         .load-song-small2-icon {
@@ -550,12 +551,8 @@ html {
     width: 20%;
     gap: 0.5rem;
 }
-//! add display itp zeby było columnowo te odliczanie 
+//! add display itp zeby było columnowo te odliczanie
 .song-duration {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     font-size: 0.8rem;
 }
 
@@ -876,7 +873,6 @@ footer {
     }
 }
 
-
 #my-name-is {
     font-size: 1.5rem;
     padding: 0.5rem 0;
@@ -968,9 +964,9 @@ footer {
     .artist-name {
         font-size: 1rem;
     }
-    //! test czy ten display pomaga a chyba nie 
+    //! test czy ten display pomaga a chyba nie
     .song-duration {
-      /*   display: flex;
+        /*   display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column; */
@@ -1234,7 +1230,6 @@ footer {
     .nav-a-footer-social {
         padding: 0 1rem;
     }
-
 }
 
 //media for 1440 screens

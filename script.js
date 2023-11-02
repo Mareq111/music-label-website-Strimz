@@ -25,57 +25,65 @@ summaryFocus?.addEventListener("click", () => {
     : (summaryFocus?.classList.remove("focused"), (isFocused = false));
 });
 
-//! 3 add audio to song div test
-// fuction when clicked songDiv to listen any song but it doesnt work complete if i click button with icons
+//! 3 add audio to song div
+// fuction when a songDiv is clicked to listen any song, even when only "button" icons is clicked
 
-const songDiv = document.querySelector(".song");
-const audio = document.querySelector(".audio-song");
-const durationElement = document.getElementById("trackDuration");
+const songDivs = document.querySelectorAll(".song");
 let isPlaying = false;
+let currentPlayingSongDiv = null;
 
-//checking availability for html elements
-if (!songDiv || !audio || !durationElement) {
-  console.error("Element html is not reached");
-} else {
-  //upadate duration for any song
-  const updateDuration = () => {
+// Function to stop the currently playing song
+function stopCurrentSong() {
+  if (currentPlayingSongDiv) {
+    const audio = currentPlayingSongDiv.querySelector(".audio-song");
     if (audio instanceof HTMLAudioElement) {
+      audio.pause();
+      currentPlayingSongDiv.classList.remove("song-clicked");
+    }
+  }
+}
+
+// Add event listeners to each song div
+songDivs.forEach((songDiv) => {
+  const audio = songDiv.querySelector(".audio-song");
+  const durationElement = songDiv.querySelector(".song-duration");
+
+  songDiv.addEventListener("click", () => {
+    if (currentPlayingSongDiv !== songDiv) {
+      stopCurrentSong();
+    }
+
+    if (audio instanceof HTMLAudioElement) {
+      if (audio.paused) {
+        audio.play();
+        isPlaying = true;
+        songDiv.classList.add("song-clicked");
+        currentPlayingSongDiv = songDiv;
+      } else {
+        audio.pause();
+        isPlaying = false;
+        songDiv.classList.remove("song-clicked");
+        currentPlayingSongDiv = null;
+      }
+    }
+  });
+
+  // Event listener for audio to update song duration
+  if (audio instanceof HTMLAudioElement) {
+    audio.addEventListener("timeupdate", () => {
       const currentTime = audio.currentTime;
       const minutes = Math.floor(currentTime / 60);
       const seconds = Math.floor(currentTime % 60);
       durationElement.textContent = `${minutes}:${
         seconds < 10 ? "0" : ""
       }${seconds}`;
-    }
-  };
+    });
 
-  //add and remove class song-clicked if its pause or play
-
-  songDiv.addEventListener("click", () => {
-    if (isPlaying) {
-      if (audio instanceof HTMLAudioElement) {
-        audio.pause();
-        isPlaying = false;
-        songDiv.classList.remove("song-clicked");
-      }
-    } else {
-      if (audio instanceof HTMLAudioElement) {
-        audio.currentTime = 0;
-        audio.play();
-        isPlaying = true;
-        songDiv.classList.add("song-clicked");
-      }
-    }
-  });
-
-  // event listener for audio to update song duration
-  if (audio instanceof HTMLAudioElement) {
-    audio.addEventListener("timeupdate", updateDuration);
-
-    // if song is ended remove class song-clicked
     audio.addEventListener("ended", () => {
       isPlaying = false;
       songDiv.classList.remove("song-clicked");
+      currentPlayingSongDiv = null;
     });
   }
-}
+});
+
