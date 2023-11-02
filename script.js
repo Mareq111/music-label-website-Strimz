@@ -27,63 +27,92 @@ summaryFocus?.addEventListener("click", () => {
 
 //! 3 add audio to song div
 // fuction when a songDiv is clicked to listen any song, even when only "button" icons is clicked
+//dziala idealnie wszystko tylko jest 0: 00 w song duration i cos nie dziala
 
-const songDivs = document.querySelectorAll(".song");
+const songs = document.querySelectorAll(".song");
+const audioElements = document.querySelectorAll(".audio-song");
+const bigPlayBtn = document.getElementById("playBtn");
 let isPlaying = false;
+let currentSongIndex = 0;
 let currentPlayingSongDiv = null;
+let isSequentialPlaying = false;
 
-// Function to stop the currently playing song
-function stopCurrentSong() {
-  if (currentPlayingSongDiv) {
-    const audio = currentPlayingSongDiv.querySelector(".audio-song");
+function playSong(index) {
+  if (currentSongIndex === index && isPlaying) {
+    stopCurrentSong();
+    isPlaying = false;
+  } else {
+    stopCurrentSong();
+    currentSongIndex = index;
+    const audio = audioElements[currentSongIndex];
+    const songDiv = songs[currentSongIndex];
+    const durationElement = songDiv.querySelector(".song-duration");
+
     if (audio instanceof HTMLAudioElement) {
-      audio.pause();
-      currentPlayingSongDiv.classList.remove("song-clicked");
+      audio.play();
+      isPlaying = true;
+      songDiv.classList.add("song-clicked");
+      currentPlayingSongDiv = songDiv;
+
+      audio.addEventListener("timeupdate", () => {
+        const currentTime = audio.currentTime;
+        const minutes = Math.floor(currentTime / 60);
+        const seconds = Math.floor(currentTime % 60);
+        durationElement.textContent = `${minutes}:${
+          seconds < 10 ? "0" : ""
+        }${seconds}`;
+      });
+
+      audio.onended = () => {
+        isPlaying = false;
+        songDiv.classList.remove("song-clicked");
+        currentPlayingSongDiv = null;
+        if (isSequentialPlaying) {
+          currentSongIndex++;
+          if (currentSongIndex < songs.length) {
+            playSong(currentSongIndex);
+          } else {
+            isSequentialPlaying = false;
+            currentSongIndex = 0;
+            bigPlayBtn.classList.add("ended-play");
+            bigPlayBtn.addEventListener("click", () => {
+              bigPlayBtn.classList.remove("ended-play");
+            });
+          }
+        }
+      };
     }
   }
 }
 
-// Add event listeners to each song div
-songDivs.forEach((songDiv) => {
-  const audio = songDiv.querySelector(".audio-song");
-  const durationElement = songDiv.querySelector(".song-duration");
-
-  songDiv.addEventListener("click", () => {
-    if (currentPlayingSongDiv !== songDiv) {
-      stopCurrentSong();
-    }
-
+function stopCurrentSong() {
+  if (currentPlayingSongDiv) {
+    const index = Array.from(songs).indexOf(currentPlayingSongDiv);
+    const audio = audioElements[index];
     if (audio instanceof HTMLAudioElement) {
-      if (audio.paused) {
-        audio.play();
-        isPlaying = true;
-        songDiv.classList.add("song-clicked");
-        currentPlayingSongDiv = songDiv;
-      } else {
-        audio.pause();
-        isPlaying = false;
-        songDiv.classList.remove("song-clicked");
-        currentPlayingSongDiv = null;
-      }
-    }
-  });
-
-  // Event listener for audio to update song duration
-  if (audio instanceof HTMLAudioElement) {
-    audio.addEventListener("timeupdate", () => {
-      const currentTime = audio.currentTime;
-      const minutes = Math.floor(currentTime / 60);
-      const seconds = Math.floor(currentTime % 60);
-      durationElement.textContent = `${minutes}:${
-        seconds < 10 ? "0" : ""
-      }${seconds}`;
-    });
-
-    audio.addEventListener("ended", () => {
+      audio.pause();
+      audio.currentTime = 0;
       isPlaying = false;
-      songDiv.classList.remove("song-clicked");
+      currentPlayingSongDiv.classList.remove("song-clicked");
       currentPlayingSongDiv = null;
-    });
+    }
   }
+}
+
+songs.forEach((songDiv, index) => {
+  songDiv.addEventListener("click", () => {
+    if (!isSequentialPlaying) {
+      playSong(index);
+    } else {
+      isSequentialPlaying = false;
+      playSong(index);
+    }
+    ``;
+  });
 });
 
+bigPlayBtn.addEventListener("click", () => {
+  isSequentialPlaying = true;
+  currentSongIndex = 0;
+  playSong(currentSongIndex);
+});

@@ -348,7 +348,7 @@ html {
     gap: 1rem;
 }
 
-//! The btn for starting to listen to music at the first one with an animation after click
+//! The big btn for starting to listen to music at the first one with an animation after click
 
 .play-btn {
     display: flex;
@@ -382,9 +382,35 @@ html {
             font-size: 1.2rem;
             color: $white;
             display: flex;
-            animation: loading 3s linear forwards;
+            animation: loading 1.5s linear forwards;
         }
     }
+    &.ended-play {
+            opacity: 1;
+            border-radius: 20%;
+           
+        &:focus {
+          .play-song-big-icon {
+            display: block;
+            color: $black-900;
+            
+          }
+          .load-song-big-icon {
+            display: none;
+        }
+    }
+
+    //bez hover bo jest ten hover na mobile zly a na desktop dobry
+    /*  &:hover {
+                opacity: 0.5;
+                border-radius: 28%;
+                .play-song-big-icon {
+                    display: block;
+                    color: $white;
+                    
+                  } */
+            }
+  
 }
 
 //visible but hidden after click btn
