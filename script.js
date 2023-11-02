@@ -91,7 +91,7 @@ function stopCurrentSong() {
     const audio = audioElements[index];
     if (audio instanceof HTMLAudioElement) {
       audio.pause();
-      audio.currentTime = 0;
+      /* audio.currentTime = 0; */
       isPlaying = false;
       currentPlayingSongDiv.classList.remove("song-clicked");
       currentPlayingSongDiv = null;
@@ -107,7 +107,6 @@ songs.forEach((songDiv, index) => {
       isSequentialPlaying = false;
       playSong(index);
     }
-    ``;
   });
 });
 
@@ -116,3 +115,24 @@ bigPlayBtn.addEventListener("click", () => {
   currentSongIndex = 0;
   playSong(currentSongIndex);
 });
+
+//! 4 sum all songs duration into stats for whole album duration
+
+const allSongsDuration = document.getElementById("all-songs-duration");
+const songDurations = document.querySelectorAll(".song-duration");
+let totalDurationInSeconds = 0;
+
+songDurations.forEach((song) => {
+  const time = song.textContent.split(":");
+  const min = parseInt(time[0]);
+  const sec = parseInt(time[1]);
+  totalDurationInSeconds += min * 60 + sec;
+});
+
+const totalMin = Math.floor(totalDurationInSeconds / 60);
+const totalSec = Math.floor(totalDurationInSeconds % 60);
+
+const displayAllTime =
+  totalMin < 1 ? `${totalSec} seconds` : `${totalMin} minutes`;
+
+allSongsDuration.textContent = displayAllTime;
