@@ -51,11 +51,10 @@ html {
 }
 
 #background-album-cover {
-
     position: absolute;
     width: 100vw;
     height: 40rem;
-   filter: blur(0.6rem); 
+    filter: blur(0.6rem);
     z-index: -2;
 }
 
@@ -215,7 +214,6 @@ html {
     height: auto;
     box-shadow: 0px 2px 8px 1px $shadow-black;
 }
-
 
 #fig-album-released {
     padding-bottom: 0.5rem;
@@ -410,7 +408,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
     font-weight: 400;
     width: 40%;
@@ -895,6 +893,13 @@ footer {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+//media queries for 375px screens
+
+@media (min-width: 375px) {
+    .quantity-of-songs-and-time {
+        font-size: 0.7rem;
     }
 }
 

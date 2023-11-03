@@ -91,7 +91,7 @@ function stopCurrentSong() {
     const audio = audioElements[index];
     if (audio instanceof HTMLAudioElement) {
       audio.pause();
-      /* audio.currentTime = 0; */
+
       isPlaying = false;
       currentPlayingSongDiv.classList.remove("song-clicked");
       currentPlayingSongDiv = null;
@@ -144,3 +144,51 @@ const showQuantity = document.getElementById("all-songs-quantity");
 const allAnySongs = anySong.length;
 
 showQuantity.textContent = `${allAnySongs} songs `;
+
+//! 6 three dots in any song = info in song
+const visibleInfoDiv = document.querySelector(".visible-info");
+const visibleDots = document.querySelector(".visible-dots");
+const hiddenInfoDiv = document.querySelector(".hidden-info");
+const hiddenDots = document.querySelector(".hidden-dots");
+
+//firstly visible dots
+visibleDots.addEventListener("click", () => {
+  hiddenInfoDiv.classList.remove("hidden-info");
+  hiddenInfoDiv.classList.add("visible-info");
+  visibleInfoDiv.classList.remove("visible-info");
+  visibleInfoDiv.classList.add("hidden-info");
+
+  //simulation click after 10 seconds
+  setTimeout(() => {
+    hiddenDots.click();
+  }, 10000);
+});
+
+//dots upon 'song div'
+visibleDots.addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
+//hidden dots , active when visible was clicked
+hiddenDots.addEventListener("click", () => {
+  hiddenInfoDiv.classList.remove("visible-info");
+  hiddenInfoDiv.classList.add("hidden-info");
+  visibleInfoDiv.classList.remove("hidden-info");
+  visibleInfoDiv.classList.add("visible-info");
+});
+
+//dots upon 'song div'
+hiddenDots.addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
+//! 7 heart click , added song to favorite
+
+const heartInSong = document.querySelector(".heart-in-song");
+
+heartInSong.addEventListener("click", () => {
+  heartInSong.classList.toggle("is-red");
+});
+heartInSong.addEventListener("click", (event) => {
+  event.stopPropagation();
+});

@@ -8,7 +8,10 @@
 }
 
 //colors variety
+
 $white: #f2f2f2;
+$red-500: #cd3737;
+$red-700: #b61a1a;
 $grey-500: #dcdcdc;
 $grey-600: #8d8c8c;
 $grey-700: #3e3c3c;
@@ -432,7 +435,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
     font-weight: 400;
     width: 40%;
@@ -450,9 +453,7 @@ html {
     margin: 0.5rem 0;
 }
 
-//only tracks
-
-//tack-1
+//only tracks test
 
 //only left side song
 .l_side {
@@ -570,13 +571,7 @@ html {
 }
 
 // only right side song
-.r_side {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    gap: 0.5rem;
-}
+
 //! add display itp zeby było columnowo te odliczanie
 .song-duration {
     font-size: 0.8rem;
@@ -587,11 +582,66 @@ html {
     font-size: 1.4rem;
     transition: 0.3s ease-in;
     z-index: 1;
+    cursor: pointer;
     &:hover {
         transform: scale(1.1) rotate(1turn);
         color: $eastern-blue-500;
     }
 }
+
+.hidden-dots {
+    color: $ming-blue-600;
+    font-size: 1.4rem;
+    transition: 0.3s ease-in;
+    z-index: 1;
+    padding-left: 0.2rem;
+    cursor: pointer;
+    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
+        color: $eastern-blue-500;
+    }
+}
+
+.r_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 0.5rem;
+}
+.visible-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: auto;
+    /* width: auto; */
+    min-width: 20%;
+}
+
+.hidden-info {
+    display: none;
+}
+//heart click in song info
+
+.heart-in-song {
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: $grey-600;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+    &:active {
+        animation: heart-click 0.2s ease-in-out;
+        color: $red-500;
+    }
+    &.is-red {
+        color: $red-700;
+    }
+}
+
+
+
 //section 4 other albums might you like
 
 .section4 {
@@ -911,7 +961,7 @@ footer {
         color: $amulet-green-400;
     }
 }
-// animation
+// animations 
 @keyframes loading {
     0% {
         transform: rotate(0deg);
@@ -921,6 +971,39 @@ footer {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+// Animation for heart hover focus in song
+@keyframes heart-hover-focus {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+// Animation for heart click in song
+@keyframes heart-click {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+//media queries for 375px screens
+
+@media (min-width: 375px) {
+    .quantity-of-songs-and-time {
+        font-size: 0.7rem;
     }
 }
 
@@ -1000,6 +1083,9 @@ footer {
     }
     .anchor-dots {
         font-size: 1.6rem;
+    }
+    .heart-in-song {
+        font-size: 1.4rem;
     }
     //section 4 other albums might you like
     .section4 {
@@ -1218,6 +1304,13 @@ footer {
     }
     .list-time-songs {
         padding: 2rem;
+    }
+    // hover for heart in div song
+    .heart-in-song {
+        &:hover {
+            animation: heart-hover-focus 0.3s ease-in-out;
+            color: $red-500;
+        }
     }
     //section 4
 

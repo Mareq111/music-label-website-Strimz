@@ -397,7 +397,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
   font-weight: 400;
   width: 40%;
@@ -523,14 +523,6 @@ html {
   color: #8d8c8c;
 }
 
-.r_side {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  gap: 0.5rem;
-}
-
 .song-duration {
   font-size: 0.8rem;
 }
@@ -540,10 +532,62 @@ html {
   font-size: 1.4rem;
   transition: 0.3s ease-in;
   z-index: 1;
+  cursor: pointer;
 }
 .anchor-dots:hover {
   transform: scale(1.1) rotate(1turn);
   color: #26acac;
+}
+
+.hidden-dots {
+  color: #367983;
+  font-size: 1.4rem;
+  transition: 0.3s ease-in;
+  z-index: 1;
+  padding-left: 0.2rem;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.hidden-dots:hover {
+  transform: scale(1.1);
+  color: #26acac;
+}
+
+.r_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  gap: 0.5rem;
+}
+
+.visible-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: auto;
+  /* width: auto; */
+  min-width: 20%;
+}
+
+.hidden-info {
+  display: none;
+}
+
+.heart-in-song {
+  display: inline-block;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #8d8c8c;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+}
+.heart-in-song:active {
+  animation: heart-click 0.2s ease-in-out;
+  color: #cd3737;
+}
+.heart-in-song.is-red {
+  color: #b61a1a;
 }
 
 .section4 {
@@ -878,6 +922,33 @@ footer {
     transform: rotate(360deg);
   }
 }
+@keyframes heart-hover-focus {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes heart-click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (min-width: 375px) {
+  .quantity-of-songs-and-time {
+    font-size: 0.7rem;
+  }
+}
 @media (min-width: 425px) {
   #background-album-cover {
     height: 45rem;
@@ -945,6 +1016,9 @@ footer {
   }
   .anchor-dots {
     font-size: 1.6rem;
+  }
+  .heart-in-song {
+    font-size: 1.4rem;
   }
   .section4 {
     padding: 0 2rem 4rem 2rem;
@@ -1139,6 +1213,10 @@ footer {
   }
   .list-time-songs {
     padding: 2rem;
+  }
+  .heart-in-song:hover {
+    animation: heart-hover-focus 0.3s ease-in-out;
+    color: #cd3737;
   }
   .section4 {
     padding: 4rem 4rem;

@@ -378,7 +378,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
   font-weight: 400;
   width: 40%;
@@ -857,6 +857,11 @@ footer {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media (min-width: 375px) {
+  .quantity-of-songs-and-time {
+    font-size: 0.7rem;
   }
 }
 @media (min-width: 425px) {
