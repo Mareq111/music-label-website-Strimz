@@ -136,3 +136,11 @@ const displayAllTime =
   totalMin < 1 ? `${totalSec} seconds` : `${totalMin} minutes`;
 
 allSongsDuration.textContent = displayAllTime;
+
+//! 5 sum quantity of tracks in album
+
+const anySong = document.querySelectorAll(".song");
+const showQuantity = document.getElementById("all-songs-quantity");
+const allAnySongs = anySong.length;
+
+showQuantity.textContent = `${allAnySongs} songs `;
