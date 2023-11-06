@@ -147,9 +147,9 @@ showQuantity.textContent = `${allAnySongs} songs `;
 
 //! 6 three dots in any song = info in song
 const visibleInfoDiv = document.querySelector(".visible-info");
-const visibleDots = document.querySelector(".visible-dots");
+const visibleDots = document.querySelector(".btn-3-dots-visible");
 const hiddenInfoDiv = document.querySelector(".hidden-info");
-const hiddenDots = document.querySelector(".hidden-dots");
+const hiddenDots = document.querySelector(".btn-3-dots-hidden");
 
 //firstly visible dots
 visibleDots.addEventListener("click", () => {
@@ -184,7 +184,7 @@ hiddenDots.addEventListener("click", function (event) {
 
 //! 7 heart click , added song to favorite
 
-const heartInSong = document.querySelector(".heart-in-song");
+const heartInSong = document.querySelector(".heart-btn-in-song");
 
 heartInSong.addEventListener("click", () => {
   heartInSong.classList.toggle("is-red");

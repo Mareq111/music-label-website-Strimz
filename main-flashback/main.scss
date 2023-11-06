@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 //colors variety
 
 $white: #f2f2f2;
@@ -621,12 +622,16 @@ html {
 
 .hidden-info {
     display: none;
+    //moze to ponizej usunac
+    justify-content: center;
+    align-items: center;
 }
 //heart click in song info
 
-.heart-in-song {
+/* .heart-in-song */
+.heart-btn-in-song {
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     cursor: pointer;
     color: $grey-600;
     transition: 0.2s ease-in-out;
@@ -640,6 +645,14 @@ html {
     }
 }
 
+// btn for icons in song in right side
+.btn-3-dots-visible, .btn-3-dots-hidden, .heart-btn-in-song {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+}
 
 
 //section 4 other albums might you like
@@ -1084,8 +1097,9 @@ footer {
     .anchor-dots {
         font-size: 1.6rem;
     }
-    .heart-in-song {
-        font-size: 1.4rem;
+    /* .heart-in-song */
+    .heart-btn-in-song {
+        font-size: 1.6rem;
     }
     //section 4 other albums might you like
     .section4 {
@@ -1306,7 +1320,8 @@ footer {
         padding: 2rem;
     }
     // hover for heart in div song
-    .heart-in-song {
+   /*  .heart-in-song */
+   .heart-btn-in-song {
         &:hover {
             animation: heart-hover-focus 0.3s ease-in-out;
             color: $red-500;
