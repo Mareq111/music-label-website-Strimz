@@ -116,27 +116,63 @@ bigPlayBtn.addEventListener("click", () => {
 });
 
 //! 4 dynamic add song-duration for any song
-//test
 //! 5 dynamic sum all songs duration into stats for whole album duration
 
-const allSongsDuration = document.getElementById("all-songs-duration");
 const songDurations = document.querySelectorAll(".song-duration");
 let totalDurationInSeconds = 0;
 
-songDurations.forEach((song) => {
-  const time = song.textContent.split(":");
-  const min = parseInt(time[0]);
-  const sec = parseInt(time[1]);
-  totalDurationInSeconds += min * 60 + sec;
+const formatTime = (seconds) => {
+  // format loeadmetadata which was with seconds to minutes now
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = Math.floor(seconds % 60);
+  // format time 'minutes : seconds ' and if seconds < 10 seconds add 0 before seconds
+  const formattedTime = `${minutes}:${
+    remainingSeconds < 10 ? "0" : ""
+  }${remainingSeconds}`;
+  return formattedTime;
+};
+
+// listening starts if dom is loaded , site is reload or load
+window.addEventListener("DOMContentLoaded", (event) => {
+  const audioElements = document.querySelectorAll(".audio-song");
+
+  audioElements.forEach((audio) => {
+    // listener loadmetadata for any audio song to find audio duration every song
+    audio.addEventListener("loadedmetadata", () => {
+      const duration = audio.duration;
+      //
+      const formattedDuration = formatTime(duration);
+      // finding a song duration which represents duration  in his 'parent' =  audio-song
+      const songDurationElement =
+        audio.parentElement.querySelector(".song-duration");
+      if (songDurationElement) {
+        songDurationElement.textContent = formattedDuration;
+        updateTotalDuration();
+      }
+    });
+  });
+  //
+  const updateTotalDuration = () => {
+    totalDurationInSeconds = 0;
+    // Extracts song durations from metadata (separated into minutes and seconds) to convert the total duration in seconds
+    songDurations.forEach((song) => {
+      const time = song.textContent.split(":");
+      const min = parseInt(time[0]);
+      const sec = parseInt(time[1]);
+      totalDurationInSeconds += min * 60 + sec;
+    });
+
+    // convert and round duration for minutes:seconds and display total time for any album
+    const totalMin = Math.floor(totalDurationInSeconds / 60);
+    const totalSec = Math.floor(totalDurationInSeconds % 60);
+
+    const displayAllTime =
+      totalMin < 1 ? `${totalSec} seconds` : `${totalMin} minutes`;
+
+    const allSongsDuration = document.getElementById("all-songs-duration");
+    allSongsDuration.textContent = displayAllTime;
+  };
 });
-
-const totalMin = Math.floor(totalDurationInSeconds / 60);
-const totalSec = Math.floor(totalDurationInSeconds % 60);
-
-const displayAllTime =
-  totalMin < 1 ? `${totalSec} seconds` : `${totalMin} minutes`;
-
-allSongsDuration.textContent = displayAllTime;
 
 //! 6 dynamic sum quantity of tracks in any album
 
