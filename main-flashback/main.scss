@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-
 //colors variety
 
 $white: #f2f2f2;
@@ -646,14 +645,15 @@ html {
 }
 
 // btn for icons in song in right side
-.btn-3-dots-visible, .btn-3-dots-hidden, .heart-btn-in-song {
+.btn-3-dots-visible,
+.btn-3-dots-hidden,
+.heart-btn-in-song {
     background-color: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
     z-index: 1;
 }
-
 
 //section 4 other albums might you like
 
@@ -974,7 +974,7 @@ footer {
         color: $amulet-green-400;
     }
 }
-// animations 
+// animations
 @keyframes loading {
     0% {
         transform: rotate(0deg);
@@ -1320,8 +1320,8 @@ footer {
         padding: 2rem;
     }
     // hover for heart in div song
-   /*  .heart-in-song */
-   .heart-btn-in-song {
+    /*  .heart-in-song */
+    .heart-btn-in-song {
         &:hover {
             animation: heart-hover-focus 0.3s ease-in-out;
             color: $red-500;

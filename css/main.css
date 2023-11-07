@@ -593,7 +593,9 @@ html {
   color: #b61a1a;
 }
 
-.btn-3-dots-visible, .btn-3-dots-hidden, .heart-btn-in-song {
+.btn-3-dots-visible,
+.btn-3-dots-hidden,
+.heart-btn-in-song {
   background-color: transparent;
   border: none;
   cursor: pointer;

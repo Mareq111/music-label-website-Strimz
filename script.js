@@ -137,7 +137,7 @@ const displayAllTime =
 
 allSongsDuration.textContent = displayAllTime;
 
-//! 5 sum quantity of tracks in album
+//! 5 sum quantity of tracks in any album
 
 const anySong = document.querySelectorAll(".song");
 const showQuantity = document.getElementById("all-songs-quantity");
@@ -145,50 +145,53 @@ const allAnySongs = anySong.length;
 
 showQuantity.textContent = `${allAnySongs} songs `;
 
-//! 6 three dots in any song = info in song
-const visibleInfoDiv = document.querySelector(".visible-info");
-const visibleDots = document.querySelector(".btn-3-dots-visible");
-const hiddenInfoDiv = document.querySelector(".hidden-info");
-const hiddenDots = document.querySelector(".btn-3-dots-hidden");
+//! 6 when you click on the visible dots, the visibility of the information changes
+//! 7 heart click which added song to favorite in any song
 
-//firstly visible dots
-visibleDots.addEventListener("click", () => {
-  hiddenInfoDiv.classList.remove("hidden-info");
-  hiddenInfoDiv.classList.add("visible-info");
-  visibleInfoDiv.classList.remove("visible-info");
-  visibleInfoDiv.classList.add("hidden-info");
+songs.forEach((song) => {
+  const visibleInfoDiv = song.querySelector(".visible-info");
+  const visibleDots = song.querySelector(".btn-3-dots-visible");
+  const hiddenInfoDiv = song.querySelector(".hidden-info");
+  const hiddenDots = song.querySelector(".btn-3-dots-hidden");
+  const heartInSong = song.querySelectorAll(".heart-btn-in-song");
 
-  //simulation click after 10 seconds
-  setTimeout(() => {
-    hiddenDots.click();
-  }, 10000);
+  heartInSong.forEach((heart) => {
+    heart.addEventListener("click", (event) => {
+      heart.classList.toggle("is-red");
+      //if heart is clicked, it won't trigger whole song div
+      event.stopPropagation();
+    });
+  });
+  //firstly visible dots
+  visibleDots.addEventListener("click", () => {
+    hiddenInfoDiv.classList.remove("hidden-info");
+    hiddenInfoDiv.classList.add("visible-info");
+    visibleInfoDiv.classList.remove("visible-info");
+    visibleInfoDiv.classList.add("hidden-info");
+
+    //simulation click after click visible dots, duartion = 10 seconds
+    setTimeout(() => {
+      hiddenDots.click();
+    }, 10000);
+  });
+
+  // if VISIBLE dots is clicked, it won't trigger the click for the entire song div
+  visibleDots.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+
+  //hidden dots, active when visible dots was clicked
+  hiddenDots.addEventListener("click", () => {
+    hiddenInfoDiv.classList.remove("visible-info");
+    hiddenInfoDiv.classList.add("hidden-info");
+    visibleInfoDiv.classList.remove("hidden-info");
+    visibleInfoDiv.classList.add("visible-info");
+  });
+
+  // if HIDDEN dots is clicked, it won't trigger the click for the entire song div
+  hiddenDots.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
 });
 
-//dots upon 'song div'
-visibleDots.addEventListener("click", function (event) {
-  event.stopPropagation();
-});
-
-//hidden dots , active when visible was clicked
-hiddenDots.addEventListener("click", () => {
-  hiddenInfoDiv.classList.remove("visible-info");
-  hiddenInfoDiv.classList.add("hidden-info");
-  visibleInfoDiv.classList.remove("hidden-info");
-  visibleInfoDiv.classList.add("visible-info");
-});
-
-//dots upon 'song div'
-hiddenDots.addEventListener("click", function (event) {
-  event.stopPropagation();
-});
-
-//! 7 heart click , added song to favorite
-
-const heartInSong = document.querySelector(".heart-btn-in-song");
-
-heartInSong.addEventListener("click", () => {
-  heartInSong.classList.toggle("is-red");
-});
-heartInSong.addEventListener("click", (event) => {
-  event.stopPropagation();
-});
+//!8 ?
