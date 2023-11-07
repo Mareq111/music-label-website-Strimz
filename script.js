@@ -27,7 +27,6 @@ summaryFocus?.addEventListener("click", () => {
 
 //! 3 add audio to song div
 // fuction when a songDiv is clicked to listen any song, even when only "button" icons is clicked
-//dziala idealnie wszystko tylko jest 0: 00 w song duration i cos nie dziala
 
 const songs = document.querySelectorAll(".song");
 const audioElements = document.querySelectorAll(".audio-song");
@@ -116,7 +115,9 @@ bigPlayBtn.addEventListener("click", () => {
   playSong(currentSongIndex);
 });
 
-//! 4 sum all songs duration into stats for whole album duration
+//! 4 dynamic add song-duration for any song
+//test
+//! 5 dynamic sum all songs duration into stats for whole album duration
 
 const allSongsDuration = document.getElementById("all-songs-duration");
 const songDurations = document.querySelectorAll(".song-duration");
@@ -137,7 +138,7 @@ const displayAllTime =
 
 allSongsDuration.textContent = displayAllTime;
 
-//! 5 sum quantity of tracks in any album
+//! 6 dynamic sum quantity of tracks in any album
 
 const anySong = document.querySelectorAll(".song");
 const showQuantity = document.getElementById("all-songs-quantity");
@@ -145,8 +146,9 @@ const allAnySongs = anySong.length;
 
 showQuantity.textContent = `${allAnySongs} songs `;
 
-//! 6 when you click on the visible dots, the visibility of the information changes
-//! 7 heart click which added song to favorite in any song
+//! 7 when you click on the visible dots, the visibility of the information changes
+//! 8 heart click which added song to favorite in any song
+//const songs = document.querySelectorAll(".song"); was declared
 
 songs.forEach((song) => {
   const visibleInfoDiv = song.querySelector(".visible-info");
@@ -155,43 +157,45 @@ songs.forEach((song) => {
   const hiddenDots = song.querySelector(".btn-3-dots-hidden");
   const heartInSong = song.querySelectorAll(".heart-btn-in-song");
 
-  heartInSong.forEach((heart) => {
-    heart.addEventListener("click", (event) => {
-      heart.classList.toggle("is-red");
-      //if heart is clicked, it won't trigger whole song div
+  //console.log(visibleInfoDiv, visibleDots, hiddenInfoDiv, hiddenDots, heartInSong);
+
+  if (visibleInfoDiv) {
+    heartInSong.forEach((heart) => {
+      heart.addEventListener("click", (event) => {
+        heart.classList.toggle("is-red");
+        //if heart is clicked, it won't trigger whole song div
+        event.stopPropagation();
+      });
+    });
+    //firstly visible dots
+    visibleDots.addEventListener("click", () => {
+      hiddenInfoDiv.classList.remove("hidden-info");
+      hiddenInfoDiv.classList.add("visible-info");
+      visibleInfoDiv.classList.remove("visible-info");
+      visibleInfoDiv.classList.add("hidden-info");
+
+      //simulation click after click visible dots, duartion = 10 seconds
+      setTimeout(() => {
+        hiddenDots.click();
+      }, 10000);
+    });
+
+    // if VISIBLE dots is clicked, it won't trigger the click for the entire song div
+    visibleDots.addEventListener("click", (event) => {
       event.stopPropagation();
     });
-  });
-  //firstly visible dots
-  visibleDots.addEventListener("click", () => {
-    hiddenInfoDiv.classList.remove("hidden-info");
-    hiddenInfoDiv.classList.add("visible-info");
-    visibleInfoDiv.classList.remove("visible-info");
-    visibleInfoDiv.classList.add("hidden-info");
 
-    //simulation click after click visible dots, duartion = 10 seconds
-    setTimeout(() => {
-      hiddenDots.click();
-    }, 10000);
-  });
+    //hidden dots, active when visible dots was clicked
+    hiddenDots.addEventListener("click", () => {
+      hiddenInfoDiv.classList.remove("visible-info");
+      hiddenInfoDiv.classList.add("hidden-info");
+      visibleInfoDiv.classList.remove("hidden-info");
+      visibleInfoDiv.classList.add("visible-info");
+    });
 
-  // if VISIBLE dots is clicked, it won't trigger the click for the entire song div
-  visibleDots.addEventListener("click", (event) => {
-    event.stopPropagation();
-  });
-
-  //hidden dots, active when visible dots was clicked
-  hiddenDots.addEventListener("click", () => {
-    hiddenInfoDiv.classList.remove("visible-info");
-    hiddenInfoDiv.classList.add("hidden-info");
-    visibleInfoDiv.classList.remove("hidden-info");
-    visibleInfoDiv.classList.add("visible-info");
-  });
-
-  // if HIDDEN dots is clicked, it won't trigger the click for the entire song div
-  hiddenDots.addEventListener("click", (event) => {
-    event.stopPropagation();
-  });
+    // if HIDDEN dots is clicked, it won't trigger the click for the entire song div
+    hiddenDots.addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
+  }
 });
-
-//!8 ?
