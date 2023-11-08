@@ -2,13 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
+//colors variety import from  separate color stylesheet
+/* @import "/css/ColorsVariety.css"; */
 
-//colors variety
 $white: #f2f2f2;
+$red-500: #cd3737;
+$red-700: #b61a1a;
 $grey-500: #dcdcdc;
 $grey-600: #8d8c8c;
 $grey-700: #3e3c3c;
@@ -39,6 +38,11 @@ $color-king-of-for-and-muds: rgba(181, 133, 94, 1);
 $shadow-green: rgba(133, 171, 123, 0.4);
 $shadow-black: rgba(30, 29, 29, 0.6);
 $shadow-black-transparent: rgba(0, 0, 0, 0.8);
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
 
 //styling
 
@@ -353,7 +357,7 @@ html {
     gap: 1rem;
 }
 
-//! The btn for starting to listen to music at the first one with an animation after click
+//! The big btn for starting to listen to music at the first one with an animation after click
 
 .play-btn {
     display: flex;
@@ -387,7 +391,21 @@ html {
             font-size: 1.2rem;
             color: $white;
             display: flex;
-            animation: loading 3s linear forwards;
+            animation: loading 1.5s linear forwards;
+        }
+    }
+    &.ended-play {
+        opacity: 1;
+        border-radius: 20%;
+
+        &:focus {
+            .play-song-big-icon {
+                display: block;
+                color: $black-900;
+            }
+            .load-song-big-icon {
+                display: none;
+            }
         }
     }
 }
@@ -429,9 +447,7 @@ html {
     margin: 0.5rem 0;
 }
 
-//only tracks
-
-//tack-1
+//only tracks test
 
 //only left side song
 .l_side {
@@ -466,10 +482,11 @@ html {
         display: none;
     }
 }
-//TODO  zrob zeby play btn zmienil sie na loading kołko gdy sie kliknie w cały div i zeby song title nie wychodziło poza div
+
+//! if is clicked song Div this 'animations' is add & after song is removed
 .song-clicked {
     cursor: pointer;
-    box-shadow: inset 1.5rem 0 1px 0px /*  $shadow-black-transparent */ $ming-blue-600;
+    box-shadow: inset 1.5rem 0 1px 0px $ming-blue-600;
     color: $white;
     & {
         .load-song-small2-icon {
@@ -548,13 +565,8 @@ html {
 }
 
 // only right side song
-.r_side {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    gap: 0.5rem;
-}
+
+//! add display itp zeby było columnowo te odliczanie
 .song-duration {
     font-size: 0.8rem;
 }
@@ -564,11 +576,79 @@ html {
     font-size: 1.4rem;
     transition: 0.3s ease-in;
     z-index: 1;
+    cursor: pointer;
     &:hover {
         transform: scale(1.1) rotate(1turn);
         color: $eastern-blue-500;
     }
 }
+
+.hidden-dots {
+    color: $ming-blue-600;
+    font-size: 1.4rem;
+    transition: 0.3s ease-in;
+    z-index: 1;
+    padding-left: 0.2rem;
+    cursor: pointer;
+    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
+        color: $eastern-blue-500;
+    }
+}
+
+.r_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 0.5rem;
+}
+.visible-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: auto;
+    /* width: auto; */
+    min-width: 20%;
+}
+
+.hidden-info {
+    display: none;
+    //moze to ponizej usunac
+    justify-content: center;
+    align-items: center;
+}
+//heart click in song info
+
+/* .heart-in-song */
+.heart-btn-in-song {
+    display: inline-block;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: $grey-600;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+    &:active {
+        animation: heart-click 0.2s ease-in-out;
+        color: $red-500;
+    }
+    &.is-red {
+        color: $red-700;
+    }
+}
+
+// btn for icons in song in right side
+.btn-3-dots-visible,
+.btn-3-dots-hidden,
+.heart-btn-in-song {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+}
+
 //section 4 other albums might you like
 
 .section4 {

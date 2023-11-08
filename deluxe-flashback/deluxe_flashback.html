@@ -11,7 +11,7 @@
     <!-- favicon  -->
     <link rel="icon" href="/img/logo16x16.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="/css/deluxe_flashback.css" />
+    <link rel="stylesheet" href="/css/deluxe-flashback.css" />
 
     <!-- icons link -->
     <link
@@ -322,6 +322,7 @@
       </div>
     </section>
     <!--section 3 tracklist  -->
+
     <section class="section3">
       <h4 id="h4-section3">Track List</h4>
 
@@ -334,404 +335,764 @@
           <i class="bx bx-play | play-song-big-icon"></i>
           <i class="bx bx-loader-alt | load-song-big-icon"></i>
         </button>
-        <p class="quantity-of-songs-and-time">17 songs</p>
+        <p class="quantity-of-songs-and-time" id="all-songs-quantity"></p>
         <i class="bx bxs-circle"></i>
-        <p class="quantity-of-songs-and-time">60 minutes</p>
+        <p class="quantity-of-songs-and-time" id="all-songs-duration"></p>
       </div>
       <hr class="hr-line" id="hr-line2" />
 
       <!-- tack-1 -->
-      <div class="song">
+      <div class="song" id="track-1-flashbackFrom2001">
+        <audio
+          id="summer-breeze-normal"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">1</span>
-
-          <button class="play-btn-song" aria-label="Listen song 1">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Summer Breeze</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">2:49</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
       <!-- tack-2 -->
-      <div class="song">
+      <div class="song" id="track-2-flashbackFrom2001">
+        <audio
+          id="millenium-muzik-normal"
+          class="audio-song"
+          src="/songs/main-flashback/millenium-muzik-normal.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">2</span>
-
-          <button class="play-btn-song" aria-label="Listen song 2">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Millenium Muzik</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:21</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-3 -->
-      <div class="song">
+      <div class="song" id="track-3-flashbackFrom2001">
+        <audio
+          id="easy-livin-normal"
+          class="audio-song"
+          src="/songs/main-flashback/easyLivin-Normal.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">3</span>
-
-          <button class="play-btn-song" aria-label="Listen song 3">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Easy Livin</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">2:39</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
 
       <!-- tack-4 -->
-      <div class="song">
+      <div class="song" id="track-4-flashbackFrom2001">
+        <audio
+          id="the-next-episode-normal"
+          class="audio-song"
+          src="/songs/main-flashback/The Next Episode.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">4</span>
-
-          <button class="play-btn-song" aria-label="Listen song 4">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">The Next Episode</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">4:38</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
 
       <!-- tack-5 -->
-      <div class="song">
+      <div class="song" id="track-5-flashbackFrom2001">
+        <audio
+          id="dare-he-go-normal"
+          class="audio-song"
+          src="/songs/main-flashback/Dare He Go.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">5</span>
-
-          <button class="play-btn-song" aria-label="Listen song 5">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
-
-          <div class="name-song-aritst">
-            <h5 class="song-title">Memoriez</h5>
-            <p class="artist-name">El Double O ft. KitKudi</p>
           </div>
-        </div>
-        <div class="r_side">
-          <time class="song-duration">3:29</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
-        </div>
-      </div>
-
-      <!-- tack-6 -->
-      <div class="song">
-        <div class="l_side">
-          <span class="song-number">6</span>
-
-          <button class="play-btn-song" aria-label="Listen song 6">
-            <i class="bx bx-play play-song-icon"></i>
-            <i class="bx bx-loader-alt | load-song-small-icon"></i>
-            <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Dare He Go</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">2:47</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
+      <!-- tack-6 -->
+      <div class="song" id="track-6-flashbackFrom2001">
+        <audio
+          id="enjoy-the-view-normal"
+          class="audio-song"
+          src="/songs/main-flashback/Enjoy the view.mp3"
+        ></audio>
 
-      <!-- tack-7 -->
-      <div class="song">
         <div class="l_side">
-          <span class="song-number">7</span>
-
-          <button class="play-btn-song" aria-label="Listen song 7">
+          <span class="song-number">6</span>
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Enjoy The View</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:33</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
+      <!-- tack-7 -->
+      <div class="song" id="track-7-flashbackFrom2001">
+        <audio
+          id="memoriez-normal"
+          class="audio-song"
+          src="/songs/main-flashback/Memoriez ft KitKudi.mp3"
+        ></audio>
 
-      <!-- tack-8 -->
-      <div class="song">
         <div class="l_side">
-          <span class="song-number">8</span>
-
-          <button class="play-btn-song" aria-label="Listen song 8">
+          <span class="song-number">7</span>
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
+          </div>
+
+          <div class="name-song-aritst">
+            <h5 class="song-title">Memoriez</h5>
+            <p class="artist-name">El Double O ft. KitKadi</p>
+          </div>
+        </div>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
           </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
+        </div>
+      </div>
+      <!-- tack-8 -->
+      <div class="song" id="track-8-flashbackFrom2001">
+        <audio
+          id="neon-icon-normal"
+          class="audio-song"
+          src="/songs/main-flashback/Neon icon .mp3"
+        ></audio>
+
+        <div class="l_side">
+          <span class="song-number">8</span>
+          <div class="play-btn-song">
+            <i class="bx bx-play play-song-icon"></i>
+            <i class="bx bx-loader-alt | load-song-small-icon"></i>
+            <i class="bx bx-loader-alt | load-song-small2-icon"></i>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Neon Icon</h5>
-            <p class="artist-name">El Double O</p>
+            <p class="artist-name">El Double O ft. Riff</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">4:07</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-9 -->
-      <div class="song">
+      <div class="song" id="track-9-flashbackFrom2001">
+        <audio
+          id="urban-legends-normal"
+          class="audio-song"
+          src="/songs/main-flashback/urban legends.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">9</span>
-
-          <button class="play-btn-song" aria-label="Listen song 9">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Urban Legends</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:03</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-10 -->
-      <div class="song">
+      <div class="song" id="track-10-flashbackFrom2001">
+        <audio
+          id="flashback-from-2001-normal"
+          class="audio-song"
+          src="/songs/main-flashback/flashback from 2001.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">10</span>
-          <button class="play-btn-song" aria-label="Listen song 10">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
-            <h5 class="song-title">Flashback from 2001</h5>
+            <h5 class="song-title">Flashback From 2001</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">4:16</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
       <!-- tack-11 -->
-      <div class="song">
+      <div class="song" id="track-11-flashbackFrom2001">
+        <audio
+          id="curdroys-on-carton-normal"
+          class="audio-song"
+          src="/songs/main-flashback/flashback from 2001.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">11</span>
-          <button class="play-btn-song" aria-label="Listen song 10">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
-            <h5 class="song-title">Corduroys on Carton</h5>
+            <h5 class="song-title">Corduroys On Carton change src</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">5:02</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
       <!-- tack-12 -->
-      <div class="song">
+      <div class="song" id="track-12-flashbackFrom2001">
+        <audio
+          id="3310-normal"
+          class="audio-song"
+          src="/songs/main-flashback/flashback from 2001.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">12</span>
-          <button class="play-btn-song" aria-label="Listen song 10">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">3310</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:44</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
       <!-- tack-13 -->
-      <div class="song">
+      <div class="song" id="track-13-flashbackFrom2001">
+        <audio
+          id="snake-normal"
+          class="audio-song"
+          src="/songs/main-flashback/flashback from 2001.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">13</span>
-          <button class="play-btn-song" aria-label="Listen song 10">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Snake</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">4:14</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
       <!-- tack-14 -->
-      <div class="song">
+      <div class="song" id="track-14-flashbackFrom2001">
+        <audio
+          id="ronaldinho-chips-normal"
+          class="audio-song"
+          src="/songs/main-flashback/flashback from 2001.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">14</span>
-          <button class="play-btn-song" aria-label="Listen song 10">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Ronaldinho Chips</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:55</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
       <!-- tack-15 -->
-      <div class="song">
+      <div class="song" id="track-15-flashbackFrom2001">
+        <audio
+          id="posters-on-the-wall-normal"
+          class="audio-song"
+          src="/songs/main-flashback/flashback from 2001.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">15</span>
-          <button class="play-btn-song" aria-label="Listen song 10">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
-            <h5 class="song-title">Posters on the wall</h5>
+            <h5 class="song-title">Posters On The Wall</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:22</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
       <!-- tack-16 -->
-      <div class="song">
+      <div class="song" id="track-16-flashbackFrom2001">
+        <audio
+          id="9-pm-normal"
+          class="audio-song"
+          src="/songs/main-flashback/flashback from 2001.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">16</span>
-          <button class="play-btn-song" aria-label="Listen song 10">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">9 PM</h5>
-            <p class="artist-name">El Double O</p>
+            <p class="artist-name">El Double O ft. ABC</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">2:56</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
       <!-- tack-17 -->
-      <div class="song">
+      <div class="song" id="track-17-flashbackFrom2001">
+        <audio
+          id="sd-on-zombie-island-normal"
+          class="audio-song"
+          src="/songs/main-flashback/flashback from 2001.mp3"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">17</span>
-          <button class="play-btn-song" aria-label="Listen song 10">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
-            <h5 class="song-title">SD on Zombie Island</h5>
+            <h5 class="song-title">SD On Zombie Island</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">4:46</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side | visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded | anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded | anchor-dots | hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
     </section>
+
     <!-- section 4 other albums might you like -->
     <section class="section4">
       <h5 id="h5-section4">
@@ -990,7 +1351,6 @@
             ></a>
 
             <a
-              target="_blank"
               class="my-social"
               aria-label="Check out my personal Instagram"
               href="https://www.instagram.com/mrq_szulc/"

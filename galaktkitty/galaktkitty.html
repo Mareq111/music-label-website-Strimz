@@ -326,247 +326,449 @@
           <i class="bx bx-play | play-song-big-icon"></i>
           <i class="bx bx-loader-alt | load-song-big-icon"></i>
         </button>
-        <p class="quantity-of-songs-and-time">10 songs</p>
+        <p class="quantity-of-songs-and-time" id="all-songs-quantity"></p>
         <i class="bx bxs-circle"></i>
-        <p class="quantity-of-songs-and-time">36 minutes</p>
+        <p class="quantity-of-songs-and-time" id="all-songs-duration"></p>
       </div>
       <hr class="hr-line" id="hr-line2" />
-
       <!-- tack-1 -->
-      <div class="song">
+      <div class="song" id="track-1-galaktkitty">
+        <audio
+          id="first-jump-galaktkitty"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">1</span>
-
-          <button class="play-btn-song" aria-label="Listen song 1">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
-            <h5 class="song-title">First Jump</h5>
+            <h5 class="song-title">First Jump change all src</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:19</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
       <!-- tack-2 -->
-      <div class="song">
+      <div class="song" id="track-2-galaktkitty">
+        <audio
+          id="steps-into-unknown-galaktkitty"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">2</span>
-
-          <button class="play-btn-song" aria-label="Listen song 2">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
-            <h5 class="song-title">Steps into Unknown</h5>
+            <h5 class="song-title">Steps Into Unknown</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">4:03</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-3 -->
-      <div class="song">
+      <div class="song" id="track-3-galaktkitty">
+        <audio
+          id="horizons-exploration-galaktkitty"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">3</span>
-
-          <button class="play-btn-song" aria-label="Listen song 3">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
-            <h5 class="song-title">Horizons Exploration</h5>
+            <h5 class="song-title">Horizon Exploration</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">2:46</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-4 -->
-      <div class="song">
+      <div class="song" id="track-4-galaktkitty">
+        <audio
+          id="digital-journey-galaktkitty"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">4</span>
-
-          <button class="play-btn-song" aria-label="Listen song 4">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Digital Journey</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:58</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-5 -->
-      <div class="song">
+      <div class="song" id="track-5-galaktkitty">
+        <audio
+          id="code-to-infinity-galaktkitty"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">5</span>
-
-          <button class="play-btn-song" aria-label="Listen song 5">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Code To Infinity</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:35</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-6 -->
-      <div class="song">
+      <div class="song" id="track-6-galaktkitty">
+        <audio
+          id="one-of-the-many-galaktkitty"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">6</span>
-
-          <button class="play-btn-song" aria-label="Listen song 6">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
-            <h5 class="song-title">One of the many</h5>
+            <h5 class="song-title">One Of The Many</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">4:37</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-7 -->
-      <div class="song">
+      <div class="song" id="track-7-galaktkitty">
+        <audio
+          id="space-dreamers-path-galaktkitty"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">7</span>
-
-          <button class="play-btn-song" aria-label="Listen song 7">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Space Dreamers Path</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:42</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-8 -->
-      <div class="song">
+      <div class="song" id="track-8-galaktkitty">
+        <audio
+          id="among-npcs-galaktkitty"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">8</span>
-
-          <button class="play-btn-song" aria-label="Listen song 8">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Among NPC's</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">4:46</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-9 -->
-      <div class="song">
+      <div class="song" id="track-9-galaktkitty">
+        <audio
+          id="a-light-in-the-tunnel-galaktkitty"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">9</span>
-
-          <button class="play-btn-song" aria-label="Listen song 9">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
-            <h5 class="song-title">A Light in the Tunnel</h5>
+            <h5 class="song-title">A Light In The Tunnel</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:25</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
-
       <!-- tack-10 -->
-      <div class="song">
+      <div class="song" id="track-10-galaktkitty">
+        <audio
+          id="winston-galaktkitty"
+          class="audio-song"
+          src="/songs/main-flashback/1 summer breeze.m4a"
+        ></audio>
+
         <div class="l_side">
           <span class="song-number">10</span>
-          <button class="play-btn-song" aria-label="Listen song 10">
+          <div class="play-btn-song">
             <i class="bx bx-play play-song-icon"></i>
             <i class="bx bx-loader-alt | load-song-small-icon"></i>
             <i class="bx bx-loader-alt | load-song-small2-icon"></i>
-          </button>
+          </div>
 
           <div class="name-song-aritst">
             <h5 class="song-title">Winston</h5>
             <p class="artist-name">El Double O</p>
           </div>
         </div>
-        <div class="r_side">
-          <time class="song-duration">3:53</time>
-          <a class="anchor-dots" aria-label="Check out more info" href="#"
-            ><i class="bx bx-dots-horizontal-rounded three-dots-song"></i
-          ></a>
+        <!-- visible div with time and dots id="r-side-visible" -->
+        <div class="r_side visible-info">
+          <time class="song-duration"></time>
+          <button class="btn-3-dots-visible" aria-label="open song info">
+            <i class="bx bx-dots-horizontal-rounded anchor-dots"></i>
+          </button>
+        </div>
+        <!-- hidden div with dots and heart  id="r-side-hidden"-->
+        <div class="r_side | hidden-info">
+          <button
+            class="heart-btn-in-song"
+            aria-label="add song to your favorite"
+          >
+            <i class="bx bxs-heart heart-in-song"></i>
+          </button>
+
+          <button class="btn-3-dots-hidden" aria-label="open song info">
+            <i
+              class="bx bx-dots-horizontal-rounded anchor-dots hidden-dots"
+            ></i>
+          </button>
         </div>
       </div>
     </section>
