@@ -57,7 +57,7 @@ html {
     width: 100vw;
     height: 40rem;
     filter: blur(2rem);
-    opacity: 0.4;
+    opacity: 0.5;
     z-index: -2;
 }
 
@@ -1124,9 +1124,9 @@ footer {
     .album-artist-name {
         font-size: 1.4rem;
     }
-    #fig-album-released {
+    /*  #fig-album-released {
         color: $black-700;
-    }
+    } */
     //section 2
     .section2 {
         background-color: $black-900;
