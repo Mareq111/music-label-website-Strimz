@@ -2,10 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
 
-/* //colors variety import from  separate color stylesheet
-@import "/css/ColorsVariety.css";
- */
- $white: #f2f2f2;
+//colors variety import from  separate color stylesheet
+/* @import "/css/ColorsVariety.css"; */
+
+$white: #f2f2f2;
 $red-500: #cd3737;
 $red-700: #b61a1a;
 $grey-500: #dcdcdc;
@@ -58,7 +58,8 @@ html {
     position: absolute;
     width: 100vw;
     height: 40rem;
-    filter: blur(0.6rem);
+    filter: blur(2rem);
+    opacity: 0.4;
     z-index: -2;
 }
 
@@ -236,6 +237,7 @@ html {
     font-size: 1.6rem;
     font-weight: 800;
     padding-bottom: 0.5rem;
+    /* border-bottom: 0.1rem solid $grey-700 *; */
     width: 100%;
 }
 
@@ -272,17 +274,19 @@ html {
 }
 
 .name-artist-in-p {
-    color: $amulet-green-400;
+    color: $eastern-blue-500;
 }
 
 .p-in-details {
     padding: 1rem;
     border-radius: 1%;
+
     background-color: $black-600;
     box-shadow: $shadow-black;
 }
 
 // section 2
+
 .section2 {
     display: flex;
     flex-direction: column;
@@ -710,13 +714,13 @@ html {
         transition: box-shadow 0.3s ease;
     }
 
-    //1 album flashback deluxe
-    &:hover #album-cover-flashback-deluxe {
-        box-shadow: 0 0 8px $shadow-flashback-deluxe;
+    //1 album flashback normal main
+    &:hover #album-cover-flashback-normal {
+        box-shadow: 0 0 8px $shadow-flashback-normal;
     }
-    &:hover #dots-separator-album-1 {
+    &:hover #dots-separator-album-3 {
         transition-delay: 300ms;
-        color: $color-flashback-deluxe;
+        color: $color-flashback-normal;
     }
 
     // 2 album arena of autumnn
@@ -728,11 +732,12 @@ html {
         color: $color-arena-of-autumnn;
     }
 
-    // 3 album galaktkitty
+    // 3 album  galaktkitty
+
     &:hover #album-cover-galaktkitty {
         box-shadow: 0 0 8px $shadow-galaktkitty;
     }
-    &:hover #dots-separator-album-3 {
+    &:hover #dots-separator-album-1 {
         transition-delay: 300ms;
         color: $color-galaktkitty;
     }
@@ -965,7 +970,7 @@ footer {
         color: $amulet-green-400;
     }
 }
-// animations
+// animation
 @keyframes loading {
     0% {
         transform: rotate(0deg);
@@ -977,32 +982,6 @@ footer {
         transform: rotate(360deg);
     }
 }
-// Animation for heart hover focus in song
-@keyframes heart-hover-focus {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-// Animation for heart click in song
-@keyframes heart-click {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(0.8);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 //media queries for 375px screens
 
 @media (min-width: 375px) {
@@ -1077,19 +1056,10 @@ footer {
     .artist-name {
         font-size: 1rem;
     }
-    //! test czy ten display pomaga a chyba nie
     .song-duration {
-        /*   display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; */
         font-size: 1rem;
     }
     .anchor-dots {
-        font-size: 1.6rem;
-    }
-    /* .heart-in-song */
-    .heart-btn-in-song {
         font-size: 1.6rem;
     }
     //section 4 other albums might you like
@@ -1310,14 +1280,6 @@ footer {
     .list-time-songs {
         padding: 2rem;
     }
-    // hover for heart in div song
-    /*  .heart-in-song */
-    .heart-btn-in-song {
-        &:hover {
-            animation: heart-hover-focus 0.3s ease-in-out;
-            color: $red-500;
-        }
-    }
     //section 4
 
     .section4 {
@@ -1355,9 +1317,21 @@ footer {
     .nav-a-footer-social {
         padding: 0 1rem;
     }
-}
 
-//media for 1440 screens
+    /*     #bottom-footer-social-1,
+#bottom-footer-social-2,
+#bottom-footer-social-3,
+#bottom-footer-social-4,
+#bottom-footer-social-5,
+#bottom-footer-social-6,
+#bottom-footer-social-7,
+#bottom-footer-social-8,
+#bottom-footer-social-9 {
+    font-size: 2rem;
+    color: $grey-500;
+    cursor: pointer;
+} */
+}
 
 @media (min-width: 1440px) {
     //nav top

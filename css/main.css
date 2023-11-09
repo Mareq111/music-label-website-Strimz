@@ -19,7 +19,8 @@ html {
   position: absolute;
   width: 100vw;
   height: 40rem;
-  filter: blur(0.6rem);
+  filter: blur(2rem);
+  opacity: 0.4;
   z-index: -2;
 }
 

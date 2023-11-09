@@ -8,6 +8,7 @@
 }
 
 //colors variety
+
 $white: #f2f2f2;
 $red-500: #cd3737;
 $red-700: #b61a1a;
@@ -41,7 +42,6 @@ $color-king-of-for-and-muds: rgba(181, 133, 94, 1);
 $shadow-green: rgba(133, 171, 123, 0.4);
 $shadow-black: rgba(30, 29, 29, 0.6);
 $shadow-black-transparent: rgba(0, 0, 0, 0.8);
-
 //styling
 
 html {
@@ -56,7 +56,8 @@ html {
     position: absolute;
     width: 100vw;
     height: 40rem;
-    filter: blur(0.6rem);
+    filter: blur(2rem);
+    opacity: 0.4;
     z-index: -2;
 }
 
@@ -233,7 +234,7 @@ html {
     font-size: 1.6rem;
     font-weight: 800;
     padding-bottom: 0.5rem;
-    /* border-bottom: 0.1rem solid $grey-700 *; */
+
     width: 100%;
 }
 
@@ -476,7 +477,6 @@ html {
         display: none;
     }
 }
-
 //! if is clicked song Div this 'animations' is add & after song is removed
 .song-clicked {
     cursor: pointer;
@@ -547,6 +547,7 @@ html {
         }
     }
 }
+
 .song-title {
     font-weight: 600;
     font-size: 1rem;
@@ -641,7 +642,6 @@ html {
     padding: 0;
     z-index: 1;
 }
-
 //section 4 other albums might you like
 
 .section4 {
@@ -722,22 +722,22 @@ html {
         color: $color-flashback-deluxe;
     }
 
-    // 3 album galaktkitty
-    &:hover #album-cover-galaktkitty {
-        box-shadow: 0 0 8px $shadow-galaktkitty;
+    // 3 album arena of autumnn
+    &:hover #album-cover-arena-of-autumnn {
+        box-shadow: 0 0 8px $shadow-arena-of-autumnn;
     }
     &:hover #dots-separator-album-2 {
         transition-delay: 300ms;
-        color: $color-galaktkitty;
+        color: $color-arena-of-autumnn;
     }
 
-    //4 album king of
-    &:hover #album-cover-king-of {
-        box-shadow: 0 0 8px $shadow-king-of-for-and-muds;
+    //4 album Galaktkitty
+    &:hover #album-cover-galaktkitty {
+        box-shadow: 0 0 8px $shadow-galaktkitty;
     }
     &:hover #dots-separator-album-4 {
         transition-delay: 300ms;
-        color: $color-king-of-for-and-muds;
+        color: $color-galaktkitty;
     }
 }
 
@@ -1122,9 +1122,6 @@ footer {
     }
     .album-artist-name {
         font-size: 1.4rem;
-    }
-    #fig-album-released {
-        color: $black-700;
     }
     //section 2
     .section2 {

@@ -8,7 +8,6 @@
 }
 
 //colors variety
-
 $white: #f2f2f2;
 $red-500: #cd3737;
 $red-700: #b61a1a;
@@ -56,7 +55,8 @@ html {
     position: absolute;
     width: 100vw;
     height: 40rem;
-    filter: blur(0.6rem);
+    filter: blur(2rem);
+    opacity: 0.4;
     z-index: -2;
 }
 
@@ -132,6 +132,7 @@ html {
     color: $amulet-green-400;
     transition: 0.1s ease-in-out;
     &:hover {
+        /* text-decoration: underline 0.2rem $eastern-blue-500; */
         transform: scale(1.05);
         color: $grey-600;
     }
@@ -233,7 +234,7 @@ html {
     font-size: 1.6rem;
     font-weight: 800;
     padding-bottom: 0.5rem;
-
+    /* border-bottom: 0.1rem solid $grey-700 *; */
     width: 100%;
 }
 
@@ -331,7 +332,6 @@ html {
 }
 
 //section 3 tracklist
-
 .section3 {
     display: flex;
     flex-direction: column;
@@ -351,7 +351,6 @@ html {
     padding: 1rem;
     gap: 1rem;
 }
-
 //! The big btn for starting to listen to music at the first one with an animation after click
 
 .play-btn {
@@ -476,6 +475,7 @@ html {
         display: none;
     }
 }
+
 //! if is clicked song Div this 'animations' is add & after song is removed
 .song-clicked {
     cursor: pointer;
@@ -504,7 +504,6 @@ html {
         animation: loading 3s linear infinite;
     }
 }
-
 //! small btn for any song  with animation after click
 .play-btn-song {
     padding: 0;
@@ -589,7 +588,6 @@ html {
         color: $eastern-blue-500;
     }
 }
-
 .r_side {
     display: flex;
     justify-content: center;
@@ -704,15 +702,8 @@ html {
     .album-cover {
         transition: box-shadow 0.3s ease;
     }
-    // 1 album flashback normal
-    &:hover #album-cover-flashback-normal {
-        box-shadow: 0 0 8px $shadow-flashback-normal;
-    }
-    &:hover #dots-separator-album-3 {
-        transition-delay: 300ms;
-        color: $color-flashback-normal;
-    }
-    //2 album flashback deluxe
+
+    //1 album flashback deluxe
     &:hover #album-cover-flashback-deluxe {
         box-shadow: 0 0 8px $shadow-flashback-deluxe;
     }
@@ -720,7 +711,14 @@ html {
         transition-delay: 300ms;
         color: $color-flashback-deluxe;
     }
-
+    // 2 album flashback normal
+    &:hover #album-cover-flashback-normal {
+        box-shadow: 0 0 8px $shadow-flashback-normal;
+    }
+    &:hover #dots-separator-album-3 {
+        transition-delay: 300ms;
+        color: $color-flashback-normal;
+    }
     // 3 album arena of autumnn
     &:hover #album-cover-arena-of-autumnn {
         box-shadow: 0 0 8px $shadow-arena-of-autumnn;
@@ -730,13 +728,13 @@ html {
         color: $color-arena-of-autumnn;
     }
 
-    //4 album Galaktkitty
-    &:hover #album-cover-galaktkitty {
-        box-shadow: 0 0 8px $shadow-galaktkitty;
+    //4 album king of
+    &:hover #album-cover-king-of {
+        box-shadow: 0 0 8px $shadow-king-of-for-and-muds;
     }
     &:hover #dots-separator-album-4 {
         transition-delay: 300ms;
-        color: $color-galaktkitty;
+        color: $color-king-of-for-and-muds;
     }
 }
 
