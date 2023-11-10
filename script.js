@@ -167,7 +167,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const totalSec = Math.floor(totalDurationInSeconds % 60);
 
     const displayAllTime =
-      totalMin < 1 ? `${totalSec} seconds` : `${totalMin} minutes`;
+      totalMin === 1
+        ? `${totalMin} minute`
+        : totalMin < 1
+        ? `${totalSec} seconds`
+        : `${totalMin} minutes`;
 
     const allSongsDuration = document.getElementById("all-songs-duration");
     allSongsDuration.textContent = displayAllTime;
@@ -180,7 +184,8 @@ const anySong = document.querySelectorAll(".song");
 const showQuantity = document.getElementById("all-songs-quantity");
 const allAnySongs = anySong.length;
 
-showQuantity.textContent = `${allAnySongs} songs `;
+showQuantity.textContent =
+  allAnySongs === 1 ? `${allAnySongs} song` : `${allAnySongs} songs`;
 
 //! 7 when you click on the visible dots, the visibility of the information changes
 //! 8 heart click which added song to favorite in any song
