@@ -5,7 +5,7 @@
 /* //colors variety import from  separate color stylesheet
 @import "/css/ColorsVariety.css";
  */
- $white: #f2f2f2;
+$white: #f2f2f2;
 $red-500: #cd3737;
 $red-700: #b61a1a;
 $grey-500: #dcdcdc;
@@ -19,6 +19,9 @@ $amulet-green-400: #85ab7b;
 $ming-blue-600: #367983;
 
 //mini- albums shadows and more
+$shadow-wave: rgba(109, 13, 113, 0.5);
+$color-wave: rgba(53, 17, 127, 1);
+
 $shadow-flashback-normal: rgba(211, 142, 122, 0.5);
 $color-flashback-normal: rgba(235, 152, 120, 1);
 
@@ -737,8 +740,16 @@ html {
         transition-delay: 300ms;
         color: $color-galaktkitty;
     }
+    // 4 album wave
+    &:hover #album-cover-wave {
+        box-shadow: 0 0 8px $shadow-wave;
+    }
+    &:hover #dots-separator-album-5 {
+        transition-delay: 300ms;
+        color: $color-wave;
+    }
 
-    //4 album king of
+    //5 album king of
     &:hover #album-cover-king-of {
         box-shadow: 0 0 8px $shadow-king-of-for-and-muds;
     }

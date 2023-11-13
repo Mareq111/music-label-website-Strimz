@@ -680,6 +680,13 @@ html {
   transition-delay: 300ms;
   color: rgb(175, 160, 212);
 }
+.album:hover #album-cover-wave {
+  box-shadow: 0 0 8px rgba(109, 13, 113, 0.5);
+}
+.album:hover #dots-separator-album-5 {
+  transition-delay: 300ms;
+  color: rgb(53, 17, 127);
+}
 .album:hover #album-cover-king-of {
   box-shadow: 0 0 8px rgba(181, 133, 94, 0.5);
 }

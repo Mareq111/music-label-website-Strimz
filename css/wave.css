@@ -627,6 +627,7 @@ html {
   height: auto;
   min-height: 20rem;
   gap: 2rem;
+  z-index: 1;
 }
 
 .album-cover {
@@ -658,6 +659,13 @@ html {
 
 .album .album-cover {
   transition: box-shadow 0.3s ease;
+}
+.album:hover #album-cover-flashback-normal {
+  box-shadow: 0 0 8px rgba(211, 142, 122, 0.5);
+}
+.album:hover #dots-separator-album-5 {
+  transition-delay: 300ms;
+  color: rgb(235, 152, 120);
 }
 .album:hover #album-cover-flashback-deluxe {
   box-shadow: 0 0 8px rgba(210, 146, 164, 0.5);
