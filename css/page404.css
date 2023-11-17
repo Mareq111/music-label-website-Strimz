@@ -214,7 +214,7 @@ html {
   cursor: pointer;
 }
 .btn-return .return-link {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
   color: #120f10;
   font-size: 1rem;
