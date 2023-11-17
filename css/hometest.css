@@ -292,7 +292,7 @@ html {
   font-size: 1.4rem;
   text-transform: uppercase;
   width: 100%;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
   font-weight: 700;
 }
 
@@ -307,6 +307,7 @@ html {
 .link-to-all-collection {
   text-decoration: none;
   color: #f2f2f2;
+  transition: 0.1s ease-in-out;
 }
 
 .albums-chooser,
@@ -557,6 +558,112 @@ html {
   height: 0.05rem;
   opacity: 0.1;
   margin-top: 2rem;
+}
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem 0 1rem;
+  background-image: url("/src/img/others/Project Capture.jpg");
+  background-repeat: repeat-x;
+  background-position: 50% 0%;
+  background-size: cover;
+}
+
+.div-section5-opacity-bg {
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+  border-radius: 2%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.link-to-shop {
+  text-decoration: none;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+#h15-section5 {
+  font-size: 1.4rem;
+  /*   line-height: 2.8rem; */
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: 800;
+  color: #f2f2f2;
+  width: auto;
+  transition: 0.2s ease-in-out;
+}
+#h15-section5:hover,
+#h15-section5 :focus,
+#h15-section5 :active {
+  color: #26acac;
+}
+
+.visit-shop-and-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.shop-logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+#store-icon {
+  font-size: 2rem;
+  /* color: $eastern-blue-500; */
+  color: #f2f2f2;
+}
+
+.div_for_p-section5 {
+  margin-top: 1rem;
+}
+
+.p_section5 {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  /* line-height: 2rem;
+  font-size: 1rem; */
+  font-weight: 500;
+}
+
+.btn-shop-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.btn-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #120f10;
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  width: 14rem;
+  height: auto;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.1s ease-in-out;
+}
+.btn-shop:hover,
+.btn-shop :focus,
+.btn-shop :active {
+  transform: scale(1.1);
+  background-color: #dcdcdc;
 }
 
 .hr-line-footer {
