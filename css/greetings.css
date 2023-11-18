@@ -199,33 +199,37 @@ html {
   font-size: 1.2rem;
 }
 
-.btn-return {
+.btn-return-div {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f2;
   width: 100%;
-  height: 3rem;
-  padding: 1rem 0.5rem;
-  outline: none;
-  border: none;
+  height: auto;
+  background-color: transparent;
   margin-top: 0.5rem;
-  cursor: pointer;
 }
-.btn-return .return-link {
-  /* text-transform: uppercase; */
+
+.btn-return-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  color: #120f10;
+  padding: 0.5rem 1rem;
+  background-color: #3e3c3c;
+  color: #f2f2f2;
+  width: 100%;
+  height: auto;
   font-size: 1rem;
   font-weight: 700;
-  width: 100%;
-  height: 100%;
+  transition: 0.1s ease-in-out;
+  padding: 1rem 0.5rem;
 }
-.btn-return:hover,
-.btn-return :focus,
-.btn-return :active {
-  background-color: #dcdcdc;
+.btn-return-link:hover,
+.btn-return-link :focus,
+.btn-return-link :active {
+  outline: none;
+  background-color: #8d8c8c;
+  color: #120f10;
 }
 
 .hr-line-footer {
@@ -473,12 +477,12 @@ footer {
     margin-top: 0.5rem;
     font-size: 1.4rem;
   }
-  .btn-return {
+  .btn-return-div {
     height: 3.4rem;
     margin-top: 1rem;
     width: 90%;
   }
-  .return-link {
+  .btn-return-link {
     font-size: 1.2rem;
   }
   footer {
@@ -531,12 +535,12 @@ footer {
     margin-top: 0.5rem;
     font-size: 1.4rem;
   }
-  .btn-return {
+  .btn-return-div {
     height: 3.4rem;
     margin-top: 1rem;
     width: 80%;
   }
-  .return-link {
+  .btn-return-link {
     font-size: 1.2rem;
   }
 }
@@ -620,12 +624,12 @@ footer {
     margin-top: 0.5rem;
     font-size: 1.4rem;
   }
-  .btn-return {
+  .btn-return-div {
     height: 3.4rem;
     margin-top: 1rem;
     width: 70%;
   }
-  .return-link {
+  .btn-return-link {
     font-size: 1.2rem;
   }
   .footer-top {
@@ -699,12 +703,12 @@ footer {
     margin-top: 1rem;
     font-size: 1.6rem;
   }
-  .btn-return {
+  .btn-return-div {
     height: 3.4rem;
     margin-top: 1.5rem;
     width: 60%;
   }
-  .return-link {
+  .btn-return-link {
     font-size: 1.4rem;
   }
   .footer-top {

@@ -6,6 +6,7 @@
 @import "/css/ColorsVariety.css";
  */
 $white: #f2f2f2;
+$red-300: #f14343;
 $red-500: #cd3737;
 $red-700: #b61a1a;
 $grey-500: #dcdcdc;
@@ -301,9 +302,9 @@ html {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: $black-900;
     padding: 0.5rem 1rem;
-    background-color: $white;
+    background-color: $grey-700;
+    color: $white;
     width: 14rem;
     height: auto;
     margin: 1rem 0;
@@ -314,8 +315,10 @@ html {
     &:hover,
     :focus,
     :active {
+        outline: none;
         transform: scale(1.1);
-        background-color: $grey-500;
+        background-color: $grey-600;
+        color: $black-900;
     }
 }
 .hr-line-to-sections {
@@ -416,7 +419,6 @@ html {
     height: auto;
     margin-top: auto;
 }
-
 
 .date-small {
     font-weight: 400;
@@ -540,22 +542,15 @@ html {
 
 //btn for view collection
 //btn
-.btn-view-collection-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-}
+
 .btn-view-collection {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: $black-900;
     padding: 0.5rem 1rem;
-    background-color: $white;
+    background-color: $grey-700;
+    color: $white;
     width: 14rem;
     height: auto;
     margin: 1rem 0;
@@ -566,10 +561,14 @@ html {
     &:hover,
     :focus,
     :active {
+        outline: none;
         transform: scale(1.1);
-        background-color: $grey-500;
+        background-color: $grey-600;
+        color: $black-900;
     }
 }
+
+//
 
 //section3 music app chooser
 
@@ -705,6 +704,9 @@ html {
 }
 //btn for check out shop
 //btn
+
+//
+
 .btn-shop-div {
     display: flex;
     justify-content: center;
@@ -713,6 +715,7 @@ html {
     height: auto;
     background-color: transparent;
 }
+
 .btn-shop {
     display: flex;
     justify-content: center;
@@ -737,7 +740,6 @@ html {
 }
 
 //section 6 tour
-//section5 shop
 
 .section6 {
     display: flex;
@@ -759,18 +761,9 @@ html {
     flex-direction: column;
     gap: 0.5rem;
 }
-.title-name-tour {
-    font-size: 1rem;
-}
-
-.name-tag-red {
-    color: $red-500; //!zmien na inny
-    font-weight: 800;
-}
 
 #h16-section6 {
     font-size: 1.4rem;
-    /*   line-height: 2.8rem; */
     text-transform: uppercase;
     width: 100%;
     font-weight: 800;
@@ -778,15 +771,112 @@ html {
     width: auto;
     transition: 0.2s ease-in-out;
     margin-bottom: 1rem;
-
     &:hover,
     :focus,
     :active {
         color: $eastern-blue-500;
     }
 }
+
+.title-name-tour {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.name-tag-red {
+    color: $red-300;
+    font-weight: 800;
+}
+
 .div_for_p-section6 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+}
+.p_section5-mini-description {
+    font-size: 0.8rem;
+    color: $grey-600;
+}
+.p_section5 {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+//btn 1
+.two-btn-tour-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.btn-tour-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.btn-tour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: $grey-700;
+    color: $white;
+    width: 14rem;
+    height: auto;
+   /*  margin: 1rem 0 */;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.1s ease-in-out;
+
+    &:hover,
+    :focus,
+    :active {
+        outline: none;
+        transform: scale(1.1);
+        background-color: $grey-600;
+        color: $black-900;
+    }
+}
+//2 btn album info
+.btn-album-info-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.btn-album-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 0.1rem solid $grey-700;
+    color: $white;
+    width: 14rem;
+    height: auto;
+    /* margin: 1rem 0; */
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.1s ease-in-out;
+
+    &:hover,
+    :focus,
+    :active {
+        outline: none;
+        transform: scale(1.1);
+        background-color: $grey-600;
+        color: $black-900;
+    }
 }
 
 // footer

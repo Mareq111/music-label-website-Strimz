@@ -251,9 +251,9 @@ html {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #120f10;
   padding: 0.5rem 1rem;
-  background-color: #f2f2f2;
+  background-color: #3e3c3c;
+  color: #f2f2f2;
   width: 14rem;
   height: auto;
   margin: 1rem 0;
@@ -264,8 +264,10 @@ html {
 .btn-discover:hover,
 .btn-discover :focus,
 .btn-discover :active {
+  outline: none;
   transform: scale(1.1);
-  background-color: #dcdcdc;
+  background-color: #8d8c8c;
+  color: #120f10;
 }
 
 .hr-line-to-sections {
@@ -463,23 +465,14 @@ html {
   color: rgb(98, 45, 95);
 }
 
-.btn-view-collection-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: transparent;
-}
-
 .btn-view-collection {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #120f10;
   padding: 0.5rem 1rem;
-  background-color: #f2f2f2;
+  background-color: #3e3c3c;
+  color: #f2f2f2;
   width: 14rem;
   height: auto;
   margin: 1rem 0;
@@ -490,8 +483,10 @@ html {
 .btn-view-collection:hover,
 .btn-view-collection :focus,
 .btn-view-collection :active {
+  outline: none;
   transform: scale(1.1);
-  background-color: #dcdcdc;
+  background-color: #8d8c8c;
+  color: #120f10;
 }
 
 .section3 {
@@ -691,18 +686,8 @@ html {
   gap: 0.5rem;
 }
 
-.title-name-tour {
-  font-size: 1rem;
-}
-
-.name-tag-red {
-  color: #cd3737;
-  font-weight: 800;
-}
-
 #h16-section6 {
   font-size: 1.4rem;
-  /*   line-height: 2.8rem; */
   text-transform: uppercase;
   width: 100%;
   font-weight: 800;
@@ -717,8 +702,104 @@ html {
   color: #26acac;
 }
 
+.title-name-tour {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.name-tag-red {
+  color: #f14343;
+  font-weight: 800;
+}
+
 .div_for_p-section6 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.p_section5-mini-description {
+  font-size: 0.8rem;
+  color: #8d8c8c;
+}
+
+.p_section5 {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.two-btn-tour-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.btn-tour-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.btn-tour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #3e3c3c;
+  color: #f2f2f2;
+  width: 14rem;
+  height: auto;
+  /*  margin: 1rem 0 */
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.1s ease-in-out;
+}
+.btn-tour:hover,
+.btn-tour :focus,
+.btn-tour :active {
+  outline: none;
+  transform: scale(1.1);
+  background-color: #8d8c8c;
+  color: #120f10;
+}
+
+.btn-album-info-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.btn-album-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 0.1rem solid #3e3c3c;
+  color: #f2f2f2;
+  width: 14rem;
+  height: auto;
+  /* margin: 1rem 0; */
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.1s ease-in-out;
+}
+.btn-album-info:hover,
+.btn-album-info :focus,
+.btn-album-info :active {
+  outline: none;
+  transform: scale(1.1);
+  background-color: #8d8c8c;
+  color: #120f10;
 }
 
 .hr-line-footer {

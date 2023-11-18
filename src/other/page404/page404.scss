@@ -62,8 +62,6 @@ html {
     opacity: 0.4;
     z-index: -2;
     background-size: cover;
-    
-    
 }
 
 .top-content {
@@ -222,7 +220,6 @@ html {
     background-color: $shadow-black-transparent;
     padding: 2rem 1rem;
     opacity: 0.9;
-
 }
 #h5-section4 {
     font-size: 1.8rem;
@@ -235,35 +232,42 @@ html {
     padding: 0;
     font-size: 1.2rem;
 }
-
-.btn-return {
+//btn
+.btn-return-div {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: $white;
     width: 100%;
-    height: 3rem;
-    padding: 1rem 0.5rem;
-    outline: none;
-    border: none;
+    height: auto;
+    background-color: transparent;
     margin-top: 0.5rem;
-    cursor: pointer;
-   
+    
+}
 
-.return-link {
-    /* text-transform: uppercase; */
+.btn-return-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    color: $black-900;
+    padding: 0.5rem 1rem;
+    background-color: $grey-700;
+    color: $white;
+    width: 100%;
+    height: auto;
     font-size: 1rem;
     font-weight: 700;
-    width: 100%;
-    height: 100%;
+    transition: 0.1s ease-in-out;
+    padding: 1rem 0.5rem;
+
+    &:hover,
+    :focus,
+    :active {
+        outline: none;
+        background-color: $grey-600;
+        color: $black-900;
+    }
 }
-&:hover, :focus, :active {
-    background-color: $grey-500;
-}
-}
+
 
 // footer
 
@@ -508,12 +512,12 @@ footer {
         margin-top: 0.5rem;
         font-size: 1.4rem;
     }
-    .btn-return {
+    .btn-return-div {
         height: 3.4rem;
         margin-top: 1rem;
         width: 90%;
     }
-    .return-link {
+    .btn-return-link {
         font-size: 1.2rem;
     }
 
@@ -526,7 +530,7 @@ footer {
         font-size: 1.6rem;
     }
     //footer boottom
- 
+
     #bottom-footer-social-1,
     #bottom-footer-social-2,
     #bottom-footer-social-3,
@@ -551,7 +555,6 @@ footer {
 // media q for 768px screens
 
 @media (min-width: 768px) {
-
     //toggle menu
     .toggle-menu {
         width: 60%;
@@ -559,14 +562,12 @@ footer {
     }
 
     //section 4
-        #background-cover {
-            transform: translateY(-2rem);
-            height: auto;
-
-        }
+    #background-cover {
+        transform: translateY(-2rem);
+        height: auto;
+    }
     .section4 {
         padding: 14rem 2rem 4rem 2rem;
-       
     }
     .div-info-404 {
         padding: 3rem 2rem;
@@ -579,15 +580,14 @@ footer {
         margin-top: 0.5rem;
         font-size: 1.4rem;
     }
-    .btn-return {
+    .btn-return-div {
         height: 3.4rem;
         margin-top: 1rem;
         width: 80%;
     }
-    .return-link {
+    .btn-return-link {
         font-size: 1.2rem;
     }
-  
 }
 
 //media q for 1024px
@@ -657,12 +657,11 @@ footer {
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0);
-        padding:  0 2rem;
-      }
-//section4
+        padding: 0 2rem;
+    }
+    //section4
     .section4 {
         padding: 14rem 4rem 4rem 4rem;
-       
     }
     .div-info-404 {
         padding: 4rem 3rem;
@@ -675,12 +674,12 @@ footer {
         margin-top: 0.5rem;
         font-size: 1.4rem;
     }
-    .btn-return {
+    .btn-return-div {
         height: 3.4rem;
         margin-top: 1rem;
         width: 70%;
     }
-    .return-link {
+    .btn-return-link {
         font-size: 1.2rem;
     }
     //footer'top
@@ -708,7 +707,6 @@ footer {
     //footer bottom
     .footer-bottom {
         background-color: $black-900;
-        
     }
     .footer-p-and-nav {
         padding-top: 2rem;
@@ -754,10 +752,9 @@ footer {
 
     #background-cover {
         max-height: 80rem;
-
     }
     //section4
-  
+
     .div-info-404 {
         padding: 4rem 3rem;
         width: 60%;
@@ -769,12 +766,12 @@ footer {
         margin-top: 1rem;
         font-size: 1.6rem;
     }
-    .btn-return {
+    .btn-return-div {
         height: 3.4rem;
         margin-top: 1.5rem;
         width: 60%;
     }
-    .return-link {
+    .btn-return-link {
         font-size: 1.4rem;
     }
     //footer'top
