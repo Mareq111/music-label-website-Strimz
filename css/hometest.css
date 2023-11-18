@@ -328,8 +328,8 @@ html {
 .single-cover {
   width: 7.5rem;
   height: auto;
-  min-height: 7rem;
-  min-width: 7rem;
+  min-height: 7.5rem;
+  min-width: 7.5rem;
 }
 
 .album,
@@ -341,13 +341,22 @@ html {
   width: 7.5rem;
   height: auto;
   min-height: 13rem;
-  gap: 0.5rem;
   transition: 0.1s ease-in-out;
   cursor: pointer;
 }
 .album:hover,
 .single:hover {
   transform: scale(1.1);
+}
+
+.song-title-small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: wrap;
+  width: 100%;
+  margin-top: 0.5rem;
 }
 
 .content-small {
@@ -359,15 +368,6 @@ html {
   width: 100%;
   height: auto;
   margin-top: auto;
-}
-
-.song-title-small {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-weight: 600;
-  font-size: 0.9rem;
-  white-space: wrap;
-  width: 100%;
 }
 
 .date-small {

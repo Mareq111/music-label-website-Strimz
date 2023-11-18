@@ -1,0 +1,110 @@
+.album-cover,
+.single-cover {
+    width: 7.5rem;
+    height: auto;
+    min-height: 7.5rem;
+    min-width: 7.5rem;
+}
+.album,
+.single {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 7.5rem;
+    height: auto;
+    min-height: 13rem;
+
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.song-title-small {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: wrap;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.content-small {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.2rem;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+
+
+.date-small {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.dots-separator-album {
+    color: $eastern-blue-500;
+    font-size: 1.2rem;
+}
+
+// albumowe
+.album-cover {
+    width: 14rem;
+    height: auto;
+    min-height: 14rem;
+    min-width: 14rem;
+}
+.album {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 14rem;
+    min-height: 21rem;
+    height: auto;
+    min-height: 21rem;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.song-title-small {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 1.2rem;
+    white-space: wrap;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.content-small {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.2rem;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+
+
+.date-small {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.dots-separator-album {
+    color: $eastern-blue-500;
+    font-size: 1.4rem;
+}

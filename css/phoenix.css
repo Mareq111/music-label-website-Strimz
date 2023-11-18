@@ -639,17 +639,49 @@ html {
 
 .album {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   width: 14rem;
+  min-height: 21rem;
   height: auto;
-  gap: 0.5rem;
+  min-height: 21rem;
   transition: 0.1s ease-in-out;
   cursor: pointer;
 }
 .album:hover {
   transform: scale(1.1);
+}
+
+.song-title-small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 1.2rem;
+  white-space: wrap;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.content-small {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+}
+
+.date-small {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.dots-separator-album {
+  color: #26acac;
+  font-size: 1.4rem;
 }
 
 .album-a-next-page {
@@ -687,34 +719,6 @@ html {
 .album:hover #dots-separator-album-4 {
   transition-delay: 300ms;
   color: rgb(181, 133, 94);
-}
-
-.content-small {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.2rem;
-  width: 100%;
-  height: auto;
-  margin-top: auto;
-}
-
-.song-title-small {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.date-small {
-  font-weight: 400;
-  font-size: 0.8rem;
-}
-
-.dots-separator-album {
-  color: #26acac;
-  font-size: 1.4rem;
 }
 
 .btn-view-div {
