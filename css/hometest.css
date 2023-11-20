@@ -497,7 +497,7 @@ html {
   padding: 0 1rem;
 }
 
-#h7-section3 {
+.h2-section3 {
   font-size: 1.4rem;
   text-transform: uppercase;
   width: 100%;
@@ -584,7 +584,7 @@ html {
   cursor: pointer;
 }
 
-#h15-section5 {
+.h-section5 {
   font-size: 1.4rem;
   /*   line-height: 2.8rem; */
   text-transform: uppercase;
@@ -594,9 +594,9 @@ html {
   width: auto;
   transition: 0.2s ease-in-out;
 }
-#h15-section5:hover,
-#h15-section5 :focus,
-#h15-section5 :active {
+.h-section5:hover,
+.h-section5 :focus,
+.h-section5 :active {
   color: #26acac;
 }
 
@@ -686,7 +686,7 @@ html {
   gap: 0.5rem;
 }
 
-#h16-section6 {
+.h-section6 {
   font-size: 1.4rem;
   text-transform: uppercase;
   width: 100%;
@@ -696,9 +696,9 @@ html {
   transition: 0.2s ease-in-out;
   margin-bottom: 1rem;
 }
-#h16-section6:hover,
-#h16-section6 :focus,
-#h16-section6 :active {
+.h-section6:hover,
+.h-section6 :focus,
+.h-section6 :active {
   color: #26acac;
 }
 
