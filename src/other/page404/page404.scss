@@ -203,7 +203,9 @@ html {
 #bottom-li-nav-about {
     color: $amulet-green-400;
 }
-
+.nav-a-social {
+    display: none;
+}
 //section 404
 
 .section4 {
@@ -631,6 +633,7 @@ footer {
     }
 
     .nav-a-social {
+        display: block;
         text-decoration: none;
         color: $white;
         margin: 0.2rem 0;

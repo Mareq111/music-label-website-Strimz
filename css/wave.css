@@ -169,6 +169,10 @@ html {
   color: #85ab7b;
 }
 
+.nav-a-social {
+  display: none;
+}
+
 .section1 {
   display: flex;
   flex-direction: column;
@@ -1168,6 +1172,7 @@ footer {
     position: fixed;
   }
   .nav-a-social {
+    display: block;
     text-decoration: none;
     color: #f2f2f2;
     margin: 0.2rem 0;

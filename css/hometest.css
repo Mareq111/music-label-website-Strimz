@@ -169,6 +169,10 @@ html {
   color: #85ab7b;
 }
 
+.nav-a-social {
+  display: none;
+}
+
 .section-1 {
   display: flex;
   flex-direction: column;
@@ -177,7 +181,7 @@ html {
   width: 100%;
   height: auto;
   padding: 4rem 0.5rem 0 0.5rem;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .section-1-card {
@@ -191,6 +195,12 @@ html {
   z-index: 1;
   background-color: rgba(30, 29, 29, 0.6);
   border-radius: 2.5%;
+}
+
+.link-to-story {
+  text-decoration: none;
+  color: #f2f2f2;
+  cursor: pointer;
 }
 
 .name-and-logo {
@@ -209,6 +219,11 @@ html {
   font-weight: 800;
   width: auto;
   font-size: 2.1rem;
+}
+.h1-main-name:hover,
+.h1-main-name :focus,
+.h1-main-name :active {
+  color: #26acac;
 }
 
 .img-square-section {
@@ -499,6 +514,15 @@ html {
   color: rgb(98, 45, 95);
 }
 
+.btn-view-collection-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
 .btn-view-collection {
   display: flex;
   justify-content: center;
@@ -533,10 +557,36 @@ html {
 
 .h2-section3 {
   font-size: 1.4rem;
+  line-height: 2.8rem;
   text-transform: uppercase;
   width: 100%;
-  padding-bottom: 2rem;
+  /*  padding-bottom: 2rem; */
   font-weight: 800;
+}
+
+.dot-and-introduction-chooser {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  gap: 0.5rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.p_introduction-chooser {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #8d8c8c;
+}
+
+#dot-introduction-chooser {
+  color: #26acac;
+  font-size: 0.6rem;
 }
 
 .choose-player {
@@ -561,7 +611,8 @@ html {
 #box-5 {
   color: #f2f2f2;
   padding: 0;
-  font-size: 1.5rem;
+  /*  font-size: 1.5rem; */
+  font-size: 2rem;
   transition: 0.1s ease-in-out;
   cursor: pointer;
 }
@@ -620,7 +671,7 @@ html {
 
 .h-section5 {
   font-size: 1.4rem;
-  /*   line-height: 2.8rem; */
+  line-height: 2.8rem;
   text-transform: uppercase;
   width: 100%;
   font-weight: 800;
@@ -654,15 +705,12 @@ html {
   color: #f2f2f2;
 }
 
-.div_for_p-section5 {
-  margin-top: 1rem;
-}
-
+/* .div_for_p-section5 {
+    margin-top: 1rem;
+} */
 .p_section5 {
-  font-size: 0.8rem;
-  line-height: 1.6rem;
-  /* line-height: 2rem;
-  font-size: 1rem; */
+  font-size: 1rem;
+  line-height: 2rem;
   font-weight: 500;
 }
 
@@ -685,7 +733,7 @@ html {
   background-color: #f2f2f2;
   width: 14rem;
   height: auto;
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
   font-size: 1rem;
   font-weight: 700;
   transition: 0.1s ease-in-out;
@@ -722,6 +770,7 @@ html {
 
 .h-section6 {
   font-size: 1.4rem;
+  line-height: 2.8rem;
   text-transform: uppercase;
   width: 100%;
   font-weight: 800;
@@ -750,12 +799,12 @@ html {
   margin-top: 1.5rem;
 }
 
-.p_section5-mini-description {
+.p_section6-mini-description {
   font-size: 0.8rem;
   color: #8d8c8c;
 }
 
-.p_section5 {
+.p_section6 {
   font-size: 1rem;
   line-height: 2rem;
 }
@@ -1040,124 +1089,199 @@ footer {
   color: #85ab7b;
 }
 
-@keyframes loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes heart-hover-focus {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes heart-click {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@media (min-width: 375px) {
-  .quantity-of-songs-and-time {
-    font-size: 0.7rem;
-  }
-}
+/* @media (min-width: 375px) {
+
+} */
 @media (min-width: 425px) {
-  #background-album-cover {
-    height: 45rem;
-  }
-  .top-content {
-    padding: 0 2rem;
-  }
   .all-inside {
     padding: 2rem;
   }
   .toggle_menu-a {
     font-size: 1.4rem;
   }
-  .section1 {
-    padding: 4rem 2rem 0 2rem;
+  /* .section-1-card {
+      padding: 3rem 2rem;
+  } */
+  .link-to-story {
+    text-decoration: none;
+    color: #f2f2f2;
+    cursor: pointer;
   }
-  .album-description {
-    font-size: 0.9rem;
+  .name-and-logo {
+    gap: 2.2rem;
+    line-height: 4.6rem;
   }
-  .section2 {
-    padding: 2rem;
+  .h1-main-name {
+    font-size: 2.3rem;
   }
-  #box-1,
-  #box-2,
-  #box-3,
-  #box-4,
-  #box-5 {
-    font-size: 1.8rem;
+  .img-square-section {
+    width: 2.3rem;
+    height: 2.3rem;
   }
-  .section3 {
-    padding: 2rem;
+  .p_description {
+    line-height: 2.2rem;
+    font-size: 1.1rem;
+    max-width: 36rem;
   }
-  .play-btn {
-    min-height: 3.5rem;
-    min-width: 3.5rem;
+  .hr-line-to-p {
+    height: 0.1rem;
+    margin: 1rem 0;
   }
-  .song {
-    height: 3.5rem;
-  }
-  .song-number {
-    font-size: 0.9rem;
-  }
-  .play-btn-song {
-    width: 3rem;
-    height: 3rem;
-  }
-  .play-btn-song .play-song-icon {
+  .h2_description {
+    line-height: 3.2rem;
     font-size: 1.6rem;
   }
-  .quantity-of-songs-and-time {
-    font-size: 0.8rem;
-  }
-  .song-title {
+  .btn-discover {
+    /* padding: 0.5rem 1rem; */
+    width: 18rem;
+    height: auto;
+    margin: 1.5rem 0;
     font-size: 1.2rem;
   }
-  .artist-name {
+  .section-2,
+  .section-4 {
+    padding: 3rem 2rem;
+    gap: 1rem;
+  }
+  .h-section-2,
+  .h-section-4 {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+  .albums-chooser,
+  .singles-chooser {
+    min-height: 22rem;
+    gap: 2rem;
+  }
+  .album-cover,
+  .single-cover {
+    width: 8.5rem;
+    height: auto;
+    min-height: 8.5rem;
+    min-width: 8.5rem;
+  }
+  .album,
+  .single {
+    width: 8.5rem;
+    height: auto;
+    min-height: 14rem;
+  }
+  .song-title-small {
+    font-size: 1rem;
+    margin-top: 0.7rem;
+  }
+  .content-small {
+    gap: 0.4rem;
+  }
+  .date-small {
     font-size: 1rem;
   }
-  .song-duration {
-    /*   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
+  .dots-separator-album {
+    font-size: 1.6rem;
+  }
+  .btn-view-collection {
+    /* 
+    padding: 0.5rem 1rem; */
+    width: 18rem;
+    height: auto;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+  }
+  .section3 {
+    padding: 0 2rem;
+  }
+  .h2-section3 {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+  .dot-and-introduction-chooser {
+    gap: 0.5rem;
+    line-height: 2rem;
+    /*  margin: 0.5rem 0 2rem 0; */
+  }
+  .p_introduction-chooser {
     font-size: 1rem;
   }
-  .anchor-dots {
+  #dot-introduction-chooser {
+    font-size: 0.8rem;
+  }
+  .hr-line-to-sections-chooser {
+    height: 0.1rem;
+    /* margin-top: 2rem ; */
+  }
+  /*.section5 {
+      padding: 2rem 0.5rem;
+  } 
+   .div-section5-opacity-bg {
+      padding: 3rem 2rem;
+  } */ /* nie dodaje tego bo ma byc takie jak section 1  = 16px +8px */
+  .h-section5 {
     font-size: 1.6rem;
+    line-height: 3.2rem;
   }
-  /* .heart-in-song */
-  .heart-btn-in-song {
+  .visit-shop-and-icons {
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+  .shop-logo {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  #store-icon {
+    font-size: 2.2rem;
+  }
+  .p_section5 {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    max-width: 36rem;
+  }
+  .btn-shop {
+    /* padding: 0.5rem 1rem; */
+    width: 18rem;
+    height: auto;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+  }
+  .section6 {
+    padding: 3rem 2rem;
+  }
+  .tour-and-title {
+    gap: 0.5rem;
+  }
+  .h-section6 {
     font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-bottom: 1rem;
   }
-  .section4 {
-    padding: 0 2rem 4rem 2rem;
+  .title-name-tour {
+    font-size: 1.4rem;
   }
-  footer {
-    padding: 0rem 2rem;
+  /* .div_for_p-section6 {
+      margin-top: 1.5rem;
+  } */
+  .p_section6-mini-description {
+    font-size: 0.9rem;
   }
-  .nav-a-footer {
-    font-size: 1.6rem;
+  .p_section6 {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    max-width: 36rem;
+  }
+  .two-btn-tour-div {
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+  .btn-tour {
+    width: 18rem;
+    height: auto;
+    /* margin: 1.5rem 0; */
+    font-size: 1.2rem;
+  }
+  .btn-album-info {
+    width: 18rem;
+    height: auto;
+    /* margin: 1.5rem 0; */
+    font-size: 1.2rem;
   }
   #bottom-footer-social-1,
   #bottom-footer-social-2,
@@ -1277,6 +1401,7 @@ footer {
     position: fixed;
   }
   .nav-a-social {
+    display: block;
     text-decoration: none;
     color: #f2f2f2;
     margin: 0.2rem 0;
