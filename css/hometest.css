@@ -192,7 +192,7 @@ html {
   width: 100%;
   height: auto;
   padding: 2rem 1rem;
-  z-index: 1;
+  /* z-index: 1; */
   background-color: rgba(30, 29, 29, 0.6);
   border-radius: 2.5%;
 }
@@ -670,8 +670,8 @@ html {
 }
 
 .h-section5 {
-  font-size: 1.4rem;
-  line-height: 2.8rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
   text-transform: uppercase;
   width: 100%;
   font-weight: 800;
@@ -918,7 +918,7 @@ footer {
 .footer-a-2 {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  margin: 0.5rem;
   width: auto;
 }
 
@@ -1216,8 +1216,8 @@ footer {
       padding: 3rem 2rem;
   } */ /* nie dodaje tego bo ma byc takie jak section 1  = 16px +8px */
   .h-section5 {
-    font-size: 1.6rem;
-    line-height: 3.2rem;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
   }
   .visit-shop-and-icons {
     margin-bottom: 1.5rem;
@@ -1304,70 +1304,248 @@ footer {
   }
 }
 @media (min-width: 768px) {
-  #background-album-cover {
-    transform: translateY(-16rem);
-    height: auto;
-  }
-  #main-album-cover {
-    width: 100%;
-  }
   .toggle-menu {
     width: 60%;
     right: 0;
   }
-  .section1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
+  .section-1-card {
+    padding: 3rem 2rem;
   }
-  .album-and-figcaption {
-    width: 100%;
-    padding: 0;
+  .name-and-logo {
+    gap: 2.4rem;
+    line-height: 5rem;
   }
-  .title-name-artist {
-    padding-top: 6rem;
-    width: 100%;
+  .h1-main-name {
+    font-size: 2.5rem;
   }
-  .album-name {
-    font-size: 1.8rem;
+  .img-square-section {
+    width: 2.5rem;
+    height: 2.5rem;
   }
-  .album-artist-name {
-    font-size: 1.4rem;
+  .dot-and-introduction {
+    gap: 1rem;
+    line-height: 2rem;
   }
-  .section2 {
-    background-color: #120f10;
-    margin-top: 4rem;
-  }
-  #h3-section2 {
-    font-size: 1.6rem;
-  }
-  .section3 {
-    padding: 2rem;
-    background-color: #120f10;
-  }
-  #h4-section3 {
-    font-size: 1.6rem;
-  }
-  .play-btn {
-    min-width: 3.5rem;
-    min-height: 3.5rem;
-  }
-  .quantity-of-songs-and-time {
+  .p_introduction {
     font-size: 1rem;
   }
-  .list-time-songs {
-    width: 50%;
-  }
-  .bxs-circle {
+  #dot-introduction {
     font-size: 0.8rem;
   }
-  #h5-section4 {
+  .p_description {
+    line-height: 2.6rem;
+    font-size: 1.3rem;
+    max-width: 44rem;
+  }
+  .hr-line-to-p {
+    height: 0.1rem;
+    margin: 1.5rem 0;
+  }
+  .h2_description {
+    line-height: 3.4rem;
+    font-size: 1.8rem;
+  }
+  .btn-discover {
+    padding: 1rem;
+    width: 22rem;
+    height: auto;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+  }
+  .section-2,
+  .section-4 {
+    padding: 4rem 3rem;
+    gap: 1rem;
+  }
+  .h-section-2,
+  .h-section-4 {
+    font-size: 1.8rem;
+    margin-bottom: 2.6rem;
+  }
+  .albums-chooser,
+  .singles-chooser {
+    min-height: 24rem;
+    gap: 2rem;
+  }
+  .album-cover,
+  .single-cover {
+    width: 9rem;
+    height: auto;
+    min-height: 9rem;
+    min-width: 9rem;
+  }
+  .album,
+  .single {
+    width: 9rem;
+    height: auto;
+    min-height: 16rem;
+  }
+  .song-title-small {
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+  }
+  .content-small {
+    gap: 0.5rem;
+  }
+  .date-small {
+    font-size: 1.1rem;
+  }
+  .dots-separator-album {
+    font-size: 1.7rem;
+  }
+  .btn-view-collection {
+    padding: 1rem;
+    width: 22rem;
+    height: auto;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+  }
+  .section3 {
+    padding: 0 3rem;
+  }
+  .h2-section3 {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+  .dot-and-introduction-chooser {
+    gap: 0.6rem;
+    line-height: 2.2rem;
+  }
+  .p_introduction-chooser {
+    font-size: 1.1rem;
+  }
+  #dot-introduction-chooser {
+    font-size: 0.9rem;
+  }
+  #box-1,
+  #box-2,
+  #box-3,
+  #box-4,
+  #box-5 {
+    font-size: 2.2rem;
+  }
+  .hr-line-to-sections-chooser {
+    height: 0.1rem;
+    margin-top: 2rem;
+  }
+  /*  .section5 {
+      padding: 3rem 2rem;
+  } */
+  .div-section5-opacity-bg {
+    padding: 3rem 2rem 1rem 2rem;
+  }
+  .h-section5 {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .shop-logo {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  #store-icon {
+    font-size: 2.2rem;
+  }
+  .visit-shop-and-icons {
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+  }
+  .p_section5 {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    max-width: 44rem;
+  }
+  .btn-shop {
+    padding: 1rem;
+    width: 22rem;
+    height: auto;
+    margin: 3rem 0;
+    font-size: 1.4rem;
+  }
+  .section6 {
+    padding: 4rem 3rem;
+  }
+  .tour-and-title {
+    gap: 0.7rem;
+  }
+  .h-section6 {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    margin-bottom: 1rem;
+  }
+  .title-name-tour {
     font-size: 1.6rem;
   }
-  .section4 {
-    padding: 2rem 2rem 4rem 2rem;
+  /* .div_for_p-section6 {
+      margin-top: 1.5rem;
+  } */
+  .p_section6-mini-description {
+    font-size: 1.1rem;
+  }
+  .p_section6 {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    max-width: 44rem;
+  }
+  .two-btn-tour-div {
+    margin-top: 4rem;
+    gap: 3rem;
+  }
+  .btn-tour {
+    padding: 1rem;
+    width: 22rem;
+    height: auto;
+    font-size: 1.4rem;
+  }
+  .btn-album-info {
+    padding: 1rem;
+    width: 22rem;
+    height: auto;
+    /* margin: 1.5rem 0; */
+    font-size: 1.4rem;
+  }
+  .footer-top {
+    padding: 4rem 2rem;
+  }
+  .nav-a-footer {
+    font-size: 1.6rem;
+  }
+  .description-and-email-input {
+    gap: 1rem;
+  }
+  .email-input-description {
+    /* padding: 2rem 0 1rem 0; */
+    font-size: 1.4rem;
+  }
+  .input-wth-btn {
+    width: 100%;
+    height: auto;
+  }
+  .input-email {
+    font-size: 1.6rem;
+    /* padding: 1rem 0; */
+  }
+  .send-btn {
+    font-size: 1.6rem;
+  }
+  #bottom-footer-social-1,
+  #bottom-footer-social-2,
+  #bottom-footer-social-3,
+  #bottom-footer-social-4,
+  #bottom-footer-social-5,
+  #bottom-footer-social-6,
+  #bottom-footer-social-7,
+  #bottom-footer-social-8,
+  #bottom-footer-social-9 {
+    font-size: 2rem;
+  }
+  .time-and-rights {
+    font-size: 1.3rem;
+  }
+  #description-about-me {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    width: 80%;
+    padding-bottom: 1.5rem;
   }
 }
 @media (min-width: 1024px) {
@@ -1488,10 +1666,10 @@ footer {
     gap: 4rem;
     padding: 4rem;
   }
-  .footer-a-1,
+  /*    .footer-a-1,
   .footer-a-2 {
-    gap: 1rem;
-  }
+      margin: 1rem;
+  } */
   .description-and-email-input {
     width: 40%;
     gap: 1rem;
@@ -1612,9 +1790,9 @@ footer {
   .content-small {
     gap: 0.5rem;
   }
-  .song-title-small {
-    font-size: 1.4rem;
-  }
+  /*  .song-title-small {
+      font-size: 1.4rem;
+  } */
   .date-small {
     font-weight: 400;
     font-size: 1rem;
