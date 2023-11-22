@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
-/* //colors variety import from  separate color stylesheet
-@import "/css/ColorsVariety.css";
- */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -1823,37 +1820,6 @@ footer {
     font-size: 1.4rem;
   }
 }
-.footer-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 4rem;
-  padding: 4rem;
-}
-
-.footer-a-1,
-.footer-a-2 {
-  gap: 1rem;
-}
-
-.description-and-email-input {
-  width: 40%;
-  gap: 1rem;
-}
-
-.email-input-description {
-  padding: 0;
-}
-
-.footer-p-and-nav {
-  padding-top: 2rem;
-}
-
-.nav-a-footer-social {
-  padding: 0 1rem;
-}
-
 @media (min-width: 1440px) {
   #nav-a-1,
   #nav-a-2,
