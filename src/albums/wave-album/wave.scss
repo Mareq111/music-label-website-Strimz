@@ -823,12 +823,13 @@ footer {
     flex-wrap: wrap;
     width: 100%;
     padding: 2rem 1rem;
+    gap: 0.5rem;
 }
 .footer-a-1,
 .footer-a-2 {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+  
     width: auto;
 }
 
