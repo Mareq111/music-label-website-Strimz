@@ -198,15 +198,15 @@ html {
   flex-direction: row;
   width: 100%;
   height: auto;
-  gap: 1.3rem;
-  line-height: 3.8rem;
+  gap: 2rem;
+  line-height: 4.2rem;
 }
 
 .h1-main-name {
   color: #f2f2f2;
   font-weight: 800;
   width: auto;
-  font-size: 1.9rem;
+  font-size: 2.1rem;
 }
 .h1-main-name:hover,
 .h1-main-name :focus,
@@ -215,8 +215,8 @@ html {
 }
 
 .img-square-section {
-  width: 1.9rem;
-  height: 1.9rem;
+  width: 2.1rem;
+  height: 2.1rem;
 }
 
 .dot-and-introduction {
@@ -1083,19 +1083,9 @@ footer {
   color: #85ab7b;
 }
 
-@media (min-width: 375px) {
-  .name-and-logo {
-    gap: 2rem;
-    line-height: 4.2rem;
-  }
-  .h1-main-name {
-    font-size: 2.1rem;
-  }
-  .img-square-section {
-    width: 2.1rem;
-    height: 2.1rem;
-  }
-}
+/* @media (min-width: 375px) {
+
+} */
 @media (min-width: 425px) {
   .all-inside {
     padding: 2rem;
@@ -1936,4 +1926,4 @@ footer {
     color: #367983;
     transition: 0.1s ease-in-out;
   }
-}/*# sourceMappingURL=hometest.css.map */
+}/*# sourceMappingURL=music.css.map */
