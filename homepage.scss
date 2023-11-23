@@ -218,7 +218,13 @@ html {
     display: none;
 }
 //section 1
+//test
+.hero-img {
+    width: 100%;
+    height: 10rem;
+}
 
+//end
 .section-1 {
     display: flex;
     flex-direction: column;
@@ -229,6 +235,7 @@ html {
     padding: 4rem 0.5rem 0 0.5rem;
     /* z-index: 1; */
 }
+
 
 .section-1-card {
     display: flex;

@@ -516,6 +516,76 @@ html {
   transition-delay: 300ms;
   color: rgb(98, 45, 95);
 }
+.single:hover #still-the-same-single-cover {
+  box-shadow: 0 0 8px rgba(119, 82, 172, 0.5);
+}
+.single:hover #dots-separator-single-7 {
+  transition-delay: 300ms;
+  color: rgb(125, 86, 104);
+}
+.single:hover #thinkers-hermanos-single-cover {
+  box-shadow: 0 0 8px rgba(160, 146, 126, 0.5);
+}
+.single:hover #dots-separator-single-8 {
+  transition-delay: 300ms;
+  color: rgb(222, 219, 193);
+}
+.single:hover #most-known-unknown-single-cover {
+  box-shadow: 0 0 8px rgba(137, 131, 45, 0.5);
+}
+.single:hover #dots-separator-single-9 {
+  transition-delay: 300ms;
+  color: rgb(157, 154, 40);
+}
+.single:hover #tunnel-vision-single-cover {
+  box-shadow: 0 0 8px rgba(141, 15, 6, 0.5);
+}
+.single:hover #dots-separator-single-10 {
+  transition-delay: 300ms;
+  color: rgb(222, 19, 16);
+}
+.single:hover #masurian-ghost-single-cover {
+  box-shadow: 0 0 8px rgba(117, 134, 33, 0.5);
+}
+.single:hover #dots-separator-single-11 {
+  transition-delay: 300ms;
+  color: rgb(101, 126, 24);
+}
+.single:hover #change-direction-single-cover {
+  box-shadow: 0 0 8px rgba(185, 152, 85, 0.5);
+}
+.single:hover #dots-separator-single-12 {
+  transition-delay: 300ms;
+  color: rgb(200, 171, 114);
+}
+.single:hover #tiki-taki-single-cover {
+  box-shadow: 0 0 8px rgba(87, 113, 151, 0.5);
+}
+.single:hover #dots-separator-single-13 {
+  transition-delay: 300ms;
+  color: rgb(90, 116, 149);
+}
+.single:hover #blurry-single-cover {
+  box-shadow: 0 0 8px rgba(98, 16, 52, 0.5);
+}
+.single:hover #dots-separator-single-14 {
+  transition-delay: 300ms;
+  color: rgb(129, 27, 67);
+}
+.single:hover #wolf-single-cover {
+  box-shadow: 0 0 8px rgba(139, 178, 179, 0.5);
+}
+.single:hover #dots-separator-single-15 {
+  transition-delay: 300ms;
+  color: rgb(151, 201, 190);
+}
+.single:hover #phoenix-single-cover {
+  box-shadow: 0 0 8px rgba(32, 188, 255, 0.5);
+}
+.single:hover #dots-separator-single-16 {
+  transition-delay: 300ms;
+  color: rgb(120, 179, 222);
+}
 
 .btn-view-collection-div {
   display: flex;

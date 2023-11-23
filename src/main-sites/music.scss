@@ -35,6 +35,36 @@ $color-dark-single: rgba(151, 212, 210, 1);
 
 $shadow-lake: rgba(244, 171, 239, 0.5);
 $color-lake: rgb(98, 45, 95);
+//new
+$shadow-still-the-same: rgba(119, 82, 172, 0.5);
+$color-still-the-same: rgba(125, 86, 104, 1);
+
+$shadow-thinkers-hermanos: rgba(160, 146, 126, 0.5);
+$color-thinkers-hermanos: rgba(222, 219, 193, 1);
+
+$shadow-most-known-unknown: rgba(137, 131, 45, 0.5);
+$color-most-known-unknown: rgba(157, 154, 40, 1);
+
+$shadow-tunnel-vision: rgba(141, 15, 6, 0.5);
+$color-tunnel-vision: rgba(222, 19, 16, 1);
+
+$shadow-masurian-ghost: rgba(117, 134, 33, 0.5);
+$color-masurian-ghost: rgba(101, 126, 24, 1);
+
+$shadow-change-direction: rgba(185, 152, 85, 0.5);
+$color-change-direction: rgba(200, 171, 114, 1);
+
+$shadow-tiki-taki: rgba(87, 113, 151, 0.5);
+$color-tiki-taki: rgba(90, 116, 149, 1);
+
+$shadow-blurry: rgba(98, 16, 52, 0.5);
+$color-blurry: rgba(129, 27, 67, 1);
+
+$shadow-wolf: rgba(139, 178, 179, 0.5);
+$color-wolf: rgba(151, 201, 190, 1);
+
+$shadow-phoenix: rgba(32, 188, 255, 0.5);
+$color-phoenix: rgba(120, 179, 222, 1);
 
 //mini- albums shadows and more
 $shadow-wave: rgba(109, 13, 113, 0.5);
@@ -593,6 +623,86 @@ html {
     &:hover #dots-separator-single-6 {
         transition-delay: 300ms;
         color: $color-lake;
+    }
+    // 7 still
+    &:hover #still-the-same-single-cover {
+        box-shadow: 0 0 8px $shadow-still-the-same;
+    }
+    &:hover #dots-separator-single-7 {
+        transition-delay: 300ms;
+        color: $color-still-the-same;
+    }
+    // 8 thinkers
+    &:hover #thinkers-hermanos-single-cover {
+        box-shadow: 0 0 8px $shadow-thinkers-hermanos;
+    }
+    &:hover #dots-separator-single-8 {
+        transition-delay: 300ms;
+        color: $color-thinkers-hermanos;
+    }
+    // 9 most known
+    &:hover #most-known-unknown-single-cover {
+        box-shadow: 0 0 8px $shadow-most-known-unknown;
+    }
+    &:hover #dots-separator-single-9 {
+        transition-delay: 300ms;
+        color: $color-most-known-unknown;
+    }
+    // 10 tunnel
+    &:hover #tunnel-vision-single-cover {
+        box-shadow: 0 0 8px $shadow-tunnel-vision;
+    }
+    &:hover #dots-separator-single-10 {
+        transition-delay: 300ms;
+        color: $color-tunnel-vision;
+    }
+    // 11 masurian
+    &:hover #masurian-ghost-single-cover {
+        box-shadow: 0 0 8px $shadow-masurian-ghost;
+    }
+    &:hover #dots-separator-single-11 {
+        transition-delay: 300ms;
+        color: $color-masurian-ghost;
+    }
+    // 12 change direction
+    &:hover #change-direction-single-cover {
+        box-shadow: 0 0 8px $shadow-change-direction;
+    }
+    &:hover #dots-separator-single-12 {
+        transition-delay: 300ms;
+        color: $color-change-direction;
+    }
+    // 13 tiki taki
+    &:hover #tiki-taki-single-cover {
+        box-shadow: 0 0 8px $shadow-tiki-taki;
+    }
+    &:hover #dots-separator-single-13 {
+        transition-delay: 300ms;
+        color: $color-tiki-taki;
+    }
+    // 14 blurry
+    &:hover #blurry-single-cover {
+        box-shadow: 0 0 8px $shadow-blurry;
+    }
+    &:hover #dots-separator-single-14 {
+        transition-delay: 300ms;
+        color: $color-blurry;
+    }
+    //15 digital wolf
+    &:hover #wolf-single-cover {
+        box-shadow: 0 0 8px $shadow-wolf;
+    }
+    &:hover #dots-separator-single-15 {
+        transition-delay: 300ms;
+        color: $color-wolf;
+    }
+    // 16 phoenix
+    &:hover #phoenix-single-cover {
+        box-shadow: 0 0 8px $shadow-phoenix;
+    }
+    &:hover #dots-separator-single-16 {
+        transition-delay: 300ms;
+        color: $color-phoenix;
     }
 }
 
