@@ -198,15 +198,15 @@ html {
   flex-direction: row;
   width: 100%;
   height: auto;
-  gap: 2rem;
-  line-height: 4.2rem;
+  gap: 1.3rem;
+  line-height: 3.8rem;
 }
 
 .h1-main-name {
   color: #f2f2f2;
   font-weight: 800;
   width: auto;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
 }
 .h1-main-name:hover,
 .h1-main-name :focus,
@@ -215,8 +215,8 @@ html {
 }
 
 .img-square-section {
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 1.9rem;
+  height: 1.9rem;
 }
 
 .dot-and-introduction {
@@ -435,17 +435,24 @@ html {
   transition-delay: 300ms;
   color: rgb(210, 146, 164);
 }
+.album:hover #album-cover-flashback-normal {
+  box-shadow: 0 0 8px rgba(211, 142, 122, 0.5);
+}
+.album:hover #dots-separator-album-2 {
+  transition-delay: 300ms;
+  color: rgb(235, 152, 120);
+}
 .album:hover #album-cover-arena-of-autumnn {
   box-shadow: 0 0 8px rgba(185, 169, 71, 0.5);
 }
-.album:hover #dots-separator-album-2 {
+.album:hover #dots-separator-album-3 {
   transition-delay: 300ms;
   color: rgb(185, 169, 71);
 }
 .album:hover #album-cover-galaktkitty {
   box-shadow: 0 0 8px rgba(50, 23, 78, 0.5);
 }
-.album:hover #dots-separator-album-3 {
+.album:hover #dots-separator-album-4 {
   transition-delay: 300ms;
   color: rgb(175, 160, 212);
 }
@@ -455,6 +462,13 @@ html {
 .album:hover #dots-separator-album-5 {
   transition-delay: 300ms;
   color: rgb(53, 17, 127);
+}
+.album:hover #album-cover-king-of {
+  box-shadow: 0 0 8px rgba(181, 133, 94, 0.5);
+}
+.album:hover #dots-separator-album-6 {
+  transition-delay: 300ms;
+  color: rgb(181, 133, 94);
 }
 
 .single .single-cover {
@@ -1083,9 +1097,19 @@ footer {
   color: #85ab7b;
 }
 
-/* @media (min-width: 375px) {
-
-} */
+@media (min-width: 375px) {
+  .name-and-logo {
+    gap: 2rem;
+    line-height: 4.2rem;
+  }
+  .h1-main-name {
+    font-size: 2.1rem;
+  }
+  .img-square-section {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+}
 @media (min-width: 425px) {
   .all-inside {
     padding: 2rem;

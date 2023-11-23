@@ -256,14 +256,14 @@ html {
     flex-direction: row;
     width: 100%;
     height: auto;
-    gap: 2rem;
-    line-height: 4.2rem;
+    gap: 1.3rem;
+    line-height: 3.8rem;
 }
 .h1-main-name {
     color: $white;
     font-weight: 800;
     width: auto;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     &:hover,
     :focus,
     :active {
@@ -271,8 +271,8 @@ html {
     }
 }
 .img-square-section {
-    width: 2.1rem;
-    height: 2.1rem;
+    width: 1.9rem;
+    height: 1.9rem;
 }
 
 //introduction
@@ -492,32 +492,47 @@ html {
         transition-delay: 300ms;
         color: $color-flashback-deluxe;
     }
-
-    // 2 album arena of autumnn
+    //2 album flashback normal
+    &:hover #album-cover-flashback-normal {
+        box-shadow: 0 0 8px $shadow-flashback-normal;
+    }
+    &:hover #dots-separator-album-2 {
+        transition-delay: 300ms;
+        color: $color-flashback-normal;
+    }
+    //  3 album arena of autumnn
     &:hover #album-cover-arena-of-autumnn {
         box-shadow: 0 0 8px $shadow-arena-of-autumnn;
     }
-    &:hover #dots-separator-album-2 {
+    &:hover #dots-separator-album-3 {
         transition-delay: 300ms;
         color: $color-arena-of-autumnn;
     }
 
-    // 3 album galaktkitty
+    //   4 album galaktkitty
     &:hover #album-cover-galaktkitty {
         box-shadow: 0 0 8px $shadow-galaktkitty;
     }
-    &:hover #dots-separator-album-3 {
+    &:hover #dots-separator-album-4 {
         transition-delay: 300ms;
         color: $color-galaktkitty;
     }
 
-    // 4 album wave
+    // 5 album wave
     &:hover #album-cover-wave {
         box-shadow: 0 0 8px $shadow-wave;
     }
     &:hover #dots-separator-album-5 {
         transition-delay: 300ms;
         color: $color-wave;
+    }
+    // 6 album king of forests and muds
+    &:hover #album-cover-king-of {
+        box-shadow: 0 0 8px $shadow-king-of-for-and-muds;
+    }
+    &:hover #dots-separator-album-6 {
+        transition-delay: 300ms;
+        color: $color-king-of-for-and-muds;
     }
 }
 //! only for singles
@@ -991,7 +1006,7 @@ footer {
 .footer-a-2 {
     display: flex;
     flex-direction: column;
-   /*  margin: 0.5rem; */
+    /*  margin: 0.5rem; */
     width: auto;
 }
 
@@ -1150,12 +1165,21 @@ footer {
     }
 }
 
-
 //media queries for 375px screens
 
-/* @media (min-width: 375px) {
-    
-} */
+@media (min-width: 375px) {
+    .name-and-logo {
+        gap: 2rem;
+        line-height: 4.2rem;
+    }
+    .h1-main-name {
+        font-size: 2.1rem;
+    }
+    .img-square-section {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+}
 
 //media queries for 425px screens
 
@@ -1383,36 +1407,36 @@ footer {
         font-size: 1.2rem;
     }
 
-    //footer 
- //top footer
- footer {
-    padding: 0rem 2rem;
-}
-.nav-a-footer {
-    font-size: 1.6rem;
-}
-//footer boottom
+    //footer
+    //top footer
+    footer {
+        padding: 0rem 2rem;
+    }
+    .nav-a-footer {
+        font-size: 1.6rem;
+    }
+    //footer boottom
 
-#bottom-footer-social-1,
-#bottom-footer-social-2,
-#bottom-footer-social-3,
-#bottom-footer-social-4,
-#bottom-footer-social-5,
-#bottom-footer-social-6,
-#bottom-footer-social-7,
-#bottom-footer-social-8,
-#bottom-footer-social-9 {
-    font-size: 1.8rem;
-}
-.time-and-rights {
-    font-size: 1.2rem;
-}
-//about me
-#description-about-me {
-    font-size: 1.2rem;
-    width: 80%;
-    padding-bottom: 1.5rem;
-}
+    #bottom-footer-social-1,
+    #bottom-footer-social-2,
+    #bottom-footer-social-3,
+    #bottom-footer-social-4,
+    #bottom-footer-social-5,
+    #bottom-footer-social-6,
+    #bottom-footer-social-7,
+    #bottom-footer-social-8,
+    #bottom-footer-social-9 {
+        font-size: 1.8rem;
+    }
+    .time-and-rights {
+        font-size: 1.2rem;
+    }
+    //about me
+    #description-about-me {
+        font-size: 1.2rem;
+        width: 80%;
+        padding-bottom: 1.5rem;
+    }
 }
 // media q for 768px screens
 
@@ -1653,7 +1677,6 @@ footer {
         font-size: 1.4rem;
     }
     //footer top
-    
 }
 
 //media q for 1024px
@@ -2001,7 +2024,6 @@ footer {
     .nav-a-footer-social {
         padding: 0 1rem;
     }
-
 }
 
 //media for 1440 screens
@@ -2061,7 +2083,7 @@ footer {
     .section3 {
         padding: 0 8rem;
     }
-    
+
     //! section 5 shop
 
     .section5 {

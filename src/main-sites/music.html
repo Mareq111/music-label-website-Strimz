@@ -10,7 +10,7 @@
     />
     <!-- favicon  -->
     <link rel="icon" href="/src/img/logo16x16.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/hometest.css" />
+    <link rel="stylesheet" href="/css/music.css" />
 
     <!-- icons link -->
     <link
@@ -23,7 +23,7 @@
       src="https://kit.fontawesome.com/460b41b87d.js"
       crossorigin="anonymous"
     ></script>
-    <title>Strimz Empire</title>
+    <title>Music - Strimz Empire</title>
   </head>
   <body>
     <div class="top">
@@ -41,8 +41,10 @@
         <!-- left side toggle menu -->
         <div class="toggle-nav-left">
           <nav class="toggle_menu-a">
-            <a class="nav-a-toggle-menu" href="#">Home</a>
-            <a class="nav-a-toggle-menu" href="#">Music</a>
+            <a class="nav-a-toggle-menu" href="/homepage.html">Home</a>
+            <a class="nav-a-toggle-menu" href="/src/main-sites/music.html"
+              >Music</a
+            >
             <a class="nav-a-toggle-menu" href="#">Shop</a>
             <a class="nav-a-toggle-menu" href="#">Tour</a>
             <a class="nav-a-toggle-menu" href="#">About</a>
@@ -218,7 +220,7 @@
       <div class="section-1-card">
         <a class="link-to-story" href="/src/other/page404/page404.html">
           <div class="name-and-logo">
-            <h1 class="h1-main-name">Strimz Empire</h1>
+            <h1 class="h1-main-name">Music</h1>
             <img
               class="img-square-section"
               class="hero-section-logo"
@@ -230,35 +232,17 @@
         <div class="dot-and-introduction">
           <i class="bx bxs-circle" id="dot-introduction"></i>
 
-          <p class="p_introduction">Introduction to our mission</p>
+          <p class="p_introduction">Albums And Singles</p>
         </div>
 
         <hr class="hr-line-to-p" />
         <!-- p descriptions -->
         <p class="p_description">
-          The music label
-          <strong class="name-in-p-blue">Strimz Empire</strong> was started by
-          underground artist
-          <strong class="name-in-p-green">El Double M</strong>. He aims to share
-          our music for free and unite fellow artists within the label.
+          Discover the complete collection of albums and singles by
+          <strong class="name-in-p-green">El Double M</strong> and from the
+          entire discography of
+          <strong class="name-in-p-blue">Strimz Empire</strong> label.
         </p>
-        <hr class="hr-line-to-p" />
-        <h2 class="h2_description">
-          <strong class="name-in-p-blue">Main Idea</strong>
-        </h2>
-        <p class="p_description">
-          More than just a record label, its an artistic community that promotes
-          diversity and creativity, providing a space for experimentation and
-          nurturing talent.
-        </p>
-        <br />
-        <div class="discover-div">
-          <div class="btn-discover-div">
-            <a href="/src/" class="btn-discover" aria-label="Discover Story"
-              >Discover Story</a
-            >
-          </div>
-        </div>
       </div>
     </section>
 
@@ -267,7 +251,7 @@
       <!-- TODO  add link -->
       <a class="link-to-all-collection" href="#">
         <h2 class="h-section-2">
-          Newest Albums by <br id="break-other-relas" />
+          All Albums by <br id="break-other-relas" />
           <strong class="name-tag-blue">El Double M</strong>
         </h2>
       </a>
@@ -297,7 +281,33 @@
             </div>
           </div>
         </a>
-        <!-- second album ARENA OF AUTUMNN EP -->
+        <!-- second album FLASHBACK FROM 2001 normal -->
+        <a
+          class="album-a-next-page"
+          href="/src/albums/main-flashback/mainAlbum.html"
+        >
+          <div class="album">
+            <img
+              class="album-cover"
+              id="album-cover-flashback-normal"
+              src="/src/img/flashback_from_2001.jpg"
+              alt="flashback_from_2001-normal-album-cover"
+            />
+
+            <h3 class="song-title-small">Flashback From 2001</h3>
+            <div class="content-small">
+              <p class="date-small">Album</p>
+              <i
+                class="bx bx-dots-horizontal-rounded | dots-separator-album"
+                id="dots-separator-album-2"
+              ></i>
+
+              <time datetime="2023" class="date-small">2023</time>
+            </div>
+          </div>
+        </a>
+
+        <!-- third album ARENA OF AUTUMNN EP -->
         <a
           class="album-a-next-page"
           href="/src/albums/arena-of-autumnn/arena_of_autumnn.html"
@@ -314,7 +324,7 @@
               <p class="date-small">Album</p>
               <i
                 class="bx bx-dots-horizontal-rounded dots-separator-album"
-                id="dots-separator-album-2"
+                id="dots-separator-album-3"
               ></i>
               <time datetime="2022" class="date-small">2022</time>
             </div>
@@ -337,19 +347,15 @@
               <p class="date-small">Album</p>
               <i
                 class="bx bx-dots-horizontal-rounded dots-separator-album"
-                id="dots-separator-album-3"
+                id="dots-separator-album-4"
               ></i>
               <time datetime="2021" class="date-small">2021</time>
             </div>
           </div>
         </a>
 
-        <!-- fourth album KING OF FORESTS AND MUDS -->
-        <!-- fourth album wave -->
-        <a
-          class="album-a-next-page"
-          href="/src/albums/galaktkitty/galaktkitty.html"
-        >
+        <!-- fifth album wave -->
+        <a class="album-a-next-page" href="/src/albums/wave-album/wave.html">
           <div class="album">
             <img
               class="album-cover"
@@ -368,16 +374,29 @@
             </div>
           </div>
         </a>
-
-        <!-- btn -->
-        <div class="btn-view-collection-div">
-          <a
-            href="/src/other/page404/page404.html"
-            class="btn-view-collection"
-            aria-label="View Collection"
-            >View Collection</a
-          >
-        </div>
+        <!-- 6 album KING OF FORESTS AND MUDS -->
+        <a
+          class="album-a-next-page"
+          href="/src/albums/king-of-forests-and-muds/king_of.html"
+        >
+          <div class="album">
+            <img
+              class="album-cover"
+              id="album-cover-king-of"
+              src="/src/img/king_of_forest_and_muds.jpg"
+              alt="king-of-forests-and-muds-album-cover"
+            />
+            <h3 class="song-title-small">King Of Forests And Muds</h3>
+            <div class="content-small">
+              <p class="date-small">Album</p>
+              <i
+                class="bx bx-dots-horizontal-rounded dots-separator-album"
+                id="dots-separator-album-6"
+              ></i>
+              <time datetime="2019" class="date-small">2019</time>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
 
