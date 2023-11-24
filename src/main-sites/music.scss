@@ -85,6 +85,8 @@ $color-galaktkitty: rgba(175, 160, 212, 1);
 $shadow-king-of-for-and-muds: rgba(181, 133, 94, 0.5);
 $color-king-of-for-and-muds: rgba(181, 133, 94, 1);
 
+$shadow-red-path-to-zukunft: rgba(69, 25, 22, 0.5);
+
 //other shadows
 $shadow-green: rgba(133, 171, 123, 0.4);
 $shadow-black: rgba(30, 29, 29, 0.6);
@@ -828,118 +830,10 @@ html {
     margin-top: 2rem;
     //
 }
-//section5 shop
+
+//section 5 upcoming album
 
 .section5 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 2rem 0.5rem;
-    background-image: url("/src/img/others/Project Capture.jpg");
-    background-repeat: repeat-x;
-    background-position: 50% 00%;
-    background-size: cover;
-}
-.div-section5-opacity-bg {
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-    border-radius: 2.5%;
-    backdrop-filter: blur(4px);
-    background-color: $shadow-black-transparent;
-}
-
-.link-to-shop {
-    text-decoration: none;
-    color: $white;
-    cursor: pointer;
-}
-.h-section5 {
-    font-size: 1.5rem;
-    line-height: 3rem;
-    text-transform: uppercase;
-    width: 100%;
-    font-weight: 800;
-    color: $white;
-    width: auto;
-    transition: 0.2s ease-in-out;
-
-    &:hover,
-    :focus,
-    :active {
-        color: $eastern-blue-500;
-    }
-}
-
-.visit-shop-and-icons {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 1rem;
-    gap: 1rem;
-}
-
-.shop-logo {
-    width: 2rem;
-    height: 2rem;
-}
-#store-icon {
-    font-size: 2rem;
-    /* color: $eastern-blue-500; */
-    color: $white;
-}
-
-/* .div_for_p-section5 {
-    margin-top: 1rem;
-} */ //nwm poco
-
-.p_section5 {
-    font-size: 1rem;
-    line-height: 2rem;
-    font-weight: 500;
-}
-//btn for check out shop
-//btn
-
-//
-
-.btn-shop-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-}
-
-.btn-shop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: $black-900;
-    padding: 0.5rem 1rem;
-    background-color: $white;
-    width: 14rem;
-    height: auto;
-    margin: 2rem 0 1rem 0;
-    font-size: 1rem;
-    font-weight: 700;
-    transition: 0.1s ease-in-out;
-
-    &:hover,
-    :focus,
-    :active {
-        transform: scale(1.1);
-        background-color: $grey-500;
-    }
-}
-
-//section 6 tour
-
-.section6 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -947,20 +841,44 @@ html {
     padding: 2rem 1rem;
     background-color: $black-900;
 }
-.link-to-concert {
+.link-to-upcoming-album {
     text-decoration: none;
     color: $white;
     cursor: pointer;
 }
-.tour-and-title {
+.upcoming-album-title {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     gap: 0.5rem;
 }
+//img
+.upcoming-album-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
 
-.h-section6 {
+.upcoming-album-img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.inner-div-upcoming-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    transition: 0.1s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 8px $shadow-red-path-to-zukunft;
+    }
+}
+
+.h-section5 {
     font-size: 1.4rem;
     line-height: 2.8rem;
     text-transform: uppercase;
@@ -977,7 +895,7 @@ html {
     }
 }
 
-.title-name-tour {
+.title-upcoming-album {
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -987,23 +905,27 @@ html {
     font-weight: 800;
 }
 
-.div_for_p-section6 {
+.div_for_p-section5 {
     margin-top: 1.5rem;
 }
-.p_section6-mini-description {
+.p_section5-mini-description {
     font-size: 0.8rem;
     color: $grey-600;
 }
 #tour-date-months {
     margin-right: 0.5rem;
 }
-.p_section6 {
+.p_section5 {
     font-size: 1rem;
     line-height: 2rem;
 }
+//hidden p only for 1024px scrrens and bigger
+.p_section5-hidden {
+    display: none;
+}
 
 //btn 1
-.two-btn-tour-div {
+.discover-album-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1012,7 +934,7 @@ html {
     gap: 2rem;
 }
 
-.btn-tour-div {
+.btn-discover-album {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1021,7 +943,7 @@ html {
     background-color: transparent;
 }
 
-.btn-tour {
+.a-btn-discover-album {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1045,41 +967,7 @@ html {
         color: $black-900;
     }
 }
-//2 btn album info
-.btn-album-info-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-}
 
-.btn-album-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: transparent;
-    border: 0.1rem solid $grey-700;
-    color: $white;
-    width: 14rem;
-    height: auto;
-    /* margin: 1rem 0; */
-    font-size: 1rem;
-    font-weight: 700;
-    transition: 0.1s ease-in-out;
-
-    &:hover,
-    :focus,
-    :active {
-        outline: none;
-        transform: scale(1.1);
-        background-color: $grey-600;
-        color: $black-900;
-    }
-}
 //footer new
 // footer
 
@@ -1438,79 +1326,61 @@ footer {
         height: 0.1rem;
         /* margin-top: 2rem ; */
     }
-    //section 5 shop
-    .h-section5 {
-        font-size: 1.8rem;
-        line-height: 3.6rem;
-    }
 
-    .visit-shop-and-icons {
-        margin-bottom: 1.5rem;
-        gap: 1rem;
-    }
+    //section 5 tour
 
-    .shop-logo {
-        width: 2.2rem;
-        height: 2.2rem;
-    }
-    #store-icon {
-        font-size: 2.2rem;
-    }
-
-    .p_section5 {
-        font-size: 1.1rem;
-        line-height: 2.2rem;
-        max-width: 36rem;
-    }
-    //btn for check out shop
-    .btn-shop {
-        width: 18rem;
-        height: auto;
-        margin: 1.5rem 0;
-        font-size: 1.2rem;
-    }
-    //section 6 tour
-
-    .section6 {
+    .section5 {
         padding: 3rem 2rem;
     }
-    .tour-and-title {
+    .upcoming-album-title {
         gap: 0.5rem;
     }
 
-    .h-section6 {
+    .h-section5 {
         font-size: 1.6rem;
         line-height: 3.2rem;
         margin-bottom: 1rem;
     }
 
-    .title-name-tour {
+    .title-upcoming-album {
         font-size: 1.4rem;
     }
 
-    .p_section6-mini-description {
+    .p_section5-mini-description {
         font-size: 0.9rem;
     }
-    .p_section6 {
+    .p_section5 {
         font-size: 1.1rem;
         line-height: 2.2rem;
         max-width: 36rem;
     }
+    //img
+    .upcoming-album-img-div {
+        /*  display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin: 2rem 0;
+    }
+
+    .upcoming-album-img {
+        width: 100%;
+        height: auto;
+    }
+    .inner-div-upcoming-album {
+        /*  display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin: 0 2rem;
+        max-width: 31rem;
+    }
 
     //btn 1
-    .two-btn-tour-div {
+    .discover-album-div {
         margin-top: 3rem;
         gap: 2rem;
     }
 
-    .btn-tour {
-        width: 18rem;
-        height: auto;
-        /* margin: 1.5rem 0; */
-        font-size: 1.2rem;
-    }
-    //2 btn album info
-    .btn-album-info {
+    .a-btn-discover-album {
         width: 18rem;
         height: auto;
         /* margin: 1.5rem 0; */
@@ -1703,89 +1573,67 @@ footer {
         height: 0.1rem;
         margin-top: 2rem;
     }
-    //section 5 shop
 
-    .div-section5-opacity-bg {
-        padding: 3rem 2rem 1rem 2rem;
-    }
-    .h-section5 {
-        font-size: 2rem;
-        line-height: 4rem;
-    }
-    .shop-logo {
-        width: 2.2rem;
-        height: 2.2rem;
-    }
-    #store-icon {
-        font-size: 2.2rem;
-    }
+    //section 5 upcoming album
 
-    .visit-shop-and-icons {
-        margin-bottom: 2rem;
-        gap: 1.5rem;
-    }
-
-    .p_section5 {
-        font-size: 1.3rem;
-        line-height: 2.6rem;
-        max-width: 44rem;
-    }
-    //btn for check out shop
-    .btn-shop {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        margin: 3rem 0;
-        font-size: 1.4rem;
-    }
-    //section 6 tour
-
-    .section6 {
+    .section5 {
         padding: 4rem 3rem;
     }
-    .tour-and-title {
+    .upcoming-album-title {
         gap: 0.7rem;
     }
 
-    .h-section6 {
+    .h-section5 {
         font-size: 1.8rem;
         line-height: 3.6rem;
         margin-bottom: 1rem;
     }
 
-    .title-name-tour {
+    .title-upcoming-album {
         font-size: 1.6rem;
     }
 
-    .p_section6-mini-description {
+    .p_section5-mini-description {
         font-size: 1.1rem;
     }
-    .p_section6 {
+    .p_section5 {
         font-size: 1.3rem;
         line-height: 2.6rem;
         max-width: 44rem;
     }
+    //img
+    .upcoming-album-img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+    }
+
+    .upcoming-album-img {
+        width: 100%;
+        height: auto;
+    }
+    .inner-div-upcoming-album {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 3rem;
+        max-width: 31rem;
+    }
 
     //btn 1
-    .two-btn-tour-div {
+    .discover-album-div {
         margin-top: 4rem;
         gap: 3rem;
     }
 
-    .btn-tour {
+    .a-btn-discover-album {
         padding: 1rem;
         width: 22rem;
         height: auto;
         font-size: 1.4rem;
     }
-    //2 btn album info
-    .btn-album-info {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        /* margin: 1.5rem 0; */
-        font-size: 1.4rem;
-    }
+
     //footer top
 }
 
@@ -1922,7 +1770,7 @@ footer {
     // section 2 new albums with section 4 latest singles
     .section-2,
     .section-4 {
-        padding: 5.5rem 4.5rem;
+        padding: 5.5rem 4.5rem 2rem 5.5rem;
         gap: 1.5rem;
     }
     .h-section-2,
@@ -1968,16 +1816,6 @@ footer {
         font-size: 1.8rem;
     }
 
-    //btn for view collection
-    //btn
-    /* bez zmian .btn-view-collection {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        margin: 2rem 0;
-        font-size: 1.4rem;
-    } */
-
     //section3 music app chooser
 
     .section3 {
@@ -2010,100 +1848,85 @@ footer {
         height: 0.1rem;
         margin-top: 3rem;
     }
-    //!section 5 shop
+
+    //!section 5 upcoming album 1024
 
     .section5 {
-        padding: 4rem 1rem 4rem 1rem;
-    }
-    .div-section5-opacity-bg {
-        padding: 4rem 3rem 1rem 3rem;
-    }
-
-    .h-section5 {
-        font-size: 2.2rem;
-        line-height: 4.4rem;
-    }
-    .shop-logo {
-        width: 2.4rem;
-        height: 2.4rem;
-    }
-    #store-icon {
-        font-size: 2.4rem;
-    }
-
-    .visit-shop-and-icons {
-        margin-bottom: 2.2rem;
-        gap: 1.7rem;
-    }
-
-    .p_section5 {
-        font-size: 1.4rem;
-        line-height: 2.8rem;
-        max-width: 46rem;
-    }
-    //btn for check out shop
-    /* bez zmian .btn-shop {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        margin: 3rem 0;
-        font-size: 1.4rem;
-    } */
-
-    //!section 6 tour 1024
-
-    /* .section6 {
-        padding: 4rem 3rem;
-    } */
-    .section6 {
         padding: 4rem 4.5rem;
     }
-    .tour-and-title {
+    .upcoming-album-title {
         gap: 0.9rem;
     }
 
-    .h-section6 {
+    .h-section5 {
         font-size: 2rem;
         line-height: 4rem;
         margin-bottom: 1.2rem;
     }
 
-    .title-name-tour {
+    .title-upcoming-album {
         font-size: 1.6rem;
     }
 
-    /* .div_for_p-section6 {
-        margin-top: 1.5rem;
-    } */
-    .p_section6-mini-description {
+    .p_section5-mini-description {
         font-size: 1.2rem;
     }
-    .p_section6 {
+    .p_section5 {
+        display: none;
         font-size: 1.4rem;
         line-height: 2.8rem;
         max-width: 46rem;
     }
+    .p_section5-hidden {
+        display: block;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        /* max-width: 46rem; */
+        max-width: 50vw;
+    }
+    //img
+    .upcoming-album-img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0 0 0;
+    }
+
+    .upcoming-album-img {
+        width: 100%;
+        height: auto;
+    }
+    .inner-div-upcoming-album {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2rem;
+        max-width: 31rem;
+    }
 
     //btn 1
-    .two-btn-tour-div {
-        margin-top: 4rem;
+    .btn-discover-album {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        padding-left: 2rem;
+    }
+
+    .discover-album-div {
+        margin-top: 3rem;
         gap: 3rem;
     }
 
-    .btn-tour {
+    .a-btn-discover-album {
         padding: 1rem;
         width: 22rem;
         height: auto;
         font-size: 1.4rem;
     }
-    //2 btn album info
-    .btn-album-info {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        /* margin: 1.5rem 0; */
-        font-size: 1.4rem;
-    }
+
     //!footer
     //footer'top
 
@@ -2194,27 +2017,15 @@ footer {
         padding: 0 8rem;
     }
 
-    //! section 5 shop
+    //! section 5 upcoming album 1024
 
     .section5 {
-        padding: 4rem 1.5rem 4rem 1.5rem;
-    }
-    .div-section5-opacity-bg {
-        padding: 4rem 6rem 2rem 6rem;
-    }
-    .p_section5 {
-        max-width: 54rem;
-    }
-
-    //! section 6 tour 1024
-
-    .section6 {
         padding: 4rem 8rem;
     }
-    .tour-and-title {
+    .upcoming-album-title {
         gap: 1rem;
     }
-    .p_section6 {
+    .p_section5 {
         max-width: 54rem;
     }
     //footer'top

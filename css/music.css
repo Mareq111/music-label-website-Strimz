@@ -720,120 +720,17 @@ html {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 2rem 0.5rem;
-  background-image: url("/src/img/others/Project Capture.jpg");
-  background-repeat: repeat-x;
-  background-position: 50% 0%;
-  background-size: cover;
-}
-
-.div-section5-opacity-bg {
-  width: 100%;
-  height: auto;
-  padding: 2rem 1rem;
-  border-radius: 2.5%;
-  backdrop-filter: blur(4px);
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.link-to-shop {
-  text-decoration: none;
-  color: #f2f2f2;
-  cursor: pointer;
-}
-
-.h-section5 {
-  font-size: 1.5rem;
-  line-height: 3rem;
-  text-transform: uppercase;
-  width: 100%;
-  font-weight: 800;
-  color: #f2f2f2;
-  width: auto;
-  transition: 0.2s ease-in-out;
-}
-.h-section5:hover,
-.h-section5 :focus,
-.h-section5 :active {
-  color: #26acac;
-}
-
-.visit-shop-and-icons {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 1rem;
-  gap: 1rem;
-}
-
-.shop-logo {
-  width: 2rem;
-  height: 2rem;
-}
-
-#store-icon {
-  font-size: 2rem;
-  /* color: $eastern-blue-500; */
-  color: #f2f2f2;
-}
-
-/* .div_for_p-section5 {
-    margin-top: 1rem;
-} */
-.p_section5 {
-  font-size: 1rem;
-  line-height: 2rem;
-  font-weight: 500;
-}
-
-.btn-shop-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: transparent;
-}
-
-.btn-shop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #120f10;
-  padding: 0.5rem 1rem;
-  background-color: #f2f2f2;
-  width: 14rem;
-  height: auto;
-  margin: 2rem 0 1rem 0;
-  font-size: 1rem;
-  font-weight: 700;
-  transition: 0.1s ease-in-out;
-}
-.btn-shop:hover,
-.btn-shop :focus,
-.btn-shop :active {
-  transform: scale(1.1);
-  background-color: #dcdcdc;
-}
-
-.section6 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
   padding: 2rem 1rem;
   background-color: #120f10;
 }
 
-.link-to-concert {
+.link-to-upcoming-album {
   text-decoration: none;
   color: #f2f2f2;
   cursor: pointer;
 }
 
-.tour-and-title {
+.upcoming-album-title {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -841,7 +738,32 @@ html {
   gap: 0.5rem;
 }
 
-.h-section6 {
+.upcoming-album-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.upcoming-album-img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.inner-div-upcoming-album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  transition: 0.1s ease-in-out;
+}
+.inner-div-upcoming-album:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(69, 25, 22, 0.5);
+}
+
+.h-section5 {
   font-size: 1.4rem;
   line-height: 2.8rem;
   text-transform: uppercase;
@@ -852,13 +774,13 @@ html {
   transition: 0.2s ease-in-out;
   margin-bottom: 1rem;
 }
-.h-section6:hover,
-.h-section6 :focus,
-.h-section6 :active {
+.h-section5:hover,
+.h-section5 :focus,
+.h-section5 :active {
   color: #26acac;
 }
 
-.title-name-tour {
+.title-upcoming-album {
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -868,11 +790,11 @@ html {
   font-weight: 800;
 }
 
-.div_for_p-section6 {
+.div_for_p-section5 {
   margin-top: 1.5rem;
 }
 
-.p_section6-mini-description {
+.p_section5-mini-description {
   font-size: 0.8rem;
   color: #8d8c8c;
 }
@@ -881,12 +803,16 @@ html {
   margin-right: 0.5rem;
 }
 
-.p_section6 {
+.p_section5 {
   font-size: 1rem;
   line-height: 2rem;
 }
 
-.two-btn-tour-div {
+.p_section5-hidden {
+  display: none;
+}
+
+.discover-album-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -895,7 +821,7 @@ html {
   gap: 2rem;
 }
 
-.btn-tour-div {
+.btn-discover-album {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -904,7 +830,7 @@ html {
   background-color: transparent;
 }
 
-.btn-tour {
+.a-btn-discover-album {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -919,43 +845,9 @@ html {
   font-weight: 700;
   transition: 0.1s ease-in-out;
 }
-.btn-tour:hover,
-.btn-tour :focus,
-.btn-tour :active {
-  outline: none;
-  transform: scale(1.1);
-  background-color: #8d8c8c;
-  color: #120f10;
-}
-
-.btn-album-info-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: transparent;
-}
-
-.btn-album-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  background-color: transparent;
-  border: 0.1rem solid #3e3c3c;
-  color: #f2f2f2;
-  width: 14rem;
-  height: auto;
-  /* margin: 1rem 0; */
-  font-size: 1rem;
-  font-weight: 700;
-  transition: 0.1s ease-in-out;
-}
-.btn-album-info:hover,
-.btn-album-info :focus,
-.btn-album-info :active {
+.a-btn-discover-album:hover,
+.a-btn-discover-album :focus,
+.a-btn-discover-album :active {
   outline: none;
   transform: scale(1.1);
   background-color: #8d8c8c;
@@ -1298,65 +1190,50 @@ footer {
     height: 0.1rem;
     /* margin-top: 2rem ; */
   }
+  .section5 {
+    padding: 3rem 2rem;
+  }
+  .upcoming-album-title {
+    gap: 0.5rem;
+  }
   .h-section5 {
-    font-size: 1.8rem;
-    line-height: 3.6rem;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-bottom: 1rem;
   }
-  .visit-shop-and-icons {
-    margin-bottom: 1.5rem;
-    gap: 1rem;
+  .title-upcoming-album {
+    font-size: 1.4rem;
   }
-  .shop-logo {
-    width: 2.2rem;
-    height: 2.2rem;
-  }
-  #store-icon {
-    font-size: 2.2rem;
+  .p_section5-mini-description {
+    font-size: 0.9rem;
   }
   .p_section5 {
     font-size: 1.1rem;
     line-height: 2.2rem;
     max-width: 36rem;
   }
-  .btn-shop {
-    width: 18rem;
+  .upcoming-album-img-div {
+    /*  display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 2rem 0;
+  }
+  .upcoming-album-img {
+    width: 100%;
     height: auto;
-    margin: 1.5rem 0;
-    font-size: 1.2rem;
   }
-  .section6 {
-    padding: 3rem 2rem;
+  .inner-div-upcoming-album {
+    /*  display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 0 2rem;
+    max-width: 31rem;
   }
-  .tour-and-title {
-    gap: 0.5rem;
-  }
-  .h-section6 {
-    font-size: 1.6rem;
-    line-height: 3.2rem;
-    margin-bottom: 1rem;
-  }
-  .title-name-tour {
-    font-size: 1.4rem;
-  }
-  .p_section6-mini-description {
-    font-size: 0.9rem;
-  }
-  .p_section6 {
-    font-size: 1.1rem;
-    line-height: 2.2rem;
-    max-width: 36rem;
-  }
-  .two-btn-tour-div {
+  .discover-album-div {
     margin-top: 3rem;
     gap: 2rem;
   }
-  .btn-tour {
-    width: 18rem;
-    height: auto;
-    /* margin: 1.5rem 0; */
-    font-size: 1.2rem;
-  }
-  .btn-album-info {
+  .a-btn-discover-album {
     width: 18rem;
     height: auto;
     /* margin: 1.5rem 0; */
@@ -1515,73 +1392,53 @@ footer {
     height: 0.1rem;
     margin-top: 2rem;
   }
-  .div-section5-opacity-bg {
-    padding: 3rem 2rem 1rem 2rem;
+  .section5 {
+    padding: 4rem 3rem;
+  }
+  .upcoming-album-title {
+    gap: 0.7rem;
   }
   .h-section5 {
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    margin-bottom: 1rem;
   }
-  .shop-logo {
-    width: 2.2rem;
-    height: 2.2rem;
+  .title-upcoming-album {
+    font-size: 1.6rem;
   }
-  #store-icon {
-    font-size: 2.2rem;
-  }
-  .visit-shop-and-icons {
-    margin-bottom: 2rem;
-    gap: 1.5rem;
+  .p_section5-mini-description {
+    font-size: 1.1rem;
   }
   .p_section5 {
     font-size: 1.3rem;
     line-height: 2.6rem;
     max-width: 44rem;
   }
-  .btn-shop {
-    padding: 1rem;
-    width: 22rem;
-    height: auto;
+  .upcoming-album-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 3rem 0;
-    font-size: 1.4rem;
   }
-  .section6 {
-    padding: 4rem 3rem;
+  .upcoming-album-img {
+    width: 100%;
+    height: auto;
   }
-  .tour-and-title {
-    gap: 0.7rem;
+  .inner-div-upcoming-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+    max-width: 31rem;
   }
-  .h-section6 {
-    font-size: 1.8rem;
-    line-height: 3.6rem;
-    margin-bottom: 1rem;
-  }
-  .title-name-tour {
-    font-size: 1.6rem;
-  }
-  .p_section6-mini-description {
-    font-size: 1.1rem;
-  }
-  .p_section6 {
-    font-size: 1.3rem;
-    line-height: 2.6rem;
-    max-width: 44rem;
-  }
-  .two-btn-tour-div {
+  .discover-album-div {
     margin-top: 4rem;
     gap: 3rem;
   }
-  .btn-tour {
+  .a-btn-discover-album {
     padding: 1rem;
     width: 22rem;
     height: auto;
-    font-size: 1.4rem;
-  }
-  .btn-album-info {
-    padding: 1rem;
-    width: 22rem;
-    height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.4rem;
   }
 }
@@ -1700,7 +1557,7 @@ footer {
   } */
   .section-2,
   .section-4 {
-    padding: 5.5rem 4.5rem;
+    padding: 5.5rem 4.5rem 2rem 5.5rem;
     gap: 1.5rem;
   }
   .h-section-2,
@@ -1740,13 +1597,6 @@ footer {
   .dots-separator-single {
     font-size: 1.8rem;
   }
-  /* bez zmian .btn-view-collection {
-      padding: 1rem;
-      width: 22rem;
-      height: auto;
-      margin: 2rem 0;
-      font-size: 1.4rem;
-  } */
   .section3 {
     padding: 0 4.5rem;
   }
@@ -1777,81 +1627,69 @@ footer {
     margin-top: 3rem;
   }
   .section5 {
-    padding: 4rem 1rem 4rem 1rem;
-  }
-  .div-section5-opacity-bg {
-    padding: 4rem 3rem 1rem 3rem;
-  }
-  .h-section5 {
-    font-size: 2.2rem;
-    line-height: 4.4rem;
-  }
-  .shop-logo {
-    width: 2.4rem;
-    height: 2.4rem;
-  }
-  #store-icon {
-    font-size: 2.4rem;
-  }
-  .visit-shop-and-icons {
-    margin-bottom: 2.2rem;
-    gap: 1.7rem;
-  }
-  .p_section5 {
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    max-width: 46rem;
-  }
-  /* bez zmian .btn-shop {
-      padding: 1rem;
-      width: 22rem;
-      height: auto;
-      margin: 3rem 0;
-      font-size: 1.4rem;
-  } */
-  /* .section6 {
-      padding: 4rem 3rem;
-  } */
-  .section6 {
     padding: 4rem 4.5rem;
   }
-  .tour-and-title {
+  .upcoming-album-title {
     gap: 0.9rem;
   }
-  .h-section6 {
+  .h-section5 {
     font-size: 2rem;
     line-height: 4rem;
     margin-bottom: 1.2rem;
   }
-  .title-name-tour {
+  .title-upcoming-album {
     font-size: 1.6rem;
   }
-  /* .div_for_p-section6 {
-      margin-top: 1.5rem;
-  } */
-  .p_section6-mini-description {
+  .p_section5-mini-description {
     font-size: 1.2rem;
   }
-  .p_section6 {
+  .p_section5 {
+    display: none;
     font-size: 1.4rem;
     line-height: 2.8rem;
     max-width: 46rem;
   }
-  .two-btn-tour-div {
-    margin-top: 4rem;
+  .p_section5-hidden {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    /* max-width: 46rem; */
+    max-width: 50vw;
+  }
+  .upcoming-album-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 0 0;
+  }
+  .upcoming-album-img {
+    width: 100%;
+    height: auto;
+  }
+  .inner-div-upcoming-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+    max-width: 31rem;
+  }
+  .btn-discover-album {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    padding-left: 2rem;
+  }
+  .discover-album-div {
+    margin-top: 3rem;
     gap: 3rem;
   }
-  .btn-tour {
+  .a-btn-discover-album {
     padding: 1rem;
     width: 22rem;
     height: auto;
-    font-size: 1.4rem;
-  }
-  .btn-album-info {
-    padding: 1rem;
-    width: 22rem;
-    height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.4rem;
   }
   .footer-top {
@@ -1926,21 +1764,12 @@ footer {
     padding: 0 8rem;
   }
   .section5 {
-    padding: 4rem 1.5rem 4rem 1.5rem;
-  }
-  .div-section5-opacity-bg {
-    padding: 4rem 6rem 2rem 6rem;
-  }
-  .p_section5 {
-    max-width: 54rem;
-  }
-  .section6 {
     padding: 4rem 8rem;
   }
-  .tour-and-title {
+  .upcoming-album-title {
     gap: 1rem;
   }
-  .p_section6 {
+  .p_section5 {
     max-width: 54rem;
   }
   .footer-top {
