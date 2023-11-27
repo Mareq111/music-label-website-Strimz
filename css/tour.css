@@ -324,6 +324,14 @@ html {
   padding: 2rem 1rem;
 }
 
+.month-div {
+  display: none;
+}
+
+.month-div.active {
+  display: block;
+}
+
 .btns-chooser {
   display: flex;
   justify-content: center;
@@ -331,7 +339,16 @@ html {
   width: 100%;
   height: auto;
   gap: 0.5rem;
+  padding: 0.5rem 0;
   margin-bottom: 1.5rem;
+  background-color: #120f10;
+  position: sticky;
+  top: 3.5rem;
+  z-index: 1;
+}
+
+.btns-chooser.reached {
+  position: static;
 }
 
 .hr-line-under-btns {

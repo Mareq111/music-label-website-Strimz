@@ -401,7 +401,7 @@ html {
     margin-top: 0.5rem;
 }
 
-// nowiutyki
+// section 2 tour dates
 .section-2 {
     display: flex;
     flex-direction: column;
@@ -409,6 +409,14 @@ html {
     height: auto;
     padding: 2rem 1rem;
 }
+.month-div {
+    display: none;
+}
+
+.month-div.active {
+    display: block;
+}
+
 //btn chooser
 .btns-chooser {
     display: flex;
@@ -417,18 +425,25 @@ html {
     width: 100%;
     height: auto;
     gap: 0.5rem;
+    padding: 0.5rem 0;
     margin-bottom: 1.5rem;
+    background-color: $black-900;
+    position: sticky;
+    top: 3.5rem;
+    z-index: 1;
+}
+
+.btns-chooser.reached {
+    position: static;
 }
 .hr-line-under-btns {
-        border: none;
-        width: 100%;
-        background-color: $grey-700;
-        height: 0.05rem;
-        opacity: 0.1;
-        margin-bottom: 1.5rem;
-        
-    }
-
+    border: none;
+    width: 100%;
+    background-color: $grey-700;
+    height: 0.05rem;
+    opacity: 0.1;
+    margin-bottom: 1.5rem;
+}
 
 .btn-month {
     width: 25%;
@@ -453,7 +468,6 @@ html {
     background-color: $red-500;
     color: $black-600;
     opacity: 1;
-
 }
 //end
 
@@ -556,7 +570,6 @@ html {
     height: 0.05rem;
     opacity: 0.1;
     margin-top: 0.5rem;
-    
 }
 
 //section3 music app chooser
