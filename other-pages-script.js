@@ -24,3 +24,18 @@ summaryFocus?.addEventListener("click", () => {
     ? (summaryFocus.classList.add("focused"), (isFocused = true))
     : (summaryFocus?.classList.remove("focused"), (isFocused = false));
 });
+
+//3 month chooser for tour page
+
+const buttonChooser = document.querySelectorAll(".btn-month");
+const may = document.getElementById("btn-May");
+const june = document.getElementById("btn-June");
+const july = document.getElementById("btn-July");
+const august = document.getElementById("btn-August");
+
+buttonChooser.forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelector(".btn-month.active")?.classList.remove("active");
+    button.classList.add("active");
+  });
+});
