@@ -5,7 +5,7 @@
 /* //colors variety import from  separate color stylesheet
 @import "/css/ColorsVariety.css";
  */
- $white: #f2f2f2;
+$white: #f2f2f2;
 $red-500: #cd3737;
 $red-700: #b61a1a;
 $grey-500: #dcdcdc;
@@ -221,6 +221,7 @@ html {
     width: 100%;
     height: auto;
     box-shadow: 0px 2px 8px 1px $shadow-black;
+    border-radius: 5%;
 }
 
 #fig-album-released {
@@ -687,8 +688,8 @@ html {
     height: auto;
     min-height: 14rem;
     min-width: 14rem;
+    border-radius: 5%;
 }
-
 
 .album {
     display: flex;
@@ -725,7 +726,6 @@ html {
     height: auto;
     margin-top: auto;
 }
-
 
 .date-small {
     font-weight: 400;
@@ -784,8 +784,8 @@ html {
     }
 }
 
- //btn 
- .btn-view-div {
+//btn
+.btn-view-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -806,8 +806,10 @@ html {
     font-size: 1rem;
     font-weight: 700;
     transition: 0.1s ease-in-out;
-   
-    &:hover, :focus, :active {
+
+    &:hover,
+    :focus,
+    :active {
         transform: scale(1.1);
         background-color: $grey-500;
     }
@@ -847,7 +849,7 @@ footer {
 .footer-a-2 {
     display: flex;
     flex-direction: column;
-   
+
     width: auto;
 }
 
@@ -1048,6 +1050,13 @@ footer {
 @media (min-width: 375px) {
     .quantity-of-songs-and-time {
         font-size: 0.7rem;
+    }
+    //album section
+    .album-name {
+        font-size: 1.8rem;
+    }
+    .album-artist-name {
+        font-size: 1.3rem;
     }
 }
 

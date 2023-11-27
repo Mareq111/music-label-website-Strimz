@@ -221,6 +221,7 @@ html {
     width: 100%;
     height: auto;
     box-shadow: 0px 2px 8px 1px $shadow-black;
+    border-radius: 5%;
 }
 
 #fig-album-released {
@@ -687,6 +688,7 @@ html {
     height: auto;
     min-height: 14rem;
     min-width: 14rem;
+    border-radius: 5%;
 }
 .album {
     display: flex;
@@ -1050,6 +1052,13 @@ footer {
     .quantity-of-songs-and-time {
         font-size: 0.7rem;
     }
+        //album section
+        .album-name {
+            font-size: 1.8rem;
+        }
+        .album-artist-name {
+            font-size: 1.3rem;
+        }
 }
 
 //media queries for 425px screens

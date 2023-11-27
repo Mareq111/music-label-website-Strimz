@@ -369,6 +369,7 @@ html {
   height: auto;
   min-height: 7.5rem;
   min-width: 7.5rem;
+  border-radius: 5%;
 }
 
 .album,
@@ -749,6 +750,7 @@ html {
   width: 100%;
   height: auto;
   cursor: pointer;
+  border-radius: 5%;
 }
 
 .inner-div-upcoming-album {
@@ -757,6 +759,7 @@ html {
   align-items: center;
   margin: 0 1rem;
   transition: 0.1s ease-in-out;
+  border-radius: 5%;
 }
 .inner-div-upcoming-album:hover {
   transform: scale(1.1);

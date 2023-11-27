@@ -374,6 +374,7 @@ html {
   height: auto;
   min-height: 7.5rem;
   min-width: 7.5rem;
+  border-radius: 5%;
 }
 
 .album,

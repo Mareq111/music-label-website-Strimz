@@ -453,6 +453,7 @@ html {
     height: auto;
     min-height: 7.5rem;
     min-width: 7.5rem;
+    border-radius: 5%;
 }
 .album,
 .single {
@@ -859,12 +860,14 @@ html {
     justify-content: center;
     align-items: center;
     margin: 1.5rem 0;
+   
 }
 
 .upcoming-album-img {
     width: 100%;
     height: auto;
     cursor: pointer;
+    border-radius: 5%;
 }
 .inner-div-upcoming-album {
     display: flex;
@@ -872,6 +875,7 @@ html {
     align-items: center;
     margin: 0 1rem;
     transition: 0.1s ease-in-out;
+    border-radius: 5%;
     &:hover {
         transform: scale(1.1);
         box-shadow: 0 0 8px $shadow-red-path-to-zukunft;
@@ -1791,6 +1795,7 @@ footer {
         height: auto;
         min-height: 10rem;
         min-width: 10rem;
+       
     }
     .album,
     .single {
@@ -1890,11 +1895,13 @@ footer {
         justify-content: center;
         align-items: center;
         margin: 3rem 0 0 0;
+       
     }
 
     .upcoming-album-img {
         width: 100%;
         height: auto;
+   
     }
     .inner-div-upcoming-album {
         display: flex;

@@ -188,6 +188,7 @@ html {
   width: 100%;
   height: auto;
   box-shadow: 0px 2px 8px 1px rgba(30, 29, 29, 0.6);
+  border-radius: 5%;
 }
 
 #fig-album-released {
@@ -639,6 +640,7 @@ html {
   height: auto;
   min-height: 14rem;
   min-width: 14rem;
+  border-radius: 5%;
 }
 
 .album {
@@ -993,6 +995,12 @@ footer {
 @media (min-width: 375px) {
   .quantity-of-songs-and-time {
     font-size: 0.7rem;
+  }
+  .album-name {
+    font-size: 1.8rem;
+  }
+  .album-artist-name {
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 425px) {
