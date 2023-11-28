@@ -152,7 +152,7 @@ html {
     transition: 0.2s ease-in-out;
     opacity: 1;
     display: block;
-    z-index: 2;
+    z-index: 3;
 }
 
 .all-inside {
@@ -488,7 +488,7 @@ html {
     flex-direction: column;
     width: 100%;
     height: auto;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     &:hover {
         border-bottom: 0.1rem solid $grey-700;
     }
@@ -1007,7 +1007,7 @@ footer {
         margin: 1.5rem 0;
         font-size: 1.2rem;
     }
-    //! section 2 tour dates
+    //! section 2 tour dates 425px
     .section-2 {
         display: flex;
         flex-direction: column;
@@ -1018,8 +1018,13 @@ footer {
 
     //btn chooser
     .btns-chooser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 0 0 1rem 0;
         margin-bottom: 2rem;
+        width: 100%;
+        /* max-width: 34rem; */
         /*  top: 3.5rem; */
     }
 
@@ -1100,13 +1105,12 @@ footer {
 
     .hr-line-to-sections-chooser {
         height: 0.1rem;
-        /*     margin-top: 0.5rem; */
     }
 
     //!section 5 tour
 
     .section5 {
-        padding: 3rem 2rem;
+        padding: 2rem;
     }
     .upcoming-album-title {
         gap: 0.5rem;
@@ -1257,19 +1261,22 @@ footer {
         font-size: 1.4rem;
     }
     //! section 2
-    //! section 2 tour dates
     .section-2 {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
-        padding: 4rem 3rem;
+        padding: 3rem;
     }
+    //
 
     //btn chooser
     .btns-chooser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         margin-bottom: 3rem;
-        /*  top: 3.5rem; */
     }
     .btn-month {
         width: 25%;
@@ -1291,8 +1298,7 @@ footer {
         align-items: center;
         flex-direction: row;
         width: 100%;
-        height: 3rem;
-        /*  background-color: #342138; */
+        height: 4rem;
     }
 
     .row-date-place-location {
@@ -1349,7 +1355,7 @@ footer {
     //!section 5 upcoming album
 
     .section5 {
-        padding: 4rem 3rem;
+        padding: 3rem;
     }
     .upcoming-album-title {
         gap: 0.7rem;
@@ -1527,98 +1533,94 @@ footer {
         line-height: 3.8rem;
         font-size: 1.9rem;
     }
-
-    //btn discover story
-
-    /* //bez zmian   .btn-discover {
-        padding: 1rem;
-        width: 22rem;
+    //! section 2 1024
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         height: auto;
-        margin: 2rem 0;
-        font-size: 1.4rem;
-    } */
-    //! section 2 i 4 padding 5.5 4.5 ma byc wieksze niz section 1 o 0.5rem
-
-    // section 2 new albums with section 4 latest singles
-    .section-2,
-    .section-4 {
-        padding: 5.5rem 4.5rem 2rem 5.5rem;
-        gap: 1.5rem;
-    }
-    .h-section-2,
-    .h-section-4 {
-        font-size: 2rem;
-        margin-bottom: 2.8rem;
+        padding: 4rem 4.5rem;
     }
 
-    //albums thing
-    .albums-chooser,
-    .singles-chooser {
-        min-height: 26rem;
-        gap: 2rem;
+    //btn chooser
+    .btns-chooser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 0 1rem 4rem 1rem;
+        z-index: 2;
     }
-    .album-cover,
-    .single-cover {
-        width: 10rem;
-        height: auto;
-        min-height: 10rem;
-        min-width: 10rem;
-    }
-    .album,
-    .single {
-        width: 10rem;
-        height: auto;
-        min-height: 18rem;
-    }
-    .song-title-small {
-        font-size: 1.2rem;
-        margin-top: 0.9rem;
-    }
-
-    .content-small {
-        gap: 0.6rem;
-    }
-
-    .date-small {
-        font-size: 1.2rem;
-    }
-
-    .dots-separator-album,
-    .dots-separator-single {
-        font-size: 1.8rem;
-    }
-
-    //section3 music app chooser
-
-    .section3 {
-        padding: 0 4.5rem;
-    }
-    .h2-section3 {
-        font-size: 2rem;
-        line-height: 4rem;
-    }
-    .dot-and-introduction-chooser {
-        gap: 0.8rem;
-        line-height: 2.4rem;
-        margin: 0.5rem 0 3rem 0;
-    }
-    .p_introduction-chooser {
-        font-size: 1.2rem;
-    }
-    #dot-introduction-chooser {
+    .btn-month {
+        width: 25%;
+        height: 3rem;
         font-size: 1rem;
-    }
-    #box-1,
-    #box-2,
-    #box-3,
-    #box-4,
-    #box-5 {
-        font-size: 2.4rem;
+        margin: 0;
     }
 
-    .hr-line-to-sections-chooser {
-        height: 0.1rem;
-        margin-top: 3rem;
+    .h-section-2 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 2.8rem;
+        font-weight: 700;
+    }
+    .month-div.active {
+        display: block;
+        margin: 0 2rem;
+    }
+
+    .tour-dates-all-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 5rem;
+    }
+
+    .row-date-place-location {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+        gap: 1rem;
+    }
+    .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+    .city {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 7rem;
+        width: auto;
+        height: auto;
+    }
+    .place {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .city-place-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        font-size: 1rem;
+        width: 100%;
+        height: auto;
+    }
+    //btn
+    .btn-details-div {
+        z-index: 1;
     }
 
     //!section 5 upcoming album 1024
@@ -1775,112 +1777,148 @@ footer {
     .p_description {
         max-width: 52rem;
     }
-    //! section 2 i 4 padding 5.5 4.5 ma byc wieksze niz section 1 o 0.5rem
+    //! section 2 tour dates
 
-    // section 2 new albums with section 4 latest singles
-    .section-2,
-    .section-4 {
-        padding: 5.5rem 8rem;
-        gap: 2rem;
-    }
-    //! section3 music app chooser
-
-    .section3 {
-        padding: 0 8rem;
-    }
-
-    //! section 5 upcoming album 1024
-
-    .section5 {
-        padding: 4rem 8rem;
-    }
-    .upcoming-album-title {
-        gap: 1rem;
-    }
-    .p_section5 {
-        max-width: 54rem;
-    }
-    //footer'top
-
-    .footer-top {
+    //! section 2
+    .section-2 {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 6rem;
-        padding: 6rem;
-    }
-    .description-and-email-input {
-        gap: 2rem;
-    }
-
-    .email-input-description {
-        padding: 0;
-    }
-    //footer bottom
-    .footer-bottom {
-        padding: 0 6rem;
-    }
-
-    .footer-p-and-nav {
-        padding-top: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 2rem;
-    }
-    .nav-a-footer-social {
-        padding: 0 2rem;
-    }
-    #bottom-nav-a-1,
-    #bottom-nav-a-2,
-    #bottom-nav-a-3,
-    #bottom-nav-a-4,
-    #bottom-nav-a-5,
-    #bottom-nav-a-6,
-    #bottom-nav-a-7,
-    #bottom-nav-a-8,
-    #bottom-nav-a-9 {
-        font-size: 2.5rem;
-    }
-    .time-and-rights {
-        font-size: 1.2rem;
-    }
-    //about me
-    .about-me {
-        display: flex;
-        justify-content: flex-start;
         flex-direction: column;
-        align-items: center;
         width: 100%;
         height: auto;
-        padding-top: 2rem;
+        padding: 4rem 8rem;
     }
-    #description-about-me {
+
+    //btn chooser
+
+    .btns-chooser {
+        margin: 0 1.5rem 4rem 1.5rem;
+
+        top: 4rem;
+    }
+    .h-section-2 {
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 3.4rem;
+        font-weight: 700;
+    }
+    .month-div.active {
+        display: block;
+        margin: 0 3rem;
+    }
+
+    .row-date-place-location {
+        gap: 2rem;
+    }
+    .date {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 6rem;
-        gap: 0.5rem;
+        font-size: 1.4rem;
+        margin-right: 1rem;
+    }
+    .city {
+        min-width: 10rem;
+    }
+    .btn-details {
         font-size: 1.2rem;
-        width: 100%;
     }
-    .my-name-and-socials {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 6rem;
-        width: 100%;
-        gap: 1rem;
-    }
-    #my-name-is {
-        font-size: 1.6rem;
-        padding: 1rem 0;
-    }
-    .my-social {
-        font-size: 3.2rem;
-        color: $ming-blue-600;
-        transition: 0.1s ease-in-out;
+
+    .city-place-div {
+        font-size: 1.2rem;
+        //! section 5 upcoming album 1024
+
+        .section5 {
+            padding: 4rem 8rem;
+        }
+        .upcoming-album-title {
+            gap: 1rem;
+        }
+        .p_section5 {
+            max-width: 54rem;
+        }
+        //footer'top
+
+        .footer-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 6rem;
+            padding: 6rem;
+        }
+        .description-and-email-input {
+            gap: 2rem;
+        }
+
+        .email-input-description {
+            padding: 0;
+        }
+        //footer bottom
+        .footer-bottom {
+            padding: 0 6rem;
+        }
+
+        .footer-p-and-nav {
+            padding-top: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 2rem;
+        }
+        .nav-a-footer-social {
+            padding: 0 2rem;
+        }
+        #bottom-nav-a-1,
+        #bottom-nav-a-2,
+        #bottom-nav-a-3,
+        #bottom-nav-a-4,
+        #bottom-nav-a-5,
+        #bottom-nav-a-6,
+        #bottom-nav-a-7,
+        #bottom-nav-a-8,
+        #bottom-nav-a-9 {
+            font-size: 2.5rem;
+        }
+        .time-and-rights {
+            font-size: 1.2rem;
+        }
+        //about me
+        .about-me {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding-top: 2rem;
+        }
+        #description-about-me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 6rem;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+        .my-name-and-socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 6rem;
+            width: 100%;
+            gap: 1rem;
+        }
+        #my-name-is {
+            font-size: 1.6rem;
+            padding: 1rem 0;
+        }
+        .my-social {
+            font-size: 3.2rem;
+            color: $ming-blue-600;
+            transition: 0.1s ease-in-out;
+        }
     }
 }
