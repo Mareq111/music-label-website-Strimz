@@ -428,6 +428,7 @@ html {
     padding: 0.5rem 0;
     margin-bottom: 1.5rem;
     background-color: $black-900;
+    border-bottom: 0.4rem solid $black-700;
     position: sticky;
     top: 3.5rem;
     z-index: 1;
@@ -447,7 +448,7 @@ html {
 
 .btn-month {
     width: 25%;
-    height: 2rem;
+    height: 2.5rem;
     border-radius: 5%;
     outline: none;
     cursor: pointer;
@@ -465,8 +466,8 @@ html {
     }
 }
 .btn-month.active {
-    background-color: $red-500;
-    color: $black-600;
+    background-color: $red-300;
+    color: $black-900;
     opacity: 1;
 }
 //end

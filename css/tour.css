@@ -342,6 +342,7 @@ html {
   padding: 0.5rem 0;
   margin-bottom: 1.5rem;
   background-color: #120f10;
+  border-bottom: 0.4rem solid #1c1b1b;
   position: sticky;
   top: 3.5rem;
   z-index: 1;
@@ -362,7 +363,7 @@ html {
 
 .btn-month {
   width: 25%;
-  height: 2rem;
+  height: 2.5rem;
   border-radius: 5%;
   outline: none;
   cursor: pointer;
@@ -381,7 +382,7 @@ html {
 }
 
 .btn-month.active {
-  background-color: #cd3737;
+  background-color: #f14343;
   color: #120f10;
   opacity: 1;
 }
