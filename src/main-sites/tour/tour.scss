@@ -401,7 +401,7 @@ html {
     margin-top: 0.5rem;
 }
 
-// section 2 tour dates
+//! section 2 tour dates
 .section-2 {
     display: flex;
     flex-direction: column;
@@ -425,7 +425,7 @@ html {
     width: 100%;
     height: auto;
     gap: 0.5rem;
-    padding: 0.5rem 0;
+    padding: 0 0 0.5rem 0;
     margin-bottom: 1.5rem;
     background-color: $black-900;
     border-bottom: 0.4rem solid $black-700;
@@ -449,7 +449,9 @@ html {
 .btn-month {
     width: 25%;
     height: 2.5rem;
-    border-radius: 5%;
+    /* border-radius: 5%; */
+    border-radius: 0.5rem;
+
     outline: none;
     cursor: pointer;
     border: none;
@@ -511,6 +513,13 @@ html {
     font-size: 1.2rem;
     width: 100%;
 }
+.city {
+    display: flex;
+}
+.place {
+    display: flex;
+    gap: 0.5rem;
+}
 .city-place-div {
     display: flex;
     justify-content: space-between;
@@ -571,82 +580,6 @@ html {
     height: 0.05rem;
     opacity: 0.1;
     margin-top: 0.5rem;
-}
-
-//section3 music app chooser
-
-.section3 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 0 1rem;
-}
-.h2-section3 {
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    text-transform: uppercase;
-    width: 100%;
-    /*  padding-bottom: 2rem; */
-    font-weight: 800;
-}
-.dot-and-introduction-chooser {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    gap: 0.5rem;
-    line-height: 1.6rem;
-    margin: 0.5rem 0 2rem 0;
-}
-.p_introduction-chooser {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    font-size: 0.8rem;
-    color: $grey-600;
-}
-#dot-introduction-chooser {
-    color: $eastern-blue-500;
-    font-size: 0.6rem;
-}
-
-.choose-player {
-    display: flex;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    opacity: 0.8;
-}
-
-.music-app-choose {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-}
-
-#box-1,
-#box-2,
-#box-3,
-#box-4,
-#box-5 {
-    color: $white;
-    padding: 0;
-    /*  font-size: 1.5rem; */
-    font-size: 2rem;
-    transition: 0.1s ease-in-out;
-    cursor: pointer;
-    &:active {
-        color: $amulet-green-400;
-        transform: scale(1.3);
-    }
-    &:hover {
-        color: $amulet-green-400;
-        transform: scale(1.3);
-    }
 }
 
 //section 5 upcoming album
@@ -1059,95 +992,98 @@ footer {
         margin: 1.5rem 0;
         font-size: 1.2rem;
     }
-    //! section 2 i 4 padding 3rem 2rem
+    //! section 2
+    //! section 2 tour dates
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 2rem 1.5rem;
+    }
 
-    // section 2 new albums with section 4 latest singles
-    .section-2,
-    .section-4 {
-        padding: 3rem 2rem;
+    //btn chooser
+    .btns-chooser {
+        padding: 0 0 1rem 0;
+        margin-bottom: 2rem;
+        /*  top: 3.5rem; */
+    }
+
+    .btn-month {
+        width: 25%;
+        height: 3rem;
+        font-size: 0.9rem;
+    }
+
+    .h-section-2 {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 2.4rem;
+        font-weight: 700;
+    }
+
+    .tour-dates-all-info {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
         gap: 1rem;
     }
-    .h-section-2,
-    .h-section-4 {
-        font-size: 1.6rem;
-        margin-bottom: 2.4rem;
-    }
-
-    //albums thing
-    .albums-chooser,
-    .singles-chooser {
-        min-height: 22rem; //pocco?
-        gap: 2rem;
-    }
-    .album-cover,
-    .single-cover {
-        width: 8.5rem;
+    /* .city {
+    display: flex;
+}
+.place {
+    display: flex;
+    gap: 0.5rem;
+} */
+    .row-date-place-location {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        /* height: 5rem; */
         height: auto;
-        min-height: 8.5rem;
-        min-width: 8.5rem;
-    }
-    .album,
-    .single {
-        width: 8.5rem;
-        height: auto;
-        min-height: 14rem;
-    }
-    .song-title-small {
-        font-size: 1rem;
-        margin-top: 0.7rem;
-    }
-
-    .content-small {
-        gap: 0.4rem;
-    }
-
-    .date-small {
-        font-size: 1rem;
-    }
-
-    .dots-separator-album,
-    .dots-separator-single {
-        font-size: 1.6rem;
-    }
-
-    //btn for view collection
-    //btn
-    .btn-view-collection {
-        /* 
-    padding: 0.5rem 1rem; */
-        width: 18rem;
-        height: auto;
-        margin: 1.5rem 0;
-        font-size: 1.2rem;
-    }
-
-    //section3 music app chooser
-
-    .section3 {
-        padding: 0 2rem;
-    }
-    .h2-section3 {
-        font-size: 1.6rem;
-        line-height: 3.2rem;
-    }
-    .dot-and-introduction-chooser {
+        width: 100%;
         gap: 0.5rem;
-        line-height: 2rem;
-        /*  margin: 0.5rem 0 2rem 0; */
     }
-    .p_introduction-chooser {
+    .date {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         font-size: 1rem;
+        width: auto;
     }
-    #dot-introduction-chooser {
-        font-size: 0.8rem;
+    .city-place-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        font-size: 1rem;
+        width: 100%;
+        gap: 0.5rem;
+        padding: 0;
+        height: auto;
+    }
+    //btn
+
+    .btn-details-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
     }
 
     .hr-line-to-sections-chooser {
         height: 0.1rem;
-        /* margin-top: 2rem ; */
+        /*     margin-top: 0.5rem; */
     }
 
-    //section 5 tour
+    //!section 5 tour
 
     .section5 {
         padding: 3rem 2rem;
@@ -1300,101 +1236,97 @@ footer {
         margin: 2rem 0;
         font-size: 1.4rem;
     }
-    //! section 2 i 4 padding 4rem 3rem
-
-    // section 2 new albums with section 4 latest singles
-    .section-2,
-    .section-4 {
+    //! section 2
+    //! section 2 tour dates
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
         padding: 4rem 3rem;
-        gap: 1rem;
     }
-    .h-section-2,
-    .h-section-4 {
+
+    //btn chooser
+    .btns-chooser {
+        margin-bottom: 3rem;
+        /*  top: 3.5rem; */
+    }
+    .btn-month {
+        width: 25%;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .h-section-2 {
         font-size: 1.8rem;
+        text-transform: uppercase;
+        width: 100%;
         margin-bottom: 2.6rem;
+        font-weight: 700;
     }
 
-    //albums thing
-    .albums-chooser,
-    .singles-chooser {
-        min-height: 24rem;
-        gap: 2rem;
+    .tour-dates-all-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 3rem;
+        /*  background-color: #342138; */
     }
-    .album-cover,
-    .single-cover {
-        width: 9rem;
+
+    .row-date-place-location {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
         height: auto;
-        min-height: 9rem;
-        min-width: 9rem;
+        width: auto;
+        /* gap: 1rem; */
     }
-    .album,
-    .single {
-        width: 9rem;
+    .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+    .city {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-width: 7rem;
+        width: auto;
         height: auto;
-        min-height: 16rem;
     }
-    .song-title-small {
-        font-size: 1.1rem;
-        margin-top: 0.8rem;
-    }
-
-    .content-small {
-        gap: 0.5rem;
+    .place {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    .date-small {
-        font-size: 1.1rem;
+    .city-place-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        font-size: 1rem;
+        width: 100%;
+        height: auto;
     }
-
-    .dots-separator-album,
-    .dots-separator-single {
-        font-size: 1.7rem;
-    }
-
-    //btn for view collection
     //btn
-    .btn-view-collection {
-        padding: 1rem;
-        width: 22rem;
+
+    .btn-details-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
         height: auto;
-        margin: 2rem 0;
-        font-size: 1.4rem;
+        background-color: transparent;
+        margin-left: auto; //test
     }
 
-    //section3 music app chooser
-
-    .section3 {
-        padding: 0 3rem;
-    }
-    .h2-section3 {
-        font-size: 1.8rem;
-        line-height: 3.6rem;
-    }
-    .dot-and-introduction-chooser {
-        gap: 0.6rem;
-        line-height: 2.2rem;
-        margin: 0.5rem 0 2.5rem 0;
-    }
-    .p_introduction-chooser {
-        font-size: 1.1rem;
-    }
-    #dot-introduction-chooser {
-        font-size: 0.9rem;
-    }
-    #box-1,
-    #box-2,
-    #box-3,
-    #box-4,
-    #box-5 {
-        font-size: 2.2rem;
-    }
-
-    .hr-line-to-sections-chooser {
-        height: 0.1rem;
-        margin-top: 2rem;
-    }
-
-    //section 5 upcoming album
+    //!section 5 upcoming album
 
     .section5 {
         padding: 4rem 3rem;
