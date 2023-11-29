@@ -1049,13 +1049,13 @@ footer {
         flex-direction: column;
         width: 100%;
         height: auto;
-        gap: 1rem;
+        /*   gap: 1rem; */
     }
     .city {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        min-width: 6rem;
+        min-width: 6.5rem;
         width: auto;
         height: auto;
     }
@@ -1078,17 +1078,18 @@ footer {
         justify-content: flex-start;
         align-items: center;
         font-size: 1rem;
-        width: auto;
-        margin-right: 0.5rem;
+        width: auto; //z auto
+        min-width: 5.3rem;
+        /* margin-right: 0.5rem; */
     }
     .city-place-div {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: row;
         font-size: 1rem;
         width: 100%;
-        gap: 0.5rem;
+        /* gap: 0.5rem; */
         padding: 0;
         height: auto;
     }
@@ -1315,13 +1316,14 @@ footer {
         justify-content: center;
         align-items: center;
         font-size: 1.2rem;
-        margin-right: 0.5rem;
+        margin-right: 1rem;
+        width: 8rem;
     }
     .city {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        min-width: 7rem;
+        min-width: 6.5rem;
         width: auto;
         height: auto;
     }
@@ -1333,7 +1335,7 @@ footer {
 
     .city-place-div {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-direction: row;
         font-size: 1rem;
@@ -1599,7 +1601,7 @@ footer {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        min-width: 7rem;
+        min-width: 8rem;
         width: auto;
         height: auto;
     }
@@ -1611,7 +1613,7 @@ footer {
 
     .city-place-div {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-direction: row;
         font-size: 1rem;
@@ -1816,6 +1818,7 @@ footer {
         align-items: center;
         font-size: 1.4rem;
         margin-right: 1rem;
+        min-width: 10rem;
     }
     .city {
         min-width: 10rem;
