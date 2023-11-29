@@ -614,6 +614,7 @@ footer {
     left: 50%;
     transform: translate(-50%, 0);
     padding: 0 2rem;
+    max-height: 70rem;
   }
   .section-greetings {
     padding: 14rem 4rem 4rem 4rem;
@@ -695,7 +696,7 @@ footer {
     font-size: 2rem;
   }
   #background-cover {
-    max-height: 80rem;
+    max-height: 75rem;
   }
   .div-info-greetings {
     padding: 4rem 3rem;

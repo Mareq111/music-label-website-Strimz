@@ -1628,16 +1628,16 @@ footer {
   .city-place-div {
     font-size: 1.2rem;
   }
-  .city-place-div .section5 {
+  .section5 {
     padding: 4rem 8rem;
   }
-  .city-place-div .upcoming-album-title {
+  .upcoming-album-title {
     gap: 1rem;
   }
-  .city-place-div .p_section5 {
+  .p_section5 {
     max-width: 54rem;
   }
-  .city-place-div .footer-top {
+  .footer-top {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1645,16 +1645,16 @@ footer {
     gap: 6rem;
     padding: 6rem;
   }
-  .city-place-div .description-and-email-input {
+  .description-and-email-input {
     gap: 2rem;
   }
-  .city-place-div .email-input-description {
+  .email-input-description {
     padding: 0;
   }
-  .city-place-div .footer-bottom {
+  .footer-bottom {
     padding: 0 6rem;
   }
-  .city-place-div .footer-p-and-nav {
+  .footer-p-and-nav {
     padding-top: 4rem;
     display: flex;
     align-items: center;
@@ -1662,24 +1662,24 @@ footer {
     flex-direction: row;
     gap: 2rem;
   }
-  .city-place-div .nav-a-footer-social {
+  .nav-a-footer-social {
     padding: 0 2rem;
   }
-  .city-place-div #bottom-nav-a-1,
-  .city-place-div #bottom-nav-a-2,
-  .city-place-div #bottom-nav-a-3,
-  .city-place-div #bottom-nav-a-4,
-  .city-place-div #bottom-nav-a-5,
-  .city-place-div #bottom-nav-a-6,
-  .city-place-div #bottom-nav-a-7,
-  .city-place-div #bottom-nav-a-8,
-  .city-place-div #bottom-nav-a-9 {
+  #bottom-nav-a-1,
+  #bottom-nav-a-2,
+  #bottom-nav-a-3,
+  #bottom-nav-a-4,
+  #bottom-nav-a-5,
+  #bottom-nav-a-6,
+  #bottom-nav-a-7,
+  #bottom-nav-a-8,
+  #bottom-nav-a-9 {
     font-size: 2.5rem;
   }
-  .city-place-div .time-and-rights {
+  .time-and-rights {
     font-size: 1.2rem;
   }
-  .city-place-div .about-me {
+  .about-me {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -1688,7 +1688,7 @@ footer {
     height: auto;
     padding-top: 2rem;
   }
-  .city-place-div #description-about-me {
+  #description-about-me {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1697,7 +1697,7 @@ footer {
     font-size: 1.2rem;
     width: 100%;
   }
-  .city-place-div .my-name-and-socials {
+  .my-name-and-socials {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1705,11 +1705,11 @@ footer {
     width: 100%;
     gap: 1rem;
   }
-  .city-place-div #my-name-is {
+  #my-name-is {
     font-size: 1.6rem;
     padding: 1rem 0;
   }
-  .city-place-div .my-social {
+  .my-social {
     font-size: 3.2rem;
     color: #367983;
     transition: 0.1s ease-in-out;

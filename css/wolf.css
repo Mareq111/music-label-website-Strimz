@@ -1110,6 +1110,7 @@ footer {
   #background-album-cover {
     transform: translateY(-16rem);
     height: auto;
+    max-height: 75rem;
   }
   #main-album-cover {
     width: 100%;

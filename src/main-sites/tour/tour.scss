@@ -1829,99 +1829,99 @@ footer {
 
     .city-place-div {
         font-size: 1.2rem;
-        //! section 5 upcoming album 1024
+    }
+    //! section 5 upcoming album 1024
 
-        .section5 {
-            padding: 4rem 8rem;
-        }
-        .upcoming-album-title {
-            gap: 1rem;
-        }
-        .p_section5 {
-            max-width: 54rem;
-        }
-        //footer'top
+    .section5 {
+        padding: 4rem 8rem;
+    }
+    .upcoming-album-title {
+        gap: 1rem;
+    }
+    .p_section5 {
+        max-width: 54rem;
+    }
+    //footer'top
 
-        .footer-top {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 6rem;
-            padding: 6rem;
-        }
-        .description-and-email-input {
-            gap: 2rem;
-        }
+    .footer-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 6rem;
+        padding: 6rem;
+    }
+    .description-and-email-input {
+        gap: 2rem;
+    }
 
-        .email-input-description {
-            padding: 0;
-        }
-        //footer bottom
-        .footer-bottom {
-            padding: 0 6rem;
-        }
+    .email-input-description {
+        padding: 0;
+    }
+    //footer bottom
+    .footer-bottom {
+        padding: 0 6rem;
+    }
 
-        .footer-p-and-nav {
-            padding-top: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-            gap: 2rem;
-        }
-        .nav-a-footer-social {
-            padding: 0 2rem;
-        }
-        #bottom-nav-a-1,
-        #bottom-nav-a-2,
-        #bottom-nav-a-3,
-        #bottom-nav-a-4,
-        #bottom-nav-a-5,
-        #bottom-nav-a-6,
-        #bottom-nav-a-7,
-        #bottom-nav-a-8,
-        #bottom-nav-a-9 {
-            font-size: 2.5rem;
-        }
-        .time-and-rights {
-            font-size: 1.2rem;
-        }
-        //about me
-        .about-me {
-            display: flex;
-            justify-content: flex-start;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: auto;
-            padding-top: 2rem;
-        }
-        #description-about-me {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0 6rem;
-            gap: 0.5rem;
-            font-size: 1.2rem;
-            width: 100%;
-        }
-        .my-name-and-socials {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem 6rem;
-            width: 100%;
-            gap: 1rem;
-        }
-        #my-name-is {
-            font-size: 1.6rem;
-            padding: 1rem 0;
-        }
-        .my-social {
-            font-size: 3.2rem;
-            color: $ming-blue-600;
-            transition: 0.1s ease-in-out;
-        }
+    .footer-p-and-nav {
+        padding-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .nav-a-footer-social {
+        padding: 0 2rem;
+    }
+    #bottom-nav-a-1,
+    #bottom-nav-a-2,
+    #bottom-nav-a-3,
+    #bottom-nav-a-4,
+    #bottom-nav-a-5,
+    #bottom-nav-a-6,
+    #bottom-nav-a-7,
+    #bottom-nav-a-8,
+    #bottom-nav-a-9 {
+        font-size: 2.5rem;
+    }
+    .time-and-rights {
+        font-size: 1.2rem;
+    }
+    //about me
+    .about-me {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding-top: 2rem;
+    }
+    #description-about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 6rem;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .my-name-and-socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 6rem;
+        width: 100%;
+        gap: 1rem;
+    }
+    #my-name-is {
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+    .my-social {
+        font-size: 3.2rem;
+        color: $ming-blue-600;
+        transition: 0.1s ease-in-out;
     }
 }
