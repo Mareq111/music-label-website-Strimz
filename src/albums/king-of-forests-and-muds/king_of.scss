@@ -64,6 +64,7 @@ html {
     z-index: -2;
 }
 
+//!for mobile menu and hide desktop menu
 .top-content {
     display: flex;
     justify-content: space-between;
@@ -76,9 +77,9 @@ html {
     position: fixed;
     z-index: 2;
 }
-
 #logo,
 #dropdown-menu-icon {
+    display: block;
     width: 1.75rem;
     height: 1.75rem;
     font-size: 1.75rem;
@@ -87,6 +88,12 @@ html {
     &:hover {
         color: $grey-500;
     }
+}
+#chevron-to-show-social-menu {
+    display: none;
+}
+.nav-desktop {
+    display: none;
 }
 
 //toggle menu
@@ -1199,66 +1206,124 @@ footer {
 
 @media (min-width: 1024px) {
     //nav top
+ // hide mobile menu and nav for desktop row - 1024+
+ .top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $shadow-black-transparent;
+    backdrop-filter: blur(0.5rem);
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 2rem;
+    position: fixed;
+    z-index: 2;
+}
 
-    //toggle menu
-    .toggle-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
-        right: 0;
-        padding: 1.5rem;
+#logo,
+#chevron-to-show-social-menu {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.75rem;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    &:hover {
+        color: $grey-500;
     }
-    .toggle_menu-a {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0;
-        font-size: 1.4rem;
-    }
+}
 
-    // social icons are hidden
-    .toggle-column-right {
-        display: none;
-    }
+#dropdown-menu-icon {
+    display: none;
+}
 
-    //hide this nav for small screens
-    .top-nav-desktop {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        margin: 5rem 2rem;
-        right: 0;
-        gap: 0.5rem;
-        position: fixed;
-    }
+.nav-desktop {
+    display: block;
+    width: 80%;
+}
+.desktop_menu-a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem 0rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+}
 
-    .nav-a-social {
-        display: block;
-        text-decoration: none;
-        color: $white;
-        margin: 0.2rem 0;
-        cursor: pointer;
+.nav-a-desktop-menu {
+    text-decoration: none;
+    color: $grey-500;
+    transition: 0.1s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+        color: $grey-600;
     }
+}
 
-    #nav-a-1,
-    #nav-a-2,
-    #nav-a-3,
-    #nav-a-4,
-    #nav-a-5,
-    #nav-a-6,
-    #nav-a-7,
-    #nav-a-8,
-    #nav-a-9 {
-        font-size: 1.75rem;
-        transition: 0.1s ease-in-out;
-        &:hover {
-            transform: scale(1.2);
-            color: $grey-500;
-        }
+//toggle menu
+.toggle-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    right: 0;
+    padding: 1.5rem;
+}
+.toggle_menu-a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+//hide this nav for small screens - social
+// social icons are hidden
+.toggle-column-right {
+    display: none;
+}
+
+.top-nav-desktop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 2rem;
+    right: 0;
+    gap: 0.5rem;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-a-social {
+    display: block; //test
+    text-decoration: none;
+    color: $white;
+    margin: 0.2rem 0;
+    cursor: pointer;
+}
+
+#nav-a-1,
+#nav-a-2,
+#nav-a-3,
+#nav-a-4,
+#nav-a-5,
+#nav-a-6,
+#nav-a-7,
+#nav-a-8,
+#nav-a-9 {
+    font-size: 1.75rem;
+    transition: 0.1s ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+        color: $grey-500;
     }
+}
+
     //section1
     .section1 {
         gap: 3rem;
@@ -1376,16 +1441,23 @@ footer {
     .toggle_menu-a {
         font-size: 1.6rem;
     }
-    //menu
+    //! desktop menu 1440
     .top-content {
-        padding: 2rem;
+        width: 100%;
+        height: 4rem;
     }
+
     #logo,
-    #dropdown-menu-icon {
+    #chevron-to-show-social-menu {
         width: 2rem;
         height: 2rem;
         font-size: 2rem;
     }
+    .desktop_menu-a {
+        gap: 2rem;
+        font-size: 1.2rem;
+    }
+
 
     //section1
     .section1 {

@@ -170,11 +170,6 @@ html {
   display: none;
 }
 
-.hero-img {
-  width: 100%;
-  height: 10rem;
-}
-
 .section-1 {
   display: flex;
   flex-direction: column;
@@ -1674,13 +1669,6 @@ footer {
     line-height: 3.8rem;
     font-size: 1.9rem;
   }
-  /* //bez zmian   .btn-discover {
-      padding: 1rem;
-      width: 22rem;
-      height: auto;
-      margin: 2rem 0;
-      font-size: 1.4rem;
-  } */
   .section-2,
   .section-4 {
     padding: 5.5rem 4.5rem;
@@ -1723,13 +1711,6 @@ footer {
   .dots-separator-single {
     font-size: 1.8rem;
   }
-  /* bez zmian .btn-view-collection {
-      padding: 1rem;
-      width: 22rem;
-      height: auto;
-      margin: 2rem 0;
-      font-size: 1.4rem;
-  } */
   .section3 {
     padding: 0 4.5rem;
   }
@@ -1785,13 +1766,6 @@ footer {
     line-height: 2.8rem;
     max-width: 46rem;
   }
-  /* bez zmian .btn-shop {
-      padding: 1rem;
-      width: 22rem;
-      height: auto;
-      margin: 3rem 0;
-      font-size: 1.4rem;
-  } */
   /* .section6 {
       padding: 4rem 3rem;
   } */
@@ -1882,6 +1856,10 @@ footer {
   .toggle_menu-a {
     font-size: 1.6rem;
   }
+  .top-content {
+    width: 100%;
+    height: 4rem;
+  }
   #logo,
   #chevron-to-show-social-menu {
     width: 2rem;
@@ -1890,7 +1868,6 @@ footer {
   }
   .desktop_menu-a {
     gap: 2rem;
-    padding: 2rem 0rem;
     font-size: 1.2rem;
   }
   .section-1 {

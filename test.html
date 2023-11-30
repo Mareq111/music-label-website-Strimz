@@ -1,0 +1,227 @@
+<img id="logo" src="/src/img/logo.png" alt="Company-logo" />
+<!-- pod tym wklej -->
+
+
+
+<!-- desktop nav - row for 1024px+ -->
+<div class="nav-desktop">
+    <nav class="desktop_menu-a">
+      <a class="nav-a-desktop-menu" href="/homepage.html">Home</a>
+      <a
+        class="nav-a-desktop-menu"
+        href="/src/main-sites/music/music.html"
+        >Releases</a
+      >
+      <a class="nav-a-desktop-menu" href="#">Artists</a>
+      <a class="nav-a-desktop-menu" href="#">Shop</a>
+      <a class="nav-a-desktop-menu" href="/src/main-sites/tour/tour.html">Tour</a>
+      <a class="nav-a-desktop-menu" href="#">About</a>
+      <a class="nav-a-desktop-menu" href="#">Contact Us</a>
+    </nav>
+</div>
+<i class="bx bx-menu-alt-left" id="dropdown-menu-icon"></i>
+<i class='bx bx-chevron-down' id="chevron-to-show-social-menu"></i>
+
+    <!-- scss -->
+    <!-- linijka okolo 77 -->
+
+
+    //!for mobile menu and hide desktop menu
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $shadow-black-transparent;
+    backdrop-filter: blur(0.5rem);
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 2;
+}
+#logo,
+#dropdown-menu-icon {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.75rem;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    &:hover {
+        color: $grey-500;
+    }
+}
+#chevron-to-show-social-menu {
+    display: none;
+}
+.nav-desktop {
+    display: none;
+}
+
+//toggle menu
+
+// dopiero next w 1024 od poczatku USUN WSZYSTKO DO POCZ SEKCJA 1
+
+@media (min-width: 1024px) {
+    //
+    // hide mobile menu and nav for desktop row - 1024+
+    .top-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $shadow-black-transparent;
+        backdrop-filter: blur(0.5rem);
+        width: 100%;
+        height: 3.5rem;
+        padding: 0 2rem;
+        position: fixed;
+        z-index: 2;
+    }
+
+    #logo,
+    #chevron-to-show-social-menu {
+        display: block;
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: 1.75rem;
+        transition: ease-in-out 0.2s;
+        cursor: pointer;
+        &:hover {
+            color: $grey-500;
+        }
+    }
+
+    #dropdown-menu-icon {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: block;
+        width: 80%;
+    }
+    .desktop_menu-a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 1rem 0rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .nav-a-desktop-menu {
+        text-decoration: none;
+        color: $grey-500;
+        transition: 0.1s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            color: $grey-600;
+        }
+    }
+
+    //toggle menu
+    .toggle-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        right: 0;
+        padding: 1.5rem;
+    }
+    .toggle_menu-a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        font-size: 1.4rem;
+    }
+
+    //hide this nav for small screens - social
+    // social icons are hidden
+    .toggle-column-right {
+        display: none;
+    }
+
+    .top-nav-desktop {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        margin: 5rem 2rem;
+        right: 0;
+        gap: 0.5rem;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .nav-a-social {
+        display: block; //test
+        text-decoration: none;
+        color: $white;
+        margin: 0.2rem 0;
+        cursor: pointer;
+    }
+
+    #nav-a-1,
+    #nav-a-2,
+    #nav-a-3,
+    #nav-a-4,
+    #nav-a-5,
+    #nav-a-6,
+    #nav-a-7,
+    #nav-a-8,
+    #nav-a-9 {
+        font-size: 1.75rem;
+        transition: 0.1s ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+            color: $grey-500;
+        }
+    }
+
+
+    1440 px!!!! USUN WSZYSTKO TAK SAMO DO POCZ SEKCJA 1
+
+
+    @media (min-width: 1440px) {
+        //nav top
+        #nav-a-1,
+        #nav-a-2,
+        #nav-a-3,
+        #nav-a-4,
+        #nav-a-5,
+        #nav-a-6,
+        #nav-a-7,
+        #nav-a-8,
+        #nav-a-9 {
+            font-size: 2rem;
+        }
+        //toggle menu
+        .toggle-menu {
+            width: 20%;
+            transform: translateY(4rem);
+        }
+        .toggle_menu-a {
+            font-size: 1.6rem;
+        }
+        //! desktop menu 1440
+        .top-content {
+            width: 100%;
+            height: 4rem;
+        }
+    
+        #logo,
+        #chevron-to-show-social-menu {
+            width: 2rem;
+            height: 2rem;
+            font-size: 2rem;
+        }
+        .desktop_menu-a {
+            gap: 2rem;
+            font-size: 1.2rem;
+        }
+    
+        //! section1 1440px

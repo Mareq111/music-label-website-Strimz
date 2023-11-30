@@ -27,6 +27,7 @@ html {
 
 #logo,
 #dropdown-menu-icon {
+  display: block;
   width: 1.75rem;
   height: 1.75rem;
   font-size: 1.75rem;
@@ -36,6 +37,14 @@ html {
 #logo:hover,
 #dropdown-menu-icon:hover {
   color: #dcdcdc;
+}
+
+#chevron-to-show-social-menu {
+  display: none;
+}
+
+.nav-desktop {
+  display: none;
 }
 
 .toggle-menu {
@@ -1271,6 +1280,59 @@ footer {
   }
 }
 @media (min-width: 1024px) {
+  .top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(0.5rem);
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 2rem;
+    position: fixed;
+    z-index: 2;
+  }
+  #logo,
+  #chevron-to-show-social-menu {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.75rem;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+  }
+  #logo:hover,
+  #chevron-to-show-social-menu:hover {
+    color: #dcdcdc;
+  }
+  #dropdown-menu-icon {
+    display: none;
+  }
+  .nav-desktop {
+    display: block;
+    width: 80%;
+  }
+  .desktop_menu-a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem 0rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+  }
+  .nav-a-desktop-menu {
+    text-decoration: none;
+    color: #dcdcdc;
+    transition: 0.1s ease-in-out;
+  }
+  .nav-a-desktop-menu:hover {
+    transform: scale(1.05);
+    color: #8d8c8c;
+  }
   .toggle-menu {
     display: flex;
     justify-content: center;
@@ -1294,7 +1356,6 @@ footer {
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    position: absolute;
     margin: 5rem 2rem;
     right: 0;
     gap: 0.5rem;
@@ -1331,9 +1392,6 @@ footer {
   #nav-a-9:hover {
     transform: scale(1.2);
     color: #dcdcdc;
-  }
-  .top-content {
-    padding: 0 2rem;
   }
   .section-1 {
     padding: 5rem 1rem 0 1rem;
@@ -1569,13 +1627,18 @@ footer {
     font-size: 1.6rem;
   }
   .top-content {
-    padding: 2rem;
+    width: 100%;
+    height: 4rem;
   }
   #logo,
-  #dropdown-menu-icon {
+  #chevron-to-show-social-menu {
     width: 2rem;
     height: 2rem;
     font-size: 2rem;
+  }
+  .desktop_menu-a {
+    gap: 2rem;
+    font-size: 1.2rem;
   }
   .section-1 {
     padding: 5rem 1.5rem 0 1.5rem;
