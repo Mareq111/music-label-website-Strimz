@@ -5,7 +5,7 @@
 /* //colors variety import from  separate color stylesheet
 @import "/css/ColorsVariety.css";
  */
- $white: #f2f2f2;
+$white: #f2f2f2;
 $red-500: #cd3737;
 $red-700: #b61a1a;
 $grey-500: #dcdcdc;
@@ -63,6 +63,7 @@ html {
     z-index: -2;
 }
 
+//!for mobile menu and hide desktop menu
 .top-content {
     display: flex;
     justify-content: space-between;
@@ -75,9 +76,9 @@ html {
     position: fixed;
     z-index: 2;
 }
-
 #logo,
 #dropdown-menu-icon {
+    display: block;
     width: 1.75rem;
     height: 1.75rem;
     font-size: 1.75rem;
@@ -87,7 +88,12 @@ html {
         color: $grey-500;
     }
 }
-
+#chevron-to-show-social-menu {
+    display: none;
+}
+.nav-desktop {
+    display: none;
+}
 //toggle menu
 
 .toggle-menu {
@@ -727,7 +733,6 @@ html {
     margin-top: auto;
 }
 
-
 .date-small {
     font-weight: 400;
     font-size: 1.1rem;
@@ -785,9 +790,8 @@ html {
     }
 }
 
-
- //btn 
- .btn-view-div {
+//btn
+.btn-view-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -808,8 +812,10 @@ html {
     font-size: 1rem;
     font-weight: 700;
     transition: 0.1s ease-in-out;
-   
-    &:hover, :focus, :active {
+
+    &:hover,
+    :focus,
+    :active {
         transform: scale(1.1);
         background-color: $grey-500;
     }
@@ -849,7 +855,7 @@ footer {
 .footer-a-2 {
     display: flex;
     flex-direction: column;
-   
+
     width: auto;
 }
 
@@ -1051,13 +1057,13 @@ footer {
     .quantity-of-songs-and-time {
         font-size: 0.7rem;
     }
-        //album section
-        .album-name {
-            font-size: 1.8rem;
-        }
-        .album-artist-name {
-            font-size: 1.3rem;
-        }
+    //album section
+    .album-name {
+        font-size: 1.8rem;
+    }
+    .album-artist-name {
+        font-size: 1.3rem;
+    }
 }
 
 //media queries for 425px screens
@@ -1259,6 +1265,64 @@ footer {
 @media (min-width: 1024px) {
     //nav top
 
+    // hide mobile menu and nav for desktop row - 1024+
+    .top-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $shadow-black-transparent;
+        backdrop-filter: blur(0.5rem);
+        width: 100%;
+        height: 3.5rem;
+        padding: 0 2rem;
+        position: fixed;
+        z-index: 2;
+    }
+
+    #logo,
+    #chevron-to-show-social-menu {
+        display: block;
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: 1.75rem;
+        transition: ease-in-out 0.2s;
+        cursor: pointer;
+        &:hover {
+            color: $grey-500;
+        }
+    }
+
+    #dropdown-menu-icon {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: block;
+        width: 80%;
+    }
+    .desktop_menu-a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 1rem 0rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .nav-a-desktop-menu {
+        text-decoration: none;
+        color: $grey-500;
+        transition: 0.1s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            color: $grey-600;
+        }
+    }
+
     //toggle menu
     .toggle-menu {
         display: flex;
@@ -1276,26 +1340,26 @@ footer {
         font-size: 1.4rem;
     }
 
+    //hide this nav for small screens - social
     // social icons are hidden
     .toggle-column-right {
         display: none;
     }
 
-    //hide this nav for small screens
     .top-nav-desktop {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         flex-direction: column;
-        position: absolute;
         margin: 5rem 2rem;
         right: 0;
         gap: 0.5rem;
         position: fixed;
+        z-index: 1;
     }
 
     .nav-a-social {
-        display: block;
+        display: block; //test
         text-decoration: none;
         color: $white;
         margin: 0.2rem 0;
@@ -1431,17 +1495,22 @@ footer {
     .toggle_menu-a {
         font-size: 1.6rem;
     }
-    //menu
+    //! desktop menu 1440
     .top-content {
-        padding: 2rem;
+        width: 100%;
+        height: 4rem;
     }
+
     #logo,
-    #dropdown-menu-icon {
+    #chevron-to-show-social-menu {
         width: 2rem;
         height: 2rem;
         font-size: 2rem;
     }
-
+    .desktop_menu-a {
+        gap: 2rem;
+        font-size: 1.2rem;
+    }
     //section1
     .section1 {
         gap: 5rem;
