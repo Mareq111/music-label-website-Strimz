@@ -194,10 +194,11 @@ html {
   height: auto;
   box-shadow: 0px 2px 8px 1px rgba(30, 29, 29, 0.6);
   border-radius: 5%;
+  max-width: 23rem;
 }
 
 #fig-album-released {
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
   position: relative;
   font-size: 0.8rem;
   font-weight: 500;
@@ -1065,6 +1066,7 @@ footer {
   }
   #main-album-cover {
     width: 100%;
+    max-width: 28rem;
   }
   .toggle-menu {
     width: 60%;
@@ -1080,6 +1082,7 @@ footer {
   .album-and-figcaption {
     width: 100%;
     padding: 0;
+    max-width: 28rem;
   }
   .title-name-artist {
     padding-top: 6rem;
@@ -1246,6 +1249,10 @@ footer {
     gap: 3rem;
     padding: 4rem 4rem 0 4rem;
   }
+  #fig-album-released {
+    padding: 1rem 0 0.5rem 0;
+    font-size: 0.9rem;
+  }
   .album-name {
     font-size: 2.2rem;
   }
@@ -1360,7 +1367,7 @@ footer {
   }
   .section1 {
     gap: 5rem;
-    padding: 6rem 6rem 0 6rem;
+    padding: 5rem 6rem 0 6rem;
   }
   .album-and-figcaption {
     width: 60%;
