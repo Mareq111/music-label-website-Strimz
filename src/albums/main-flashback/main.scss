@@ -65,6 +65,33 @@ html {
     opacity: 0.4;
     z-index: -2;
 }
+//return link arrow
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $shadow-black;
+    width: 1.75rem;
+    height: 1.75rem;
+    z-index: 2;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+.arrow-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+
+    &:hover,
+    &:active {
+        color: $amulet-green-400;
+        transform: scale(1.1);
+    }
+}
 
 //!for mobile menu and hide desktop menu
 .top-content {
@@ -1173,8 +1200,7 @@ footer {
 
     #main-album-cover {
         width: 100%;
-    max-width: 28rem;
-
+        max-width: 28rem;
     }
     //toggle menu
     .toggle-menu {
@@ -1370,7 +1396,6 @@ footer {
     #fig-album-released {
         padding: 1rem 0 0.5rem 0;
         font-size: 0.9rem;
-        
     }
     .section1 {
         gap: 3rem;

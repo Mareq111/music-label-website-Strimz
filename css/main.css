@@ -24,6 +24,32 @@ html {
   z-index: -2;
 }
 
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(30, 29, 29, 0.6);
+  width: 1.75rem;
+  height: 1.75rem;
+  z-index: 2;
+  margin: 0.5rem 0;
+  padding: 1rem;
+}
+
+.arrow-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: 0.1s ease-in-out;
+}
+.arrow-link:hover, .arrow-link:active {
+  color: #85ab7b;
+  transform: scale(1.1);
+}
+
 .top-content {
   display: flex;
   justify-content: space-between;
