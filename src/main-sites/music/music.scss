@@ -18,6 +18,12 @@ $amulet-green-400: #85ab7b;
 $ming-blue-600: #367983;
 
 //mini- SINGLES shadows and more
+$shadow-follow-the-light: rgba(138, 169, 113, 0.5);
+$color-follow-the-light: rgba(114, 36, 24);
+
+$shadow-empty-position: rgba(185, 102, 138, 0.5);
+$color-empty-position: rgba(185, 102, 138, 1);
+
 $shadow-a-horse: rgba(23, 59, 59, 0.5);
 $color-a-horse: rgba(42, 78, 79, 1);
 
@@ -35,7 +41,7 @@ $color-dark-single: rgba(151, 212, 210, 1);
 
 $shadow-lake: rgba(244, 171, 239, 0.5);
 $color-lake: rgb(98, 45, 95);
-//new
+
 $shadow-still-the-same: rgba(119, 82, 172, 0.5);
 $color-still-the-same: rgba(125, 86, 104, 1);
 
@@ -67,6 +73,12 @@ $shadow-phoenix: rgba(32, 188, 255, 0.5);
 $color-phoenix: rgba(120, 179, 222, 1);
 
 //mini- albums shadows and more
+$shadow-kuntry: rgba(165, 107, 44, 0.5);
+$color-kuntry: rgba(165, 107, 44, 1);
+
+$shadow-initial-confusion: rgba(72, 200, 212, 0.5);
+$color-initial-confusion: rgba(76, 204, 219, 1);
+
 $shadow-wave: rgba(109, 13, 113, 0.5);
 $color-wave: rgba(53, 17, 127, 1);
 
@@ -106,10 +118,9 @@ html {
     background-color: $black-900;
     color: $white;
 }
-   //!for mobile menu and hide desktop menu
+//!for mobile menu and hide desktop menu
 
-
-   .top-content {
+.top-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -599,6 +610,23 @@ html {
         transition-delay: 300ms;
         color: $color-king-of-for-and-muds;
     }
+    //7 kuntry
+
+    &:hover #album-cover-kuntry {
+        box-shadow: 0 0 8px $shadow-kuntry;
+    }
+    &:hover #dots-separator-album-7 {
+        transition-delay: 300ms;
+        color: $color-kuntry;
+    }
+    //8 initial confusion
+    &:hover #album-cover-initial-confusion {
+        box-shadow: 0 0 8px $shadow-initial-confusion;
+    }
+    &:hover #dots-separator-album-8 {
+        transition-delay: 300ms;
+        color: $color-initial-confusion;
+    }
 }
 //! only for singles
 // hover for singles covers and dots separators
@@ -731,13 +759,29 @@ html {
         transition-delay: 300ms;
         color: $color-wolf;
     }
-    // 16 phoenix
-    &:hover #phoenix-single-cover {
-        box-shadow: 0 0 8px $shadow-phoenix;
+    //16 follow the light
+    &:hover #follow-the-light-single-cover {
+        box-shadow: 0 0 8px $shadow-follow-the-light;
     }
     &:hover #dots-separator-single-16 {
         transition-delay: 300ms;
+        color: $color-follow-the-light;
+    }
+    // 17 phoenix
+    &:hover #phoenix-single-cover {
+        box-shadow: 0 0 8px $shadow-phoenix;
+    }
+    &:hover #dots-separator-single-17 {
+        transition-delay: 300ms;
         color: $color-phoenix;
+    }
+    //18 empty position ? --- check out my github, linkedin, instagram  my website
+    &:hover #empty-position-single-cover {
+        box-shadow: 0 0 8px $shadow-empty-position;
+    }
+    &:hover #dots-separator-single-18 {
+        transition-delay: 300ms;
+        color: $color-empty-position;
     }
 }
 
@@ -1676,7 +1720,7 @@ footer {
 
 @media (min-width: 1024px) {
     //nav top new
-     //
+    //
     // hide mobile menu and nav for desktop row - 1024+
     .top-content {
         display: flex;
@@ -1794,7 +1838,6 @@ footer {
             color: $grey-500;
         }
     }
-
 
     /* //toggle menu
     .toggle-menu {
@@ -2116,45 +2159,45 @@ footer {
 //media for 1440 screens
 
 @media (min-width: 1440px) {
-   //nav top
-   #nav-a-1,
-   #nav-a-2,
-   #nav-a-3,
-   #nav-a-4,
-   #nav-a-5,
-   #nav-a-6,
-   #nav-a-7,
-   #nav-a-8,
-   #nav-a-9 {
-       font-size: 2rem;
-   }
-   //toggle menu
-   .toggle-menu {
-       width: 20%;
-       transform: translateY(4rem);
-   }
-   .toggle_menu-a {
-       font-size: 1.6rem;
-   }
-   //! desktop menu 1440
-   .top-content {
-       width: 100%;
-       height: 4rem;
-   }
+    //nav top
+    #nav-a-1,
+    #nav-a-2,
+    #nav-a-3,
+    #nav-a-4,
+    #nav-a-5,
+    #nav-a-6,
+    #nav-a-7,
+    #nav-a-8,
+    #nav-a-9 {
+        font-size: 2rem;
+    }
+    //toggle menu
+    .toggle-menu {
+        width: 20%;
+        transform: translateY(4rem);
+    }
+    .toggle_menu-a {
+        font-size: 1.6rem;
+    }
+    //! desktop menu 1440
+    .top-content {
+        width: 100%;
+        height: 4rem;
+    }
 
-   #logo,
-   #chevron-to-show-social-menu {
-       width: 2rem;
-       height: 2rem;
-       font-size: 2rem;
-   }
-   .desktop_menu-a {
-       gap: 2rem;
+    #logo,
+    #chevron-to-show-social-menu {
+        width: 2rem;
+        height: 2rem;
+        font-size: 2rem;
+    }
+    .desktop_menu-a {
+        gap: 2rem;
 
-       font-size: 1.2rem;
-   }
+        font-size: 1.2rem;
+    }
 
-   //! section1 1440px
+    //! section1 1440px
 
     //! section1 1440px
     .section-1 {

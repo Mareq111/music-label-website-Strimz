@@ -504,6 +504,20 @@ html {
   transition-delay: 300ms;
   color: rgb(181, 133, 94);
 }
+.album:hover #album-cover-kuntry {
+  box-shadow: 0 0 8px rgba(165, 107, 44, 0.5);
+}
+.album:hover #dots-separator-album-7 {
+  transition-delay: 300ms;
+  color: rgb(165, 107, 44);
+}
+.album:hover #album-cover-initial-confusion {
+  box-shadow: 0 0 8px rgba(72, 200, 212, 0.5);
+}
+.album:hover #dots-separator-album-8 {
+  transition-delay: 300ms;
+  color: rgb(76, 204, 219);
+}
 
 .single .single-cover {
   transition: box-shadow 0.3s ease;
@@ -613,12 +627,26 @@ html {
   transition-delay: 300ms;
   color: rgb(151, 201, 190);
 }
-.single:hover #phoenix-single-cover {
-  box-shadow: 0 0 8px rgba(32, 188, 255, 0.5);
+.single:hover #follow-the-light-single-cover {
+  box-shadow: 0 0 8px rgba(138, 169, 113, 0.5);
 }
 .single:hover #dots-separator-single-16 {
   transition-delay: 300ms;
+  color: rgb(114, 36, 24);
+}
+.single:hover #phoenix-single-cover {
+  box-shadow: 0 0 8px rgba(32, 188, 255, 0.5);
+}
+.single:hover #dots-separator-single-17 {
+  transition-delay: 300ms;
   color: rgb(120, 179, 222);
+}
+.single:hover #empty-position-single-cover {
+  box-shadow: 0 0 8px rgba(185, 102, 138, 0.5);
+}
+.single:hover #dots-separator-single-18 {
+  transition-delay: 300ms;
+  color: rgb(185, 102, 138);
 }
 
 .btn-view-collection-div {
