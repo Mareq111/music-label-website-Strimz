@@ -62,7 +62,47 @@ html {
     opacity: 0.4;
     z-index: -2;
 }
+//return link arrow
 
+.arrow-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+    width: 1.75rem;
+    height: 1.75rem;
+    /* margin: 0.5rem 0; */
+    padding: 1rem;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $shadow-black;
+    width: 1.75rem;
+    height: 1.75rem;
+    /* margin: 0.5rem 0; */
+    padding: 1rem;
+}
+
+#arrow-icon {
+    color: $white;
+    font-size: 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.arrow-link:hover .arrow {
+    background-color: $black-700;
+}
+
+.arrow-link:hover #arrow-icon,
+.arrow-link:focus #arrow-icon {
+    transform: scale(1.1);
+    color: $grey-500;
+}
 //!for mobile menu and hide desktop menu
 .top-content {
     display: flex;
