@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 //4 clicking  arrow link enables returning to the previous site that referred to the current page
 // and this function using a the browser's history to navigate back to the referring page.
 

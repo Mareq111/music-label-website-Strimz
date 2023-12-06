@@ -422,6 +422,9 @@ html {
 .month-div.active {
     display: block;
 }
+.btn-month:focus {
+    outline: 0.2rem solid $red-500; 
+  }
 
 //btn chooser
 .btns-chooser {

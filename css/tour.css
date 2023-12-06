@@ -341,6 +341,10 @@ html {
   display: block;
 }
 
+.btn-month:focus {
+  outline: 0.2rem solid #cd3737;
+}
+
 .btns-chooser {
   display: flex;
   justify-content: center;
