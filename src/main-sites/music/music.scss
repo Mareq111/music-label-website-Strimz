@@ -1021,8 +1021,7 @@ html {
         color: $black-900;
     }
 }
-//test album single collection
-//section6
+//secton6 album single collection
 
 .section6 {
     display: flex;
@@ -1075,6 +1074,7 @@ html {
 //text
 .p_section6-mini-description {
     font-size: 0.8rem;
+    line-height: 1.6rem;
     color: $grey-600;
     margin-bottom: 1rem;
 }
@@ -1084,11 +1084,14 @@ html {
 .strimz-store-link {
     text-decoration: none;
 }
-
+.p_section6-top,
 .p_section6 {
     font-size: 1rem;
     line-height: 2rem;
     font-weight: 500;
+}
+.p-dont-miss {
+    margin-top: 0.5rem;
 }
 //img
 
@@ -1132,7 +1135,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     gap: 0.5rem;
     width: 100%;
     height: auto;
@@ -1150,10 +1153,7 @@ html {
 
 //end img
 
-//btn for check out shop
 //btn
-
-//
 
 .btn-shop-div {
     display: flex;
@@ -1474,7 +1474,7 @@ footer {
     //albums thing
     .albums-chooser,
     .singles-chooser {
-        min-height: 22rem; //pocco?
+        min-height: 22rem;
         gap: 2rem;
     }
     .album-cover,
@@ -1511,8 +1511,6 @@ footer {
     //btn for view collection
     //btn
     .btn-view-collection {
-        /* 
-    padding: 0.5rem 1rem; */
         width: 18rem;
         height: auto;
         margin: 1.5rem 0;
@@ -1531,7 +1529,6 @@ footer {
     .dot-and-introduction-chooser {
         gap: 0.5rem;
         line-height: 2rem;
-        /*  margin: 0.5rem 0 2rem 0; */
     }
     .p_introduction-chooser {
         font-size: 1rem;
@@ -1542,13 +1539,12 @@ footer {
 
     .hr-line-to-sections-chooser {
         height: 0.1rem;
-        /* margin-top: 2rem ; */
     }
 
     //section 5 tour
 
     .section5 {
-        padding: 3rem 2rem;
+        padding: 3rem 2rem 0 2rem;
     }
     .upcoming-album-title {
         gap: 0.5rem;
@@ -1574,9 +1570,6 @@ footer {
     }
     //img
     .upcoming-album-img-div {
-        /*  display: flex;
-        justify-content: center;
-        align-items: center; */
         margin: 2rem 0;
     }
 
@@ -1585,9 +1578,6 @@ footer {
         height: auto;
     }
     .inner-div-upcoming-album {
-        /*  display: flex;
-        justify-content: center;
-        align-items: center; */
         margin: 0 2rem;
         max-width: 31rem;
     }
@@ -1601,10 +1591,59 @@ footer {
     .a-btn-discover-album {
         width: 18rem;
         height: auto;
-        /* margin: 1.5rem 0; */
+
         font-size: 1.2rem;
     }
+    //section6
 
+    .section6 {
+        padding: 2rem 0.5rem;
+    }
+
+    .h-section6 {
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+    }
+    .strimz-shop-only-icon {
+        font-size: 0.9rem;
+    }
+
+    //text
+    .p_section6-mini-description {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+
+    .p_section6-top {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        max-width: 100%;
+    }
+    .p_section6 {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        max-width: 36rem;
+    }
+
+    //img
+
+    .div-dream-chasers {
+        padding: 2rem 0;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .dream-chasers-img {
+        width: 14rem;
+    }
+
+    .btn-shop {
+        padding: 0.5rem 1rem;
+        width: 18rem;
+        height: auto;
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
     //footer
     //top footer
     footer {
@@ -1851,7 +1890,58 @@ footer {
         height: auto;
         font-size: 1.4rem;
     }
+    //section6
 
+    .section6 {
+        padding: 2rem 0.5rem;
+    }
+    .div-section6-opacity-bg {
+        padding: 3rem 2rem 1rem 2rem;
+    }
+
+    .h-section6 {
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+    }
+    .strimz-shop-only-icon {
+        font-size: 1.1rem;
+    }
+
+    //text
+    .p_section6-mini-description {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        /* margin-bottom: 1rem; */
+    }
+
+    .p_section6-top {
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+        max-width: 100%;
+    }
+    .p_section6 {
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+        max-width: 44rem;
+    }
+
+    //img
+
+    .div-dream-chasers {
+        padding: 2.5rem 0;
+        margin-bottom: 0.5rem;
+        /* gap: 0.5rem; */
+    }
+
+    // div under img
+
+    .btn-shop {
+        padding: 1rem;
+        width: 22rem;
+        height: auto;
+        margin: 2rem 0;
+        font-size: 1.4rem;
+    }
     //footer top
 }
 
@@ -1978,70 +2068,6 @@ footer {
         }
     }
 
-    /* //toggle menu
-    .toggle-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
-        right: 0;
-        padding: 1.5rem;
-    }
-    .toggle_menu-a {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0;
-        font-size: 1.4rem;
-    }
-
-    // social icons are hidden
-    .toggle-column-right {
-        display: none;
-    }
-
-    //hide this nav for small screens
-    .top-nav-desktop {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        margin: 5rem 2rem;
-        right: 0;
-        gap: 0.5rem;
-        position: fixed;
-        z-index: 1;
-    }
-
-    .nav-a-social {
-        display: block; //test
-        text-decoration: none;
-        color: $white;
-        margin: 0.2rem 0;
-        cursor: pointer;
-    }
-
-    #nav-a-1,
-    #nav-a-2,
-    #nav-a-3,
-    #nav-a-4,
-    #nav-a-5,
-    #nav-a-6,
-    #nav-a-7,
-    #nav-a-8,
-    #nav-a-9 {
-        font-size: 1.75rem;
-        transition: 0.1s ease-in-out;
-        &:hover {
-            transform: scale(1.2);
-            color: $grey-500;
-        }
-    }
-    .top-content {
-        padding: 0 2rem;
-    } */
-
     //section1 1024px
 
     .section-1 {
@@ -2092,15 +2118,6 @@ footer {
         font-size: 1.9rem;
     }
 
-    //btn discover story
-
-    /* //bez zmian   .btn-discover {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        margin: 2rem 0;
-        font-size: 1.4rem;
-    } */
     //! section 2 i 4 padding 5.5 4.5 ma byc wieksze niz section 1 o 0.5rem
 
     // section 2 new albums with section 4 latest singles
@@ -2262,6 +2279,69 @@ footer {
         height: auto;
         font-size: 1.4rem;
     }
+    //section6
+
+    .section6 {
+        padding: 2rem 1rem;
+    }
+    .div-section6-opacity-bg {
+        padding: 4rem 3rem 2rem 3rem;
+    }
+
+    .h-section6 {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    .strimz-shop-only-icon {
+        font-size: 1.2rem;
+    }
+
+    //text
+    .p_section6-mini-description {
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+    }
+
+    .p_section6-top {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        max-width: 100%;
+    }
+    .p_section6 {
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        max-width: 46rem;
+    }
+
+    .div-dream-chasers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0;
+        margin: 0;
+    }
+
+    .dream-chasers-img {
+        width: 15rem;
+    }
+    .inner-div-dream-chasers {
+        gap: 2rem;
+    }
+
+    // div under img
+
+    .shop-dream-chasers {
+        margin-top: 1.5rem;
+    }
+
+    .dream-shop-icon {
+        font-size: 1.3rem;
+    }
+    .dream-chasers-fig {
+        font-size: 1.1rem;
+    }
+
+    //btn
 
     //!footer
     //footer'top
@@ -2373,6 +2453,23 @@ footer {
     .p_section5 {
         max-width: 54rem;
     }
+    //section6
+
+    .section6 {
+        padding: 3rem 1rem;
+    }
+
+    //text
+
+    .p_section6 {
+        max-width: 54rem;
+    }
+
+    //img
+    .inner-div-dream-chasers {
+        gap: 3rem;
+    }
+
     //footer'top
 
     .footer-top {

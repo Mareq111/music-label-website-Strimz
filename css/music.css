@@ -948,6 +948,7 @@ html {
 
 .p_section6-mini-description {
   font-size: 0.8rem;
+  line-height: 1.6rem;
   color: #8d8c8c;
   margin-bottom: 1rem;
 }
@@ -960,10 +961,15 @@ html {
   text-decoration: none;
 }
 
+.p_section6-top,
 .p_section6 {
   font-size: 1rem;
   line-height: 2rem;
   font-weight: 500;
+}
+
+.p-dont-miss {
+  margin-top: 0.5rem;
 }
 
 .div-dream-chasers {
@@ -1006,7 +1012,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   gap: 0.5rem;
   width: 100%;
   height: auto;
@@ -1361,8 +1367,6 @@ footer {
     font-size: 1.6rem;
   }
   .btn-view-collection {
-    /* 
-    padding: 0.5rem 1rem; */
     width: 18rem;
     height: auto;
     margin: 1.5rem 0;
@@ -1378,7 +1382,6 @@ footer {
   .dot-and-introduction-chooser {
     gap: 0.5rem;
     line-height: 2rem;
-    /*  margin: 0.5rem 0 2rem 0; */
   }
   .p_introduction-chooser {
     font-size: 1rem;
@@ -1388,10 +1391,9 @@ footer {
   }
   .hr-line-to-sections-chooser {
     height: 0.1rem;
-    /* margin-top: 2rem ; */
   }
   .section5 {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 0 2rem;
   }
   .upcoming-album-title {
     gap: 0.5rem;
@@ -1413,9 +1415,6 @@ footer {
     max-width: 36rem;
   }
   .upcoming-album-img-div {
-    /*  display: flex;
-    justify-content: center;
-    align-items: center; */
     margin: 2rem 0;
   }
   .upcoming-album-img {
@@ -1423,9 +1422,6 @@ footer {
     height: auto;
   }
   .inner-div-upcoming-album {
-    /*  display: flex;
-    justify-content: center;
-    align-items: center; */
     margin: 0 2rem;
     max-width: 31rem;
   }
@@ -1436,8 +1432,46 @@ footer {
   .a-btn-discover-album {
     width: 18rem;
     height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.2rem;
+  }
+  .section6 {
+    padding: 2rem 0.5rem;
+  }
+  .h-section6 {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+  .strimz-shop-only-icon {
+    font-size: 0.9rem;
+  }
+  .p_section6-mini-description {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+  .p_section6-top {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    max-width: 100%;
+  }
+  .p_section6 {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    max-width: 36rem;
+  }
+  .div-dream-chasers {
+    padding: 2rem 0;
+    margin: 0 0 1.5rem 0;
+  }
+  .dream-chasers-img {
+    width: 14rem;
+  }
+  .btn-shop {
+    padding: 0.5rem 1rem;
+    width: 18rem;
+    height: auto;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
   footer {
     padding: 0rem 2rem;
@@ -1641,6 +1675,46 @@ footer {
     height: auto;
     font-size: 1.4rem;
   }
+  .section6 {
+    padding: 2rem 0.5rem;
+  }
+  .div-section6-opacity-bg {
+    padding: 3rem 2rem 1rem 2rem;
+  }
+  .h-section6 {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+  .strimz-shop-only-icon {
+    font-size: 1.1rem;
+  }
+  .p_section6-mini-description {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    /* margin-bottom: 1rem; */
+  }
+  .p_section6-top {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    max-width: 100%;
+  }
+  .p_section6 {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    max-width: 44rem;
+  }
+  .div-dream-chasers {
+    padding: 2.5rem 0;
+    margin-bottom: 0.5rem;
+    /* gap: 0.5rem; */
+  }
+  .btn-shop {
+    padding: 1rem;
+    width: 22rem;
+    height: auto;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+  }
 }
 @media (min-width: 1024px) {
   .top-content {
@@ -1756,69 +1830,6 @@ footer {
     transform: scale(1.2);
     color: #dcdcdc;
   }
-  /* //toggle menu
-  .toggle-menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30%;
-      right: 0;
-      padding: 1.5rem;
-  }
-  .toggle_menu-a {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      padding: 0;
-      font-size: 1.4rem;
-  }
-
-  // social icons are hidden
-  .toggle-column-right {
-      display: none;
-  }
-
-  //hide this nav for small screens
-  .top-nav-desktop {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      margin: 5rem 2rem;
-      right: 0;
-      gap: 0.5rem;
-      position: fixed;
-      z-index: 1;
-  }
-
-  .nav-a-social {
-      display: block; //test
-      text-decoration: none;
-      color: $white;
-      margin: 0.2rem 0;
-      cursor: pointer;
-  }
-
-  #nav-a-1,
-  #nav-a-2,
-  #nav-a-3,
-  #nav-a-4,
-  #nav-a-5,
-  #nav-a-6,
-  #nav-a-7,
-  #nav-a-8,
-  #nav-a-9 {
-      font-size: 1.75rem;
-      transition: 0.1s ease-in-out;
-      &:hover {
-          transform: scale(1.2);
-          color: $grey-500;
-      }
-  }
-  .top-content {
-      padding: 0 2rem;
-  } */
   .section-1 {
     padding: 5rem 1rem 0 1rem;
   }
@@ -1860,13 +1871,6 @@ footer {
     line-height: 3.8rem;
     font-size: 1.9rem;
   }
-  /* //bez zmian   .btn-discover {
-      padding: 1rem;
-      width: 22rem;
-      height: auto;
-      margin: 2rem 0;
-      font-size: 1.4rem;
-  } */
   .section-2,
   .section-4 {
     padding: 5.5rem 4.5rem 2rem 5.5rem;
@@ -2004,6 +2008,55 @@ footer {
     height: auto;
     font-size: 1.4rem;
   }
+  .section6 {
+    padding: 2rem 1rem;
+  }
+  .div-section6-opacity-bg {
+    padding: 4rem 3rem 2rem 3rem;
+  }
+  .h-section6 {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .strimz-shop-only-icon {
+    font-size: 1.2rem;
+  }
+  .p_section6-mini-description {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+  .p_section6-top {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    max-width: 100%;
+  }
+  .p_section6 {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    max-width: 46rem;
+  }
+  .div-dream-chasers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    margin: 0;
+  }
+  .dream-chasers-img {
+    width: 15rem;
+  }
+  .inner-div-dream-chasers {
+    gap: 2rem;
+  }
+  .shop-dream-chasers {
+    margin-top: 1.5rem;
+  }
+  .dream-shop-icon {
+    font-size: 1.3rem;
+  }
+  .dream-chasers-fig {
+    font-size: 1.1rem;
+  }
   .footer-top {
     display: flex;
     flex-direction: row;
@@ -2088,6 +2141,15 @@ footer {
   }
   .p_section5 {
     max-width: 54rem;
+  }
+  .section6 {
+    padding: 3rem 1rem;
+  }
+  .p_section6 {
+    max-width: 54rem;
+  }
+  .inner-div-dream-chasers {
+    gap: 3rem;
   }
   .footer-top {
     display: flex;
