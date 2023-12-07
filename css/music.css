@@ -758,7 +758,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0 1rem;
   background-color: #120f10;
 }
 
@@ -894,12 +894,76 @@ html {
   color: #120f10;
 }
 
-.section5 {
+.section6 {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
   padding: 2rem 0.5rem;
+}
+
+.div-section6-opacity-bg {
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(4px);
+  background-color: rgba(30, 29, 29, 0.6);
+}
+
+.visit-store {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.link-to-shop {
+  text-decoration: none;
+  color: #f2f2f2;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.h-section6 {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: 800;
+  color: #f2f2f2;
+  width: auto;
+  transition: 0.2s ease-in-out;
+}
+.h-section6:hover,
+.h-section6 :focus,
+.h-section6 :active {
+  color: #26acac;
+}
+
+.strimz-shop-only-icon {
+  font-size: 0.8rem;
+  color: #26acac;
+}
+
+.p_section6-mini-description {
+  font-size: 0.8rem;
+  color: #8d8c8c;
+  margin-bottom: 1rem;
+}
+
+#shop-mini-description {
+  margin-right: 0.5rem;
+}
+
+.strimz-store-link {
+  text-decoration: none;
+}
+
+.p_section6 {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 .div-dream-chasers {
@@ -910,78 +974,53 @@ html {
   flex-wrap: nowrap;
   max-width: 100%;
   height: auto;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
+  margin: 0 0 1rem 0;
   gap: 0.5rem;
   position: relative;
   overflow-x: auto;
   white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
+  z-index: 2;
 }
 
 .dream-chasers-img {
-  max-width: 80%;
-  /*  width: 13.5rem; */
+  width: 80%;
+  width: 13.5rem;
   height: auto;
   border-radius: 5%;
+  z-index: 2;
 }
 
-.div-section5-opacity-bg {
+.inner-div-dream-chasers {
+  display: flex;
+  gap: 1rem;
+}
+
+.link-chasers {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.shop-dream-chasers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
   width: 100%;
   height: auto;
-  padding: 2rem 1rem;
-  border-radius: 0.5rem;
-  backdrop-filter: blur(4px);
-  background-color: rgba(30, 29, 29, 0.6);
 }
 
-.link-to-shop {
-  text-decoration: none;
-  color: #f2f2f2;
-  cursor: pointer;
-}
-
-.h-section5 {
-  font-size: 1.5rem;
-  line-height: 3rem;
-  text-transform: uppercase;
-  width: 100%;
-  font-weight: 800;
-  color: #f2f2f2;
-  width: auto;
-  transition: 0.2s ease-in-out;
-}
-.h-section5:hover,
-.h-section5 :focus,
-.h-section5 :active {
+.dream-shop-icon {
+  font-size: 1.2rem;
   color: #26acac;
 }
 
-.online-only-section5 {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.visit-store {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-}
-
-.shop-logo {
-  width: 2rem;
-  height: 2rem;
-}
-
-#store-icon {
-  font-size: 2rem;
-  color: #f2f2f2;
-}
-
-.p_section5 {
+.dream-chasers-fig {
   font-size: 1rem;
-  line-height: 2rem;
-  font-weight: 500;
+  color: #f2f2f2;
+  font-weight: 700;
 }
 
 .btn-shop-div {
