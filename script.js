@@ -1,10 +1,34 @@
-//! 1 toggle menu
-const menuIcon = document.getElementById("dropdown-menu-icon");
-const toggleMenu = document.getElementById("toggle_menu");
+//! 1 toggle menu, and if you click everywhere you close toggle menu without click on icon
 
-menuIcon?.addEventListener("click", () => {
-  toggleMenu?.classList.toggle("active");
-});
+//react to load our dom structure
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggleMenu = document.getElementById("toggle_menu");
+    const menuIcon = document.getElementById("dropdown-menu-icon");
+    
+    //click icon to activate toggle menu
+    if (menuIcon && toggleMenu) {
+      menuIcon.addEventListener("click", (e) => {
+        toggleMenu.classList.toggle("active");
+      });
+  
+      //if you click anywhere besides toggleMenu you close it 
+
+
+      document.addEventListener("click", (e) => {
+        //if you click into toggle menu you wont close it
+        const isClickInsideMenu = toggleMenu.contains(e.target);
+        //checking if click is on icon
+        const isClickOnMenuIcon = menuIcon.contains(e.target);
+  
+        //if you click anywhere besides toggleMenu and icon - you close it 
+        if (!isClickInsideMenu && !isClickOnMenuIcon) {
+          toggleMenu.classList.remove("active");
+        }
+      });
+    }
+  });
+  
+  
 
 //! 2 if logo was clicked go to top
 
