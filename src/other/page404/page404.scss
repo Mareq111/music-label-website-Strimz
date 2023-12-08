@@ -230,6 +230,8 @@ html {
     flex-direction: column;
     background-color: $shadow-black-transparent;
     padding: 2rem 1rem;
+    border-radius: 1rem 1rem 0 0;
+
     opacity: 0.9;
 }
 #h5-section4 {
@@ -269,6 +271,8 @@ html {
     font-weight: 700;
     transition: 0.1s ease-in-out;
     padding: 1rem 0.5rem;
+    border-radius: 0 0 1rem 1rem ;
+
 
     &:hover,
     :focus,
