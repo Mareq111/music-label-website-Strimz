@@ -618,7 +618,14 @@ footer {
         z-index: 2;
     }
 
-    #logo,
+    #logo {
+        display: block;
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: 1.75rem;
+        transition: ease-in-out 0.2s;
+        cursor: pointer;
+    }
     #chevron-to-show-social-menu {
         display: block;
         width: 1.75rem;
@@ -626,9 +633,15 @@ footer {
         font-size: 1.75rem;
         transition: ease-in-out 0.2s;
         cursor: pointer;
+        border-radius: 50%;
         &:hover {
             color: $grey-500;
+            background-color: $black-600;
+            border-radius: 50%;
         }
+        &.rotate {
+            transform: rotate(180deg);
+          }
     }
 
     #dropdown-menu-icon {

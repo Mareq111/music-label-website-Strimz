@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (menuIcon && toggleMenu) {
     menuIcon.addEventListener("click", (e) => {
       toggleMenu.classList.toggle("active");
+      
     });
 
     //if you click anywhere besides toggleMenu you close it
@@ -89,11 +90,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //4 for desktops, chevron icon if clicked, it hide a social nav menu
 
-const cheveronIcon = document.getElementById('chevron-to-show-social-menu')
+const chevronIcon = document.getElementById('chevron-to-show-social-menu')
 const socialMenu = document.querySelector('.top-nav-desktop')
 
-cheveronIcon?.addEventListener('click', () => {
+chevronIcon?.addEventListener('click', () => {
   socialMenu?.classList.toggle('top-nav-desktop-hidden')
+  chevronIcon.classList.toggle('rotate');
 })
 
 

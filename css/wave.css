@@ -1215,8 +1215,7 @@ footer {
     position: fixed;
     z-index: 2;
   }
-  #logo,
-  #chevron-to-show-social-menu {
+  #logo {
     display: block;
     width: 1.75rem;
     height: 1.75rem;
@@ -1224,9 +1223,22 @@ footer {
     transition: ease-in-out 0.2s;
     cursor: pointer;
   }
-  #logo:hover,
+  #chevron-to-show-social-menu {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.75rem;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    border-radius: 50%;
+  }
   #chevron-to-show-social-menu:hover {
     color: #dcdcdc;
+    background-color: #120f10;
+    border-radius: 50%;
+  }
+  #chevron-to-show-social-menu.rotate {
+    transform: rotate(180deg);
   }
   #dropdown-menu-icon {
     display: none;
