@@ -1407,7 +1407,9 @@ footer {
     position: fixed;
     z-index: 1;
 }
-
+.top-nav-desktop-hidden {
+    display: none;
+  }
 .nav-a-social {
     display: block; //test
     text-decoration: none;

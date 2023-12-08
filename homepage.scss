@@ -1767,6 +1767,9 @@ footer {
         position: fixed;
         z-index: 1;
     }
+    .top-nav-desktop-hidden {
+        display: none;
+    }
 
     .nav-a-social {
         display: block; //test
@@ -1966,7 +1969,6 @@ footer {
         max-width: 46rem;
     }
     //btn for check out shop
-   
 
     //!section 6 tour 1024
 
@@ -2091,7 +2093,7 @@ footer {
     }
     .desktop_menu-a {
         gap: 2rem;
-        
+
         font-size: 1.2rem;
     }
 

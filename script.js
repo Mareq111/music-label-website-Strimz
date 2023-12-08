@@ -278,3 +278,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+//10 for desktops, chevron icon if clicked, it hide a social nav menu
+
+const cheveronIcon = document.getElementById('chevron-to-show-social-menu')
+const socialMenu = document.querySelector('.top-nav-desktop')
+
+cheveronIcon?.addEventListener('click', () => {
+  socialMenu?.classList.toggle('top-nav-desktop-hidden')
+})
