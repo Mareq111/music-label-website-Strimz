@@ -776,7 +776,7 @@ html {
   color: #f2f2f2;
   width: auto;
   transition: 0.2s ease-in-out;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .h-section6:hover,
 .h-section6 :focus,

@@ -73,8 +73,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+//4 artists chooser for artists page its the same code like above this
 
-//4 clicking  arrow link enables returning to the previous site that referred to the current page
+document.addEventListener("DOMContentLoaded", function () {
+  const buttonChooser = document.querySelectorAll(".btn-artists");
+  const artistDivs = document.querySelectorAll(".artist-div");
+  // btns per artist
+  buttonChooser.forEach((button) => {
+    button.addEventListener("click", () => {
+      document.querySelector(".btn-artists.active")?.classList.remove("active");
+      button.classList.add("active");
+
+      // dates per artist card and split btn id into array with 2 elements
+      const artistId = button.id.split("-")[1];
+
+      artistDivs.forEach((div) => {
+        div.classList.remove("active");
+      });
+      //add 'active' class
+      const selectedArtistDiv = document.getElementById(`${artistId}-card`);
+      // add active class if selectedMonth exist or is null
+      if (selectedArtistDiv) {
+        selectedArtistDiv.classList.add("active");
+      }
+    });
+  });
+});
+
+
+//5 clicking  arrow link enables returning to the previous site that referred to the current page
 // and this function using a the browser's history to navigate back to the referring page.
 
 const linkReturn = document.querySelector(".arrow-link");
@@ -88,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-//4 for desktops, chevron icon if clicked, it hide a social nav menu
+//6 for desktops, chevron icon if clicked, it hide a social nav menu
 
 const chevronIcon = document.getElementById('chevron-to-show-social-menu')
 const socialMenu = document.querySelector('.top-nav-desktop')

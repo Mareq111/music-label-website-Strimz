@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#26acac" />
+    <meta
+      name="description"
+      content="I made this website for my portfolio, Marek Szulc"
+    />
+    <!-- favicon  -->
+    <link rel="icon" href="/src/img/logo16x16.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/artists.css" />
+
+    <!-- icons link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- icons other -->
+    <script
+      src="https://kit.fontawesome.com/460b41b87d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Artists - Strimz Empire</title>
+  </head>
+  <body>
+    <div class="top">
+      <div class="top-content">
+        <img id="logo" src="/src/img/logo.png" alt="Company-logo" />
+        <!-- desktop nav - row for 1024px+ -->
+        <div class="nav-desktop">
+          <nav class="desktop_menu-a">
+            <a class="nav-a-desktop-menu" href="/homepage.html">Home</a>
+            <a
+              class="nav-a-desktop-menu"
+              href="/src/main-sites/music/music.html"
+              >Releases</a
+            >
+            <a
+              class="nav-a-desktop-menu"
+              href="/src/main-sites/artists/artists.html"
+              >Artists</a
+            >
+            <a class="nav-a-desktop-menu" href="#">Shop</a>
+            <a class="nav-a-desktop-menu" href="/src/main-sites/tour/tour.html"
+              >Tour</a
+            >
+            <a
+              class="nav-a-desktop-menu"
+              href="/src/main-sites/about/about.html"
+              >About</a
+            >
+            <a
+              class="nav-a-desktop-menu"
+              href="/src/main-sites/contact-us/contact-us.html"
+              >Contact Us</a
+            >
+          </nav>
+        </div>
+        <i class="bx bx-menu-alt-left" id="dropdown-menu-icon"></i>
+        <i class="bx bx-chevron-down" id="chevron-to-show-social-menu"></i>
+      </div>
+    </div>
+
+    <!-- toggle menu -->
+
+    <nav class="toggle-menu" id="toggle_menu">
+      <div class="all-inside">
+        <!-- left side toggle menu -->
+        <div class="toggle-nav-left">
+          <nav class="toggle_menu-a">
+            <a class="nav-a-toggle-menu" href="/homepage.html">Home</a>
+            <a class="nav-a-toggle-menu" href="/src/main-sites/music/music.html"
+              >Releases</a
+            >
+            <a
+              class="nav-a-toggle-menu"
+              href="/src/main-sites/artists/artists.html"
+              >Artists</a
+            >
+            <a class="nav-a-toggle-menu" href="#">Shop</a>
+            <a class="nav-a-toggle-menu" href="/src/main-sites/tour/tour.html"
+              >Tour</a
+            >
+            <a
+              class="nav-a-toggle-menu"
+              href="
+            /src/main-sites/about/about.html"
+              >About</a
+            >
+            <a
+              class="nav-a-toggle-menu"
+              href="/src/main-sites/contact-us/contact-us.html"
+              >Contact Us</a
+            >
+          </nav>
+        </div>
+        <!-- right side toggle menu -->
+        <div class="toggle-column-right">
+          <a
+            target="_blank"
+            class="toggle-menu-social"
+            aria-label="Check out Soundcloud"
+            href="https://soundcloud.com/"
+            title="Go to SoundCloud"
+            ><i class="bx bxl-soundcloud" id="toggle-menu-a-1"></i
+          ></a>
+          <a
+            target="_blank"
+            class="toggle-menu-social"
+            aria-label="Check out Youtube"
+            href="https://www.youtube.com/"
+            title="Go to Youtube"
+            ><i class="bx bxl-youtube" id="toggle-menu-a-2"></i
+          ></a>
+          <a
+            target="_blank"
+            class="toggle-menu-social"
+            aria-label="Check out Spotify"
+            href="https://open.spotify.com/"
+            title="Go to Spotify"
+            ><i class="bx bxl-spotify" id="toggle-menu-a-3"></i
+          ></a>
+
+          <a
+            target="_blank"
+            class="toggle-menu-social"
+            aria-label="Check out Apple Music"
+            href="https://music.apple.com/us/browse"
+            title="Go to Apple Music"
+            ><i class="bx bxl-apple" id="toggle-menu-a-4"></i
+          ></a>
+
+          <a
+            target="_blank"
+            class="toggle-menu-social"
+            aria-label="Check out Deezer"
+            href="https://www.deezer.com/en/offers"
+            title="Go to Deezer"
+            ><i class="bx bxl-deezer" id="toggle-menu-a-5"></i
+          ></a>
+
+          <a
+            target="_blank"
+            class="toggle-menu-social"
+            aria-label="Check out TikTok"
+            href="https://www.tiktok.com/"
+            title="Go to TikTok"
+            ><i class="bx bxl-tiktok" id="toggle-menu-a-6"></i
+          ></a>
+
+          <a
+            target="_blank"
+            class="toggle-menu-social"
+            aria-label="Check out Facebook"
+            href="https://www.facebook.com/"
+            title="Go to Facebook"
+            ><i class="bx bxl-facebook-circle" id="toggle-menu-a-7"></i
+          ></a>
+          <a
+            target="_blank"
+            class="toggle-menu-social"
+            aria-label="Check out Instagram"
+            href="https://www.instagram.com/"
+            title="Go to Instagram"
+            ><i class="bx bxl-instagram" id="toggle-menu-a-8"></i
+          ></a>
+
+          <a
+            target="_blank"
+            class="toggle-menu-social"
+            aria-label="Check out X (Twitter)"
+            href="https://twitter.com/"
+            title="Go to X (Twitter)"
+            ><i class="fa-brands fa-x-twitter" id="toggle-menu-a-9"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav on right for desktop and hide for mobile-->
+    <nav class="top-nav-desktop">
+      <a
+        target="_blank"
+        class="nav-a-social"
+        aria-label="Check out Soundcloud"
+        href="https://soundcloud.com/"
+        title="Go to SoundCloud"
+        ><i class="bx bxl-soundcloud" id="nav-a-1"></i
+      ></a>
+      <a
+        target="_blank"
+        class="nav-a-social"
+        aria-label="Check out Youtube"
+        href="https://www.youtube.com/"
+        title="Go to Youtube"
+        ><i class="bx bxl-youtube" id="nav-a-2"></i
+      ></a>
+      <a
+        target="_blank"
+        class="nav-a-social"
+        aria-label="Check out Spotify"
+        href="https://open.spotify.com/"
+        title="Go to Spotify"
+        ><i class="bx bxl-spotify" id="nav-a-3"></i
+      ></a>
+      <a
+        target="_blank"
+        class="nav-a-social"
+        aria-label="Check out Apple Music"
+        href="https://music.apple.com/us/browse"
+        title="Go to Apple Music"
+        ><i class="bx bxl-apple" id="nav-a-4"></i
+      ></a>
+
+      <a
+        target="_blank"
+        class="nav-a-social"
+        aria-label="Check out Dezzer"
+        href="https://www.deezer.com/en/offers"
+        title="Go to Deezer"
+        ><i class="bx bxl-deezer" id="nav-a-5"></i
+      ></a>
+
+      <a
+        target="_blank"
+        class="nav-a-social"
+        aria-label="Check out TikTok"
+        href="https://www.tiktok.com/"
+        title="Go to TikTok"
+        ><i class="bx bxl-tiktok" id="nav-a-6"></i
+      ></a>
+
+      <a
+        target="_blank"
+        class="nav-a-social"
+        aria-label="Check out Facebook"
+        href="https://www.facebook.com/"
+        title="Go to Facebook"
+        ><i class="bx bxl-facebook-circle" id="nav-a-7"></i
+      ></a>
+      <a
+        target="_blank"
+        class="nav-a-social"
+        aria-label="Check out Instagram"
+        href="https://www.instagram.com/"
+        title="Go to Instagram"
+        ><i class="bx bxl-instagram" id="nav-a-8"></i
+      ></a>
+
+      <a
+        target="_blank"
+        class="nav-a-social"
+        aria-label="Check out X (Twitter)"
+        href="https://twitter.com/"
+        title="Go to X (Twitter)"
+        ><i class="fa-brands fa-x-twitter" id="nav-a-9"></i
+      ></a>
+    </nav>
+    <!-- section 1  -->
+
+    <section class="section-1">
+      <div class="section-1-card">
+        <a class="link-to-story" href="/src/other/page404/page404.html">
+          <div class="name-and-logo">
+            <h1 class="h1-main-name">Artists</h1>
+            <img
+              class="img-square-section"
+              class="hero-section-logo"
+              src="/src/img/logo.png"
+              alt="Company-logo"
+            />
+          </div>
+        </a>
+        <div class="dot-and-introduction">
+          <i class="bx bxs-circle" id="dot-introduction"></i>
+
+          <p class="p_introduction">Current and future talents</p>
+        </div>
+
+        <hr class="hr-line-to-p" />
+        <!-- p descriptions -->
+        <p class="p_description">
+          Our artists resonate with a wide range of sounds, spanning from
+          expansive hip-hop and rock to subtle wave music and unconventional
+          beats of country rap.
+        </p>
+        <br />
+        <p class="p_description">
+          Within our artistic ensemble, you'll discover both experienced
+          professionals and promising talents. Some of them are at the beginning
+          of their musical journey, poised and ready to make their debut
+        </p>
+      </div>
+    </section>
+
+    <!-- section 1  el double m -->
+
+    <!--  <hr class="hr-line-to-sections-chooser" /> -->
+    <section class="section1">
+      <a class="link-to-releases" href="/src/main-sites/music/music.html">
+        <div class="introduction">
+          <h2 class="h-artist-name">El Double M</h2>
+          <h3 class="core-of-artist">
+            Musician, producer, and founder of
+            <strong class="name-in-p-blue">Strimz Empire</strong>
+          </h3>
+        </div>
+      </a>
+      <div class="div_for_artist_content">
+        <div class="artist-and-img-div">
+          <!-- hidden p section -->
+          <div class="div-hidden">
+            <p class="p_description-hidden">
+              <strong>Red Path to Zukunft</strong> is an album that explores the
+              artist journey of embracing programming as the main path to a more
+              promising future.
+            </p>
+            <br />
+            <p class="p_description-hidden">
+              The album emphasizes that discovering ones
+              <strong>Red Path</strong>, for example choosing programming as the
+              primary journey, can unlock a future bursting with satisfaction
+              and fulfillment.
+            </p>
+            <br />
+            <p class="p_description-hidden">
+              Discover your own
+              <strong class="name-tag-red">Red Path To Zukunft</strong>
+            </p>
+          </div>
+
+          <!-- img album -->
+          <a class="link-to-music" href="/src/main-sites/music/music.html">
+            <div class="img-of-artist">
+              <img
+                class="artist-img"
+                loading="lazy"
+                src="/src/img/others/el-double.jpg"
+                alt="el-double-m-image"
+              />
+            </div>
+          </a>
+        </div>
+
+        <p class="p_description">
+          <strong>Red Path to Zukunft</strong> is an album that explores the
+          artist journey of embracing programming as the main path to a more
+          promising future.
+        </p>
+        <br />
+        <p class="p_description">
+          The album emphasizes that discovering ones <strong>Red Path</strong>,
+          for example choosing programming as the primary journey, can unlock a
+          future bursting with satisfaction and fulfillment.
+        </p>
+        <br />
+        <p class="p_description">
+          <strong class="name-tag-red">Find out what he can offer</strong>
+        </p>
+
+        <p class="p_description"></p>
+      </div>
+
+      <!-- explore his music -->
+      <div class="explore-music-div">
+        <div class="btn-explore-music">
+          <a
+            href="/src/albums/red-path-to-zukunft/red-path.html"
+            class="a-btn-explore-music"
+            aria-label="explore music"
+          >
+            Explore Music</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--!section 2 new albums  zmiana na wybor artystow -->
+    <section class="section-2">
+      <!-- <hr class="hr-line-under-btns" /> -->
+      <h2 class="h-section-2">Future Stars</h2>
+      <p class="p_section2-mini-description">Learn more about newest talents</p>
+
+      <div class="btns-chooser">
+        <button
+          class="btn-artists active"
+          id="btn-jackieras"
+          aria-label="Jackie Ras"
+          tabindex="0"
+        >
+          Jackie Ras
+        </button>
+        <button
+          class="btn-artists"
+          id="btn-elkaptn"
+          aria-label="El Kaptn"
+          tabindex="0"
+        >
+          El Kaptn
+        </button>
+        <button
+          class="btn-artists"
+          id="btn-mollygranoli"
+          aria-label="Molly Granoli"
+          tabindex="0"
+        >
+          Molly Granoli
+        </button>
+      </div>
+
+      <!--! 1. jackie ras -->
+
+      <div class="artist-div active" id="jackieras-card">
+        <div class="section-2-card">
+          <a class="link-to-releases" href="/src/main-sites/music/music.html">
+            <div class="introduction">
+              <h2 class="h-artist-name">Jackie Ras</h2>
+              <h3 class="core-of-artist">
+                Southern-rooted rock enthusiast, love create storytelling songs
+              </h3>
+            </div>
+          </a>
+          <div class="div_for_artist_content">
+            <div class="artist-and-img-div">
+              <!-- hidden p section -->
+              <div class="div-hidden">
+                <p class="p_description-hidden">
+                  <strong>Red Path to Zukunft</strong> is an album that explores
+                  the artist journey of embracing programming as the main path
+                  to a more promising future.
+                </p>
+                <br />
+                <p class="p_description-hidden">
+                  The album emphasizes that discovering ones
+                  <strong>Red Path</strong>, for example choosing programming as
+                  the primary journey, can unlock a future bursting with
+                  satisfaction and fulfillment.
+                </p>
+                <br />
+                <p class="p_description-hidden">
+                  Discover your own
+                  <strong class="name-tag-red">Red Path To Zukunft</strong>
+                </p>
+              </div>
+
+              <!-- img album -->
+              <a class="link-to-music" href="/src/main-sites/music/music.html">
+                <div class="img-of-artist">
+                  <img
+                    class="artist-img"
+                    loading="lazy"
+                    src="/src/img/others/el-double.jpg"
+                    alt="el-double-m-image"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <p class="p_description">
+              <strong>Red Path to Zukunft</strong> is an album that explores the
+              artist journey of embracing programming as the main path to a more
+              promising future.
+            </p>
+            <br />
+            <p class="p_description">
+              The album emphasizes that discovering ones
+              <strong>Red Path</strong>, for example choosing programming as the
+              primary journey, can unlock a future bursting with satisfaction
+              and fulfillment.
+            </p>
+            <br />
+            <p class="p_description">
+              <strong class="name-tag-red">
+                Get ready for his upcoming debut</strong
+              >
+            </p>
+
+            <p class="p_description"></p>
+          </div>
+
+          <!-- explore his music -->
+          <div class="explore-music-div">
+            <div class="btn-explore-music">
+              <a
+                href="/src/albums/red-path-to-zukunft/red-path.html"
+                class="a-btn-explore-music"
+                aria-label="explore music"
+              >
+                Explore Music Soon</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--! 2. kaptn -->
+      <div class="artist-div" id="elkaptn-card">
+        <div class="section-2-card">
+          <a class="link-to-releases" href="/src/main-sites/music/music.html">
+            <div class="introduction">
+              <h2 class="h-artist-name">El Kaptn</h2>
+              <h3 class="core-of-artist">
+                Blending the best of wave music and country rap
+              </h3>
+            </div>
+          </a>
+          <div class="div_for_artist_content">
+            <div class="artist-and-img-div">
+              <!-- hidden p section -->
+              <div class="div-hidden">
+                <p class="p_description-hidden">
+                  <strong>Red Path to Zukunft</strong> is an album that explores
+                  the artist journey of embracing programming as the main path
+                  to a more promising future.
+                </p>
+                <br />
+                <p class="p_description-hidden">
+                  The album emphasizes that discovering ones
+                  <strong>Red Path</strong>, for example choosing programming as
+                  the primary journey, can unlock a future bursting with
+                  satisfaction and fulfillment.
+                </p>
+                <br />
+                <p class="p_description-hidden">
+                  Discover your own
+                  <strong class="name-tag-red">Red Path To Zukunft</strong>
+                </p>
+              </div>
+
+              <!-- img album -->
+              <a class="link-to-music" href="/src/main-sites/music/music.html">
+                <div class="img-of-artist">
+                  <img
+                    class="artist-img"
+                    loading="lazy"
+                    src="/src/img/others/el-double.jpg"
+                    alt="el-double-m-image"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <p class="p_description">
+              <strong>Red Path to Zukunft</strong> is an album that explores the
+              artist journey of embracing programming as the main path to a more
+              promising future.
+            </p>
+            <br />
+            <p class="p_description">
+              The album emphasizes that discovering ones
+              <strong>Red Path</strong>, for example choosing programming as the
+              primary journey, can unlock a future bursting with satisfaction
+              and fulfillment.
+            </p>
+            <br />
+            <p class="p_description">
+              <strong class="name-tag-red">
+                Get ready for his upcoming debut</strong
+              >
+            </p>
+
+            <p class="p_description"></p>
+          </div>
+
+          <!-- explore his music -->
+          <div class="explore-music-div">
+            <div class="btn-explore-music">
+              <a
+                href="/src/albums/red-path-to-zukunft/red-path.html"
+                class="a-btn-explore-music"
+                aria-label="explore music"
+              >
+                Explore Music Soon</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--! 3. molly -->
+      <div class="artist-div" id="mollygranoli-card">
+        <div class="section-2-card">
+          <a class="link-to-releases" href="/src/main-sites/music/music.html">
+            <div class="introduction">
+              <h2 class="h-artist-name">Molly Granoli</h2>
+              <h3 class="core-of-artist">
+                Deeply passionate about wave music and also futuristic retro
+                synth sounds
+              </h3>
+            </div>
+          </a>
+          <div class="div_for_artist_content">
+            <div class="artist-and-img-div">
+              <!-- hidden p section -->
+              <div class="div-hidden">
+                <p class="p_description-hidden">
+                  <strong>Red Path to Zukunft</strong> is an album that explores
+                  the artist journey of embracing programming as the main path
+                  to a more promising future.
+                </p>
+                <br />
+                <p class="p_description-hidden">
+                  The album emphasizes that discovering ones
+                  <strong>Red Path</strong>, for example choosing programming as
+                  the primary journey, can unlock a future bursting with
+                  satisfaction and fulfillment.
+                </p>
+                <br />
+                <p class="p_description-hidden">
+                  Discover your own
+                  <strong class="name-tag-red">Red Path To Zukunft</strong>
+                </p>
+              </div>
+
+              <!-- img album -->
+              <a class="link-to-music" href="/src/main-sites/music/music.html">
+                <div class="img-of-artist">
+                  <img
+                    class="artist-img"
+                    loading="lazy"
+                    src="/src/img/others/el-double.jpg"
+                    alt="el-double-m-image"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <p class="p_description">
+              <strong>Red Path to Zukunft</strong> is an album that explores the
+              artist journey of embracing programming as the main path to a more
+              promising future.
+            </p>
+            <br />
+            <p class="p_description">
+              The album emphasizes that discovering ones
+              <strong>Red Path</strong>, for example choosing programming as the
+              primary journey, can unlock a future bursting with satisfaction
+              and fulfillment.
+            </p>
+            <br />
+            <p class="p_description">
+              <strong class="name-tag-red">
+                Get ready for her upcoming debut</strong
+              >
+            </p>
+
+            <p class="p_description"></p>
+          </div>
+
+          <!-- explore his music -->
+          <div class="explore-music-div">
+            <div class="btn-explore-music">
+              <a
+                href="/src/albums/red-path-to-zukunft/red-path.html"
+                class="a-btn-explore-music"
+                aria-label="explore music"
+              >
+                Explore Music Soon</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <hr class="hr-line-footer" />
+      <div class="footer-top">
+        <nav class="footer-a-1">
+          <a class="nav-a-footer" href="/homepage.html">Home</a>
+          <a class="nav-a-footer" href="/src/main-sites/music/music.html"
+            >Releases</a
+          >
+          <a class="nav-a-footer" href="/src/main-sites/artists/artists.html"
+            >Artists</a
+          >
+          <a class="nav-a-footer" href="#">Shop</a>
+        </nav>
+        <nav class="footer-a-2">
+          <a class="nav-a-footer" href="/src/main-sites/tour/tour.html">Tour</a>
+          <a
+            class="nav-a-footer"
+            href="
+          /src/main-sites/about/about.html"
+            >About</a
+          >
+          <a
+            class="nav-a-footer"
+            href="/src/main-sites/contact-us/contact-us.html"
+            >Contact Us</a
+          >
+        </nav>
+
+        <div class="description-and-email-input">
+          <p class="email-input-description">
+            Stay current with our latest news
+          </p>
+          <div class="input-wth-btn">
+            <input
+              class="input-email"
+              type="email"
+              name="user_email"
+              required
+              placeholder="Email"
+            />
+            <button
+              class="send-btn"
+              type="submit"
+              aria-label="Subscribe Newsletter"
+            >
+              <i class="bx bxs-send"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- footer bottom -->
+      <div class="footer-bottom">
+        <hr class="hr-line-footer" />
+        <div class="footer-p-and-nav">
+          <nav class="bottom-nav">
+            <a
+              target="_blank"
+              class="nav-a-footer-social"
+              id="bottom-footer-social-1"
+              aria-label="Check out Soundcloud"
+              href="https://soundcloud.com/"
+              title="Go to SoundCloud"
+              ><i class="bx bxl-soundcloud"></i
+            ></a>
+            <a
+              target="_blank"
+              class="nav-a-footer-social"
+              id="bottom-footer-social-2"
+              aria-label="Check out Youtube"
+              href="https://www.youtube.com/"
+              title="Go to Youtube"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+            <a
+              target="_blank"
+              class="nav-a-footer-social"
+              id="bottom-footer-social-3"
+              aria-label="Check out Spotify"
+              href="https://open.spotify.com/"
+              title="Go to Spotify"
+              ><i class="bx bxl-spotify"></i
+            ></a>
+            <a
+              target="_blank"
+              class="nav-a-footer-social"
+              id="bottom-footer-social-4"
+              aria-label="Check out Apple Music"
+              href="https://music.apple.com/us/browse"
+              title="Go to Apple Music"
+              ><i class="bx bxl-apple"></i
+            ></a>
+            <a
+              target="_blank"
+              class="nav-a-footer-social"
+              id="bottom-footer-social-5"
+              aria-label="Check out Deezer"
+              href="https://www.deezer.com/en/offers"
+              title="Go to Deezer"
+              ><i class="bx bxl-deezer"></i
+            ></a>
+            <a
+              target="_blank"
+              class="nav-a-footer-social"
+              id="bottom-footer-social-6"
+              aria-label="Check out TikTok"
+              href="https://www.tiktok.com/"
+              title="Go to TikTok"
+              ><i class="bx bxl-tiktok"></i
+            ></a>
+            <a
+              target="_blank"
+              class="nav-a-footer-social"
+              id="bottom-footer-social-7"
+              aria-label="Check out Facebook"
+              href="https://www.facebook.com/"
+              title="Go to Facebook"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a
+              target="_blank"
+              class="nav-a-footer-social"
+              id="bottom-footer-social-8"
+              aria-label="Check out Instagram"
+              href="https://www.instagram.com/"
+              title="Go to Instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+
+            <a
+              target="_blank"
+              class="nav-a-footer-social"
+              id="bottom-footer-social-9"
+              aria-label="Check out X (Twitter)"
+              href="https://twitter.com/"
+              title="Go to X (Twitter)"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </nav>
+          <p class="time-and-rights">
+            <time datetime="2023">2023</time> ©, All Rights Reserved
+          </p>
+        </div>
+        <div class="about-me">
+          <p id="description-about-me">
+            I made this website as a project for my portfolio. To see my other
+            projects, check out
+
+            <a target="_blank" id="anchor-description-about-me" href="#"
+              >my website</a
+            >
+          </p>
+          <div class="my-name-and-socials">
+            <p id="my-name-is">Made by Marek Szulc</p>
+            <a
+              target="_blank"
+              class="my-social"
+              aria-label="Check out my personal Github"
+              href="https://github.com/Mareq111"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              target="_blank"
+              class="my-social"
+              aria-label="Check out my personal Linkedin"
+              href="https://www.linkedin.com/in/marek-szulc-156307247/"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+
+            <a
+              target="_blank"
+              class="my-social"
+              aria-label="Check out my personal Instagram"
+              href="https://www.instagram.com/mrq_szulc/"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/other-pages-script.js"></script>
+  </body>
+</html>

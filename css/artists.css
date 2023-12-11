@@ -333,16 +333,16 @@ html {
   padding: 2rem 1rem;
 }
 
-.month-div {
+.artist-div {
   display: none;
 }
 
-.month-div.active {
+.artist-div.active {
   display: block;
 }
 
-.btn-month:focus {
-  outline: 0.2rem solid #cd3737;
+.btn-artists:focus {
+  outline: 0.2rem solid #85ab7b;
 }
 
 .btns-chooser {
@@ -374,8 +374,8 @@ html {
   margin-bottom: 1.5rem;
 }
 
-.btn-month {
-  width: 25%;
+.btn-artists {
+  width: 33%;
   height: 2.5rem;
   border-radius: 0.5rem;
   outline: none;
@@ -389,13 +389,13 @@ html {
   opacity: 0.5;
   transition: 0.2s ease-in-out;
 }
-.btn-month:hover {
+.btn-artists:hover {
   background-color: #3e3c3c;
   color: #f2f2f2;
 }
 
-.btn-month.active {
-  background-color: #f14343;
+.btn-artists.active {
+  background-color: #85ab7b;
   color: #120f10;
   opacity: 1;
 }
@@ -404,7 +404,7 @@ html {
   font-size: 1.4rem;
   text-transform: uppercase;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 
@@ -415,10 +415,12 @@ html {
   flex-direction: column;
   width: 100%;
   height: auto;
-  /* margin-bottom: 1rem; */
 }
-.section-2-card:hover {
-  border-bottom: 0.1rem solid #3e3c3c;
+
+.p_section2-mini-description {
+  font-size: 0.8rem;
+  color: #8d8c8c;
+  margin-bottom: 1rem;
 }
 
 .a-link-card {
@@ -530,7 +532,7 @@ html {
   margin-top: 0.5rem;
 }
 
-.section5 {
+.section1 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -539,13 +541,13 @@ html {
   background-color: #120f10;
 }
 
-.link-to-upcoming-album {
+.link-to-releases {
   text-decoration: none;
   color: #f2f2f2;
   cursor: pointer;
 }
 
-.upcoming-album-title {
+.introduction {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -553,21 +555,21 @@ html {
   gap: 0.5rem;
 }
 
-.upcoming-album-img-div {
+.artist-and-img-div {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1.5rem 0;
 }
 
-.upcoming-album-img {
+.artist-img {
   width: 100%;
   height: auto;
   cursor: pointer;
   border-radius: 1rem;
 }
 
-.inner-div-upcoming-album {
+.img-of-artist {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -575,29 +577,29 @@ html {
   transition: 0.1s ease-in-out;
   border-radius: 1rem;
 }
-.inner-div-upcoming-album:hover {
+.img-of-artist:hover {
   transform: scale(1.1);
   box-shadow: 0 0 8px rgba(69, 25, 22, 0.5);
 }
 
-.h-section5 {
+.h-artist-name {
   font-size: 1.4rem;
   line-height: 2.8rem;
   text-transform: uppercase;
   width: 100%;
   font-weight: 800;
-  color: #f2f2f2;
+  color: #85ab7b;
   width: auto;
   transition: 0.2s ease-in-out;
   margin-bottom: 0.5rem;
 }
-.h-section5:hover,
-.h-section5 :focus,
-.h-section5 :active {
+.h-artist-name:hover,
+.h-artist-name :focus,
+.h-artist-name :active {
   color: #26acac;
 }
 
-.title-upcoming-album {
+.core-of-artist {
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -607,29 +609,20 @@ html {
   font-weight: 800;
 }
 
-.div_for_p-section5 {
+.div_for_artist-content {
   margin-top: 1.5rem;
 }
 
-.p_section5-mini-description {
-  font-size: 0.8rem;
-  color: #8d8c8c;
-}
-
-#tour-date-months {
-  margin-right: 0.5rem;
-}
-
-.p_section5 {
+.p_description {
   font-size: 1rem;
   line-height: 2rem;
 }
 
-.p_section5-hidden {
+.p_description-hidden {
   display: none;
 }
 
-.discover-album-div {
+.explore-music-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -638,7 +631,7 @@ html {
   gap: 2rem;
 }
 
-.btn-discover-album {
+.btn-explore-music {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -647,7 +640,7 @@ html {
   background-color: transparent;
 }
 
-.a-btn-discover-album {
+.a-btn-explore-music {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -662,9 +655,9 @@ html {
   font-weight: 700;
   transition: 0.1s ease-in-out;
 }
-.a-btn-discover-album:hover,
-.a-btn-discover-album :focus,
-.a-btn-discover-album :active {
+.a-btn-explore-music:hover,
+.a-btn-explore-music :focus,
+.a-btn-explore-music :active {
   outline: none;
   transform: scale(1.1);
   background-color: #8d8c8c;
@@ -942,6 +935,10 @@ footer {
     height: auto;
     padding: 2rem 1.5rem;
   }
+  .p_section2-mini-description {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
   .btns-chooser {
     display: flex;
     justify-content: center;
@@ -952,8 +949,8 @@ footer {
     /* max-width: 34rem; */
     /*  top: 3.5rem; */
   }
-  .btn-month {
-    width: 25%;
+  .btn-artists {
+    width: 33%;
     height: 3rem;
     font-size: 0.9rem;
   }
@@ -1026,50 +1023,41 @@ footer {
   .hr-line-to-sections-chooser {
     height: 0.1rem;
   }
-  .section5 {
+  .section1 {
     padding: 2rem;
   }
-  .upcoming-album-title {
+  .introduction {
     gap: 0.5rem;
   }
-  .h-section5 {
+  .h-artist-name {
     font-size: 1.6rem;
     line-height: 3.2rem;
     margin-bottom: 1rem;
   }
-  .title-upcoming-album {
+  .core-of-artist {
     font-size: 1.4rem;
   }
-  .p_section5-mini-description {
-    font-size: 0.9rem;
-  }
-  .p_section5 {
+  .p_description {
     font-size: 1.1rem;
     line-height: 2.2rem;
     max-width: 36rem;
   }
-  .upcoming-album-img-div {
-    /*  display: flex;
-    justify-content: center;
-    align-items: center; */
+  .artist-and-img-div {
     margin: 2rem 0;
   }
-  .upcoming-album-img {
+  .artist-img {
     width: 100%;
     height: auto;
   }
-  .inner-div-upcoming-album {
-    /*  display: flex;
-    justify-content: center;
-    align-items: center; */
+  .img-of-artist {
     margin: 0 2rem;
     max-width: 31rem;
   }
-  .discover-album-div {
+  .explore-music-div {
     margin-top: 3rem;
     gap: 2rem;
   }
-  .a-btn-discover-album {
+  .a-btn-explore-music {
     width: 18rem;
     height: auto;
     /* margin: 1.5rem 0; */
@@ -1157,6 +1145,10 @@ footer {
     height: auto;
     padding: 3rem;
   }
+  .p_section2-mini-description {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
   .btns-chooser {
     display: flex;
     justify-content: center;
@@ -1164,8 +1156,8 @@ footer {
     width: 100%;
     margin-bottom: 3rem;
   }
-  .btn-month {
-    width: 25%;
+  .btn-artists {
+    width: 33%;
     height: 3rem;
     font-size: 1rem;
   }
@@ -1232,50 +1224,47 @@ footer {
     background-color: transparent;
     margin-left: auto;
   }
-  .section5 {
+  .section1 {
     padding: 3rem;
   }
-  .upcoming-album-title {
+  .introduction {
     gap: 0.7rem;
   }
-  .h-section5 {
+  .h-artist-name {
     font-size: 1.8rem;
     line-height: 3.6rem;
     margin-bottom: 1rem;
   }
-  .title-upcoming-album {
+  .core-of-artist {
     font-size: 1.6rem;
   }
-  .p_section5-mini-description {
-    font-size: 1.1rem;
-  }
-  .p_section5 {
+  .p_description {
     font-size: 1.3rem;
     line-height: 2.6rem;
     max-width: 44rem;
   }
-  .upcoming-album-img-div {
+  .artist-and-img-div {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 3rem 0;
   }
-  .upcoming-album-img {
+  .artist-img {
     width: 100%;
     height: auto;
   }
-  .inner-div-upcoming-album {
+  .img-of-artist {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 3rem;
     max-width: 31rem;
   }
-  .discover-album-div {
+  .explore-music-div {
     margin-top: 4rem;
     gap: 3rem;
   }
-  .a-btn-discover-album {
+  .a-btn-explore-music {
     padding: 1rem;
     width: 22rem;
     height: auto;
@@ -1459,6 +1448,9 @@ footer {
     height: auto;
     padding: 4rem 4.5rem;
   }
+  .p_section2-mini-description {
+    font-size: 1.2rem;
+  }
   .btns-chooser {
     display: flex;
     justify-content: center;
@@ -1467,8 +1459,8 @@ footer {
     margin: 0 1rem 4rem 1rem;
     z-index: 2;
   }
-  .btn-month {
-    width: 25%;
+  .btn-artists {
+    width: 33%;
     height: 3rem;
     font-size: 1rem;
     margin: 0;
@@ -1480,7 +1472,7 @@ footer {
     margin-bottom: 2.8rem;
     font-weight: 700;
   }
-  .month-div.active {
+  .artist-div.active {
     display: block;
     margin: 0 2rem;
   }
@@ -1533,54 +1525,51 @@ footer {
   .btn-details-div {
     z-index: 1;
   }
-  .section5 {
+  .section1 {
     padding: 4rem 4.5rem;
   }
-  .upcoming-album-title {
+  .introduction {
     gap: 0.9rem;
   }
-  .h-section5 {
+  .h-artist-name {
     font-size: 2rem;
     line-height: 4rem;
     margin-bottom: 1.2rem;
   }
-  .title-upcoming-album {
+  .core-of-artist {
     font-size: 1.6rem;
   }
-  .p_section5-mini-description {
-    font-size: 1.2rem;
-  }
-  .p_section5 {
+  .p_description {
     display: none;
     font-size: 1.4rem;
     line-height: 2.8rem;
     max-width: 46rem;
   }
-  .p_section5-hidden {
+  .p_description-hidden {
     display: block;
     font-size: 1.4rem;
     line-height: 2.8rem;
     /* max-width: 46rem; */
     max-width: 50vw;
   }
-  .upcoming-album-img-div {
+  .artist-and-img-div {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 3rem 0 0 0;
   }
-  .upcoming-album-img {
+  .artist-img {
     width: 100%;
     height: auto;
   }
-  .inner-div-upcoming-album {
+  .img-of-artist {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 2rem;
     max-width: 31rem;
   }
-  .btn-discover-album {
+  .btn-explore-music {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1589,11 +1578,11 @@ footer {
     background-color: transparent;
     padding-left: 2rem;
   }
-  .discover-album-div {
+  .explore-music-div {
     margin-top: 3rem;
     gap: 3rem;
   }
-  .a-btn-discover-album {
+  .a-btn-explore-music {
     padding: 1rem;
     width: 22rem;
     height: auto;
@@ -1685,9 +1674,10 @@ footer {
     margin-bottom: 3.4rem;
     font-weight: 700;
   }
-  .month-div.active {
+  .artist-div.active {
     display: block;
     margin: 0 3rem;
+    border: none;
   }
   .row-date-place-location {
     gap: 2rem;
@@ -1709,13 +1699,13 @@ footer {
   .city-place-div {
     font-size: 1.2rem;
   }
-  .section5 {
+  .section1 {
     padding: 4rem 8rem;
   }
-  .upcoming-album-title {
+  .introduction {
     gap: 1rem;
   }
-  .p_section5 {
+  .p_description {
     max-width: 54rem;
   }
   .footer-top {
@@ -1795,4 +1785,4 @@ footer {
     color: #367983;
     transition: 0.1s ease-in-out;
   }
-}/*# sourceMappingURL=tour.css.map */
+}/*# sourceMappingURL=artists.css.map */
