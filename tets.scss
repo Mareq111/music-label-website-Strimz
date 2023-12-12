@@ -265,7 +265,6 @@ html {
     width: 100%;
     height: auto;
     padding: 4rem 0.5rem 0 0.5rem;
-    /* z-index: 1; */
 }
 
 .section-1-card {
@@ -276,7 +275,7 @@ html {
     width: 100%;
     height: auto;
     padding: 2rem 1rem;
-    /* z-index: 1; */
+
     background-color: $shadow-black;
     border-radius: 1rem;
 }
@@ -406,25 +405,187 @@ html {
     opacity: 0.1;
     margin-top: 0.5rem;
 }
+//section el doble m
 
-//! section 2 tour dates
-.section-2 {
+.section2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    background-color: $black-900;
+}
+.link-to-releases {
+    text-decoration: none;
+    color: $white;
+    cursor: pointer;
+}
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+//img artists
+.artist-and-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.artist-img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.img-of-artist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    transition: 0.1s ease-in-out;
+    border-radius: 1rem;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 8px $shadow-red-path-to-zukunft;
+    }
+}
+.figure-img {
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; */
+    display: inline-block;
+    position: relative;
+
+    border-radius: 1rem;
+}
+//img link to unsplash
+.unsplash-img-link {
+    text-decoration: none;
+    color: $grey-600;
+    font-size: 0.8rem;
+}
+#unsplash-img-margin,
+#unsplash-img-margin2,
+#unsplash-img-margin3 {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.link-to-music {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    color: $grey-600;
+}
+
+.h-artist-name {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 800;
+    color: $amulet-green-400;
+    width: auto;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 0.5rem;
+    &:hover,
+    :focus,
+    :active {
+        color: $eastern-blue-500;
+    }
+}
+
+.core-of-artist {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.name-tag-red {
+    color: $red-300;
+    font-weight: 800;
+}
+
+.div_for_artist-content {
+    margin-top: 1.5rem;
+}
+
+.p_description-artist {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+//hidden p only for 1024px scrrens and bigger
+.p_description-artist-hidden {
+    display: none;
+}
+
+//btn 1
+.explore-music-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.btn-explore-music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.a-btn-explore-music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: $grey-700;
+    color: $white;
+    width: 14rem;
+    height: auto;
+    /*  margin: 1rem 0 */
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.1s ease-in-out;
+
+    &:hover,
+    :focus,
+    :active {
+        outline: none;
+        transform: scale(1.1);
+        background-color: $grey-600;
+        color: $black-900;
+    }
+}
+
+//! section 3 tour dates
+.section3 {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
     padding: 2rem 1rem;
 }
-.month-div {
+.artist-div {
     display: none;
 }
 
-.month-div.active {
+.artist-div.active {
     display: block;
 }
-.btn-month:focus {
-    outline: 0.2rem solid $red-500; 
-  }
+.btn-artists:focus {
+    outline: 0.2rem solid $amulet-green-400;
+}
 
 //btn chooser
 .btns-chooser {
@@ -455,11 +616,10 @@ html {
     margin-bottom: 1.5rem;
 }
 
-.btn-month {
-    width: 25%;
+.btn-artists {
+    width: 33%;
     height: 2.5rem;
     border-radius: 0.5rem;
-
     outline: none;
     cursor: pointer;
     border: none;
@@ -475,113 +635,39 @@ html {
         color: $white;
     }
 }
-.btn-month.active {
-    background-color: $red-300;
+.btn-artists.active {
+    background-color: $amulet-green-400;
     color: $black-900;
     opacity: 1;
 }
 //end
 
-.h-section-2 {
+.h-section-3 {
     font-size: 1.4rem;
     text-transform: uppercase;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-weight: 700;
 }
-.section-2-card {
+ /*
+.section-3-card {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: column; 
     width: 100%;
-    height: auto;
-    /* margin-bottom: 1rem; */
-    &:hover {
-        border-bottom: 0.1rem solid $grey-700;
-    }
+    height: 100%;
+}*/
+.p_section3-mini-description {
+    font-size: 0.8rem;
+    color: $grey-600;
+    margin-bottom: 1rem;
 }
 .a-link-card {
     color: $white;
     text-decoration: none;
 }
-.tour-dates-all-info {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    gap: 1rem;
-}
-.date {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.2rem;
-    width: 100%;
-}
 
-.city {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    min-width: 6.3rem;
-    width: auto;
-    height: auto;
-}
-.place {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.2rem;
-}
-.city-place-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    font-size: 1rem;
-    width: 100%;
-    gap: 0.5rem;
-    padding-top: 0.5rem;
-    height: auto;
-}
-//btn
-.btn-details-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-}
-
-.btn-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: transparent;
-    border: 0.1rem solid $grey-700;
-    color: $white;
-    width: 14rem;
-    height: auto;
-    /* margin: 1rem 0; */
-    font-size: 1rem;
-    font-weight: 700;
-    transition: 0.1s ease-in-out;
-
-    &:hover,
-    :focus,
-    :active {
-        outline: none;
-        transform: scale(1.1);
-        background-color: $grey-600;
-        color: $black-900;
-    }
-}
 .name-tag-blue {
     color: $eastern-blue-500;
 }
@@ -596,145 +682,6 @@ html {
     height: 0.05rem;
     opacity: 0.1;
     margin-top: 0.5rem;
-}
-
-//section 5 upcoming album
-
-.section5 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-    background-color: $black-900;
-}
-.link-to-upcoming-album {
-    text-decoration: none;
-    color: $white;
-    cursor: pointer;
-}
-.upcoming-album-title {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-//img
-.upcoming-album-img-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1.5rem 0;
-}
-
-.upcoming-album-img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    border-radius: 1rem;
-}
-.inner-div-upcoming-album {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 1rem;
-    transition: 0.1s ease-in-out;
-    border-radius: 1rem;
-    &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 8px $shadow-red-path-to-zukunft;
-    }
-}
-
-.h-section5 {
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    text-transform: uppercase;
-    width: 100%;
-    font-weight: 800;
-    color: $white;
-    width: auto;
-    transition: 0.2s ease-in-out;
-    margin-bottom: 0.5rem;
-    &:hover,
-    :focus,
-    :active {
-        color: $eastern-blue-500;
-    }
-}
-
-.title-upcoming-album {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.name-tag-red {
-    color: $red-300;
-    font-weight: 800;
-}
-
-.div_for_p-section5 {
-    margin-top: 1.5rem;
-}
-.p_section5-mini-description {
-    font-size: 0.8rem;
-    color: $grey-600;
-}
-#tour-date-months {
-    margin-right: 0.5rem;
-}
-.p_section5 {
-    font-size: 1rem;
-    line-height: 2rem;
-}
-//hidden p only for 1024px scrrens and bigger
-.p_section5-hidden {
-    display: none;
-}
-
-//btn 1
-.discover-album-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 2rem;
-    gap: 2rem;
-}
-
-.btn-discover-album {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-}
-
-.a-btn-discover-album {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: $grey-700;
-    color: $white;
-    width: 14rem;
-    height: auto;
-    /*  margin: 1rem 0 */
-    font-size: 1rem;
-    font-weight: 700;
-    transition: 0.1s ease-in-out;
-
-    &:hover,
-    :focus,
-    :active {
-        outline: none;
-        transform: scale(1.1);
-        background-color: $grey-600;
-        color: $black-900;
-    }
 }
 
 //footer new
@@ -959,11 +906,8 @@ footer {
         font-size: 1.4rem;
     }
 
-    //section 1 +0.2rem or 1rem
+    //section 1
 
-    /* .section-1-card {
-    padding: 3rem 2rem;
-} */
     //name and logo
     .link-to-story {
         text-decoration: none;
@@ -1008,15 +952,70 @@ footer {
         margin: 1.5rem 0;
         font-size: 1.2rem;
     }
-    //! section 2 tour dates 425px
-    .section-2 {
+    //!section 2
+
+    .section2 {
+        padding: 2rem;
+    }
+    .introduction {
+        gap: 0.5rem;
+    }
+
+    .h-artist-name {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .core-of-artist {
+        font-size: 1.4rem;
+    }
+
+    .p_description-artist {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        max-width: 36rem;
+    }
+    //img
+    /* .artist-and-img-div {
+        margin: 2rem 0;
+    }
+
+    .artist-img {
+        width: 100%;
+        height: auto;
+    }
+    .img-of-artist {
+        margin: 0 2rem;
+        max-width: 31rem;
+    } */
+
+    //btn 1
+    .explore-music-div {
+        margin-top: 3rem;
+        gap: 2rem;
+    }
+
+    .a-btn-explore-music {
+        width: 18rem;
+        height: auto;
+        /* margin: 1.5rem 0; */
+        font-size: 1.2rem;
+    }
+
+    //! section 3  425px
+    .section3 {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
-        padding: 2rem 1.5rem;
+        /* padding: 2rem 1.5rem; */
+        padding: 2rem;
     }
-
+    .p_section3-mini-description {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
     //btn chooser
     .btns-chooser {
         display: flex;
@@ -1029,13 +1028,13 @@ footer {
         /*  top: 3.5rem; */
     }
 
-    .btn-month {
-        width: 25%;
+    .btn-artists {
+        width: 33%;
         height: 3rem;
         font-size: 0.9rem;
     }
 
-    .h-section-2 {
+    .h-section3 {
         font-size: 1.6rem;
         text-transform: uppercase;
         width: 100%;
@@ -1043,57 +1042,6 @@ footer {
         font-weight: 700;
     }
 
-    .tour-dates-all-info {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        /*   gap: 1rem; */
-    }
-    .city {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-width: 6.5rem;
-        width: auto;
-        height: auto;
-    }
-    .place {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .row-date-place-location {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        height: auto;
-        width: 100%;
-        /*  gap: 0.5rem; */
-    }
-    .date {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: 1rem;
-        width: auto; //z auto
-        min-width: 5.3rem;
-        /* margin-right: 0.5rem; */
-    }
-    .city-place-div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        font-size: 1rem;
-        width: 100%;
-        /* gap: 0.5rem; */
-        padding: 0;
-        height: auto;
-    }
     //btn
 
     .btn-details-div {
@@ -1107,66 +1055,6 @@ footer {
 
     .hr-line-to-sections-chooser {
         height: 0.1rem;
-    }
-
-    //!section 5 tour
-
-    .section5 {
-        padding: 2rem;
-    }
-    .upcoming-album-title {
-        gap: 0.5rem;
-    }
-
-    .h-section5 {
-        font-size: 1.6rem;
-        line-height: 3.2rem;
-        margin-bottom: 1rem;
-    }
-
-    .title-upcoming-album {
-        font-size: 1.4rem;
-    }
-
-    .p_section5-mini-description {
-        font-size: 0.9rem;
-    }
-    .p_section5 {
-        font-size: 1.1rem;
-        line-height: 2.2rem;
-        max-width: 36rem;
-    }
-    //img
-    .upcoming-album-img-div {
-        /*  display: flex;
-        justify-content: center;
-        align-items: center; */
-        margin: 2rem 0;
-    }
-
-    .upcoming-album-img {
-        width: 100%;
-        height: auto;
-    }
-    .inner-div-upcoming-album {
-        /*  display: flex;
-        justify-content: center;
-        align-items: center; */
-        margin: 0 2rem;
-        max-width: 31rem;
-    }
-
-    //btn 1
-    .discover-album-div {
-        margin-top: 3rem;
-        gap: 2rem;
-    }
-
-    .a-btn-discover-album {
-        width: 18rem;
-        height: auto;
-        /* margin: 1.5rem 0; */
-        font-size: 1.2rem;
     }
 
     //footer
@@ -1262,13 +1150,76 @@ footer {
         margin: 2rem 0;
         font-size: 1.4rem;
     }
-    //! section 2
-    .section-2 {
+
+    //!section 2 team
+
+    .section2 {
+        padding: 3rem;
+    }
+    .introduction {
+        gap: 0.7rem;
+    }
+
+    .h-artist-name {
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .core-of-artist {
+        font-size: 1.6rem;
+    }
+
+    .p_description-artist {
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+        max-width: 44rem;
+    }
+    //img
+    /* .artist-and-img-div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 3rem 0;
+    }
+
+    .artist-img {
+        width: 100%;
+        height: auto;
+    }
+    .img-of-artist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 3rem;
+        max-width: 100%;
+      /*   max-width: 31rem }*/;
+    
+
+    //btn 1
+    .explore-music-div {
+        margin-top: 4rem;
+        gap: 3rem;
+    }
+
+    .a-btn-explore-music {
+        padding: 1rem;
+        width: 22rem;
+        height: auto;
+        font-size: 1.4rem;
+    }
+
+    //! section 3
+    .section3 {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
         padding: 3rem;
+    }
+    .p_section3-mini-description {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
     }
     //
 
@@ -1280,13 +1231,13 @@ footer {
         width: 100%;
         margin-bottom: 3rem;
     }
-    .btn-month {
-        width: 25%;
+    .btn-artists {
+        width: 33%;
         height: 3rem;
         font-size: 1rem;
     }
 
-    .h-section-2 {
+    .h-section3 {
         font-size: 1.8rem;
         text-transform: uppercase;
         width: 100%;
@@ -1294,55 +1245,6 @@ footer {
         font-weight: 700;
     }
 
-    .tour-dates-all-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        height: 4rem;
-    }
-
-    .row-date-place-location {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        height: auto;
-        width: auto;
-        /* gap: 1rem; */
-    }
-    .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        margin-right: 1rem;
-        width: 8rem;
-    }
-    .city {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-width: 6.5rem;
-        width: auto;
-        height: auto;
-    }
-    .place {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .city-place-div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        font-size: 1rem;
-        width: 100%;
-        height: auto;
-    }
     //btn
 
     .btn-details-div {
@@ -1353,66 +1255,6 @@ footer {
         height: auto;
         background-color: transparent;
         margin-left: auto; //test
-    }
-
-    //!section 5 upcoming album
-
-    .section5 {
-        padding: 3rem;
-    }
-    .upcoming-album-title {
-        gap: 0.7rem;
-    }
-
-    .h-section5 {
-        font-size: 1.8rem;
-        line-height: 3.6rem;
-        margin-bottom: 1rem;
-    }
-
-    .title-upcoming-album {
-        font-size: 1.6rem;
-    }
-
-    .p_section5-mini-description {
-        font-size: 1.1rem;
-    }
-    .p_section5 {
-        font-size: 1.3rem;
-        line-height: 2.6rem;
-        max-width: 44rem;
-    }
-    //img
-    .upcoming-album-img-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 3rem 0;
-    }
-
-    .upcoming-album-img {
-        width: 100%;
-        height: auto;
-    }
-    .inner-div-upcoming-album {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 3rem;
-        max-width: 31rem;
-    }
-
-    //btn 1
-    .discover-album-div {
-        margin-top: 4rem;
-        gap: 3rem;
-    }
-
-    .a-btn-discover-album {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        font-size: 1.4rem;
     }
 
     //footer top
@@ -1458,7 +1300,7 @@ footer {
         }
         &.rotate {
             transform: rotate(180deg);
-          }
+        }
     }
 
     #dropdown-menu-icon {
@@ -1528,7 +1370,7 @@ footer {
     }
     .top-nav-desktop-hidden {
         display: none;
-      }
+    }
 
     .nav-a-social {
         display: block; //test
@@ -1604,153 +1446,61 @@ footer {
         line-height: 3.8rem;
         font-size: 1.9rem;
     }
-    //! section 2 1024
-    .section-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
+
+    //!section 2 team 1024
+
+    .section2 {
         padding: 4rem 4.5rem;
     }
-
-    //btn chooser
-    .btns-chooser {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        margin: 0 1rem 4rem 1rem;
-        z-index: 2;
-    }
-    .btn-month {
-        width: 25%;
-        height: 3rem;
-        font-size: 1rem;
-        margin: 0;
-    }
-
-    .h-section-2 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        width: 100%;
-        margin-bottom: 2.8rem;
-        font-weight: 700;
-    }
-    .month-div.active {
-        display: block;
-        margin: 0 2rem;
-    }
-
-    .tour-dates-all-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        height: 5rem;
-    }
-
-    .row-date-place-location {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        height: auto;
-        width: auto;
-        gap: 1rem;
-    }
-    .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        margin-right: 0.5rem;
-    }
-    .city {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-width: 8rem;
-        width: auto;
-        height: auto;
-    }
-    .place {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .city-place-div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        font-size: 1rem;
-        width: 100%;
-        height: auto;
-    }
-    //btn
-    .btn-details-div {
-        z-index: 1;
-    }
-
-    //!section 5 upcoming album 1024
-
-    .section5 {
-        padding: 4rem 4.5rem;
-    }
-    .upcoming-album-title {
+    .introduction {
         gap: 0.9rem;
     }
 
-    .h-section5 {
+    .h-artist-name {
         font-size: 2rem;
         line-height: 4rem;
         margin-bottom: 1.2rem;
     }
 
-    .title-upcoming-album {
+    .core-of-artist {
         font-size: 1.6rem;
     }
 
-    .p_section5-mini-description {
-        font-size: 1.2rem;
-    }
-    .p_section5 {
+    .p_description-artist {
         display: none;
         font-size: 1.4rem;
         line-height: 2.8rem;
         max-width: 46rem;
     }
-    .p_section5-hidden {
+    .p_description-artist-hidden {
         display: block;
         font-size: 1.4rem;
         line-height: 2.8rem;
-        /* max-width: 46rem; */
+        /*  max-width: 46rem; */
         max-width: 50vw;
     }
     //img
-    .upcoming-album-img-div {
+    .artist-and-img-div {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 3rem 0 0 0;
     }
 
-    .upcoming-album-img {
+    .artist-img {
         width: 100%;
         height: auto;
     }
-    .inner-div-upcoming-album {
+    .img-of-artist {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 2rem;
         max-width: 31rem;
-    }
+    } 
 
     //btn 1
-    .btn-discover-album {
+    .btn-explore-music {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -1760,18 +1510,60 @@ footer {
         padding-left: 2rem;
     }
 
-    .discover-album-div {
+    .explore-music-div {
         margin-top: 3rem;
         gap: 3rem;
     }
 
-    .a-btn-discover-album {
+    .a-btn-explore-music {
         padding: 1rem;
         width: 22rem;
         height: auto;
         font-size: 1.4rem;
     }
+    //! section 3 1024
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 4rem 4.5rem;
+    }
+    .p_section3-mini-description {
+        font-size: 1.2rem;
+    }
+    //btn chooser
+    .btns-chooser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 0 1rem 4rem 1rem;
+        z-index: 2;
+    }
+    .btn-artists {
+        width: 33%;
+        height: 3rem;
+        font-size: 1rem;
+        margin: 0;
+    }
 
+    .h-section3 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 2.8rem;
+        font-weight: 700;
+    }
+    .artist-div.active {
+        display: block;
+        margin: 0 2rem;
+    }
+
+    //btn
+    .btn-details-div {
+        z-index: 1;
+    }
     //!footer
     //footer'top
 
@@ -1841,7 +1633,7 @@ footer {
     }
     .desktop_menu-a {
         gap: 2rem;
-     
+
         font-size: 1.2rem;
     }
     //! section1 1440px
@@ -1854,10 +1646,20 @@ footer {
     .p_description {
         max-width: 52rem;
     }
-    //! section 2 tour dates
+    //! section 2 team 1440
 
-    //! section 2
-    .section-2 {
+    .section2 {
+        padding: 4rem 8rem;
+    }
+    .introduction {
+        gap: 1rem;
+    }
+    .p_description {
+        max-width: 52rem;
+    }
+    //! section 3
+
+    .section3 {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1869,53 +1671,21 @@ footer {
 
     .btns-chooser {
         margin: 0 1.5rem 4rem 1.5rem;
-
         top: 4rem;
     }
-    .h-section-2 {
+    .h-section3 {
         font-size: 2.2rem;
         text-transform: uppercase;
         width: 100%;
         margin-bottom: 3.4rem;
         font-weight: 700;
     }
-    .month-div.active {
+    .artist-div.active {
         display: block;
         margin: 0 3rem;
+        border: none;
     }
 
-    .row-date-place-location {
-        gap: 2rem;
-    }
-    .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.4rem;
-        margin-right: 1rem;
-        min-width: 10rem;
-    }
-    .city {
-        min-width: 10rem;
-    }
-    .btn-details {
-        font-size: 1.2rem;
-    }
-
-    .city-place-div {
-        font-size: 1.2rem;
-    }
-    //! section 5 upcoming album 1024
-
-    .section5 {
-        padding: 4rem 8rem;
-    }
-    .upcoming-album-title {
-        gap: 1rem;
-    }
-    .p_section5 {
-        max-width: 54rem;
-    }
     //footer'top
 
     .footer-top {

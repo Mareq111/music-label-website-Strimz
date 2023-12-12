@@ -415,15 +415,15 @@ html {
     height: auto;
     padding: 2rem 1rem;
 }
-.artist-div {
+.month-div {
     display: none;
 }
 
-.artist-div.active {
-    display: block; 
+.month-div.active {
+    display: block;
 }
-.btn-artists:focus {
-    outline: 0.2rem solid $amulet-green-400; 
+.btn-month:focus {
+    outline: 0.2rem solid $red-500; 
   }
 
 //btn chooser
@@ -455,10 +455,11 @@ html {
     margin-bottom: 1.5rem;
 }
 
-.btn-artists {
-    width: 33%;
+.btn-month {
+    width: 25%;
     height: 2.5rem;
     border-radius: 0.5rem;
+
     outline: none;
     cursor: pointer;
     border: none;
@@ -474,8 +475,8 @@ html {
         color: $white;
     }
 }
-.btn-artists.active {
-    background-color: $amulet-green-400;
+.btn-month.active {
+    background-color: $red-300;
     color: $black-900;
     opacity: 1;
 }
@@ -485,7 +486,7 @@ html {
     font-size: 1.4rem;
     text-transform: uppercase;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-weight: 700;
 }
 .section-2-card {
@@ -495,12 +496,10 @@ html {
     flex-direction: column;
     width: 100%;
     height: auto;
- 
-}
-.p_section2-mini-description {
-    font-size: 0.8rem;
-    color: $grey-600;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    &:hover {
+        border-bottom: 0.1rem solid $grey-700;
+    }
 }
 .a-link-card {
     color: $white;
@@ -522,14 +521,7 @@ html {
     font-size: 1.2rem;
     width: 100%;
 }
-//test
-/* .date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
-} */
+
 .city {
     display: flex;
     justify-content: flex-start;
@@ -606,9 +598,9 @@ html {
     margin-top: 0.5rem;
 }
 
-//section 1 upcoming album
+//section 5 upcoming album
 
-.section1 {
+.section-for-artist {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -621,7 +613,7 @@ html {
     color: $white;
     cursor: pointer;
 }
-.introduction {
+.artist-intoduction {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -629,7 +621,7 @@ html {
     gap: 0.5rem;
 }
 //img
-.artist-and-img-div {
+.div-artist-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -642,7 +634,7 @@ html {
     cursor: pointer;
     border-radius: 1rem;
 }
-.img-of-artist {
+.div-inner-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -655,16 +647,16 @@ html {
     }
 }
 
-.h-artist-name {
+.h-section-for-artist {
     font-size: 1.4rem;
     line-height: 2.8rem;
     text-transform: uppercase;
     width: 100%;
     font-weight: 800;
-    color: $amulet-green-400;
+    color: $white;
     width: auto;
     transition: 0.2s ease-in-out;
-   margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
     &:hover,
     :focus,
     :active {
@@ -672,7 +664,7 @@ html {
     }
 }
 
-.core-of-artist {
+.short-description-above-img {
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -682,22 +674,27 @@ html {
     font-weight: 800;
 }
 
-.div_for_artist-content {
+.div-for-whole-description {
     margin-top: 1.5rem;
 }
-
-
-.p_description {
+.p_section-for-artist-mini-description {
+    font-size: 0.8rem;
+    color: $grey-600;
+}
+#tour-date-months {
+    margin-right: 0.5rem;
+}
+.p_section-for-artist {
     font-size: 1rem;
     line-height: 2rem;
 }
 //hidden p only for 1024px scrrens and bigger
-.p_description-hidden {
+.p_section-for-artist-hidden {
     display: none;
 }
 
 //btn 1
-.explore-music-div {
+.div-btn-cta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -706,7 +703,7 @@ html {
     gap: 2rem;
 }
 
-.btn-explore-music {
+.inner-div-btn-cta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -715,7 +712,7 @@ html {
     background-color: transparent;
 }
 
-.a-btn-explore-music {
+.link-for-cta-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1019,10 +1016,7 @@ footer {
         height: auto;
         padding: 2rem 1.5rem;
     }
-    .p_section2-mini-description {
-        font-size: 0.9rem;
-        margin-bottom: 2rem;
-    }
+
     //btn chooser
     .btns-chooser {
         display: flex;
@@ -1034,10 +1028,9 @@ footer {
         /* max-width: 34rem; */
         /*  top: 3.5rem; */
     }
-   
 
-    .btn-artists {
-        width: 33%;
+    .btn-month {
+        width: 25%;
         height: 3rem;
         font-size: 0.9rem;
     }
@@ -1118,32 +1111,36 @@ footer {
 
     //!section 5 tour
 
-    .section1{
+    .section-for-artist {
         padding: 2rem;
     }
-    .introduction {
+    .artist-intoduction {
         gap: 0.5rem;
     }
 
-    .h-artist-name {
+    .h-section-for-artist {
         font-size: 1.6rem;
         line-height: 3.2rem;
         margin-bottom: 1rem;
     }
 
-    .core-of-artist {
+    .short-description-above-img {
         font-size: 1.4rem;
     }
 
-  
-    .p_description {
+    .p_section-for-artist-mini-description {
+        font-size: 0.9rem;
+    }
+    .p_section-for-artist {
         font-size: 1.1rem;
         line-height: 2.2rem;
         max-width: 36rem;
     }
     //img
-    .artist-and-img-div {
-   
+    .div-artist-img {
+        /*  display: flex;
+        justify-content: center;
+        align-items: center; */
         margin: 2rem 0;
     }
 
@@ -1151,19 +1148,21 @@ footer {
         width: 100%;
         height: auto;
     }
-    .img-of-artist {
-  
+    .div-inner-img {
+        /*  display: flex;
+        justify-content: center;
+        align-items: center; */
         margin: 0 2rem;
         max-width: 31rem;
     }
 
     //btn 1
-    .explore-music-div {
+    .div-btn-cta {
         margin-top: 3rem;
         gap: 2rem;
     }
 
-    .a-btn-explore-music{
+    .link-for-cta-btn {
         width: 18rem;
         height: auto;
         /* margin: 1.5rem 0; */
@@ -1271,10 +1270,6 @@ footer {
         height: auto;
         padding: 3rem;
     }
-    .p_section2-mini-description {
-        font-size: 1.1rem;
-        margin-bottom: 3rem;
-    }
     //
 
     //btn chooser
@@ -1285,8 +1280,8 @@ footer {
         width: 100%;
         margin-bottom: 3rem;
     }
-    .btn-artists {
-        width: 33%;
+    .btn-month {
+        width: 25%;
         height: 3rem;
         font-size: 1rem;
     }
@@ -1360,33 +1355,35 @@ footer {
         margin-left: auto; //test
     }
 
-    //!section 1 team
+    //!section 5 upcoming album
 
-    .section1 {
+    .section-for-artist {
         padding: 3rem;
     }
-    .introduction {
+    .artist-intoduction {
         gap: 0.7rem;
     }
 
-    .h-artist-name {
+    .h-section-for-artist {
         font-size: 1.8rem;
         line-height: 3.6rem;
         margin-bottom: 1rem;
     }
 
-    .core-of-artist {
+    .short-description-above-img {
         font-size: 1.6rem;
     }
 
-   
-    .p_description {
+    .p_section-for-artist-mini-description {
+        font-size: 1.1rem;
+    }
+    .p_section-for-artist {
         font-size: 1.3rem;
         line-height: 2.6rem;
         max-width: 44rem;
     }
     //img
-    .artist-and-img-div {
+    .div-artist-img {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1397,7 +1394,7 @@ footer {
         width: 100%;
         height: auto;
     }
-    .img-of-artist {
+    .div-inner-img {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1406,12 +1403,12 @@ footer {
     }
 
     //btn 1
-    .explore-music-div {
+    .div-btn-cta {
         margin-top: 4rem;
         gap: 3rem;
     }
 
-    .a-btn-explore-music {
+    .link-for-cta-btn {
         padding: 1rem;
         width: 22rem;
         height: auto;
@@ -1615,9 +1612,7 @@ footer {
         height: auto;
         padding: 4rem 4.5rem;
     }
-    .p_section2-mini-description {
-        font-size: 1.2rem;
-    }
+
     //btn chooser
     .btns-chooser {
         display: flex;
@@ -1627,8 +1622,8 @@ footer {
         margin: 0 1rem 4rem 1rem;
         z-index: 2;
     }
-    .btn-artists {
-        width: 33%;
+    .btn-month {
+        width: 25%;
         height: 3rem;
         font-size: 1rem;
         margin: 0;
@@ -1641,7 +1636,7 @@ footer {
         margin-bottom: 2.8rem;
         font-weight: 700;
     }
-    .artist-div.active {
+    .month-div.active {
         display: block;
         margin: 0 2rem;
     }
@@ -1699,33 +1694,35 @@ footer {
         z-index: 1;
     }
 
-    //!section 1 team 1024
+    //!section 5 upcoming album 1024
 
-    .section1 {
+    .section-for-artist {
         padding: 4rem 4.5rem;
     }
-    .introduction {
+    .artist-intoduction {
         gap: 0.9rem;
     }
 
-    .h-artist-name {
+    .h-section-for-artist {
         font-size: 2rem;
         line-height: 4rem;
         margin-bottom: 1.2rem;
     }
 
-    .core-of-artist {
+    .short-description-above-img {
         font-size: 1.6rem;
     }
 
-    
-    .p_description {
+    .p_section-for-artist-mini-description {
+        font-size: 1.2rem;
+    }
+    .p_section-for-artist {
         display: none;
         font-size: 1.4rem;
         line-height: 2.8rem;
         max-width: 46rem;
     }
-    .p_description-hidden {
+    .p_section-for-artist-hidden {
         display: block;
         font-size: 1.4rem;
         line-height: 2.8rem;
@@ -1733,7 +1730,7 @@ footer {
         max-width: 50vw;
     }
     //img
-    .artist-and-img-div {
+    .div-artist-img {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1744,7 +1741,7 @@ footer {
         width: 100%;
         height: auto;
     }
-    .img-of-artist {
+    .div-inner-img {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1753,7 +1750,7 @@ footer {
     }
 
     //btn 1
-    .btn-explore-music {
+    .inner-div-btn-cta {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -1763,12 +1760,12 @@ footer {
         padding-left: 2rem;
     }
 
-    .explore-music-div {
+    .div-btn-cta {
         margin-top: 3rem;
         gap: 3rem;
     }
 
-    .a-btn-explore-music {
+    .link-for-cta-btn {
         padding: 1rem;
         width: 22rem;
         height: auto;
@@ -1882,10 +1879,9 @@ footer {
         margin-bottom: 3.4rem;
         font-weight: 700;
     }
-    .artist-div.active {
+    .month-div.active {
         display: block;
         margin: 0 3rem;
-        border: none;
     }
 
     .row-date-place-location {
@@ -1909,15 +1905,15 @@ footer {
     .city-place-div {
         font-size: 1.2rem;
     }
-    //! section 1 team 1024
+    //! section 5 upcoming album 1024
 
-    .section1 {
+    .section-for-artist {
         padding: 4rem 8rem;
     }
-    .introduction {
+    .artist-intoduction {
         gap: 1rem;
     }
-    .p_description {
+    .p_section-for-artist {
         max-width: 54rem;
     }
     //footer'top
