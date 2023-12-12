@@ -185,7 +185,6 @@ html {
     color: $amulet-green-400;
     transition: 0.1s ease-in-out;
     &:hover {
-        /* text-decoration: underline 0.2rem $eastern-blue-500; */
         transform: scale(1.05);
         color: $grey-600;
     }
@@ -351,11 +350,6 @@ html {
     margin: 0.5rem 0;
 }
 
-.h2_description {
-    line-height: 2.8rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-}
 .name-in-p-green {
     color: $amulet-green-400;
     font-weight: 700;
@@ -365,223 +359,6 @@ html {
     font-weight: 700;
 }
 
-//btn discover story
-.discover-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-}
-.btn-discover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: $grey-700;
-    color: $white;
-    width: 14rem;
-    height: auto;
-    margin: 1rem 0;
-    font-size: 1rem;
-    font-weight: 700;
-    transition: 0.1s ease-in-out;
-
-    &:hover,
-    :focus,
-    :active {
-        outline: none;
-        transform: scale(1.1);
-        background-color: $grey-600;
-        color: $black-900;
-    }
-}
-.hr-line-to-sections {
-    border: none;
-    width: 100%;
-    background-color: $grey-700;
-    height: 0.05rem;
-    opacity: 0.1;
-    margin-top: 0.5rem;
-}
-
-//! section 2 tour dates
-.section-2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-}
-.month-div {
-    display: none;
-}
-
-.month-div.active {
-    display: block;
-}
-.btn-month:focus {
-    outline: 0.2rem solid $red-500; 
-  }
-
-//btn chooser
-.btns-chooser {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    gap: 0.5rem;
-    padding: 0 0 0.5rem 0;
-    margin-bottom: 1.5rem;
-    background-color: $black-900;
-    border-bottom: 0.4rem solid $black-700;
-    position: sticky;
-    top: 3.5rem;
-    z-index: 1;
-}
-
-.btns-chooser.reached {
-    position: static;
-}
-.hr-line-under-btns {
-    border: none;
-    width: 100%;
-    background-color: $grey-700;
-    height: 0.05rem;
-    opacity: 0.1;
-    margin-bottom: 1.5rem;
-}
-
-.btn-month {
-    width: 25%;
-    height: 2.5rem;
-    border-radius: 0.5rem;
-
-    outline: none;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-    background-color: transparent;
-    color: $white;
-    border: 0.1rem $grey-600;
-    font-size: 0.8rem;
-    opacity: 0.5;
-    transition: 0.2s ease-in-out;
-    &:hover {
-        background-color: $grey-700;
-        color: $white;
-    }
-}
-.btn-month.active {
-    background-color: $red-300;
-    color: $black-900;
-    opacity: 1;
-}
-//end
-
-.h-section-2 {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    width: 100%;
-    margin-bottom: 2rem;
-    font-weight: 700;
-}
-.section-2-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    /* margin-bottom: 1rem; */
-    &:hover {
-        border-bottom: 0.1rem solid $grey-700;
-    }
-}
-.a-link-card {
-    color: $white;
-    text-decoration: none;
-}
-.tour-dates-all-info {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    gap: 1rem;
-}
-.date {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.2rem;
-    width: 100%;
-}
-
-.city {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    min-width: 6.3rem;
-    width: auto;
-    height: auto;
-}
-.place {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.2rem;
-}
-.city-place-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    font-size: 1rem;
-    width: 100%;
-    gap: 0.5rem;
-    padding-top: 0.5rem;
-    height: auto;
-}
-//btn
-.btn-details-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-}
-
-.btn-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: transparent;
-    border: 0.1rem solid $grey-700;
-    color: $white;
-    width: 14rem;
-    height: auto;
-    /* margin: 1rem 0; */
-    font-size: 1rem;
-    font-weight: 700;
-    transition: 0.1s ease-in-out;
-
-    &:hover,
-    :focus,
-    :active {
-        outline: none;
-        transform: scale(1.1);
-        background-color: $grey-600;
-        color: $black-900;
-    }
-}
 .name-tag-blue {
     color: $eastern-blue-500;
 }
@@ -589,18 +366,10 @@ html {
     color: $amulet-green-400;
 }
 
-.hr-line-to-sections-chooser {
-    border: none;
-    width: 100%;
-    background-color: $grey-700;
-    height: 0.05rem;
-    opacity: 0.1;
-    margin-top: 0.5rem;
-}
+//section artist and 3 artists
 
-//section 5 upcoming album
-
-.section-for-artist {
+.section-for-artist,
+.section3artists {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -608,11 +377,7 @@ html {
     padding: 2rem 1rem;
     background-color: $black-900;
 }
-.link-to-releases {
-    text-decoration: none;
-    color: $white;
-    cursor: pointer;
-}
+
 .artist-intoduction {
     display: flex;
     justify-content: center;
@@ -646,8 +411,34 @@ html {
         box-shadow: 0 0 8px $shadow-red-path-to-zukunft;
     }
 }
+//img link to unsplash
+.link-to-releases {
+    text-decoration: none;
+    color: $grey-600;
+    cursor: pointer;
+}
+.unsplash-img-link {
+    text-decoration: none;
+    color: $grey-600;
+    font-size: 0.8rem;
+}
+#unsplash-img-margin,
+#unsplash-img-margin2,
+#unsplash-img-margin3 {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    color: $grey-600;
+}
+.link-to-music {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    color: $grey-600;
+}
 
-.h-section-for-artist {
+//end img things
+.h-section-for-artist,
+.h-section3 {
     font-size: 1.4rem;
     line-height: 2.8rem;
     text-transform: uppercase;
@@ -677,13 +468,12 @@ html {
 .div-for-whole-description {
     margin-top: 1.5rem;
 }
-.p_section-for-artist-mini-description {
+.p_section-for-artist-mini-description,
+.p_section3-mini-description {
     font-size: 0.8rem;
     color: $grey-600;
 }
-#tour-date-months {
-    margin-right: 0.5rem;
-}
+
 .p_section-for-artist {
     font-size: 1rem;
     line-height: 2rem;
@@ -735,6 +525,71 @@ html {
         background-color: $grey-600;
         color: $black-900;
     }
+}
+// btn chooser artists
+//btn chooser
+.artist-div {
+    display: none;
+}
+
+.artist-div.active {
+    display: block;
+}
+.btn-artists:focus {
+    outline: 0.2rem solid $amulet-green-400;
+}
+
+.btns-chooser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 0.5rem;
+    padding: 0 0 0.5rem 0;
+    margin: 1.5rem 0;
+    background-color: $black-900;
+    border-bottom: 0.4rem solid $black-700;
+    position: sticky;
+    top: 3.5rem;
+    z-index: 1;
+}
+
+.btns-chooser.reached {
+    position: static;
+}
+.hr-line-under-btns {
+    border: none;
+    width: 100%;
+    background-color: $grey-700;
+    height: 0.05rem;
+    opacity: 0.1;
+    margin-bottom: 1.5rem;
+}
+
+.btn-artists {
+    width: 33%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+    color: $white;
+    border: 0.1rem $grey-600;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+    &:hover {
+        background-color: $grey-700;
+        color: $white;
+    }
+}
+.btn-artists.active {
+    background-color: $amulet-green-400;
+    color: $black-900;
+    opacity: 1;
 }
 
 //footer new
@@ -994,131 +849,18 @@ footer {
         margin: 1rem 0;
     }
 
-    .h2_description {
-        line-height: 3.2rem;
-        font-size: 1.6rem;
-    }
+    //!section artist
 
-    //btn discover story
-
-    .btn-discover {
-        /* padding: 0.5rem 1rem; */ //bez zmian
-        width: 18rem;
-        height: auto;
-        margin: 1.5rem 0;
-        font-size: 1.2rem;
-    }
-    //! section 2 tour dates 425px
-    .section-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 2rem 1.5rem;
-    }
-
-    //btn chooser
-    .btns-chooser {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 0 1rem 0;
-        margin-bottom: 2rem;
-        width: 100%;
-        /* max-width: 34rem; */
-        /*  top: 3.5rem; */
-    }
-
-    .btn-month {
-        width: 25%;
-        height: 3rem;
-        font-size: 0.9rem;
-    }
-
-    .h-section-2 {
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        width: 100%;
-        margin-bottom: 2.4rem;
-        font-weight: 700;
-    }
-
-    .tour-dates-all-info {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        /*   gap: 1rem; */
-    }
-    .city {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-width: 6.5rem;
-        width: auto;
-        height: auto;
-    }
-    .place {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .row-date-place-location {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        height: auto;
-        width: 100%;
-        /*  gap: 0.5rem; */
-    }
-    .date {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: 1rem;
-        width: auto; //z auto
-        min-width: 5.3rem;
-        /* margin-right: 0.5rem; */
-    }
-    .city-place-div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        font-size: 1rem;
-        width: 100%;
-        /* gap: 0.5rem; */
-        padding: 0;
-        height: auto;
-    }
-    //btn
-
-    .btn-details-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        background-color: transparent;
-    }
-
-    .hr-line-to-sections-chooser {
-        height: 0.1rem;
-    }
-
-    //!section 5 tour
-
-    .section-for-artist {
+    .section-for-artist,
+    .section3artists {
         padding: 2rem;
     }
     .artist-intoduction {
         gap: 0.5rem;
     }
 
-    .h-section-for-artist {
+    .h-section-for-artist,
+    .h-section3 {
         font-size: 1.6rem;
         line-height: 3.2rem;
         margin-bottom: 1rem;
@@ -1128,7 +870,8 @@ footer {
         font-size: 1.4rem;
     }
 
-    .p_section-for-artist-mini-description {
+    .p_section-for-artist-mini-description,
+    .p_section3-mini-description {
         font-size: 0.9rem;
     }
     .p_section-for-artist {
@@ -1167,6 +910,21 @@ footer {
         height: auto;
         /* margin: 1.5rem 0; */
         font-size: 1.2rem;
+    }
+    //btns chooser
+    .btns-chooser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 1rem 0;
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    .btn-artists {
+        width: 33%;
+        height: 3rem;
+        font-size: 0.9rem;
     }
 
     //footer
@@ -1248,123 +1006,20 @@ footer {
         margin: 1.5rem 0;
     }
 
-    .h2_description {
-        line-height: 3.6rem;
-        font-size: 1.8rem;
-    }
-
-    //btn discover story
-
-    .btn-discover {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        margin: 2rem 0;
-        font-size: 1.4rem;
-    }
-    //! section 2
-    .section-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 3rem;
-    }
-    //
-
     //btn chooser
-    .btns-chooser {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 3rem;
-    }
-    .btn-month {
-        width: 25%;
-        height: 3rem;
-        font-size: 1rem;
-    }
 
-    .h-section-2 {
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        width: 100%;
-        margin-bottom: 2.6rem;
-        font-weight: 700;
-    }
+    //!section artists
 
-    .tour-dates-all-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        height: 4rem;
-    }
-
-    .row-date-place-location {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        height: auto;
-        width: auto;
-        /* gap: 1rem; */
-    }
-    .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        margin-right: 1rem;
-        width: 8rem;
-    }
-    .city {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-width: 6.5rem;
-        width: auto;
-        height: auto;
-    }
-    .place {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .city-place-div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        font-size: 1rem;
-        width: 100%;
-        height: auto;
-    }
-    //btn
-
-    .btn-details-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        margin-left: auto; //test
-    }
-
-    //!section 5 upcoming album
-
-    .section-for-artist {
+    .section-for-artist,
+    .section3artists {
         padding: 3rem;
     }
     .artist-intoduction {
         gap: 0.7rem;
     }
 
-    .h-section-for-artist {
+    .h-section-for-artist,
+    .h-section3 {
         font-size: 1.8rem;
         line-height: 3.6rem;
         margin-bottom: 1rem;
@@ -1374,7 +1029,8 @@ footer {
         font-size: 1.6rem;
     }
 
-    .p_section-for-artist-mini-description {
+    .p_section-for-artist-mini-description,
+    .p_section3-mini-description {
         font-size: 1.1rem;
     }
     .p_section-for-artist {
@@ -1414,7 +1070,19 @@ footer {
         height: auto;
         font-size: 1.4rem;
     }
-
+    //btn chooser
+    .btns-chooser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0 3rem 0;
+    }
+    .btn-artists {
+        width: 33%;
+        height: 3rem;
+        font-size: 1rem;
+    }
     //footer top
 }
 
@@ -1458,7 +1126,7 @@ footer {
         }
         &.rotate {
             transform: rotate(180deg);
-          }
+        }
     }
 
     #dropdown-menu-icon {
@@ -1528,7 +1196,7 @@ footer {
     }
     .top-nav-desktop-hidden {
         display: none;
-      }
+    }
 
     .nav-a-social {
         display: block; //test
@@ -1600,110 +1268,20 @@ footer {
         margin: 2rem 0;
     }
 
-    .h2_description {
-        line-height: 3.8rem;
-        font-size: 1.9rem;
-    }
-    //! section 2 1024
-    .section-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 4rem 4.5rem;
-    }
-
     //btn chooser
-    .btns-chooser {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        margin: 0 1rem 4rem 1rem;
-        z-index: 2;
-    }
-    .btn-month {
-        width: 25%;
-        height: 3rem;
-        font-size: 1rem;
-        margin: 0;
-    }
 
-    .h-section-2 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        width: 100%;
-        margin-bottom: 2.8rem;
-        font-weight: 700;
-    }
-    .month-div.active {
-        display: block;
-        margin: 0 2rem;
-    }
+    //!section artists 1024
 
-    .tour-dates-all-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        height: 5rem;
-    }
-
-    .row-date-place-location {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        height: auto;
-        width: auto;
-        gap: 1rem;
-    }
-    .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        margin-right: 0.5rem;
-    }
-    .city {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-width: 8rem;
-        width: auto;
-        height: auto;
-    }
-    .place {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .city-place-div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        font-size: 1rem;
-        width: 100%;
-        height: auto;
-    }
-    //btn
-    .btn-details-div {
-        z-index: 1;
-    }
-
-    //!section 5 upcoming album 1024
-
-    .section-for-artist {
+    .section-for-artist,
+    .section3artists {
         padding: 4rem 4.5rem;
     }
     .artist-intoduction {
         gap: 0.9rem;
     }
 
-    .h-section-for-artist {
+    .h-section-for-artist,
+    .h-section3 {
         font-size: 2rem;
         line-height: 4rem;
         margin-bottom: 1.2rem;
@@ -1713,7 +1291,8 @@ footer {
         font-size: 1.6rem;
     }
 
-    .p_section-for-artist-mini-description {
+    .p_section-for-artist-mini-description,
+    .p_section3-mini-description {
         font-size: 1.2rem;
     }
     .p_section-for-artist {
@@ -1771,7 +1350,25 @@ footer {
         height: auto;
         font-size: 1.4rem;
     }
-
+    //btns
+    .artist-div.active {
+        display: block;
+        margin: 0 2rem;
+    }
+    .btns-chooser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 2rem 1rem 4rem 1rem;
+        z-index: 2;
+    }
+    .btn-artists {
+        width: 33%;
+        height: 3rem;
+        font-size: 1rem;
+        margin: 0;
+    }
     //!footer
     //footer'top
 
@@ -1841,7 +1438,7 @@ footer {
     }
     .desktop_menu-a {
         gap: 2rem;
-     
+
         font-size: 1.2rem;
     }
     //! section1 1440px
@@ -1854,60 +1451,11 @@ footer {
     .p_description {
         max-width: 52rem;
     }
-    //! section 2 tour dates
 
-    //! section 2
-    .section-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 4rem 8rem;
-    }
+    //! section artist  1024
 
-    //btn chooser
-
-    .btns-chooser {
-        margin: 0 1.5rem 4rem 1.5rem;
-
-        top: 4rem;
-    }
-    .h-section-2 {
-        font-size: 2.2rem;
-        text-transform: uppercase;
-        width: 100%;
-        margin-bottom: 3.4rem;
-        font-weight: 700;
-    }
-    .month-div.active {
-        display: block;
-        margin: 0 3rem;
-    }
-
-    .row-date-place-location {
-        gap: 2rem;
-    }
-    .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.4rem;
-        margin-right: 1rem;
-        min-width: 10rem;
-    }
-    .city {
-        min-width: 10rem;
-    }
-    .btn-details {
-        font-size: 1.2rem;
-    }
-
-    .city-place-div {
-        font-size: 1.2rem;
-    }
-    //! section 5 upcoming album 1024
-
-    .section-for-artist {
+    .section-for-artist,
+    .section3artists {
         padding: 4rem 8rem;
     }
     .artist-intoduction {
@@ -1916,6 +1464,21 @@ footer {
     .p_section-for-artist {
         max-width: 54rem;
     }
+    //btn chooser
+
+    //btn chooser
+
+    .btns-chooser {
+        margin: 2rem 1.5rem 4rem 1.5rem;
+        top: 4rem;
+    }
+
+    .artist-div.active {
+        display: block;
+        margin: 0 3rem;
+        border: none;
+    }
+
     //footer'top
 
     .footer-top {
