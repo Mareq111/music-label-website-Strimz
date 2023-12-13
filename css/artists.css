@@ -309,14 +309,41 @@ html {
   margin: 1.5rem 0;
 }
 
+.border-for-img {
+  display: inline-block;
+  border-radius: 30% 70% 30% 70%/70% 30% 70% 30%;
+  /* border: 0.3rem solid $black-600; */
+}
+
+#border-for-img-el-double-m {
+  padding: 0.5rem;
+  border: 0.2rem solid rgb(236, 128, 33);
+}
+
+#border-for-img-jackie {
+  padding: 0.5rem;
+  border: 0.2rem solid rgb(138, 145, 179);
+}
+
+#border-for-img-elKaptn {
+  padding: 0.5rem;
+  border: 0.2rem solid rgb(247, 232, 141);
+}
+
+#border-for-img-mollyGranoli {
+  padding: 0.5rem;
+  border: 0.2rem solid rgb(228, 174, 236);
+}
+
 .artist-img {
+  display: block;
   min-width: 10rem;
   min-height: 10rem;
   width: 100%;
   height: auto;
   cursor: pointer;
   border-radius: 30% 70% 30% 70%/70% 30% 70% 30%;
-  animation: expandImage 0.2s ease-in-out forwards;
+  animation: expandImage 0s ease-in-out forwards;
 }
 
 @keyframes expandImage {

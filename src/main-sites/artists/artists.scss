@@ -16,7 +16,11 @@ $black-600: #120f10;
 $eastern-blue-500: #26acac;
 $amulet-green-400: #85ab7b;
 $ming-blue-600: #367983;
-
+//borders for artists imgage
+$border-el-double-m: rgba(236, 128, 33, 1);
+$border-jackie: rgba(138, 145, 179, 1);
+$border-elKaptn: rgba(247, 232, 141, 1);
+$border-mollyGranoli: rgba(228, 174, 236, 1);
 //mini- SINGLES shadows and more
 $shadow-a-horse: rgba(23, 59, 59, 0.5);
 $color-a-horse: rgba(42, 78, 79, 1);
@@ -392,16 +396,40 @@ html {
     align-items: center;
     margin: 1.5rem 0;
 }
+//tets
+.border-for-img {
+    display: inline-block;
+    border-radius: 30% 70% 30% 70% / 70% 30% 70% 30%;
+    /* border: 0.3rem solid $black-600; */
+}
+//unique color for any artist
+#border-for-img-el-double-m {
+    padding: 0.5rem;
+    border: 0.2rem solid $border-el-double-m;
+}
+#border-for-img-jackie {
+    padding: 0.5rem;
+    border: 0.2rem solid $border-jackie;
+}
+#border-for-img-elKaptn {
+    padding: 0.5rem;
+    border: 0.2rem solid $border-elKaptn;
+}
+#border-for-img-mollyGranoli {
+    padding: 0.5rem;
+    border: 0.2rem solid $border-mollyGranoli;
+}
 //!animate image artist with ficaption
 
 .artist-img {
+    display: block;
     min-width: 10rem;
     min-height: 10rem;
     width: 100%;
     height: auto;
     cursor: pointer;
     border-radius: 30% 70% 30% 70% / 70% 30% 70% 30%;
-    animation: expandImage 0.2s ease-in-out forwards;
+    animation: expandImage 0s ease-in-out forwards;
 }
 
 @keyframes expandImage {
@@ -416,7 +444,6 @@ html {
         opacity: 1;
         width: 100%;
         height: auto;
-
         border-radius: 30% 70% 30% 70% / 70% 30% 70% 30%;
     }
 }
