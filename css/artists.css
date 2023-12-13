@@ -310,23 +310,40 @@ html {
 }
 
 .artist-img {
+  min-width: 10rem;
+  min-height: 10rem;
   width: 100%;
   height: auto;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 30% 70% 30% 70%/70% 30% 70% 30%;
+  animation: expandImage 0.2s ease-in-out forwards;
 }
 
+@keyframes expandImage {
+  0% {
+    opacity: 0;
+    width: 1rem;
+    height: 1rem;
+    height: auto;
+    border-radius: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 30% 70% 30% 70%/70% 30% 70% 30%;
+  }
+}
 .div-inner-img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 1rem;
   transition: 0.1s ease-in-out;
-  border-radius: 1rem;
+  border-radius: 30% 70% 30% 70%/70% 30% 70% 30%;
 }
 .div-inner-img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 8px rgba(69, 25, 22, 0.5);
 }
 
 .link-to-releases {
@@ -347,6 +364,7 @@ html {
   margin-left: 1rem;
   margin-top: 0.5rem;
   color: #8d8c8c;
+  animation: expandImage 0.5s ease-in-out forwards;
 }
 
 .link-to-music {
@@ -1150,15 +1168,15 @@ footer {
   }
   .p_section-for-artist {
     display: none;
-    font-size: 1.4rem;
+    /*  font-size: 1.4rem;
     line-height: 2.8rem;
-    max-width: 46rem;
+    max-width: 46rem; */
   }
   .p_section-for-artist-hidden {
     display: block;
     font-size: 1.4rem;
     line-height: 2.8rem;
-    /* max-width: 46rem; */
+    /*  max-width: 46rem;  */
     max-width: 50vw;
   }
   .div-artist-img {
@@ -1176,7 +1194,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0 2rem;
-    max-width: 31rem;
+    max-width: 24rem;
   }
   .inner-div-btn-cta {
     display: flex;
@@ -1199,7 +1217,7 @@ footer {
   }
   .artist-div.active {
     display: block;
-    margin: 0 2rem;
+    /* margin: 0 2rem; */
   }
   .btns-chooser {
     display: flex;
@@ -1292,6 +1310,13 @@ footer {
   }
   .p_section-for-artist {
     max-width: 54rem;
+  }
+  .div-inner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+    max-width: 26rem;
   }
   .btns-chooser {
     margin: 2rem 1.5rem 4rem 1.5rem;

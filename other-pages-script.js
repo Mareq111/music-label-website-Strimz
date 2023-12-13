@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
 //! 2 if logo was clicked go to top
 
 const logoClick = document.getElementById("logo");

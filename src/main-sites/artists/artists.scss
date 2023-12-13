@@ -392,12 +392,33 @@ html {
     align-items: center;
     margin: 1.5rem 0;
 }
+//!animate image artist with ficaption
 
 .artist-img {
+    min-width: 10rem;
+    min-height: 10rem;
     width: 100%;
     height: auto;
     cursor: pointer;
-    border-radius: 1rem;
+    border-radius: 30% 70% 30% 70% / 70% 30% 70% 30%;
+    animation: expandImage 0.2s ease-in-out forwards;
+}
+
+@keyframes expandImage {
+    0% {
+        opacity: 0;
+        width: 1rem;
+        height: 1rem;
+        height: auto;
+        border-radius: 0%;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+        height: auto;
+
+        border-radius: 30% 70% 30% 70% / 70% 30% 70% 30%;
+    }
 }
 .div-inner-img {
     display: flex;
@@ -405,10 +426,10 @@ html {
     align-items: center;
     margin: 0 1rem;
     transition: 0.1s ease-in-out;
-    border-radius: 1rem;
+    border-radius: 30% 70% 30% 70% / 70% 30% 70% 30%;
+
     &:hover {
         transform: scale(1.1);
-        box-shadow: 0 0 8px $shadow-red-path-to-zukunft;
     }
 }
 //img link to unsplash
@@ -428,6 +449,7 @@ html {
     margin-left: 1rem;
     margin-top: 0.5rem;
     color: $grey-600;
+    animation: expandImage 0.5s ease-in-out forwards;
 }
 .link-to-music {
     width: auto;
@@ -1297,15 +1319,15 @@ footer {
     }
     .p_section-for-artist {
         display: none;
-        font-size: 1.4rem;
+        /*  font-size: 1.4rem;
         line-height: 2.8rem;
-        max-width: 46rem;
+        max-width: 46rem; */
     }
     .p_section-for-artist-hidden {
         display: block;
         font-size: 1.4rem;
         line-height: 2.8rem;
-        /* max-width: 46rem; */
+        /*  max-width: 46rem;  */
         max-width: 50vw;
     }
     //img
@@ -1325,7 +1347,7 @@ footer {
         justify-content: center;
         align-items: center;
         margin: 0 2rem;
-        max-width: 31rem;
+        max-width: 24rem;
     }
 
     //btn 1
@@ -1350,11 +1372,12 @@ footer {
         height: auto;
         font-size: 1.4rem;
     }
-    //btns
     .artist-div.active {
         display: block;
-        margin: 0 2rem;
+        /* margin: 0 2rem; */
     }
+    //btns
+
     .btns-chooser {
         display: flex;
         justify-content: center;
@@ -1464,6 +1487,15 @@ footer {
     .p_section-for-artist {
         max-width: 54rem;
     }
+
+    .div-inner-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2rem;
+        max-width: 26rem;
+    }
+
     //btn chooser
 
     //btn chooser
