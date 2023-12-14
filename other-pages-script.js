@@ -166,3 +166,14 @@ function checkVisibility(element) {
 
 //  checking visibility for any element
 descriptionElements.forEach(checkVisibility);
+
+//! 8 form in footer to redirect to greetings page if person complete form with correct email
+
+const form = document.querySelector(".newsletterForm")
+//listening submit in form
+form.addEventListener("submit", (e) => {
+    //to block form action without uncorrect or empty email input
+  e.preventDefault();
+  //link to redirect page with greetings
+  window.location.href = "/src/other/page-greetings/greetings.html";
+});

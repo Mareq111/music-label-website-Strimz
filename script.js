@@ -265,7 +265,7 @@ songs.forEach((song) => {
   }
 });
 
-//9 clicking  arrow link enables returning to the previous site that referred to the current page
+//! 9 clicking  arrow link enables returning to the previous site that referred to the current page
 // and this function using a the browser's history to navigate back to the referring page.
 
 const linkReturn = document.querySelector(".arrow-link");
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-//10 for desktops, chevron icon if clicked, it hide a social nav menu
+//! 10 for desktops, chevron icon if clicked, it hide a social nav menu
 
 const chevronIcon = document.getElementById('chevron-to-show-social-menu')
 const socialMenu = document.querySelector('.top-nav-desktop')
@@ -288,3 +288,15 @@ chevronIcon?.addEventListener('click', () => {
   socialMenu?.classList.toggle('top-nav-desktop-hidden')
   chevronIcon.classList.toggle('rotate');
 })
+
+
+//! 11 form in footer to redirect to greetings page if person complete form with correct email
+
+const form = document.querySelector(".newsletterForm")
+//listening submit in form
+form.addEventListener("submit", (e) => {
+    //to block form action without uncorrect or empty email input
+  e.preventDefault();
+  //link to redirect page with greetings
+  window.location.href = "/src/other/page-greetings/greetings.html";
+});
