@@ -986,12 +986,13 @@ footer {
 }
 .footer-top {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     padding: 2rem 1rem;
+
 }
 .footer-a-1,
 .footer-a-2 {
@@ -1007,7 +1008,7 @@ footer {
     font-size: 1.4rem;
     text-decoration: none;
     transition: 0.1s ease-in-out;
-    padding: 0.5rem;
+    padding: 0.5rem; 
     &:hover {
         transform: scale(1.05);
         color: $grey-600;
@@ -1030,6 +1031,7 @@ footer {
     font-size: 1.2rem;
     font-weight: 400;
     color: $grey-600;
+
 }
 .input-wth-btn {
     display: flex;
@@ -1053,6 +1055,7 @@ footer {
     padding: 1rem 0;
     &:focus {
         outline: none;
+  
     }
 }
 .send-btn {
@@ -1060,8 +1063,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    border: 0.1rem solid;
+   border-radius: 50%;
+    border: 0.1rem solid ;
     background-color: transparent;
     color: $eastern-blue-500;
     padding: 0;
@@ -1420,7 +1423,7 @@ footer {
     .nav-a-footer {
         font-size: 1.6rem;
     }
-    /*  .send-btn {
+   /*  .send-btn {
         padding: 0.5rem 1rem;
     } */
     //footer boottom
@@ -1704,7 +1707,7 @@ footer {
         position: fixed;
         z-index: 2;
     }
-
+    
     #logo {
         display: block;
         width: 1.75rem;
@@ -1728,8 +1731,9 @@ footer {
         }
         &.rotate {
             transform: rotate(180deg);
-        }
+          }
     }
+  
 
     #dropdown-menu-icon {
         display: none;
@@ -2073,9 +2077,7 @@ footer {
         gap: 1rem;
     }
 
-    .email-input-description {
-        padding: 0;
-    }
+   
     //footer bottom
     .footer-p-and-nav {
         padding-top: 2rem;
@@ -2187,9 +2189,7 @@ footer {
         gap: 2rem;
     }
 
-    .email-input-description {
-        padding: 0;
-    }
+   
     //footer bottom
     .footer-bottom {
         padding: 0 6rem;

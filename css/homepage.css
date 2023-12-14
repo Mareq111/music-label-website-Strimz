@@ -1309,8 +1309,8 @@ footer {
     font-size: 1.6rem;
   }
   /*  .send-btn {
-      padding: 0.5rem 1rem;
-  } */
+       padding: 0.5rem 1rem;
+   } */
   #bottom-footer-social-1,
   #bottom-footer-social-2,
   #bottom-footer-social-3,
@@ -1859,9 +1859,6 @@ footer {
     width: 40%;
     gap: 1rem;
   }
-  .email-input-description {
-    padding: 0;
-  }
   .footer-p-and-nav {
     padding-top: 2rem;
   }
@@ -1947,9 +1944,6 @@ footer {
   }
   .description-and-email-input {
     gap: 2rem;
-  }
-  .email-input-description {
-    padding: 0;
   }
   .footer-bottom {
     padding: 0 6rem;

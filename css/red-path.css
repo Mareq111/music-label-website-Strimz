@@ -808,7 +808,6 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   padding: 2rem 1rem;
-  gap: 0.5rem;
 }
 
 .footer-a-1,
@@ -825,6 +824,7 @@ footer {
   font-size: 1.4rem;
   text-decoration: none;
   transition: 0.1s ease-in-out;
+  padding: 0.5rem;
 }
 .nav-a-footer:hover {
   transform: scale(1.05);
@@ -838,7 +838,6 @@ footer {
   justify-content: flex-start;
   width: auto;
   height: auto;
-  border-bottom: 0.1rem solid #f2f2f2;
   gap: 0.5rem;
   width: 100%;
   height: auto;
@@ -852,13 +851,19 @@ footer {
 }
 
 .input-wth-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   width: 100%;
   height: auto;
+  border-bottom: 0.1rem solid #f2f2f2;
 }
 
 .input-email {
   width: 80%;
   height: auto;
+  line-height: 2rem;
   font-size: 1.4rem;
   background-color: transparent;
   color: #f2f2f2;
@@ -868,11 +873,15 @@ footer {
 }
 .input-email:focus {
   outline: none;
-  color: #f2f2f2;
 }
 
 .send-btn {
-  border: 0;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.1rem solid;
   background-color: transparent;
   color: #26acac;
   padding: 0;
@@ -881,7 +890,13 @@ footer {
   height: auto;
   transition: 0.2s ease-in-out;
   font-size: 1.4rem;
+  padding: 0.5rem;
+  z-index: 1;
   cursor: pointer;
+}
+.send-btn:hover {
+  transform: scale(1.1);
+  color: #dcdcdc;
 }
 .send-btn:focus {
   transform: scale(1.1);

@@ -867,6 +867,7 @@ html {
         background-color: $grey-500;
     }
 }
+
 // footer
 
 //top footer
@@ -890,19 +891,18 @@ footer {
 }
 .footer-top {
     display: flex;
-    flex-direction: column; // higher res change to row
+    flex-direction: column; 
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     padding: 2rem 1rem;
-    gap: 0.5rem;
+
 }
 .footer-a-1,
 .footer-a-2 {
     display: flex;
     flex-direction: column;
-   
     width: auto;
 }
 
@@ -913,12 +913,13 @@ footer {
     font-size: 1.4rem;
     text-decoration: none;
     transition: 0.1s ease-in-out;
+    padding: 0.5rem; 
     &:hover {
         transform: scale(1.05);
         color: $grey-600;
     }
 }
-
+//footer form -newsletter
 .description-and-email-input {
     display: flex;
     flex-direction: column;
@@ -926,7 +927,6 @@ footer {
     justify-content: flex-start;
     width: auto;
     height: auto;
-    border-bottom: 0.1rem solid $white;
     gap: 0.5rem;
     width: 100%;
     height: auto;
@@ -936,16 +936,22 @@ footer {
     font-size: 1.2rem;
     font-weight: 400;
     color: $grey-600;
-}
 
+}
 .input-wth-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
     height: auto;
+    border-bottom: 0.1rem solid $white;
 }
 
 .input-email {
     width: 80%;
     height: auto;
+    line-height: 2rem;
     font-size: 1.4rem;
     background-color: transparent;
     color: $white;
@@ -954,11 +960,16 @@ footer {
     padding: 1rem 0;
     &:focus {
         outline: none;
-        color: $white;
+  
     }
 }
 .send-btn {
-    border: 0;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border-radius: 50%;
+    border: 0.1rem solid ;
     background-color: transparent;
     color: $eastern-blue-500;
     padding: 0;
@@ -967,12 +978,19 @@ footer {
     height: auto;
     transition: 0.2s ease-in-out;
     font-size: 1.4rem;
+    padding: 0.5rem;
+    z-index: 1;
     cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+        color: $grey-500;
+    }
     &:focus {
         transform: scale(1.1);
         color: $amulet-green-400;
     }
 }
+
 //bottom footer
 
 .footer-bottom {

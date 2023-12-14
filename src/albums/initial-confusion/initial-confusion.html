@@ -270,13 +270,13 @@
     <section class="section1">
       <div class="album-and-figcaption">
         <div class="fig-div">
-             <!-- arrow to return  -->
-             <a  aria-label="Comeback" class="arrow-link" href=" ">
-              <div class="arrow">
-                <i class="bx bx-arrow-back" id="arrow-icon"></i>
-              </div>
-            </a>
-            <!-- end arrow  -->
+          <!-- arrow to return  -->
+          <a aria-label="Comeback" class="arrow-link" href=" ">
+            <div class="arrow">
+              <i class="bx bx-arrow-back" id="arrow-icon"></i>
+            </div>
+          </a>
+          <!-- end arrow  -->
           <figcaption name="album-release" id="fig-album-released">
             Album Released - December 4, 2018
           </figcaption>
@@ -606,29 +606,36 @@
           /src/main-sites/about/about.html"
             >About</a
           >
-          <a class="nav-a-footer" href="/src/main-sites/contact-us/contact-us.html">Contact Us</a>
+          <a
+            class="nav-a-footer"
+            href="/src/main-sites/contact-us/contact-us.html"
+            >Contact Us</a
+          >
         </nav>
 
         <div class="description-and-email-input">
           <p class="email-input-description">
             Stay current with our latest news
           </p>
-          <div class="input-wth-btn">
-            <input
-              class="input-email"
-              type="email"
-              name="user_email"
-              required
-              placeholder="Email"
-            />
-            <button
-              class="send-btn"
-              type="submit"
-              aria-label="Subscribe Newsletter"
-            >
-              <i class="bx bxs-send"></i>
-            </button>
-          </div>
+          <!-- footer form - newsletter -->
+          <form class="newsletterForm" method="post" name="newsletter-form">
+            <div class="input-wth-btn">
+              <input
+                class="input-email"
+                type="email"
+                name="user_email"
+                required
+                placeholder="Email"
+              />
+              <button
+                class="send-btn"
+                type="submit"
+                aria-label="Subscribe Newsletter"
+              >
+                <i class="bx bxs-send"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
       <!-- footer bottom -->
