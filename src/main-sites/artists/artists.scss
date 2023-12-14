@@ -16,8 +16,8 @@ $black-600: #120f10;
 $eastern-blue-500: #26acac;
 $amulet-green-400: #85ab7b;
 $ming-blue-600: #367983;
-//borders for artists imgage
-$border-el-double-m: rgba(236, 128, 33, 1);
+//borders for artists image
+$border-el-double-m: rgba(101,68,49,1);
 $border-jackie: rgba(138, 145, 179, 1);
 $border-elKaptn: rgba(247, 232, 141, 1);
 $border-mollyGranoli: rgba(228, 174, 236, 1);
@@ -505,8 +505,9 @@ html {
 }
 
 .short-description-above-img {
+    color: $grey-500;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .name-tag-red {

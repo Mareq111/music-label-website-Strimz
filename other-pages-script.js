@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (menuIcon && toggleMenu) {
     menuIcon.addEventListener("click", (e) => {
       toggleMenu.classList.toggle("active");
-      
     });
 
     //if you click anywhere besides toggleMenu you close it
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
 
 //! 2 if logo was clicked go to top
 
@@ -48,7 +46,7 @@ summaryFocus?.addEventListener("click", () => {
     : (summaryFocus?.classList.remove("focused"), (isFocused = false));
 });
 
-//3 month chooser for tour page
+//! 3 month chooser for tour page
 
 document.addEventListener("DOMContentLoaded", function () {
   const buttonChooser = document.querySelectorAll(".btn-month");
@@ -74,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-//4 artists chooser for artists page its the same code like above this
+//! 4 artists chooser for artists page its the same code like above this
 
 document.addEventListener("DOMContentLoaded", function () {
   const buttonChooser = document.querySelectorAll(".btn-artists");
@@ -101,8 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-//5 clicking  arrow link enables returning to the previous site that referred to the current page
+//!5 clicking  arrow link enables returning to the previous site that referred to the current page
 // and this function using a the browser's history to navigate back to the referring page.
 
 const linkReturn = document.querySelector(".arrow-link");
@@ -116,15 +113,56 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-//6 for desktops, chevron icon if clicked, it hide a social nav menu
+//! 6 for desktops, chevron icon if clicked, it hide a social nav menu
 
-const chevronIcon = document.getElementById('chevron-to-show-social-menu')
-const socialMenu = document.querySelector('.top-nav-desktop')
+const chevronIcon = document.getElementById("chevron-to-show-social-menu");
+const socialMenu = document.querySelector(".top-nav-desktop");
 
-chevronIcon?.addEventListener('click', () => {
-  socialMenu?.classList.toggle('top-nav-desktop-hidden')
-  chevronIcon.classList.toggle('rotate');
-})
+chevronIcon?.addEventListener("click", () => {
+  socialMenu?.classList.toggle("top-nav-desktop-hidden");
+  chevronIcon.classList.toggle("rotate");
+});
 
+//! 7 animate text for artist page
 
+const descriptionElements = document.querySelectorAll(
+  ".short-description-above-img"
+);
+const speed = 40;
 
+// function for animate text within any element
+function animateText(element, text, index) {
+  if (index < text.length) {
+    //show text by each character
+    element.textContent += text.charAt(index);
+    index++;
+    setTimeout(() => animateText(element, text, index), speed);
+  }
+}
+
+// checking visibility and starting function
+function checkVisibility(element) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          let index = 0;
+          const text = entry.target.textContent.trim();
+          //delete exist html text
+          entry.target.textContent = "";
+
+          animateText(entry.target, text, index);
+          //when element is visible you unobserve it
+          observer.unobserve(entry.target);
+        }
+      });
+      //  when min 50% of this element is shown on the screen it starts up
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(element);
+}
+
+//  checking visibility for any element
+descriptionElements.forEach(checkVisibility);
