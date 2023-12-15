@@ -684,33 +684,86 @@ html {
   color: #26acac;
 }
 
+#store-icon {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: #26acac;
+}
+
 .visit-shop-and-icons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   margin-bottom: 1rem;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
-.shop-logo {
-  width: 2rem;
-  height: 2rem;
-}
-
-#store-icon {
-  font-size: 2rem;
-  /* color: $eastern-blue-500; */
-  color: #f2f2f2;
-}
-
-/* .div_for_p-section5 {
-    margin-top: 1rem;
-} */
 .p_section5 {
   font-size: 1rem;
   line-height: 2rem;
   font-weight: 500;
+}
+
+.div-dream-chasers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  height: auto;
+  padding: 1.5rem 0;
+  margin: 0 0 1rem 0;
+  gap: 0.5rem;
+  position: relative;
+  overflow-x: auto;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.dream-chasers-img {
+  width: 80%;
+  width: 13.5rem;
+  height: auto;
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.inner-div-dream-chasers {
+  display: flex;
+  gap: 1rem;
+}
+
+.link-to-buy-album {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.shop-dream-chasers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0.5rem;
+  max-width: 13.5rem;
+  margin-top: 1rem;
+  gap: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.dream-shop-icon {
+  font-size: 1.2rem;
+  color: #26acac;
+}
+
+.dream-chasers-fig {
+  font-size: 1rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn-shop-div {
@@ -1246,17 +1299,24 @@ footer {
     margin-bottom: 1.5rem;
     gap: 1rem;
   }
-  .shop-logo {
-    width: 2.2rem;
-    height: 2.2rem;
-  }
   #store-icon {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
   }
   .p_section5 {
     font-size: 1.1rem;
     line-height: 2.2rem;
     max-width: 36rem;
+  }
+  .div-dream-chasers {
+    padding: 2rem 0;
+    margin: 0 0 1.5rem 0;
+  }
+  .dream-chasers-img {
+    width: 14rem;
+  }
+  .shop-dream-chasers {
+    max-width: 14rem;
   }
   .btn-shop {
     width: 18rem;
@@ -1309,8 +1369,8 @@ footer {
     font-size: 1.6rem;
   }
   /*  .send-btn {
-       padding: 0.5rem 1rem;
-   } */
+      padding: 0.5rem 1rem;
+  } */
   #bottom-footer-social-1,
   #bottom-footer-social-2,
   #bottom-footer-social-3,
@@ -1465,21 +1525,22 @@ footer {
     font-size: 2rem;
     line-height: 4rem;
   }
-  .shop-logo {
-    width: 2.2rem;
-    height: 2.2rem;
-  }
   #store-icon {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 4rem;
   }
   .visit-shop-and-icons {
     margin-bottom: 2rem;
-    gap: 1.5rem;
   }
   .p_section5 {
     font-size: 1.3rem;
     line-height: 2.6rem;
     max-width: 44rem;
+  }
+  .div-dream-chasers {
+    padding: 2.5rem 0;
+    margin-bottom: 0.5rem;
+    /* gap: 0.5rem; */
   }
   .btn-shop {
     padding: 1rem;
@@ -1782,21 +1843,37 @@ footer {
     font-size: 2.2rem;
     line-height: 4.4rem;
   }
-  .shop-logo {
-    width: 2.4rem;
-    height: 2.4rem;
-  }
   #store-icon {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    line-height: 4.4rem;
   }
   .visit-shop-and-icons {
     margin-bottom: 2.2rem;
-    gap: 1.7rem;
   }
   .p_section5 {
     font-size: 1.4rem;
     line-height: 2.8rem;
     max-width: 46rem;
+  }
+  .div-dream-chasers {
+    padding: 3rem 0;
+    margin: 0;
+  }
+  .dream-chasers-img {
+    width: 15rem;
+  }
+  .inner-div-dream-chasers {
+    gap: 2rem;
+  }
+  .shop-dream-chasers {
+    max-width: 15rem;
+    margin-top: 1.5rem;
+  }
+  .dream-shop-icon {
+    font-size: 1.3rem;
+  }
+  .dream-chasers-fig {
+    font-size: 1.1rem;
   }
   /* .section6 {
       padding: 4rem 3rem;
@@ -1924,6 +2001,9 @@ footer {
   }
   .p_section5 {
     max-width: 54rem;
+  }
+  .inner-div-dream-chasers {
+    gap: 3rem;
   }
   .section6 {
     padding: 4rem 8rem;

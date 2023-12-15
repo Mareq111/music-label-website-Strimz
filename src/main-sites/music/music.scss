@@ -1133,7 +1133,8 @@ html {
 // div under img
 .shop-dream-chasers {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
     align-items: center;
     margin-top: 1rem;
     gap: 0.5rem;
@@ -2367,6 +2368,7 @@ footer {
     // div under img
 
     .shop-dream-chasers {
+       
         margin-top: 1.5rem;
     }
 
@@ -2487,6 +2489,12 @@ footer {
     .p_section5 {
         max-width: 54rem;
     }
+    
+    //img
+    .inner-div-dream-chasers {
+        gap: 3rem;
+    }
+
     //section6
 
     .section6 {
@@ -2497,11 +2505,6 @@ footer {
 
     .p_section6 {
         max-width: 54rem;
-    }
-
-    //img
-    .inner-div-dream-chasers {
-        gap: 3rem;
     }
 
     //footer'top
