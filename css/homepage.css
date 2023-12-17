@@ -462,7 +462,7 @@ html {
 .album:hover #album-cover-wave {
   box-shadow: 0 0 8px rgba(109, 13, 113, 0.5);
 }
-.album:hover #dots-separator-album-5 {
+.album:hover #dots-separator-album-4 {
   transition-delay: 300ms;
   color: rgb(53, 17, 127);
 }
