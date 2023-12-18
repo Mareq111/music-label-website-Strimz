@@ -987,6 +987,21 @@ html {
   overflow-x: auto;
   white-space: nowrap;
   z-index: 2;
+  scroll-behavior: smooth;
+}
+.div-dream-chasers::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+}
+.div-dream-chasers::-webkit-scrollbar-thumb {
+  background-color: #dcdcdc;
+  border-radius: 0.5rem;
+  width: 25%;
+}
+.div-dream-chasers::-webkit-scrollbar-track {
+  background-color: #3e3c3c;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
 }
 
 .dream-chasers-img {

@@ -1110,6 +1110,23 @@ html {
     overflow-x: auto;
     white-space: nowrap;
     z-index: 2;
+    scroll-behavior: smooth;
+    //scrollbar 
+      &::-webkit-scrollbar   {
+        width: 1rem; 
+        height: 1rem;
+      }
+      &::-webkit-scrollbar-thumb   {
+        background-color: $grey-500;  
+        border-radius: 0.5rem; 
+        width: 25%;
+      }
+      &::-webkit-scrollbar-track  {
+        background-color: $grey-700;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.5rem $shadow-black-transparent;
+        
+      }
 }
 
 .dream-chasers-img {
