@@ -49,7 +49,16 @@ logoClick?.addEventListener("click", () => {
   window.scroll({ top: 0, behavior: "smooth" });
 });
 
-// focused on album introduction
+//clicking by enter
+ 
+logoClick.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    window.scroll({ top: 0, behavior: 'smooth'})
+  }
+})
+
+
+//! 3 focused on album introduction
 
 const summaryFocus = document.querySelector(".album-summary-description");
 let isFocused = false;
@@ -60,7 +69,7 @@ summaryFocus?.addEventListener("click", () => {
     : (summaryFocus?.classList.remove("focused"), (isFocused = false));
 });
 
-//! 3 add audio to song div
+//! 4 add audio to song div
 // fuction when a songDiv is clicked to listen any song, even when only "button" icons is clicked
 
 const songs = document.querySelectorAll(".song");
@@ -153,8 +162,8 @@ bigPlayBtn.addEventListener("click", () => {
   playSong(currentSongIndex);
 });
 
-//! 4 dynamic add song-duration for any song
-//! 5 dynamic sum all songs duration into stats for whole album duration
+//! 5 dynamic add song-duration for any song
+//! 6 dynamic sum all songs duration into stats for whole album duration
 
 const songDurations = document.querySelectorAll(".song-duration");
 let totalDurationInSeconds = 0;
@@ -216,7 +225,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   };
 });
 
-//! 6 dynamic sum quantity of tracks in any album
+//! 7 dynamic sum quantity of tracks in any album
 
 const anySong = document.querySelectorAll(".song");
 const showQuantity = document.getElementById("all-songs-quantity");
@@ -225,8 +234,8 @@ const allAnySongs = anySong.length;
 showQuantity.textContent =
   allAnySongs === 1 ? `${allAnySongs} song` : `${allAnySongs} songs`;
 
-//! 7 when you click on the visible dots, the visibility of the information changes
-//! 8 heart click which added song to favorite in any song
+//! 8 when you click on the visible dots, the visibility of the information changes
+//! 9 heart click which added song to favorite in any song
 //const songs = document.querySelectorAll(".song"); was declared
 
 songs.forEach((song) => {
@@ -279,7 +288,7 @@ songs.forEach((song) => {
   }
 });
 
-//! 9 clicking  arrow link enables returning to the previous site that referred to the current page
+//! 10 clicking  arrow link enables returning to the previous site that referred to the current page
 // and this function using a the browser's history to navigate back to the referring page.
 
 const linkReturn = document.querySelector(".arrow-link");
@@ -293,7 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-//! 10 for desktops, chevron icon if clicked, it hide a social nav menu
+//! 11 for desktops, chevron icon if clicked, it hide a social nav menu
 
 const chevronIcon = document.getElementById('chevron-to-show-social-menu')
 const socialMenu = document.querySelector('.top-nav-desktop')
@@ -314,7 +323,7 @@ chevronIcon?.addEventListener('click', () => {
 
 
 
-//! 11 form in footer to redirect to greetings page if person complete form with correct email
+//! 12 form in footer to redirect to greetings page if person complete form with correct email
 
 const form = document.querySelector(".newsletterForm")
 //listening submit in form

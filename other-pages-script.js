@@ -3,25 +3,22 @@
 //react to load our dom structure
 document.addEventListener("DOMContentLoaded", function () {
   const toggleMenu = document.getElementById("toggle_menu");
-  const menuIcon = document.getElementById("dropdown-menu-icon")
-  
+  const menuIcon = document.getElementById("dropdown-menu-icon");
+
   //click icon to activate toggle menu
   if (menuIcon && toggleMenu) {
-
-
-
     menuIcon.addEventListener("click", (e) => {
       toggleMenu.classList.toggle("active");
     });
 
-//! Handle Enter key press for icon
-function handleKeyPress(event) {
-  if (event.key === 'Enter') {
-    toggleMenu.classList.toggle('active');
-  }
-}
+    //! Handle Enter key press for icon
+    function handleKeyPress(event) {
+      if (event.key === "Enter") {
+        toggleMenu.classList.toggle("active");
+      }
+    }
 
-menuIcon.addEventListener('keydown', handleKeyPress);
+    menuIcon.addEventListener("keydown", handleKeyPress);
 
     //if you click anywhere besides toggleMenu you close it
 
@@ -46,8 +43,15 @@ const logoClick = document.getElementById("logo");
 logoClick?.addEventListener("click", () => {
   window.scroll({ top: 0, behavior: "smooth" });
 });
+//clicking by enter
+ 
+logoClick.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    window.scroll({ top: 0, behavior: 'smooth'})
+  }
+})
 
-// focused on album introduction
+//! 3 focused on album introduction
 
 const summaryFocus = document.querySelector(".album-summary-description");
 let isFocused = false;
@@ -58,7 +62,7 @@ summaryFocus?.addEventListener("click", () => {
     : (summaryFocus?.classList.remove("focused"), (isFocused = false));
 });
 
-//! 3 month chooser for tour page
+//! 4 month chooser for tour page
 
 document.addEventListener("DOMContentLoaded", function () {
   const buttonChooser = document.querySelectorAll(".btn-month");
@@ -84,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-//! 4 artists chooser for artists page its the same code like above this
+//! 5 artists chooser for artists page its the same code like above this
 
 document.addEventListener("DOMContentLoaded", function () {
   const buttonChooser = document.querySelectorAll(".btn-artists");
@@ -111,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//!5 clicking  arrow link enables returning to the previous site that referred to the current page
+//! 6 clicking  arrow link enables returning to the previous site that referred to the current page
 // and this function using a the browser's history to navigate back to the referring page.
 
 const linkReturn = document.querySelector(".arrow-link");
@@ -125,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-//! 6 for desktops, chevron icon if clicked, it hide a social nav menu
+//! 7 for desktops, chevron icon if clicked, it hide a social nav menu
 
 const chevronIcon = document.getElementById("chevron-to-show-social-menu");
 const socialMenu = document.querySelector(".top-nav-desktop");
@@ -144,7 +148,7 @@ chevronIcon?.addEventListener("click", () => {
   chevronIcon.classList.toggle("rotate");
 });
 
-//! 7 animate text for artist page
+//! 8 animate text for artist page
 
 const descriptionElements = document.querySelectorAll(
   ".short-description-above-img"
@@ -188,7 +192,7 @@ function checkVisibility(element) {
 //  checking visibility for any element
 descriptionElements.forEach(checkVisibility);
 
-//! 8 form in footer to redirect to greetings page if person complete form with correct email
+//! 9 form in footer to redirect to greetings page if person complete form with correct email
 
 const form = document.querySelector(".newsletterForm");
 //listening submit in form
@@ -199,4 +203,4 @@ form.addEventListener("submit", (e) => {
   window.location.href = "/src/other/page-greetings/greetings.html";
 });
 
-//! 9 animated scrolls  crusesl for shop -homepage
+//! 10 animated scrolls  cruselsss for shop -homepage
