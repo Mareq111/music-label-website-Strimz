@@ -603,6 +603,10 @@ html {
       animation: loading 3s linear infinite;
     }
   }
+  &.active { 
+    border-radius: 0.5rem;   
+    background-color: 0.1rem solid  $eastern-blue-500;
+  }
 }
 
 .song-title {

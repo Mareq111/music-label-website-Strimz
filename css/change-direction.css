@@ -564,6 +564,10 @@ html {
   display: block;
   animation: loading 3s linear infinite;
 }
+.play-btn-song.active {
+  border-radius: 0.5rem;
+  background-color: 0.1rem solid #26acac;
+}
 
 .song-title {
   font-weight: 600;

@@ -1,27 +1,24 @@
 //! 1 toggle menu, and if you click everywhere you close toggle menu without click on icon
 
-
 //react to load our dom structure
 document.addEventListener("DOMContentLoaded", function () {
   const toggleMenu = document.getElementById("toggle_menu");
-  const menuIcon = document.getElementById("dropdown-menu-icon")
-  
+  const menuIcon = document.getElementById("dropdown-menu-icon");
+
   //click icon to activate toggle menu
   if (menuIcon && toggleMenu) {
-
     menuIcon.addEventListener("click", (e) => {
       toggleMenu.classList.toggle("active");
     });
 
-//! Handle Enter key press for icon
-function handleKeyPress(event) {
-  if (event.key === 'Enter') {
-    toggleMenu.classList.toggle('active');
-  }
-}
+    //! Handle Enter key press for icon
+    function handleKeyPress(event) {
+      if (event.key === "Enter") {
+        toggleMenu.classList.toggle("active");
+      }
+    }
 
-menuIcon.addEventListener('keydown', handleKeyPress);
-
+    menuIcon.addEventListener("keydown", handleKeyPress);
 
     //if you click anywhere besides toggleMenu you close it
 
@@ -38,8 +35,6 @@ menuIcon.addEventListener('keydown', handleKeyPress);
     });
   }
 });
-  
-  
 
 //! 2 if logo was clicked go to top
 
@@ -50,13 +45,12 @@ logoClick?.addEventListener("click", () => {
 });
 
 //clicking by enter
- 
-logoClick.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    window.scroll({ top: 0, behavior: 'smooth'})
-  }
-})
 
+logoClick.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }
+});
 
 //! 3 focused on album introduction
 
@@ -75,15 +69,46 @@ summaryFocus?.addEventListener("click", () => {
 const songs = document.querySelectorAll(".song");
 const audioElements = document.querySelectorAll(".audio-song");
 const bigPlayBtn = document.getElementById("playBtn");
+const playButtons = document.querySelectorAll(".play-btn-song"); //nowe
 let isPlaying = false;
 let currentSongIndex = 0;
 let currentPlayingSongDiv = null;
 let isSequentialPlaying = false;
 
+// handle to tab and enter click for accessability
+ playButtons.forEach((playBtn, index) => {
+  playBtn.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      document.querySelector(".play-btn.active")?.classList.remove("active");
+      playBtn.classList.add("active");
+      if (!isPlaying) {
+        playSong(index);
+      } else {
+        stopCurrentSong();
+      }
+    }
+  });
+}); 
+
+//remove active class from any element if you move further to other tracks
+playButtons.forEach((playBtn, index) => {
+  playBtn.addEventListener("click", () => {
+    playButtons.forEach(button => {
+      button.classList.remove("active");
+    });
+    playBtn.classList.add("active");
+
+    if (!isPlaying) {
+      playSong(index);
+    } else {
+      stopCurrentSong();
+      playSong(index);
+    }
+  });
+});
+
+//core handle song function
 function playSong(index) {
-
-
-  
   if (currentSongIndex === index && isPlaying) {
     stopCurrentSong();
     isPlaying = false;
@@ -304,34 +329,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //! 11 for desktops, chevron icon if clicked, it hide a social nav menu
 
-const chevronIcon = document.getElementById('chevron-to-show-social-menu')
-const socialMenu = document.querySelector('.top-nav-desktop')
+const chevronIcon = document.getElementById("chevron-to-show-social-menu");
+const socialMenu = document.querySelector(".top-nav-desktop");
 
 //function for tab press to hide and show elements
 function handleKeyPress(event) {
-  if ( event.key === 'Enter') {
-    socialMenu.classList.toggle('top-nav-desktop-hidden');
-    chevronIcon.classList.toggle('rotate');
+  if (event.key === "Enter") {
+    socialMenu.classList.toggle("top-nav-desktop-hidden");
+    chevronIcon.classList.toggle("rotate");
   }
 }
-chevronIcon?.addEventListener('keydown', handleKeyPress);
+chevronIcon?.addEventListener("keydown", handleKeyPress);
 
-chevronIcon?.addEventListener('click', () => {
-  socialMenu?.classList.toggle('top-nav-desktop-hidden')
-  chevronIcon.classList.toggle('rotate');
-})
-
-
+chevronIcon?.addEventListener("click", () => {
+  socialMenu?.classList.toggle("top-nav-desktop-hidden");
+  chevronIcon.classList.toggle("rotate");
+});
 
 //! 12 form in footer to redirect to greetings page if person complete form with correct email
 
-const form = document.querySelector(".newsletterForm")
+const form = document.querySelector(".newsletterForm");
 //listening submit in form
 form.addEventListener("submit", (e) => {
-    //to block form action without uncorrect or empty email input
+  //to block form action without uncorrect or empty email input
   e.preventDefault();
   //link to redirect page with greetings
   window.location.href = "/src/other/page-greetings/greetings.html";
 });
-
-

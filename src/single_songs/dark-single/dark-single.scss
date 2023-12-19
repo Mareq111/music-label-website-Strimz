@@ -579,31 +579,35 @@ html {
     font-size: 1.5rem;
     cursor: pointer;
     & {
-        .load-song-small-icon {
-            display: none;
-        }
+      .load-song-small-icon {
+        display: none;
+      }
     }
     &:hover {
-        opacity: 0.5;
-        .play-song-icon {
-            color: $white;
-        }
+      opacity: 0.5;
+      .play-song-icon {
+        color: $white;
+      }
     }
     &:focus {
-        .play-song-icon {
-            display: none;
-        }
-        .load-song-small2-icon {
-            display: none;
-        }
-        .load-song-small-icon {
-            font-size: 1.2rem;
-            color: $grey-500;
-            display: block;
-            animation: loading 3s linear infinite;
-        }
+      .play-song-icon {
+        display: none;
+      }
+      .load-song-small2-icon {
+        display: none;
+      }
+      .load-song-small-icon {
+        font-size: 1.2rem;
+        color: $grey-500;
+        display: block;
+        animation: loading 3s linear infinite;
+      }
     }
-}
+    &.active { 
+      border-radius: 0.5rem;   
+      background-color: 0.1rem solid  $eastern-blue-500;
+    }
+  }
 
 .song-title {
     font-weight: 600;
