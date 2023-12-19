@@ -142,7 +142,7 @@ html {
 
 
 //toggle menu
-
+        
 .toggle-menu {
     display: none;
     position: fixed;
@@ -151,7 +151,6 @@ html {
     background-color: $black-600;
     transform: translateY(3.5rem);
     color: $grey-500;
-
     border-radius: 0 0 5% 5%;
     box-shadow: 1px 3px 15px $shadow-black-transparent;
     opacity: 0;
@@ -1358,20 +1357,9 @@ footer {
 
 //toggle menu
 .toggle-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    right: 0;
-    padding: 1.5rem;
+    display: none;
 }
-.toggle_menu-a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0;
-    font-size: 1.4rem;
-}
+
 
 //hide this nav for small screens - social
 // social icons are hidden

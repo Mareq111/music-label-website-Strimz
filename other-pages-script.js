@@ -3,13 +3,25 @@
 //react to load our dom structure
 document.addEventListener("DOMContentLoaded", function () {
   const toggleMenu = document.getElementById("toggle_menu");
-  const menuIcon = document.getElementById("dropdown-menu-icon");
-
+  const menuIcon = document.getElementById("dropdown-menu-icon")
+  
   //click icon to activate toggle menu
   if (menuIcon && toggleMenu) {
+
+
+
     menuIcon.addEventListener("click", (e) => {
       toggleMenu.classList.toggle("active");
     });
+
+//! Handle Enter key press for icon
+function handleKeyPress(event) {
+  if (event.key === 'Enter') {
+    toggleMenu.classList.toggle('active');
+  }
+}
+
+menuIcon.addEventListener('keydown', handleKeyPress);
 
     //if you click anywhere besides toggleMenu you close it
 

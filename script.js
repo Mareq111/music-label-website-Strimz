@@ -1,32 +1,43 @@
 //! 1 toggle menu, and if you click everywhere you close toggle menu without click on icon
 
+
 //react to load our dom structure
-  document.addEventListener("DOMContentLoaded", function() {
-    const toggleMenu = document.getElementById("toggle_menu");
-    const menuIcon = document.getElementById("dropdown-menu-icon");
-    
-    //click icon to activate toggle menu
-    if (menuIcon && toggleMenu) {
-      menuIcon.addEventListener("click", (e) => {
-        toggleMenu.classList.toggle("active");
-      });
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleMenu = document.getElementById("toggle_menu");
+  const menuIcon = document.getElementById("dropdown-menu-icon")
   
-      //if you click anywhere besides toggleMenu you close it 
+  //click icon to activate toggle menu
+  if (menuIcon && toggleMenu) {
+
+    menuIcon.addEventListener("click", (e) => {
+      toggleMenu.classList.toggle("active");
+    });
+
+//! Handle Enter key press for icon
+function handleKeyPress(event) {
+  if (event.key === 'Enter') {
+    toggleMenu.classList.toggle('active');
+  }
+}
+
+menuIcon.addEventListener('keydown', handleKeyPress);
 
 
-      document.addEventListener("click", (e) => {
-        //if you click into toggle menu you wont close it
-        const isClickInsideMenu = toggleMenu.contains(e.target);
-        //checking if click is on icon
-        const isClickOnMenuIcon = menuIcon.contains(e.target);
-  
-        //if you click anywhere besides toggleMenu and icon - you close it 
-        if (!isClickInsideMenu && !isClickOnMenuIcon) {
-          toggleMenu.classList.remove("active");
-        }
-      });
-    }
-  });
+    //if you click anywhere besides toggleMenu you close it
+
+    document.addEventListener("click", (e) => {
+      //if you click into toggle menu you wont close it
+      const isClickInsideMenu = toggleMenu.contains(e.target);
+      //checking if click is on icon
+      const isClickOnMenuIcon = menuIcon.contains(e.target);
+
+      //if you click anywhere besides toggleMenu and icon - you close it
+      if (!isClickInsideMenu && !isClickOnMenuIcon) {
+        toggleMenu.classList.remove("active");
+      }
+    });
+  }
+});
   
   
 
@@ -300,6 +311,7 @@ chevronIcon?.addEventListener('click', () => {
   socialMenu?.classList.toggle('top-nav-desktop-hidden')
   chevronIcon.classList.toggle('rotate');
 })
+
 
 
 //! 11 form in footer to redirect to greetings page if person complete form with correct email

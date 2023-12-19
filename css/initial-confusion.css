@@ -1249,19 +1249,7 @@ footer {
     color: #8d8c8c;
   }
   .toggle-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    right: 0;
-    padding: 1.5rem;
-  }
-  .toggle_menu-a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0;
-    font-size: 1.4rem;
+    display: none;
   }
   .toggle-column-right {
     display: none;
