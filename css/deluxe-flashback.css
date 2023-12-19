@@ -289,7 +289,7 @@ html {
   padding-top: 1rem;
   font-size: 0.8rem;
   font-weight: 500;
-  text-transform: uppercase;
+  /*     text-transform: uppercase; */
 }
 
 .name-artist-in-p {
@@ -1213,6 +1213,9 @@ footer {
     transition: ease-in-out 0.2s;
     cursor: pointer;
     border-radius: 50%;
+    /*   &:focus {
+            background-color: $ming-blue-600;                                  ;
+        } */
   }
   #chevron-to-show-social-menu:hover {
     color: #dcdcdc;

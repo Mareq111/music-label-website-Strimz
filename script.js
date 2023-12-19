@@ -61,6 +61,9 @@ let currentPlayingSongDiv = null;
 let isSequentialPlaying = false;
 
 function playSong(index) {
+
+
+  
   if (currentSongIndex === index && isPlaying) {
     stopCurrentSong();
     isPlaying = false;
@@ -284,6 +287,15 @@ document.addEventListener("DOMContentLoaded", () => {
 const chevronIcon = document.getElementById('chevron-to-show-social-menu')
 const socialMenu = document.querySelector('.top-nav-desktop')
 
+//function for tab press to hide and show elements
+function handleKeyPress(event) {
+  if ( event.key === 'Enter') {
+    socialMenu.classList.toggle('top-nav-desktop-hidden');
+    chevronIcon.classList.toggle('rotate');
+  }
+}
+chevronIcon?.addEventListener('keydown', handleKeyPress);
+
 chevronIcon?.addEventListener('click', () => {
   socialMenu?.classList.toggle('top-nav-desktop-hidden')
   chevronIcon.classList.toggle('rotate');
@@ -300,3 +312,5 @@ form.addEventListener("submit", (e) => {
   //link to redirect page with greetings
   window.location.href = "/src/other/page-greetings/greetings.html";
 });
+
+

@@ -326,7 +326,7 @@ html {
     padding-top: 1rem;
     font-size: 0.8rem;
     font-weight: 500;
-    text-transform: uppercase;
+/*     text-transform: uppercase; */
 }
 
 .name-artist-in-p {
@@ -466,6 +466,7 @@ html {
         }
     }
 }
+
 
 //visible but hidden after click btn
 .play-song-big-icon {
@@ -1315,9 +1316,13 @@ footer {
         background-color: $black-600;
         border-radius: 50%;
     }
+    /*   &:focus {
+            background-color: $ming-blue-600;                                  ;
+        } */
     &.rotate {
         transform: rotate(180deg);
       }
+    
 }
 
 #dropdown-menu-icon {

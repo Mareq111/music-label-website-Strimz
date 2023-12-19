@@ -118,6 +118,15 @@ document.addEventListener("DOMContentLoaded", () => {
 const chevronIcon = document.getElementById("chevron-to-show-social-menu");
 const socialMenu = document.querySelector(".top-nav-desktop");
 
+//function for tab press to hide and show elements
+function handleKeyPress(event) {
+  if (event.key === "Enter") {
+    socialMenu.classList.toggle("top-nav-desktop-hidden");
+    chevronIcon.classList.toggle("rotate");
+  }
+}
+chevronIcon?.addEventListener("keydown", handleKeyPress);
+
 chevronIcon?.addEventListener("click", () => {
   socialMenu?.classList.toggle("top-nav-desktop-hidden");
   chevronIcon.classList.toggle("rotate");
@@ -169,11 +178,13 @@ descriptionElements.forEach(checkVisibility);
 
 //! 8 form in footer to redirect to greetings page if person complete form with correct email
 
-const form = document.querySelector(".newsletterForm")
+const form = document.querySelector(".newsletterForm");
 //listening submit in form
 form.addEventListener("submit", (e) => {
-    //to block form action without uncorrect or empty email input
+  //to block form action without uncorrect or empty email input
   e.preventDefault();
   //link to redirect page with greetings
   window.location.href = "/src/other/page-greetings/greetings.html";
 });
+
+//! 9 animated scrolls  crusesl for shop -homepage
