@@ -49,7 +49,7 @@ $color-meadow-of-happiness: rgba(233, 183, 40, 1);
 $shadow-wake-up-kitty-said: rgba(31, 28, 129, 0.5);
 $color-wake-up-kitty-said: rgb(176, 157, 44);
 
-$shadow-delusion: rgba(1,0,126, 0.5);
+$shadow-delusion: rgba(1, 0, 126, 0.5);
 $color-delusion: rgb(156, 28, 54);
 
 $shadow-movin-melodies: rgba(91, 150, 166, 0.5);
@@ -893,6 +893,12 @@ html {
   line-height: 2rem;
   font-weight: 500;
 }
+#shop-cta-p {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+
 //album scroll
 .div-albums-buy-scroll {
   display: flex;
@@ -910,29 +916,22 @@ html {
   white-space: nowrap;
   z-index: 2;
   scroll-behavior: smooth;
-//scrollbar 
-  &::-webkit-scrollbar   {
-    width: 1rem; 
+  //scrollbar
+  &::-webkit-scrollbar {
+    width: 1rem;
     height: 1rem;
   }
-  &::-webkit-scrollbar-thumb   {
-    background-color: $grey-500;  
-    border-radius: 0.5rem; 
+  &::-webkit-scrollbar-thumb {
+    background-color: $grey-500;
+    border-radius: 0.5rem;
     width: 25%;
   }
-  &::-webkit-scrollbar-track  {
+  &::-webkit-scrollbar-track {
     background-color: $grey-700;
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem $shadow-black-transparent;
-    
   }
-
-
 }
-
-
-
-
 
 //end scrollbar
 
@@ -1551,6 +1550,10 @@ footer {
     line-height: 2.2rem;
     max-width: 36rem;
   }
+  #shop-cta-p {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+  }
   //slider img shop
   .div-albums-buy-scroll {
     padding: 2rem 0;
@@ -1833,6 +1836,10 @@ footer {
     line-height: 2.6rem;
     max-width: 44rem;
   }
+  #shop-cta-p {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
   //slider img for shop
   .div-albums-buy-scroll {
     padding: 2.5rem 0;
@@ -1975,7 +1982,7 @@ footer {
   //toggle menu
   .toggle-menu {
     display: none;
-}
+  }
 
   //hide this nav for small screens - social
   // social icons are hidden
@@ -2191,6 +2198,10 @@ footer {
     font-size: 1.4rem;
     line-height: 2.8rem;
     max-width: 46rem;
+  }
+  #shop-cta-p {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
   }
   //shop slider album
   .div-albums-buy-scroll {
