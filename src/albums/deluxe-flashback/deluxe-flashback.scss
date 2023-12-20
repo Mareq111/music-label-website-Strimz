@@ -842,7 +842,7 @@ html {
     color: $color-wave;
   }
 
-  //5 album king of
+  //4 album king of
   &:hover #album-cover-king-of {
     box-shadow: 0 0 8px $shadow-king-of-for-and-muds;
   }
@@ -852,8 +852,39 @@ html {
   }
 }
 
+//btn
+.btn-view-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+}
+.btn-view-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $black-900;
+    padding: 0.5rem 1rem;
+    background-color: $white;
+    width: 14rem;
+    height: 10%;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: 0.1s ease-in-out;
+
+    &:hover,
+    :focus,
+    :active {
+        transform: scale(1.1);
+        background-color: $grey-500;
+    }
+}
+
 // footer
-// footer
+
 
 //top footer
 

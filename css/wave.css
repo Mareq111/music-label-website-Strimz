@@ -787,6 +787,66 @@ html {
   color: rgb(181, 133, 94);
 }
 
+.btn-view-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+.btn-view-collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #120f10;
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  width: 14rem;
+  height: 10%;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.1s ease-in-out;
+}
+.btn-view-collection:hover,
+.btn-view-collection :focus,
+.btn-view-collection :active {
+  transform: scale(1.1);
+  background-color: #dcdcdc;
+}
+
+.btn-view-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+.btn-view-collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #120f10;
+  padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  width: 14rem;
+  height: 10%;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.1s ease-in-out;
+}
+.btn-view-collection:hover,
+.btn-view-collection :focus,
+.btn-view-collection :active {
+  transform: scale(1.1);
+  background-color: #dcdcdc;
+}
+
 .hr-line-footer {
   width: 100%;
   border: none;
