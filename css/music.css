@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
+/* brak color  */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -234,7 +235,7 @@ html {
   align-items: center;
   flex-direction: row;
   /*  width: 100%;
-  height: auto; */
+    height: auto; */
   gap: 0.5rem;
   line-height: 1.6rem;
 }
@@ -493,6 +494,48 @@ html {
 .album:hover #dots-separator-album-8 {
   transition-delay: 300ms;
   color: rgb(76, 204, 219);
+}
+.album:hover #album-cover-lone-rider {
+  box-shadow: 0 0 8px rgba(198, 84, 4, 0.5);
+}
+.album:hover #dots-separator-album-others-1 {
+  transition-delay: 300ms;
+  color: rgb(224, 130, 15);
+}
+.album:hover #album-cover-lavender-labyrinth {
+  box-shadow: 0 0 8px rgba(79, 48, 80, 0.5);
+}
+.album:hover #dots-separator-album-others-2 {
+  transition-delay: 300ms;
+  color: rgb(79, 48, 80);
+}
+.album:hover #album-cover-pull-up {
+  box-shadow: 0 0 8px rgba(71, 112, 130, 0.5);
+}
+.album:hover #dots-separator-album-others-3 {
+  transition-delay: 300ms;
+  color: rgb(71, 112, 130);
+}
+.album:hover #album-cover-intro-to-different-dimension {
+  box-shadow: 0 0 8px rgba(99, 78, 173, 0.6);
+}
+.album:hover #dots-separator-album-others-4 {
+  transition-delay: 300ms;
+  color: rgb(255, 202, 231);
+}
+.album:hover #album-cover-minutes-to-midnight {
+  box-shadow: 0 0 8px rgba(211, 225, 234, 0.5);
+}
+.album:hover #dots-separator-album-others-5 {
+  transition-delay: 300ms;
+  color: rgb(211, 225, 234);
+}
+.album:hover #album-cover-rose-terrace {
+  box-shadow: 0 0 8px rgba(201, 44, 112, 0.5);
+}
+.album:hover #dots-separator-album-others-6 {
+  transition-delay: 300ms;
+  color: rgb(231, 189, 209);
 }
 
 .single .single-cover {
