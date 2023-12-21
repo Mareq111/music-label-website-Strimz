@@ -667,6 +667,90 @@ html {
   transition-delay: 300ms;
   color: rgb(185, 102, 138);
 }
+.single:hover #zen-single-cover {
+  box-shadow: 0 0 8px rgba(125, 185, 108, 0.5);
+}
+.single:hover #dots-separator-single-others-1 {
+  transition-delay: 300ms;
+  color: rgb(51, 121, 64);
+}
+.single:hover #flight-2011-single-cover {
+  box-shadow: 0 0 8px rgba(16, 144, 167, 0.5);
+}
+.single:hover #dots-separator-single-others-2 {
+  transition-delay: 300ms;
+  color: rgb(167, 197, 199);
+}
+.single:hover #meadow-of-happiness-single-cover {
+  box-shadow: 0 0 8px rgba(133, 128, 32, 0.5);
+}
+.single:hover #dots-separator-single-others-3 {
+  transition-delay: 300ms;
+  color: rgb(233, 183, 40);
+}
+.single:hover #wake-up-kitty-said-single-cover {
+  box-shadow: 0 0 8px rgba(31, 28, 129, 0.5);
+}
+.single:hover #dots-separator-single-others-4 {
+  transition-delay: 300ms;
+  color: rgb(176, 157, 44);
+}
+.single:hover #delusion-single-cover {
+  box-shadow: 0 0 8px rgba(1, 0, 126, 0.5);
+}
+.single:hover #dots-separator-single-others-5 {
+  transition-delay: 300ms;
+  color: rgb(156, 28, 54);
+}
+.single:hover #movin-melodies-single-cover {
+  box-shadow: 0 0 8px rgba(91, 150, 166, 0.5);
+}
+.single:hover #dots-separator-single-others-6 {
+  transition-delay: 300ms;
+  color: rgb(28, 91, 102);
+}
+.single:hover #row-your-boat-single-cover {
+  box-shadow: 0 0 8px rgba(109, 163, 175, 0.5);
+}
+.single:hover #dots-separator-single-others-7 {
+  transition-delay: 300ms;
+  color: rgb(68, 97, 41);
+}
+.single:hover #look-at-yourself-single-cover {
+  box-shadow: 0 0 8px rgba(126, 170, 97, 0.5);
+}
+.single:hover #dots-separator-single-others-8 {
+  transition-delay: 300ms;
+  color: rgb(87, 135, 29);
+}
+.single:hover #magic-forest-single-cover {
+  box-shadow: 0 0 8px rgba(136, 59, 129, 0.5);
+}
+.single:hover #dots-separator-single-others-9 {
+  transition-delay: 300ms;
+  color: rgb(235, 227, 126);
+}
+.single:hover #career-starvation-single-cover {
+  box-shadow: 0 0 8px rgba(90, 141, 130, 0.5);
+}
+.single:hover #dots-separator-single-others-10 {
+  transition-delay: 300ms;
+  color: rgb(53, 147, 125);
+}
+.single:hover #if-tommorrow-comes-cover {
+  box-shadow: 0 0 8px rgb(0, 74, 99);
+}
+.single:hover #dots-separator-single-others-11 {
+  transition-delay: 300ms;
+  color: rgb(0, 74, 99);
+}
+.single:hover #ziplock-single-cover {
+  box-shadow: 0 0 8px rgba(195, 154, 156, 0.5);
+}
+.single:hover #dots-separator-single-others-12 {
+  transition-delay: 300ms;
+  color: rgb(82, 126, 175);
+}
 
 .btn-view-collection-div {
   display: flex;
