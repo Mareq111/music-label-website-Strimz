@@ -1,60 +1,18 @@
-//font
-
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
-
 /* //colors variety import from  separate color stylesheet
 @import "/css/ColorsVariety.css";
  */
-$white: #f2f2f2;
-$red-500: #cd3737;
-$red-700: #b61a1a;
-$grey-500: #dcdcdc;
-$grey-600: #8d8c8c;
-$grey-700: #3e3c3c;
-$black-900: #120f10;
-$black-700: #1c1b1b;
-$black-600: #120f10;
-$eastern-blue-500: #26acac;
-$amulet-green-400: #85ab7b;
-$ming-blue-600: #367983;
-
-//mini- albums shadows and more
-$shadow-wave: rgba(109, 13, 113, 0.5);
-$color-wave: rgba(53, 17, 127, 1);
-
-$shadow-flashback-normal: rgba(211, 142, 122, 0.5);
-$color-flashback-normal: rgba(235, 152, 120, 1);
-
-$shadow-flashback-deluxe: rgba(210, 146, 164, 0.5);
-$color-flashback-deluxe: rgba(210, 146, 164, 1);
-
-$shadow-arena-of-autumnn: rgba(185, 169, 71, 0.5);
-$color-arena-of-autumnn: rgba(185, 169, 71, 1);
-
-$shadow-galaktkitty: rgba(50, 23, 78, 0.5);
-$color-galaktkitty: rgba(175, 160, 212, 1);
-
-$shadow-king-of-for-and-muds: rgba(181, 133, 94, 0.5);
-$color-king-of-for-and-muds: rgba(181, 133, 94, 1);
-
-//other shadows
-$shadow-green: rgba(133, 171, 123, 0.4);
-$shadow-black: rgba(30, 29, 29, 0.6);
-$shadow-black-transparent: rgba(0, 0, 0, 0.8);
-
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
-//styling
-
 html {
   font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   overflow-x: hidden;
-  background-color: $black-900;
-  color: $white;
+  background-color: #120f10;
+  color: #f2f2f2;
 }
 
 #background-album-cover {
@@ -65,7 +23,6 @@ html {
   opacity: 0.4;
   z-index: -2;
 }
-//return link arrow
 
 .arrow-link {
   display: flex;
@@ -84,7 +41,7 @@ html {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: $shadow-black;
+  background-color: rgba(30, 29, 29, 0.6);
   width: 1.75rem;
   height: 1.75rem;
   /* margin: 0.5rem 0; */
@@ -92,27 +49,26 @@ html {
 }
 
 #arrow-icon {
-  color: $white;
+  color: #f2f2f2;
   font-size: 1rem;
   transition: 0.2s ease-in-out;
 }
 
 .arrow-link:hover .arrow {
-  background-color: $black-700;
+  background-color: #1c1b1b;
 }
 
 .arrow-link:hover #arrow-icon,
 .arrow-link:focus #arrow-icon {
   transform: scale(1.1);
-  color: $grey-500;
+  color: #dcdcdc;
 }
 
-//!for mobile menu and hide desktop menu
 .top-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $shadow-black-transparent;
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(0.5rem);
   width: 100%;
   height: 3.5rem;
@@ -120,6 +76,7 @@ html {
   position: fixed;
   z-index: 2;
 }
+
 #logo,
 #dropdown-menu-icon {
   display: block;
@@ -128,30 +85,30 @@ html {
   font-size: 1.75rem;
   transition: ease-in-out 0.2s;
   cursor: pointer;
-  &:hover {
-    color: $grey-500;
-  }
 }
+#logo:hover,
+#dropdown-menu-icon:hover {
+  color: #dcdcdc;
+}
+
 #chevron-to-show-social-menu {
   display: none;
 }
+
 .nav-desktop {
   display: none;
 }
-
-//toggle menu
 
 .toggle-menu {
   display: none;
   position: fixed;
   width: 100%;
   height: auto;
-  background-color: $black-600;
+  background-color: #120f10;
   transform: translateY(3.5rem);
-  color: $grey-500;
-
+  color: #dcdcdc;
   border-radius: 0 0 5% 5%;
-  box-shadow: 1px 3px 15px $shadow-black-transparent;
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.8);
   opacity: 0;
 }
 
@@ -181,18 +138,18 @@ html {
   text-transform: uppercase;
   font-weight: 800;
 }
+
 .nav-a-toggle-menu {
   text-decoration: none;
-  color: $amulet-green-400;
+  color: #85ab7b;
   transition: 0.1s ease-in-out;
-  &:hover {
-    /* text-decoration: underline 0.2rem $eastern-blue-500; */
-    transform: scale(1.05);
-    color: $grey-600;
-  }
+}
+.nav-a-toggle-menu:hover {
+  /* text-decoration: underline 0.2rem $eastern-blue-500; */
+  transform: scale(1.05);
+  color: #8d8c8c;
 }
 
-//right side toggle menu
 .toggle-column-right {
   display: flex;
   justify-content: center;
@@ -211,14 +168,21 @@ html {
 #toggle-menu-a-7,
 #toggle-menu-a-8,
 #toggle-menu-a-9 {
-  color: $white;
+  color: #f2f2f2;
   font-size: 1.75rem;
   transition: 0.1s ease-in-out;
-
-  &:hover {
-    transform: scale(1.2);
-    color: $grey-500;
-  }
+}
+#toggle-menu-a-1:hover,
+#toggle-menu-a-2:hover,
+#toggle-menu-a-3:hover,
+#toggle-menu-a-4:hover,
+#toggle-menu-a-5:hover,
+#toggle-menu-a-6:hover,
+#toggle-menu-a-7:hover,
+#toggle-menu-a-8:hover,
+#toggle-menu-a-9:hover {
+  transform: scale(1.2);
+  color: #dcdcdc;
 }
 
 /* bottom navigation */
@@ -251,12 +215,12 @@ html {
 }
 
 #bottom-li-nav-about {
-  color: $amulet-green-400;
+  color: #85ab7b;
 }
+
 .nav-a-social {
   display: none;
 }
-//section 1
 
 .section1 {
   display: flex;
@@ -267,11 +231,12 @@ html {
   height: auto;
   padding: 4rem 1rem 0 1rem;
 }
+
 #main-album-cover {
   display: flex;
   width: 100%;
   height: auto;
-  box-shadow: 0px 2px 8px 1px $shadow-black;
+  box-shadow: 0px 2px 8px 1px rgba(30, 29, 29, 0.6);
   border-radius: 5%;
   max-width: 23rem;
 }
@@ -281,13 +246,15 @@ html {
   position: relative;
   font-size: 0.8rem;
   font-weight: 500;
-  color: $white;
+  color: #f2f2f2;
   letter-spacing: 0.04rem;
 }
+
 .title-name-artist {
   padding-top: 1.5rem;
   width: 100%;
 }
+
 .album-name {
   font-size: 1.6rem;
   font-weight: 800;
@@ -304,7 +271,7 @@ html {
 
 .album-summary-description {
   display: list-item;
-  color: $white;
+  color: #f2f2f2;
   cursor: pointer;
   padding: 0.5rem;
   background-color: transparent;
@@ -313,9 +280,9 @@ html {
 }
 
 .focused {
-  background-color: $grey-500;
-  color: $ming-blue-600;
-  box-shadow: 0 0 4px $shadow-black;
+  background-color: #dcdcdc;
+  color: #367983;
+  box-shadow: 0 0 4px rgba(30, 29, 29, 0.6);
 }
 
 .album-description {
@@ -328,17 +295,16 @@ html {
 }
 
 .name-artist-in-p {
-  color: $amulet-green-400;
+  color: #85ab7b;
 }
 
 .p-in-details {
   padding: 1rem;
   border-radius: 1%;
-  background-color: $black-600;
-  box-shadow: $shadow-black;
+  background-color: #120f10;
+  box-shadow: rgba(30, 29, 29, 0.6);
 }
 
-// section 2
 .section2 {
   display: flex;
   flex-direction: column;
@@ -346,6 +312,7 @@ html {
   height: auto;
   padding: 2rem 1rem;
 }
+
 #h3-section2 {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -353,6 +320,7 @@ html {
   padding-bottom: 2rem;
   font-weight: 800;
 }
+
 .choose-player {
   display: flex;
   width: 100%;
@@ -373,22 +341,28 @@ html {
 #box-3,
 #box-4,
 #box-5 {
-  color: $white;
+  color: #f2f2f2;
   padding: 0;
   font-size: 1.5rem;
   transition: 0.1s ease-in-out;
   cursor: pointer;
-  &:active {
-    color: $amulet-green-400;
-    transform: scale(1.3);
-  }
-  &:hover {
-    color: $amulet-green-400;
-    transform: scale(1.3);
-  }
 }
-
-//section 3 tracklist
+#box-1:active,
+#box-2:active,
+#box-3:active,
+#box-4:active,
+#box-5:active {
+  color: #85ab7b;
+  transform: scale(1.3);
+}
+#box-1:hover,
+#box-2:hover,
+#box-3:hover,
+#box-4:hover,
+#box-5:hover {
+  color: #85ab7b;
+  transform: scale(1.3);
+}
 
 .section3 {
   display: flex;
@@ -399,6 +373,7 @@ html {
   height: auto;
   padding: 2rem 1rem;
 }
+
 .list-time-songs {
   display: flex;
   align-items: center;
@@ -410,13 +385,11 @@ html {
   gap: 1rem;
 }
 
-//! The big btn for starting to listen to music at the first one with an animation after click
-
 .play-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $amulet-green-400;
+  background-color: #85ab7b;
   min-width: 3rem;
   min-height: 3rem;
   border-radius: 20%;
@@ -424,59 +397,52 @@ html {
   opacity: 1;
   transition: 0.2s ease-in;
   cursor: pointer;
-  & {
-    .load-song-big-icon {
-      display: none;
-    }
-  }
-  &:hover {
-    opacity: 0.5;
-    border-radius: 28%;
-    .play-song-big-icon {
-      color: $white;
-    }
-  }
-  &:focus {
-    .play-song-big-icon {
-      display: none;
-    }
-    .load-song-big-icon {
-      font-size: 1.2rem;
-      color: $white;
-      display: flex;
-      animation: loading 1.5s linear forwards;
-    }
-  }
-  &.ended-play {
-    opacity: 1;
-    border-radius: 20%;
-
-    &:focus {
-      .play-song-big-icon {
-        display: block;
-        color: $black-900;
-      }
-      .load-song-big-icon {
-        display: none;
-      }
-    }
-  }
+}
+.play-btn .load-song-big-icon {
+  display: none;
+}
+.play-btn:hover {
+  opacity: 0.5;
+  border-radius: 28%;
+}
+.play-btn:hover .play-song-big-icon {
+  color: #f2f2f2;
+}
+.play-btn:focus .play-song-big-icon {
+  display: none;
+}
+.play-btn:focus .load-song-big-icon {
+  font-size: 1.2rem;
+  color: #f2f2f2;
+  display: flex;
+  animation: loading 1.5s linear forwards;
+}
+.play-btn.ended-play {
+  opacity: 1;
+  border-radius: 20%;
+}
+.play-btn.ended-play:focus .play-song-big-icon {
+  display: block;
+  color: #120f10;
+}
+.play-btn.ended-play:focus .load-song-big-icon {
+  display: none;
 }
 
-//visible but hidden after click btn
 .play-song-big-icon {
   font-size: 1.4rem;
 }
 
-//hidden but visible after click btn
 .load-song-big-icon {
   font-size: 1.4rem;
 }
+
 #h4-section3 {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 700;
 }
+
 .quantity-of-songs-and-time {
   display: flex;
   flex-direction: column;
@@ -487,22 +453,21 @@ html {
   font-weight: 400;
   width: 40%;
 }
+
 .bxs-circle {
   font-size: 0.6rem;
-  color: $eastern-blue-500;
+  color: #26acac;
 }
+
 #hr-line2 {
   border: none;
   width: 100%;
-  background-color: $grey-700;
+  background-color: #3e3c3c;
   height: 0.05rem;
   opacity: 0.1;
   margin: 0.5rem 0;
 }
 
-//only tracks test
-
-//only left side song
 .l_side {
   display: flex;
   align-items: center;
@@ -518,6 +483,7 @@ html {
   width: 1.2rem;
   font-weight: 600;
 }
+
 .song {
   display: flex;
   justify-content: space-between;
@@ -530,42 +496,36 @@ html {
   opacity: 1;
   transition: 0.3s linear;
   padding-right: 0.5rem;
-
-  & .load-song-small2-icon {
-    display: none;
-  }
+}
+.song .load-song-small2-icon {
+  display: none;
 }
 
-//! if is clicked song Div this 'animations' is add & after song is removed
 .song-clicked {
   cursor: pointer;
-  box-shadow: inset 1.5rem 0 1px 0px $ming-blue-600;
-  color: $white;
-  & {
-    .load-song-small2-icon {
-      display: none;
-    }
-  }
-  & .song-title,
-  .song-duration {
-    opacity: 0.5;
-  }
-  & .artist-name {
-    color: $amulet-green-400;
-  }
-  & .play-song-icon {
-    display: none;
-  }
-  .load-song-small2-icon {
-    display: block;
-    font-size: 1.2rem;
-    color: $grey-500;
-
-    animation: loading 3s linear infinite;
-  }
+  box-shadow: inset 1.5rem 0 1px 0px #367983;
+  color: #f2f2f2;
+}
+.song-clicked .load-song-small2-icon {
+  display: none;
+}
+.song-clicked .song-title,
+.song-clicked .song-duration {
+  opacity: 0.5;
+}
+.song-clicked .artist-name {
+  color: #85ab7b;
+}
+.song-clicked .play-song-icon {
+  display: none;
+}
+.song-clicked .load-song-small2-icon {
+  display: block;
+  font-size: 1.2rem;
+  color: #dcdcdc;
+  animation: loading 3s linear infinite;
 }
 
-//! small btn for any song  with animation after click
 .play-btn-song {
   padding: 0;
   display: flex;
@@ -577,81 +537,75 @@ html {
   border: 0;
   opacity: 1;
   transition: 0.2s ease-in;
-  color: $eastern-blue-500;
+  color: #26acac;
   font-size: 1.5rem;
   cursor: pointer;
-  & {
-    .load-song-small-icon {
-      display: none;
-    }
-  }
-  &:hover {
-    opacity: 0.5;
-    .play-song-icon {
-      color: $white;
-    }
-  }
-  &:focus {
-    .play-song-icon {
-      display: none;
-    }
-    .load-song-small2-icon {
-      display: none;
-    }
-    .load-song-small-icon {
-      font-size: 1.2rem;
-      color: $grey-500;
-      display: block;
-      animation: loading 3s linear infinite;
-    }
-  }
-  &.active {
-    border-radius: 0.5rem;
-    background-color: 0.1rem solid $eastern-blue-500;
-  }
+}
+.play-btn-song .load-song-small-icon {
+  display: none;
+}
+.play-btn-song:hover {
+  opacity: 0.5;
+}
+.play-btn-song:hover .play-song-icon {
+  color: #f2f2f2;
+}
+.play-btn-song:focus .play-song-icon {
+  display: none;
+}
+.play-btn-song:focus .load-song-small2-icon {
+  display: none;
+}
+.play-btn-song:focus .load-song-small-icon {
+  font-size: 1.2rem;
+  color: #dcdcdc;
+  display: block;
+  animation: loading 3s linear infinite;
+}
+.play-btn-song.active {
+  border-radius: 0.5rem;
+  background-color: 0.1rem solid #26acac;
 }
 
 .song-title {
   font-weight: 600;
   font-size: 1rem;
 }
+
 .artist-name {
   font-weight: 400;
   font-size: 0.8rem;
-  color: $grey-600;
+  color: #8d8c8c;
 }
 
-// only right side song
-
-//! add display itp zeby było columnowo te odliczanie
 .song-duration {
   font-size: 0.8rem;
 }
 
 .anchor-dots {
-  color: $ming-blue-600;
+  color: #367983;
   font-size: 1.4rem;
   transition: 0.3s ease-in;
   z-index: 1;
   cursor: pointer;
-  &:hover {
-    transform: scale(1.1) rotate(1turn);
-    color: $eastern-blue-500;
-  }
+}
+.anchor-dots:hover {
+  transform: scale(1.1) rotate(1turn);
+  color: #26acac;
 }
 
 .hidden-dots {
-  color: $ming-blue-600;
+  color: #367983;
   font-size: 1.4rem;
   transition: 0.3s ease-in;
   z-index: 1;
   padding-left: 0.2rem;
   cursor: pointer;
   transform: scale(1.1);
-  &:hover {
-    transform: scale(1.1);
-    color: $eastern-blue-500;
-  }
+}
+.hidden-dots:hover {
+  transform: scale(1.1);
+  color: #26acac;
 }
 
 .r_side {
@@ -661,6 +615,7 @@ html {
   width: 20%;
   gap: 0.5rem;
 }
+
 .visible-info {
   display: flex;
   justify-content: center;
@@ -672,30 +627,27 @@ html {
 
 .hidden-info {
   display: none;
-  //moze to ponizej usunac
   justify-content: center;
   align-items: center;
 }
-//heart click in song info
 
 /* .heart-in-song */
 .heart-btn-in-song {
   display: inline-block;
   font-size: 1.3rem;
   cursor: pointer;
-  color: $grey-600;
+  color: #8d8c8c;
   transition: 0.2s ease-in-out;
   z-index: 1;
-  &:active {
-    animation: heart-click 0.2s ease-in-out;
-    color: $red-500;
-  }
-  &.is-red {
-    color: $red-700;
-  }
+}
+.heart-btn-in-song:active {
+  animation: heart-click 0.2s ease-in-out;
+  color: #cd3737;
+}
+.heart-btn-in-song.is-red {
+  color: #b61a1a;
 }
 
-// btn for icons in song in right side
 .btn-3-dots-visible,
 .btn-3-dots-hidden,
 .heart-btn-in-song {
@@ -706,14 +658,13 @@ html {
   z-index: 1;
 }
 
-//section 4 other albums might you like
-
 .section4 {
   display: flex;
   flex-direction: column;
   padding: 0 1rem 4rem 1rem;
   gap: 0.5rem;
 }
+
 #h5-section4 {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -722,7 +673,7 @@ html {
 }
 
 .name-tag {
-  color: $eastern-blue-500;
+  color: #26acac;
 }
 
 .albums-chooser {
@@ -735,9 +686,9 @@ html {
   height: auto;
   min-height: 20rem;
   gap: 2rem;
+  z-index: 1;
 }
 
-//only album
 .album-cover {
   width: 14rem;
   height: auto;
@@ -756,11 +707,11 @@ html {
   min-height: 21rem;
   transition: 0.1s ease-in-out;
   cursor: pointer;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
+.album:hover {
+  transform: scale(1.1);
+}
+
 .song-title-small {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -788,65 +739,47 @@ html {
 }
 
 .dots-separator-album {
-  color: $eastern-blue-500;
+  color: #26acac;
   font-size: 1.7rem;
 }
-// a - for mini albums
+
 .album-a-next-page {
   text-decoration: none;
-  color: $white;
+  color: #f2f2f2;
 }
-// hover for album covers and dots separators
-.album {
-  .album-cover {
-    transition: box-shadow 0.3s ease;
-  }
 
-  //1 album flashback deluxe
-  &:hover #album-cover-flashback-deluxe {
-    box-shadow: 0 0 8px $shadow-flashback-deluxe;
-  }
-  &:hover #dots-separator-album-1 {
-    transition-delay: 300ms;
-    color: $color-flashback-deluxe;
-  }
-
-  // 2 album arena of autumnn
-  &:hover #album-cover-arena-of-autumnn {
-    box-shadow: 0 0 8px $shadow-arena-of-autumnn;
-  }
-  &:hover #dots-separator-album-2 {
-    transition-delay: 300ms;
-    color: $color-arena-of-autumnn;
-  }
-
-  // 3 album galaktkitty
-  &:hover #album-cover-galaktkitty {
-    box-shadow: 0 0 8px $shadow-galaktkitty;
-  }
-  &:hover #dots-separator-album-3 {
-    transition-delay: 300ms;
-    color: $color-galaktkitty;
-  }
-  // 4 album wave
-  &:hover #album-cover-wave {
-    box-shadow: 0 0 8px $shadow-wave;
-  }
-  &:hover #dots-separator-album-5 {
-    transition-delay: 300ms;
-    color: $color-wave;
-  }
-
-  //5 album king of
-  &:hover #album-cover-king-of {
-    box-shadow: 0 0 8px $shadow-king-of-for-and-muds;
-  }
-  &:hover #dots-separator-album-4 {
-    transition-delay: 300ms;
-    color: $color-king-of-for-and-muds;
-  }
+.album .album-cover {
+  transition: box-shadow 0.3s ease;
 }
-//btn
+.album:hover #album-cover-flashback-deluxe {
+  box-shadow: 0 0 8px rgba(210, 146, 164, 0.5);
+}
+.album:hover #dots-separator-album-1 {
+  transition-delay: 300ms;
+  color: rgb(210, 146, 164);
+}
+.album:hover #album-cover-arena-of-autumnn {
+  box-shadow: 0 0 8px rgba(185, 169, 71, 0.5);
+}
+.album:hover #dots-separator-album-2 {
+  transition-delay: 300ms;
+  color: rgb(185, 169, 71);
+}
+.album:hover #album-cover-galaktkitty {
+  box-shadow: 0 0 8px rgba(50, 23, 78, 0.5);
+}
+.album:hover #dots-separator-album-3 {
+  transition-delay: 300ms;
+  color: rgb(175, 160, 212);
+}
+.album:hover #album-cover-king-of {
+  box-shadow: 0 0 8px rgba(181, 133, 94, 0.5);
+}
+.album:hover #dots-separator-album-4 {
+  transition-delay: 300ms;
+  color: rgb(181, 133, 94);
+}
+
 .btn-view-div {
   display: flex;
   justify-content: center;
@@ -854,39 +787,37 @@ html {
   width: 100%;
   background-color: transparent;
 }
+
 .btn-view-collection {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: $black-900;
+  color: #120f10;
   padding: 0.5rem 1rem;
-  background-color: $white;
+  background-color: #f2f2f2;
   width: 14rem;
   height: 10%;
   margin-top: 2rem;
   font-size: 1rem;
   font-weight: 700;
   transition: 0.1s ease-in-out;
-
-  &:hover,
-  :focus,
-  :active {
-      transform: scale(1.1);
-      background-color: $grey-500;
-  }
 }
-// footer
-
-//top footer
+.btn-view-collection:hover,
+.btn-view-collection :focus,
+.btn-view-collection :active {
+  transform: scale(1.1);
+  background-color: #dcdcdc;
+}
 
 .hr-line-footer {
   width: 100%;
   border: none;
-  background-color: $grey-600;
+  background-color: #8d8c8c;
   height: 0.05rem;
   opacity: 0.1;
 }
+
 footer {
   display: flex;
   justify-content: flex-start;
@@ -897,6 +828,7 @@ footer {
   height: auto;
   padding: 0rem 1rem;
 }
+
 .footer-top {
   display: flex;
   flex-direction: column;
@@ -906,6 +838,7 @@ footer {
   width: 100%;
   padding: 2rem 1rem;
 }
+
 .footer-a-1,
 .footer-a-2 {
   display: flex;
@@ -914,19 +847,19 @@ footer {
 }
 
 .nav-a-footer {
-  color: $amulet-green-400;
+  color: #85ab7b;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 1.4rem;
   text-decoration: none;
   transition: 0.1s ease-in-out;
   padding: 0.5rem;
-  &:hover {
-    transform: scale(1.05);
-    color: $grey-600;
-  }
 }
-//footer form -newsletter
+.nav-a-footer:hover {
+  transform: scale(1.05);
+  color: #8d8c8c;
+}
+
 .description-and-email-input {
   display: flex;
   flex-direction: column;
@@ -938,12 +871,14 @@ footer {
   width: 100%;
   height: auto;
 }
+
 .email-input-description {
   padding: 2rem 0 1rem 0;
   font-size: 1.2rem;
   font-weight: 400;
-  color: $grey-600;
+  color: #8d8c8c;
 }
+
 .input-wth-btn {
   display: flex;
   justify-content: space-between;
@@ -951,7 +886,7 @@ footer {
   flex-direction: row;
   width: 100%;
   height: auto;
-  border-bottom: 0.1rem solid $white;
+  border-bottom: 0.1rem solid #f2f2f2;
 }
 
 .input-email {
@@ -960,14 +895,15 @@ footer {
   line-height: 2rem;
   font-size: 1.4rem;
   background-color: transparent;
-  color: $white;
+  color: #f2f2f2;
   border: none;
   margin-right: 0;
   padding: 1rem 0;
-  &:focus {
-    outline: none;
-  }
 }
+.input-email:focus {
+  outline: none;
+}
+
 .send-btn {
   width: 20%;
   display: flex;
@@ -976,7 +912,7 @@ footer {
   border-radius: 50%;
   border: 0.1rem solid;
   background-color: transparent;
-  color: $eastern-blue-500;
+  color: #26acac;
   padding: 0;
   margin-left: 0;
   width: auto;
@@ -986,17 +922,15 @@ footer {
   padding: 0.5rem;
   z-index: 1;
   cursor: pointer;
-  &:hover {
-    transform: scale(1.1);
-    color: $grey-500;
-  }
-  &:focus {
-    transform: scale(1.1);
-    color: $amulet-green-400;
-  }
 }
-
-//bottom footer
+.send-btn:hover {
+  transform: scale(1.1);
+  color: #dcdcdc;
+}
+.send-btn:focus {
+  transform: scale(1.1);
+  color: #85ab7b;
+}
 
 .footer-bottom {
   display: flex;
@@ -1032,21 +966,29 @@ footer {
 #bottom-footer-social-8,
 #bottom-footer-social-9 {
   font-size: 1.4rem;
-  color: $grey-500;
+  color: #dcdcdc;
   cursor: pointer;
-
-  &:hover {
-    transition: 0.1s ease-in-out;
-    transform: scale(1.2);
-    color: $amulet-green-400;
-  }
 }
+#bottom-footer-social-1:hover,
+#bottom-footer-social-2:hover,
+#bottom-footer-social-3:hover,
+#bottom-footer-social-4:hover,
+#bottom-footer-social-5:hover,
+#bottom-footer-social-6:hover,
+#bottom-footer-social-7:hover,
+#bottom-footer-social-8:hover,
+#bottom-footer-social-9:hover {
+  transition: 0.1s ease-in-out;
+  transform: scale(1.2);
+  color: #85ab7b;
+}
+
 .time-and-rights {
   font-size: 1rem;
-  color: $grey-500;
+  color: #dcdcdc;
   font-size: 600;
 }
-//about me
+
 .about-me {
   display: flex;
   justify-content: flex-start;
@@ -1056,34 +998,37 @@ footer {
   height: auto;
   padding-top: 2rem;
 }
+
 #description-about-me {
   font-size: 1rem;
   width: 80%;
   padding-bottom: 1rem;
 }
+
 #anchor-description-about-me {
   text-decoration: none;
-  color: $grey-500;
+  color: #dcdcdc;
   font-weight: 800;
   transition: 0.1s ease-in-out;
-  &:hover {
-    color: $eastern-blue-500;
-  }
+}
+#anchor-description-about-me:hover {
+  color: #26acac;
 }
 
 #my-name-is {
   font-size: 1.5rem;
   padding: 0.5rem 0;
 }
+
 .my-social {
   font-size: 3rem;
-  color: $ming-blue-600;
+  color: #367983;
   transition: 0.1s ease-in-out;
-  &:hover {
-    color: $amulet-green-400;
-  }
 }
-// animations
+.my-social:hover {
+  color: #85ab7b;
+}
+
 @keyframes loading {
   0% {
     transform: rotate(0deg);
@@ -1095,7 +1040,6 @@ footer {
     transform: rotate(360deg);
   }
 }
-// Animation for heart hover focus in song
 @keyframes heart-hover-focus {
   0% {
     transform: scale(1);
@@ -1107,8 +1051,6 @@ footer {
     transform: scale(1);
   }
 }
-
-// Animation for heart click in song
 @keyframes heart-click {
   0% {
     transform: scale(1);
@@ -1120,14 +1062,10 @@ footer {
     transform: scale(1);
   }
 }
-
-//media queries for 375px screens
-
 @media (min-width: 375px) {
   .quantity-of-songs-and-time {
     font-size: 0.7rem;
   }
-  //album section
   .album-name {
     font-size: 1.8rem;
   }
@@ -1135,9 +1073,6 @@ footer {
     font-size: 1.3rem;
   }
 }
-
-//media queries for 425px screens
-
 @media (min-width: 425px) {
   #background-album-cover {
     height: 45rem;
@@ -1145,22 +1080,18 @@ footer {
   .top-content {
     padding: 0 2rem;
   }
-  //toggle menu
   .all-inside {
     padding: 2rem;
   }
   .toggle_menu-a {
     font-size: 1.4rem;
   }
-
-  //section 1
   .section1 {
     padding: 4rem 2rem 0 2rem;
   }
   .album-description {
     font-size: 0.9rem;
   }
-  // section 2
   .section2 {
     padding: 2rem;
   }
@@ -1171,7 +1102,6 @@ footer {
   #box-5 {
     font-size: 1.8rem;
   }
-  //section 3 tracklist
   .section3 {
     padding: 2rem;
   }
@@ -1188,10 +1118,9 @@ footer {
   .play-btn-song {
     width: 3rem;
     height: 3rem;
-
-    .play-song-icon {
-      font-size: 1.6rem;
-    }
+  }
+  .play-btn-song .play-song-icon {
+    font-size: 1.6rem;
   }
   .quantity-of-songs-and-time {
     font-size: 0.8rem;
@@ -1202,12 +1131,11 @@ footer {
   .artist-name {
     font-size: 1rem;
   }
-  //! test czy ten display pomaga a chyba nie
   .song-duration {
     /*   display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
     font-size: 1rem;
   }
   .anchor-dots {
@@ -1217,19 +1145,15 @@ footer {
   .heart-btn-in-song {
     font-size: 1.6rem;
   }
-  //section 4 other albums might you like
   .section4 {
     padding: 0 2rem 4rem 2rem;
   }
-  //top footer
   footer {
     padding: 0rem 2rem;
   }
   .nav-a-footer {
     font-size: 1.6rem;
   }
-  //footer boottom
-
   #bottom-footer-social-1,
   #bottom-footer-social-2,
   #bottom-footer-social-3,
@@ -1244,31 +1168,26 @@ footer {
   .time-and-rights {
     font-size: 1.2rem;
   }
-  //about me
   #description-about-me {
     font-size: 1.2rem;
     width: 80%;
     padding-bottom: 1.5rem;
   }
 }
-// media q for 768px screens
-
 @media (min-width: 768px) {
   #background-album-cover {
     transform: translateY(-16rem);
     height: auto;
+    max-height: 75rem;
   }
-
   #main-album-cover {
     width: 100%;
     max-width: 28rem;
   }
-  //toggle menu
   .toggle-menu {
     width: 60%;
     right: 0;
   }
-  //section1
   .section1 {
     display: flex;
     flex-direction: row;
@@ -1291,20 +1210,17 @@ footer {
   .album-artist-name {
     font-size: 1.4rem;
   }
-  //section 2
   .section2 {
-    background-color: $black-900;
+    background-color: #120f10;
     margin-top: 4rem;
   }
   #h3-section2 {
     font-size: 1.6rem;
   }
-  //section 3
   .section3 {
     padding: 2rem;
-    background-color: $black-900;
+    background-color: #120f10;
   }
-
   #h4-section3 {
     font-size: 1.6rem;
   }
@@ -1321,8 +1237,6 @@ footer {
   .bxs-circle {
     font-size: 0.8rem;
   }
-
-  //section 4
   #h5-section4 {
     font-size: 1.6rem;
   }
@@ -1330,17 +1244,12 @@ footer {
     padding: 2rem 2rem 4rem 2rem;
   }
 }
-
-//media q for 1024px
-
 @media (min-width: 1024px) {
-  //nav top
-  // hide mobile menu and nav for desktop row - 1024+
   .top-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $shadow-black-transparent;
+    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(0.5rem);
     width: 100%;
     height: 3.5rem;
@@ -1348,7 +1257,6 @@ footer {
     position: fixed;
     z-index: 2;
   }
-
   #logo {
     display: block;
     width: 1.75rem;
@@ -1365,20 +1273,18 @@ footer {
     transition: ease-in-out 0.2s;
     cursor: pointer;
     border-radius: 50%;
-    &:hover {
-      color: $grey-500;
-      background-color: $black-600;
-      border-radius: 50%;
-    }
-    &.rotate {
-      transform: rotate(180deg);
-    }
   }
-
+  #chevron-to-show-social-menu:hover {
+    color: #dcdcdc;
+    background-color: #120f10;
+    border-radius: 50%;
+  }
+  #chevron-to-show-social-menu.rotate {
+    transform: rotate(180deg);
+  }
   #dropdown-menu-icon {
     display: none;
   }
-
   .nav-desktop {
     display: block;
     width: 80%;
@@ -1395,28 +1301,21 @@ footer {
     font-weight: 800;
     margin: 0;
   }
-
   .nav-a-desktop-menu {
     text-decoration: none;
-    color: $grey-500;
+    color: #dcdcdc;
     transition: 0.1s ease-in-out;
-    &:hover {
-      transform: scale(1.05);
-      color: $grey-600;
-    }
   }
-
-  //toggle menu
+  .nav-a-desktop-menu:hover {
+    transform: scale(1.05);
+    color: #8d8c8c;
+  }
   .toggle-menu {
     display: none;
   }
-
-  //hide this nav for small screens - social
-  // social icons are hidden
   .toggle-column-right {
     display: none;
   }
-
   .top-nav-desktop {
     display: flex;
     justify-content: flex-end;
@@ -1431,15 +1330,13 @@ footer {
   .top-nav-desktop-hidden {
     display: none;
   }
-
   .nav-a-social {
-    display: block; //test
+    display: block;
     text-decoration: none;
-    color: $white;
+    color: #f2f2f2;
     margin: 0.2rem 0;
     cursor: pointer;
   }
-
   #nav-a-1,
   #nav-a-2,
   #nav-a-3,
@@ -1451,24 +1348,29 @@ footer {
   #nav-a-9 {
     font-size: 1.75rem;
     transition: 0.1s ease-in-out;
-    &:hover {
-      transform: scale(1.2);
-      color: $grey-500;
-    }
   }
-
-  //section1
-  #fig-album-released {
-    padding: 1rem 0 0.5rem 0;
-    font-size: 0.9rem;
+  #nav-a-1:hover,
+  #nav-a-2:hover,
+  #nav-a-3:hover,
+  #nav-a-4:hover,
+  #nav-a-5:hover,
+  #nav-a-6:hover,
+  #nav-a-7:hover,
+  #nav-a-8:hover,
+  #nav-a-9:hover {
+    transform: scale(1.2);
+    color: #dcdcdc;
   }
   .section1 {
     gap: 3rem;
     padding: 4rem 4rem 0 4rem;
   }
+  #fig-album-released {
+    font-size: 0.9rem;
+    padding: 1rem 0 0.5rem 0;
+  }
   .album-name {
     font-size: 2.2rem;
-    z-index: 2;
   }
   .album-artist-name {
     font-size: 1.8rem;
@@ -1479,8 +1381,6 @@ footer {
   .album-description {
     width: 90%;
   }
-
-  //section 2
   .section2 {
     padding: 4rem 4rem 0 4rem;
   }
@@ -1490,11 +1390,9 @@ footer {
   .choose-player {
     width: 80%;
   }
-  //section 3
   .section3 {
     padding: 4rem 4rem 0 4rem;
   }
-
   .play-btn {
     min-width: 4rem;
     min-height: 4rem;
@@ -1505,24 +1403,17 @@ footer {
   .list-time-songs {
     padding: 2rem;
   }
-  // hover for heart in div song
   /*  .heart-in-song */
-  .heart-btn-in-song {
-    &:hover {
-      animation: heart-hover-focus 0.3s ease-in-out;
-      color: $red-500;
-    }
+  .heart-btn-in-song:hover {
+    animation: heart-hover-focus 0.3s ease-in-out;
+    color: #cd3737;
   }
-  //section 4
-
   .section4 {
     padding: 4rem 4rem;
   }
   #h5-section4 {
     font-size: 2rem;
   }
-  //footer'top
-
   .footer-top {
     display: flex;
     flex-direction: row;
@@ -1539,11 +1430,9 @@ footer {
     width: 40%;
     gap: 1rem;
   }
-
   .email-input-description {
     padding: 0;
   }
-  //footer bottom
   .footer-p-and-nav {
     padding-top: 2rem;
   }
@@ -1551,11 +1440,7 @@ footer {
     padding: 0 1rem;
   }
 }
-
-//media for 1440 screens
-
 @media (min-width: 1440px) {
-  //nav top
   #nav-a-1,
   #nav-a-2,
   #nav-a-3,
@@ -1567,7 +1452,6 @@ footer {
   #nav-a-9 {
     font-size: 2rem;
   }
-  //toggle menu
   .toggle-menu {
     width: 20%;
     transform: translateY(4rem);
@@ -1575,12 +1459,10 @@ footer {
   .toggle_menu-a {
     font-size: 1.6rem;
   }
-  //! desktop menu 1440
   .top-content {
     width: 100%;
     height: 4rem;
   }
-
   #logo,
   #chevron-to-show-social-menu {
     width: 2rem;
@@ -1591,8 +1473,6 @@ footer {
     gap: 2rem;
     font-size: 1.2rem;
   }
-
-  //section1
   .section1 {
     gap: 5rem;
     padding: 5rem 6rem 0 6rem;
@@ -1616,9 +1496,6 @@ footer {
   .album-description {
     width: 85%;
   }
-
-  //section2
-
   .section2 {
     padding: 6rem 6rem 0 6rem;
   }
@@ -1632,7 +1509,6 @@ footer {
   #box-5 {
     font-size: 2.5rem;
   }
-  //section3
   .section3 {
     padding: 6rem 6rem 0 6rem;
   }
@@ -1666,8 +1542,6 @@ footer {
   .play-song-icon {
     font-size: 1.8rem;
   }
-
-  //section4
   .section4 {
     padding: 6rem 6rem;
   }
@@ -1687,8 +1561,6 @@ footer {
   .dots-separator-album {
     font-size: 1.8rem;
   }
-  //footer'top
-
   .footer-top {
     display: flex;
     flex-direction: row;
@@ -1700,11 +1572,9 @@ footer {
   .description-and-email-input {
     gap: 2rem;
   }
-
   .email-input-description {
     padding: 0;
   }
-  //footer bottom
   .footer-p-and-nav {
     padding-top: 4rem;
     display: flex;
@@ -1730,7 +1600,6 @@ footer {
   .time-and-rights {
     font-size: 1.2rem;
   }
-  //about me
   .about-me {
     display: flex;
     justify-content: flex-start;
@@ -1763,7 +1632,7 @@ footer {
   }
   .my-social {
     font-size: 3.2rem;
-    color: $ming-blue-600;
+    color: #367983;
     transition: 0.1s ease-in-out;
   }
-}
+}/*# sourceMappingURL=ziplock.css.map */
