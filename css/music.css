@@ -1095,7 +1095,10 @@ html {
   font-weight: 500;
 }
 
-.p-dont-miss {
+#shop-cta-p {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  font-weight: 700;
   margin-top: 0.5rem;
 }
 
@@ -1615,6 +1618,10 @@ footer {
     line-height: 2.2rem;
     max-width: 36rem;
   }
+  #shop-cta-p {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+  }
   .div-dream-chasers {
     padding: 2rem 0;
     margin: 0 0 1.5rem 0;
@@ -1859,6 +1866,10 @@ footer {
     font-size: 1.3rem;
     line-height: 2.6rem;
     max-width: 44rem;
+  }
+  #shop-cta-p {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
   }
   .div-dream-chasers {
     padding: 2.5rem 0;
@@ -2194,6 +2205,10 @@ footer {
     font-size: 1.4rem;
     line-height: 2.8rem;
     max-width: 46rem;
+  }
+  #shop-cta-p {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
   }
   .div-dream-chasers {
     display: flex;
