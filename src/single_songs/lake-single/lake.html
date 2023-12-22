@@ -33,7 +33,12 @@
         alt="flashback_from_2001-background"
       />
       <div class="top-content">
-        <img id="logo" src="/src/img/logo.png" alt="Company-logo" tabindex="0"/>
+        <img
+          id="logo"
+          src="/src/img/logo.png"
+          alt="Company-logo"
+          tabindex="0"
+        />
         <!-- desktop nav - row for 1024px+ -->
         <div class="nav-desktop">
           <nav class="desktop_menu-a">
@@ -65,7 +70,11 @@
           </nav>
         </div>
         <i tabindex="0" class="bx bx-menu-alt-left" id="dropdown-menu-icon"></i>
-        <i tabindex="0" class="bx bx-chevron-down" id="chevron-to-show-social-menu"></i>
+        <i
+          tabindex="0"
+          class="bx bx-chevron-down"
+          id="chevron-to-show-social-menu"
+        ></i>
       </div>
     </div>
 
@@ -627,15 +636,18 @@
             Stay current with our latest news
           </p>
           <!-- footer form - newsletter -->
-  <form class="newsletterForm" method="post" name="newsletter-form">
+          <form class="newsletterForm" method="post" name="newsletter-form">
     <div class="input-wth-btn">
+      <label for="user_email"></label>
       <input
+      id="user_email"
         class="input-email"
         type="email"
         name="user_email"
         required
         placeholder="Email"
       />
+    
       <button
         class="send-btn"
         type="submit"
