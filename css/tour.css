@@ -415,7 +415,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: auto;
-  /* margin-bottom: 1rem; */
+  gap: 0.5rem;
 }
 .section-2-card:hover {
   border-bottom: 0.1rem solid #3e3c3c;
