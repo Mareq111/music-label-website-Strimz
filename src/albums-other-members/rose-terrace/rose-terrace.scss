@@ -62,8 +62,18 @@ html {
   width: 100vw;
   height: 40rem;
   filter: blur(2rem);
-  opacity: 0.4;
   z-index: -2;
+  & img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(2rem);
+    opacity: 0.5;
+    object-fit: cover;
+    //change from 0 to 2rem
+    top: 2rem;
+    left: 0;
+  }
 }
 //return link arrow
 
@@ -872,8 +882,8 @@ html {
   &:hover,
   :focus,
   :active {
-      transform: scale(1.1);
-      background-color: $grey-500;
+    transform: scale(1.1);
+    background-color: $grey-500;
   }
 }
 // footer
@@ -1139,9 +1149,6 @@ footer {
 //media queries for 425px screens
 
 @media (min-width: 425px) {
-  #background-album-cover {
-    height: 45rem;
-  }
   .top-content {
     padding: 0 2rem;
   }
@@ -1254,11 +1261,6 @@ footer {
 // media q for 768px screens
 
 @media (min-width: 768px) {
-  #background-album-cover {
-    transform: translateY(-16rem);
-    height: auto;
-  }
-
   #main-album-cover {
     width: 100%;
     max-width: 28rem;

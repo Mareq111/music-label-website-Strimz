@@ -28,11 +28,13 @@
   </head>
   <body>
     <div class="top">
-      <img
-        id="background-album-cover"
-        src="/src/img/background_compress/bck-deluxe_edition_flashback_from_2001.jpg"
-        alt="flashback-from-2001-deluxe-edition-album-cover"
-      />
+      <div id="background-album-cover">
+        <img
+          src="/src/img/background_compress/bck-deluxe_edition_flashback_from_2001.jpg"
+          alt="flashback-from-2001-deluxe-edition-album-cover"
+        />
+      </div>
+
       <div class="top-content">
         <img
           id="logo"
@@ -275,6 +277,7 @@
       ></a>
     </nav>
     <!-- section 1 with album and artist things -->
+
     <section class="section1">
       <div class="album-and-figcaption">
         <div class="fig-div">
@@ -325,7 +328,6 @@
               includes an exclusive selection of 7 unreleased tracks that you
               won't find anywhere else.
             </p>
-           
           </div>
         </details>
       </div>
@@ -1331,26 +1333,26 @@
           </p>
           <!-- footer form - newsletter -->
           <form class="newsletterForm" method="post" name="newsletter-form">
-    <div class="input-wth-btn">
-      <label for="user_email"></label>
-      <input
-      id="user_email"
-        class="input-email"
-        type="email"
-        name="user_email"
-        required
-        placeholder="Email"
-      />
-    
-      <button
-        class="send-btn"
-        type="submit"
-        aria-label="Subscribe Newsletter"
-      >
-        <i class="bx bxs-send"></i>
-      </button>
-    </div>
-  </form>
+            <div class="input-wth-btn">
+              <label for="user_email"></label>
+              <input
+                id="user_email"
+                class="input-email"
+                type="email"
+                name="user_email"
+                required
+                placeholder="Email"
+              />
+
+              <button
+                class="send-btn"
+                type="submit"
+                aria-label="Subscribe Newsletter"
+              >
+                <i class="bx bxs-send"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
       <!-- footer bottom -->
