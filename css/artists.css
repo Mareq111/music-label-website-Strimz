@@ -233,7 +233,7 @@ html {
   align-items: center;
   flex-direction: row;
   /*  width: 100%;
-  height: auto; */
+    height: auto; */
   gap: 0.5rem;
   line-height: 1.6rem;
 }
@@ -447,6 +447,51 @@ html {
 
 .p_section-for-artist-hidden {
   display: none;
+}
+
+.album-link-styling {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  color: #f2f2f2;
+  transition: color 500ms;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.album-link-styling:hover {
+  color: #85ab7b;
+}
+.album-link-styling:hover::after {
+  transform: scale(1);
+}
+
+.album-link-styling::before,
+.album-link-styling::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 2px;
+}
+
+.album-link-styling::before {
+  background-color: #85ab7b;
+}
+
+.album-link-styling::after {
+  background-color: #26acac;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 600ms;
+}
+
+.artist-cta {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  font-weight: 700;
 }
 
 .div-btn-cta {
@@ -852,8 +897,8 @@ footer {
   }
   .div-artist-img {
     /*  display: flex;
-    justify-content: center;
-    align-items: center; */
+        justify-content: center;
+        align-items: center; */
     margin: 2rem 0;
   }
   .artist-img {
@@ -862,10 +907,14 @@ footer {
   }
   .div-inner-img {
     /*  display: flex;
-    justify-content: center;
-    align-items: center; */
+        justify-content: center;
+        align-items: center; */
     margin: 0 2rem;
     max-width: 31rem;
+  }
+  .artist-cta {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
   }
   .div-btn-cta {
     margin-top: 3rem;
@@ -995,6 +1044,10 @@ footer {
     align-items: center;
     margin: 0 3rem;
     max-width: 31rem;
+  }
+  .artist-cta {
+    font-size: 1.5rem;
+    line-height: 3rem;
   }
   .div-btn-cta {
     margin-top: 4rem;
@@ -1196,8 +1249,8 @@ footer {
   .p_section-for-artist {
     display: none;
     /*  font-size: 1.4rem;
-    line-height: 2.8rem;
-    max-width: 46rem; */
+        line-height: 2.8rem;
+        max-width: 46rem; */
   }
   .p_section-for-artist-hidden {
     display: block;
@@ -1222,6 +1275,10 @@ footer {
     align-items: center;
     margin: 0 2rem;
     max-width: 24rem;
+  }
+  .artist-cta {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
   }
   .inner-div-btn-cta {
     display: flex;
