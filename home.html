@@ -11,6 +11,8 @@
     <!-- favicon  -->
     <link rel="icon" href="/src/img/logo16x16.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/home.css" />
+    <!-- stylesheet for scroll observer -->
+    <link rel="stylesheet" href="/css/scrollAnimation.css" />
 
     <!-- icons link -->
     <link
@@ -353,7 +355,7 @@
           class="album-a-next-page"
           href="/src/albums/deluxe-flashback/deluxe_flashback.html"
         >
-          <div class="album">
+          <div class="album album-hidden">
             <img
               loading="lazy"
               class="album-cover"
@@ -379,7 +381,7 @@
           class="album-a-next-page"
           href="/src/albums/arena-of-autumnn/arena_of_autumnn.html"
         >
-          <div class="album">
+          <div class="album album-hidden">
             <img
               loading="lazy"
               class="album-cover"
@@ -403,7 +405,7 @@
           class="album-a-next-page"
           href="/src/albums/galaktkitty/galaktkitty.html"
         >
-          <div class="album">
+          <div class="album album-hidden">
             <img
               loading="lazy"
               class="album-cover"
@@ -424,7 +426,7 @@
         </a>
         <!-- fourth album wave -->
         <a class="album-a-next-page" href="/src/albums/wave-album/wave.html">
-          <div class="album">
+          <div class="album album-hidden">
             <img
               loading="lazy"
               class="album-cover"
@@ -474,7 +476,7 @@
           class="album-a-next-page"
           href="/src/albums-other-members/lone-rider/lone-rider.html"
         >
-          <div class="album">
+          <div class="album album-hidden-others">
             <img
               loading="lazy"
               class="album-cover"
@@ -501,7 +503,7 @@
           class="album-a-next-page"
           href="/src/albums-other-members/lavender-labyrinth/lavender-labyrinth.html"
         >
-          <div class="album">
+          <div class="album album-hidden-others">
             <img
               loading="lazy"
               class="album-cover"
@@ -525,7 +527,7 @@
           class="album-a-next-page"
           href="/src/albums-other-members/pull-up/pull-up.html"
         >
-          <div class="album">
+          <div class="album album-hidden-others">
             <img
               loading="lazy"
               class="album-cover"
@@ -549,7 +551,7 @@
           class="album-a-next-page"
           href="/src/albums-other-members/into-to-different-dimension/intro-to-different-dimension.html"
         >
-          <div class="album">
+          <div class="album album-hidden-others">
             <img
               loading="lazy"
               class="album-cover"
@@ -1451,14 +1453,14 @@
             <div class="input-wth-btn">
               <label for="user_email"></label>
               <input
-              id="user_email"
+                id="user_email"
                 class="input-email"
                 type="email"
                 name="user_email"
                 required
                 placeholder="Email"
               />
-            
+
               <button
                 class="send-btn"
                 type="submit"
@@ -1601,5 +1603,10 @@
     </footer>
 
     <script src="/other-pages-script.js"></script>
+    <!-- defer to delay this script to run after html body -->
+    <script
+      src="/src/features/scroll-animation/scrollAnimation.js"
+      defer
+    ></script>
   </body>
 </html>

@@ -1,0 +1,45 @@
+
+/* albums el double m - homepage */
+.album-hidden {
+  opacity: 0;
+  filter: blur(0.3rem);
+  transform: translateX(-100%);
+  transition: 0.2s all;
+}
+
+.album-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+
+//album others musicians -homepage
+
+
+.album-hidden-others {
+  opacity: 0;
+  filter: blur(0.3rem);
+  transform: translateX(-100%);
+  transition: 0.2s all;
+}
+
+.album-show-others {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+
+
+//for users who have set reduced motion in browser
+@media (prefers-reduced-motion) {
+  .album-hidden,
+  .album-hidden-others,
+  .album-show
+  .album-show-others {
+    transition: none;
+  }
+}
