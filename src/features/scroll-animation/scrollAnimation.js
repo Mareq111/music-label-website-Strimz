@@ -27,3 +27,32 @@ const observerOthers = new IntersectionObserver((entries, observer) => {
 
 const hiddenElementsOthers = document.querySelectorAll(".album-hidden-others");
 hiddenElementsOthers.forEach((el) => observerOthers.observe(el));
+
+//! 2 .singles section
+// Single El double m
+const singleObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("single-show");
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+const hiddenElementsSingle = document.querySelectorAll(".single-hidden");
+hiddenElementsSingle.forEach((el) => singleObserver.observe(el));
+
+// Single others musicians
+const singleObserverOthers = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("single-show-others");
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+const hiddenElementsSingleOthers = document.querySelectorAll(
+  ".single-hidden-others"
+);
+hiddenElementsSingleOthers.forEach((el) => singleObserverOthers.observe(el));
