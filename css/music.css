@@ -391,7 +391,7 @@ html {
   width: 7.5rem;
   height: auto;
   min-height: 13rem;
-  transition: 0.1s ease-in-out;
+  transition: 0.1s linear;
   cursor: pointer;
 }
 .album:hover,

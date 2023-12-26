@@ -370,6 +370,9 @@ html {
   min-height: 20rem;
   gap: 1.5rem;
   z-index: 1;
+  /* &:hover {
+    transition: 0.1s linear;
+  } */
 }
 
 .album-cover,
@@ -390,6 +393,7 @@ html {
   width: 7.5rem;
   height: auto;
   min-height: 13rem;
+  transition: 0.1s linear;
   cursor: pointer;
 }
 .album:hover,
