@@ -57,12 +57,20 @@ html {
 #background-cover {
     position: absolute;
     width: 100vw;
-    height: auto;
-    filter: blur(0.2rem);
-    opacity: 0.2;
+    height: 40rem;
+    filter: blur(1rem);
     z-index: -2;
-    background-size: cover;
-}
+    & img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      filter: blur(1.5rem);
+      opacity: 0.8;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+    }
+  }
 //!for mobile menu and hide desktop menu
 
 .top-content {
@@ -590,10 +598,7 @@ footer {
     }
 
     //section 4
-    #background-cover {
-        transform: translateY(-2rem);
-        height: auto;
-    }
+  
     .section-greetings {
         padding: 14rem 2rem 4rem 2rem;
     }
@@ -743,13 +748,7 @@ footer {
     }
 
     //sectio1
-    #background-cover {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        padding: 0 2rem;
-        max-height: 70rem;
-    }
+   
     //section greetings
     .section-greetings {
         padding: 14rem 4rem 4rem 4rem;
@@ -849,9 +848,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    #background-cover {
-        max-height: 75rem;
-    }
+   
     //section greetings
 
     .div-info-greetings {
