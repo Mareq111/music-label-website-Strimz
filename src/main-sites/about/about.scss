@@ -16,6 +16,11 @@ $black-600: #120f10;
 $eastern-blue-500: #26acac;
 $amulet-green-400: #85ab7b;
 $ming-blue-600: #367983;
+//borders for artists image
+$border-el-double-m: rgba(101, 68, 49, 1);
+$border-jackie: rgba(138, 145, 179, 1);
+$border-elKaptn: rgba(247, 232, 141, 1);
+$border-mollyGranoli: rgba(228, 174, 236, 1);
 
 //mini- SINGLES shadows and more
 $shadow-a-horse: rgba(23, 59, 59, 0.5);
@@ -568,6 +573,114 @@ html {
   height: auto;
   margin-top: 1rem;
   /*  height: 30%; */
+}
+
+//! section 4
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+}
+.img-background-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#img-backgorund-overview {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 0% 100% 0% 100% / 54% 0% 100% 46%;
+}
+#img-artist-center-overview {
+  position: absolute;
+  border-radius: 46% 54% 0% 100% / 100% 0% 100% 54%;
+  width: 60%;
+  max-width: 28rem;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+  transform: translateY(20%);
+}
+
+//figcaption
+.unsplash-img-link {
+  text-decoration: none;
+  color: $grey-600;
+  font-size: 0.8rem;
+}
+#unsplash-img-margin {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  color: $grey-600;
+}
+/* content overview */
+.content-overview-div {
+  margin-top: 2rem;
+}
+.h-content-overview {
+  height: auto;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: $eastern-blue-500;
+  font-weight: 700;
+}
+.p-content-overview {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: $white;
+}
+//stats div
+.three-stats-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+.stats-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 33%;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid $ming-blue-600;
+}
+.quantity-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+.border-for-stats {
+  padding: 0.5rem;
+  border: 0.2rem solid $amulet-green-400;
+  border-radius: 40% 40% 20% 20%;
+
+}
+.p-description-stats {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $grey-500;
 }
 
 //section 5 upcoming album

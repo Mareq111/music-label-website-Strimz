@@ -44,12 +44,12 @@ logoClick?.addEventListener("click", () => {
   window.scroll({ top: 0, behavior: "smooth" });
 });
 //clicking by enter
- 
-logoClick.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    window.scroll({ top: 0, behavior: 'smooth'})
+
+logoClick.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    window.scroll({ top: 0, behavior: "smooth" });
   }
-})
+});
 
 //! 3 focused on album introduction
 
@@ -203,4 +203,4 @@ form.addEventListener("submit", (e) => {
   window.location.href = "/src/other/page-greetings/greetings.html";
 });
 
-//! 10 animated scrolls  cruselsss for shop -homepage
+//! 10 animated numbers for about page with quantity of stats
