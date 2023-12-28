@@ -580,7 +580,8 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 33%;
+  width: 100%;
+  height: auto;
   gap: 1.5rem;
   padding-bottom: 2rem;
   border-bottom: 0.2rem solid #367983;
@@ -626,145 +627,43 @@ html {
   padding: 0.5rem;
 }
 
-.section5 {
+.section-5 {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
   padding: 2rem 1rem;
-  background-color: #120f10;
 }
 
-.link-to-upcoming-album {
-  text-decoration: none;
-  color: #f2f2f2;
-  cursor: pointer;
-}
-
-.upcoming-album-title {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.upcoming-album-img-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1.5rem 0;
-}
-
-.upcoming-album-img {
+#img-backgorund-office {
   width: 100%;
   height: auto;
-  cursor: pointer;
-  border-radius: 1rem;
+  object-fit: cover;
+  z-index: -1;
+  /*   border-radius: 0% 100% 0% 100% / 54% 0% 100% 46%; */
+  border-radius: 100% 0% 100% 0%/0% 46% 54% 100%;
 }
 
-.inner-div-upcoming-album {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 1rem;
-  transition: 0.1s ease-in-out;
-  border-radius: 1rem;
-}
-.inner-div-upcoming-album:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 8px rgba(69, 25, 22, 0.5);
+.office-div,
+.join-div {
+  margin-top: 2rem;
 }
 
-.h-section5 {
-  font-size: 1.4rem;
-  line-height: 2.8rem;
-  text-transform: uppercase;
+.h-office-and-join {
+  height: auto;
   width: 100%;
-  font-weight: 800;
-  color: #f2f2f2;
-  width: auto;
-  transition: 0.2s ease-in-out;
-  margin-bottom: 0.5rem;
-}
-.h-section5:hover,
-.h-section5 :focus,
-.h-section5 :active {
-  color: #26acac;
-}
-
-.title-upcoming-album {
   font-size: 1.2rem;
-  font-weight: 500;
+  line-height: 2.4rem;
+  color: #26acac;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.name-tag-red {
-  color: #f14343;
-  font-weight: 800;
-}
-
-.div_for_p-section5 {
-  margin-top: 1.5rem;
-}
-
-.p_section5-mini-description {
-  font-size: 0.8rem;
-  color: #8d8c8c;
-}
-
-#tour-date-months {
-  margin-right: 0.5rem;
-}
-
-.p_section5 {
+.p-office-and-join {
   font-size: 1rem;
   line-height: 2rem;
-}
-
-.p_section5-hidden {
-  display: none;
-}
-
-.discover-album-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 2rem;
-  gap: 2rem;
-}
-
-.btn-discover-album {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: transparent;
-}
-
-.a-btn-discover-album {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  background-color: #3e3c3c;
+  font-weight: 400;
   color: #f2f2f2;
-  width: 14rem;
-  height: auto;
-  /*  margin: 1rem 0 */
-  font-size: 1rem;
-  font-weight: 700;
-  transition: 0.1s ease-in-out;
-}
-.a-btn-discover-album:hover,
-.a-btn-discover-album :focus,
-.a-btn-discover-album :active {
-  outline: none;
-  transform: scale(1.1);
-  background-color: #8d8c8c;
-  color: #120f10;
 }
 
 .hr-line-footer {
@@ -1059,55 +958,6 @@ footer {
     margin-bottom: 2.4rem;
     font-weight: 700;
   }
-  .section5 {
-    padding: 2rem;
-  }
-  .upcoming-album-title {
-    gap: 0.5rem;
-  }
-  .h-section5 {
-    font-size: 1.6rem;
-    line-height: 3.2rem;
-    margin-bottom: 1rem;
-  }
-  .title-upcoming-album {
-    font-size: 1.4rem;
-  }
-  .p_section5-mini-description {
-    font-size: 0.9rem;
-  }
-  .p_section5 {
-    font-size: 1.1rem;
-    line-height: 2.2rem;
-    max-width: 36rem;
-  }
-  .upcoming-album-img-div {
-    /*  display: flex;
-        justify-content: center;
-        align-items: center; */
-    margin: 2rem 0;
-  }
-  .upcoming-album-img {
-    width: 100%;
-    height: auto;
-  }
-  .inner-div-upcoming-album {
-    /*  display: flex;
-        justify-content: center;
-        align-items: center; */
-    margin: 0 2rem;
-    max-width: 31rem;
-  }
-  .discover-album-div {
-    margin-top: 3rem;
-    gap: 2rem;
-  }
-  .a-btn-discover-album {
-    width: 18rem;
-    height: auto;
-    /* margin: 1.5rem 0; */
-    font-size: 1.2rem;
-  }
   footer {
     padding: 0rem 2rem;
   }
@@ -1196,55 +1046,6 @@ footer {
     width: 100%;
     margin-bottom: 2.6rem;
     font-weight: 700;
-  }
-  .section5 {
-    padding: 3rem;
-  }
-  .upcoming-album-title {
-    gap: 0.7rem;
-  }
-  .h-section5 {
-    font-size: 1.8rem;
-    line-height: 3.6rem;
-    margin-bottom: 1rem;
-  }
-  .title-upcoming-album {
-    font-size: 1.6rem;
-  }
-  .p_section5-mini-description {
-    font-size: 1.1rem;
-  }
-  .p_section5 {
-    font-size: 1.3rem;
-    line-height: 2.6rem;
-    max-width: 44rem;
-  }
-  .upcoming-album-img-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0;
-  }
-  .upcoming-album-img {
-    width: 100%;
-    height: auto;
-  }
-  .inner-div-upcoming-album {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3rem;
-    max-width: 31rem;
-  }
-  .discover-album-div {
-    margin-top: 4rem;
-    gap: 3rem;
-  }
-  .a-btn-discover-album {
-    padding: 1rem;
-    width: 22rem;
-    height: auto;
-    font-size: 1.4rem;
   }
 }
 @media (min-width: 1024px) {
@@ -1419,72 +1220,6 @@ footer {
     margin-bottom: 2.8rem;
     font-weight: 700;
   }
-  .section5 {
-    padding: 4rem 4.5rem;
-  }
-  .upcoming-album-title {
-    gap: 0.9rem;
-  }
-  .h-section5 {
-    font-size: 2rem;
-    line-height: 4rem;
-    margin-bottom: 1.2rem;
-  }
-  .title-upcoming-album {
-    font-size: 1.6rem;
-  }
-  .p_section5-mini-description {
-    font-size: 1.2rem;
-  }
-  .p_section5 {
-    display: none;
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    max-width: 46rem;
-  }
-  .p_section5-hidden {
-    display: block;
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    /* max-width: 46rem; */
-    max-width: 50vw;
-  }
-  .upcoming-album-img-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem 0 0 0;
-  }
-  .upcoming-album-img {
-    width: 100%;
-    height: auto;
-  }
-  .inner-div-upcoming-album {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 2rem;
-    max-width: 31rem;
-  }
-  .btn-discover-album {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    padding-left: 2rem;
-  }
-  .discover-album-div {
-    margin-top: 3rem;
-    gap: 3rem;
-  }
-  .a-btn-discover-album {
-    padding: 1rem;
-    width: 22rem;
-    height: auto;
-    font-size: 1.4rem;
-  }
   .footer-top {
     display: flex;
     flex-direction: row;
@@ -1563,15 +1298,6 @@ footer {
     width: 100%;
     margin-bottom: 3.4rem;
     font-weight: 700;
-  }
-  .section5 {
-    padding: 4rem 8rem;
-  }
-  .upcoming-album-title {
-    gap: 1rem;
-  }
-  .p_section5 {
-    max-width: 54rem;
   }
   .footer-top {
     display: flex;
