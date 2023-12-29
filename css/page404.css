@@ -18,7 +18,7 @@ html {
 #background-cover {
   position: absolute;
   width: 100vw;
-  height: 40rem;
+  height: 20rem;
   filter: blur(0.5rem);
   z-index: -2;
 }
@@ -488,6 +488,9 @@ footer {
 
 } */
 @media (min-width: 425px) {
+  #background-cover {
+    height: 30rem;
+  }
   .top-content {
     padding: 0 2rem;
   }
@@ -550,6 +553,9 @@ footer {
   }
 }
 @media (min-width: 768px) {
+  #background-cover {
+    height: 40rem;
+  }
   .toggle-menu {
     width: 60%;
     right: 0;

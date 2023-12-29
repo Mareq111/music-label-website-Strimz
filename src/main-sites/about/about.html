@@ -508,132 +508,224 @@
       <h2 class="h-section">Our office & Join Us</h2>
       <!-- new -->
       <div class="office-and-join-div">
-      <figure>
-        <img
-          id="img-backgorund-office"
-          src="/src/img/others/our-office-join-us.jpg"
-          alt="background-music-mixer-panel"
-        />
-        <figcaption class="unsplash-img-link" id="unsplash-img-margin">
-          Photo by
-          <a
-            class="unsplash-img-link"
-            href="https://unsplash.com/@campaign_creators?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Campaign Creators</a
-          >
-          on
-          <a
-            class="unsplash-img-link"
-            href="https://unsplash.com/photos/people-sitting-near-table-with-laptop-computer-qCi_MzVODoU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Unsplash</a
-          >
-        </figcaption>
-      </figure>
-      <div class="office-div">
-        <h3 class="h-office-and-join">Our Office</h3>
-        <p class="p-office-and-join">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore nesciunt porro possimus libero ea at ad saepe maxime cumwq! </p>
-      </div>
-      <div class="join-div">
-        <h3 class="h-office-and-join">Connect with Us!</h3>
-        <p class="p-office-and-join">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore nesciunt porro possimus libero ea at ad saepe maxime cumsq! </p>
-      </div>
-      <div>
-
-        <!-- new -->
-        <form action="/src/other/page-greetings/greetings.html" method="get">
-          <fieldset>
-            <legend>Contact Information</legend>
-            <label for="name">Full name:</label><br />
-            <input type="text" id="name" name="name" required autocomplete="on">
-            <br/>
-            <label for="artist-alias">Artistic Alias:</label>
-            <br/>
-            <input type="text" id="artist-alias" name="artist-alias" autocomplete="on">
-            <br/>
-            <label for="email">Email:</label><br/>
-            <input type="email" id="email" name="email" autocomplete="on" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-            <br/>
+        <figure>
+          <img
+            id="img-backgorund-office"
+            src="/src/img/others/our-office-join-us.jpg"
+            alt="background-music-mixer-panel"
+          />
+          <figcaption class="unsplash-img-link" id="unsplash-img-margin">
+            Photo by
+            <a
+              class="unsplash-img-link"
+              href="https://unsplash.com/@campaign_creators?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Campaign Creators</a
+            >
+            on
+            <a
+              class="unsplash-img-link"
+              href="https://unsplash.com/photos/people-sitting-near-table-with-laptop-computer-qCi_MzVODoU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+          </figcaption>
+        </figure>
+        <div class="office-div">
+          <h3 class="h-office-and-join">Our Office</h3>
+          <p class="p-office-and-join">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            tempore nesciunt porro possimus libero ea at ad saepe maxime cumwq!
+          </p>
+        </div>
+        <div class="join-div">
+          <h3 class="h-office-and-join">Connect with Us!</h3>
+          <p class="p-office-and-join">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            tempore nesciunt porro possimus libero ea at ad saepe maxime cumsq!
+          </p>
+        </div>
+        <div>
+          <!-- new -->
+          <form action="/src/other/page-greetings/greetings.html" method="get">
             <fieldset>
-              <legend>Preferred Music Genres</legend>
-              <!-- Checkboxy dla gatunków muzycznych -->
-              <label for="genre-rock">
-                <input type="checkbox" id="genre-rock" name="genre" value="Rock">
-                Rock
-              </label><br />
-              
-              <label for="genre-pop">
-                <input type="checkbox" id="genre-pop" name="genre" value="Pop">
-                Pop
-              </label><br />
-          
-              <label for="genre-hiphop">
-                <input type="checkbox" id="genre-hiphop" name="genre" value="HipHop">
-                Hip Hop
-              </label><br />
-              
-              <label for="genre-metal">
-                <input type="checkbox" id="genre-metal" name="genre" value="Metal">
-                Metal
-              </label><br />
-              
-              <label for="genre-wave">
-                <input type="checkbox" id="genre-wave" name="genre" value="Wave">
-                Wave
-              </label><br />
-              
-              <label for="genre-indie">
-                <input type="checkbox" id="genre-indie" name="genre" value="Indie">
-                Indie
-              </label><br />
-              
-              <label for="genre-disco">
-                <input type="checkbox" id="genre-disco" name="genre" value="Disco">
-                Disco
-              </label><br />
-              
-              <label for="genre-country">
-                <input type="checkbox" id="genre-country" name="genre" value="Country">
-                Country
-              </label><br />
-              
-              <label for="genre-dance">
-                <input type="checkbox" id="genre-dance" name="genre" value="Dance">
-                Dance
-              </label><br />
-              
-              <label for="genre-electronic">
-                <input type="checkbox" id="genre-electronic" name="genre" value="Electronic">
-                Electronic
-              </label><br />
-              
-              <label for="genre-reggae">
-                <input type="checkbox" id="genre-reggae" name="genre" value="Reggae">
-                Reggae
-              </label><br />
-              <label for="genre-abstract">
-                <input type="checkbox" id="genre-abstract" name="genre" value="Abstract">
-                Abstract
-              </label><br />
-              <!-- ... -->
-              <label for="genre-custom">
-                Custom Genre:
-                <input type="text" id="genre-custom" name="genre-custom">
-              </label><br />
+              <legend>Contact Information</legend>
+              <label for="name">Full name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="on"
+              />
+              <br />
+              <label for="artist-alias">Artistic Alias:</label>
+              <br />
+              <input
+                type="text"
+                id="artist-alias"
+                name="artist-alias"
+                autocomplete="on"
+              />
+              <br />
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="on"
+                required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              />
+              <br />
+              <fieldset>
+                <legend>Preferred Music Genres</legend>
+                <!-- Checkboxy dla gatunków muzycznych -->
+                <label for="genre-rock">
+                  <input
+                    type="checkbox"
+                    id="genre-rock"
+                    name="genre"
+                    value="Rock"
+                  />
+                  Rock </label
+                ><br />
+
+                <label for="genre-pop">
+                  <input
+                    type="checkbox"
+                    id="genre-pop"
+                    name="genre"
+                    value="Pop"
+                  />
+                  Pop </label
+                ><br />
+
+                <label for="genre-hiphop">
+                  <input
+                    type="checkbox"
+                    id="genre-hiphop"
+                    name="genre"
+                    value="HipHop"
+                  />
+                  Hip Hop </label
+                ><br />
+
+                <label for="genre-metal">
+                  <input
+                    type="checkbox"
+                    id="genre-metal"
+                    name="genre"
+                    value="Metal"
+                  />
+                  Metal </label
+                ><br />
+
+                <label for="genre-wave">
+                  <input
+                    type="checkbox"
+                    id="genre-wave"
+                    name="genre"
+                    value="Wave"
+                  />
+                  Wave </label
+                ><br />
+
+                <label for="genre-indie">
+                  <input
+                    type="checkbox"
+                    id="genre-indie"
+                    name="genre"
+                    value="Indie"
+                  />
+                  Indie </label
+                ><br />
+
+                <label for="genre-disco">
+                  <input
+                    type="checkbox"
+                    id="genre-disco"
+                    name="genre"
+                    value="Disco"
+                  />
+                  Disco </label
+                ><br />
+
+                <label for="genre-country">
+                  <input
+                    type="checkbox"
+                    id="genre-country"
+                    name="genre"
+                    value="Country"
+                  />
+                  Country </label
+                ><br />
+
+                <label for="genre-dance">
+                  <input
+                    type="checkbox"
+                    id="genre-dance"
+                    name="genre"
+                    value="Dance"
+                  />
+                  Dance </label
+                ><br />
+
+                <label for="genre-electronic">
+                  <input
+                    type="checkbox"
+                    id="genre-electronic"
+                    name="genre"
+                    value="Electronic"
+                  />
+                  Electronic </label
+                ><br />
+
+                <label for="genre-reggae">
+                  <input
+                    type="checkbox"
+                    id="genre-reggae"
+                    name="genre"
+                    value="Reggae"
+                  />
+                  Reggae </label
+                ><br />
+                <label for="genre-abstract">
+                  <input
+                    type="checkbox"
+                    id="genre-abstract"
+                    name="genre"
+                    value="Abstract"
+                  />
+                  Abstract </label
+                ><br />
+                <!-- ... -->
+                <label for="genre-custom">
+                  Custom Genre:
+                  <input
+                    type="text"
+                    id="genre-custom"
+                    name="genre-custom"
+                  /> </label
+                ><br />
+              </fieldset>
+              <!-- demo -->
+              <label for="demo">Add your demo/portfolio:</label>
+              <input
+                type="file"
+                id="demo"
+                name="demo"
+                accept=".pdf, .doc, .docx, .mp3, .wav"
+                multiple
+              />
+              <br />
+              <label for="reset"></label>
+              <input type="reset" />
+
+              <label for="Submit"></label>
+              <input type="submit" />
             </fieldset>
-            <!-- demo -->
-            <label for="demo">Add your demo/portfolio:</label>
-<input type="file" id="demo" name="demo" accept=".pdf, .doc, .docx, .mp3, .wav" multiple>
-<br/>
-            <label for="reset"></label>
-            <input type="reset">
-       
-            <label for="Submit"></label>
-            <input type="submit">
-          </fieldset>
-        </form>
-        
+          </form>
+        </div>
       </div>
-    </div>
     </section>
     <!-- footer -->
     <footer>
@@ -823,5 +915,6 @@
     </footer>
 
     <script src="/other-pages-script.js"></script>
+    <script src="/src/features/animated-numbers.js/animated-numbers.js"></script>
   </body>
 </html>

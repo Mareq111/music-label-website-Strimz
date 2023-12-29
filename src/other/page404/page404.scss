@@ -57,14 +57,13 @@ html {
 #background-cover {
   position: absolute;
   width: 100vw;
-  height: 40rem;
+  height: 20rem;
   filter: blur(0.5rem);
   z-index: -2;
   & img {
     position: absolute;
     width: 100%;
     height: 100%;
-
     opacity: 0.6;
     object-fit: cover;
     top: 5rem;
@@ -516,6 +515,9 @@ footer {
 //media queries for 425px screens
 
 @media (min-width: 425px) {
+  #background-cover {
+    height: 30rem;
+  }
   .top-content {
     padding: 0 2rem;
   }
@@ -588,6 +590,9 @@ footer {
 // media q for 768px screens
 
 @media (min-width: 768px) {
+  #background-cover {
+    height: 40rem;
+  }
   //toggle menu
   .toggle-menu {
     width: 60%;
