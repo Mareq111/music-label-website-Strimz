@@ -666,6 +666,235 @@ html {
   color: #f2f2f2;
 }
 
+.form-div {
+  margin-top: 2rem;
+}
+
+.main-form {
+  border-radius: 0.5rem;
+  border: 0.1rem solid #8d8c8c;
+}
+
+#form-h {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  margin: 1rem 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.label-title-main {
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  color: #85ab7b;
+  font-weight: 700;
+}
+
+.main-inputs {
+  border-radius: 0.5rem;
+  width: 80%;
+  height: auto;
+  line-height: 2rem;
+  font-size: 1rem;
+  background-color: #1c1b1b;
+  color: #f2f2f2;
+  border: 0.1rem solid #3e3c3c;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.main-inputs:focus {
+  outline: none;
+}
+
+.file-input-container {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+#upload-icon {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 0.9rem;
+}
+
+#label-demo-portf {
+  line-height: 1.8rem;
+  font-size: 0.9rem;
+  color: #8d8c8c;
+  font-weight: 700;
+}
+
+.choose-file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.choose-file {
+  display: flex;
+  font-family: inherit;
+  margin: 1rem 0;
+  width: 100%;
+  height: auto;
+}
+
+.choose-file::before {
+  content: "Upload Your File";
+  display: inline-block;
+  background-color: #367983;
+  border: 0.1rem solid #3e3c3c;
+  padding: 0.5rem;
+  outline: none;
+  color: #f2f2f2;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+}
+
+#demo {
+  padding: 1rem;
+  background-color: #1c1b1b;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #3e3c3c;
+}
+
+.label-title-inner {
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  color: #26acac;
+  font-weight: 700;
+}
+
+.inner-checkboxes {
+  width: auto;
+  height: auto;
+  border-radius: 0.25rem;
+  border: 0.1rem solid #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#label-preffered {
+  margin-bottom: 1rem;
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  gap: 0.5rem;
+}
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkbox-label .checkmark {
+  background-color: #85ab7b;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  transition: background-color 200ms;
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+}
+.checkbox-label .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-label input:checked ~ .checkmark {
+  background-color: #85ab7b;
+  border-radius: 0.5rem;
+  animation: clicked-checkbox 400ms ease-in-out;
+}
+.checkbox-label input:checked ~ .checkmark::after {
+  display: block;
+  left: 0.45rem;
+  top: 0.25rem;
+  width: 0.25rem;
+  height: 0.6rem;
+  border: solid #f2f2f2;
+  border-width: 0 0.15rem 0.15rem 0;
+  transform: rotate(45deg);
+}
+
+@keyframes clicked-checkbox {
+  0% {
+    box-shadow: 0 0 0 #a7c89f;
+    rotate: 25deg;
+  }
+  50% {
+    rotate: -25deg;
+  }
+  75% {
+    box-shadow: 0 0 0 10px #51634b;
+  }
+  100% {
+    box-shadow: 0 0 0 13px #35482f;
+    rotate: 0;
+  }
+}
+.genre-input {
+  margin: 0;
+}
+
+.reset-submit-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+#reset {
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  color: #f2f2f2;
+  border: 0.1rem solid #8d8c8c;
+  outline: none;
+  cursor: pointer;
+}
+#reset:hover, #reset:active {
+  background-color: #f14343;
+  border-color: #cd3737;
+  color: #120f10;
+}
+
+#submit {
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 2.5rem;
+  color: #120f10;
+  background-color: #f2f2f2;
+  border: 0.1rem solid #8d8c8c;
+  outline: none;
+  cursor: pointer;
+}
+#submit:hover, #submit:active {
+  background-color: #85ab7b;
+  border-color: #85ab7b;
+  color: #120f10;
+}
+
 .hr-line-footer {
   width: 100%;
   border: none;

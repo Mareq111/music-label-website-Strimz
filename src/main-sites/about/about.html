@@ -543,185 +543,253 @@
             tempore nesciunt porro possimus libero ea at ad saepe maxime cumsq!
           </p>
         </div>
-        <div>
-          <!-- new -->
+       
+          <!-- main form -->
+          <div class="form-div">
           <form action="/src/other/page-greetings/greetings.html" method="get">
-            <fieldset>
-              <legend>Contact Information</legend>
-              <label for="name">Full name:</label><br />
+            <fieldset class="main-form">
+              <h3 id="form-h">Contact Information</h3>
+              <label class="label-title-main" for="name">Full Name:</label
+              ><br />
               <input
+                class="main-inputs"
                 type="text"
                 id="name"
                 name="name"
                 required
+                placeholder="Required"
                 autocomplete="on"
+                aria-label="Full Name:"
               />
               <br />
-              <label for="artist-alias">Artistic Alias:</label>
+              <label class="label-title-main" for="artist-alias"
+                >Artistic Alias:</label
+              >
               <br />
               <input
+                class="main-inputs"
+                placeholder="Optional"
                 type="text"
                 id="artist-alias"
                 name="artist-alias"
                 autocomplete="on"
+                aria-label="Artistic Alias:"
               />
               <br />
-              <label for="email">Email:</label><br />
+              <label class="label-title-main" for="email">Email:</label><br />
               <input
+                class="main-inputs"
+                placeholder="Required"
                 type="email"
                 id="email"
                 name="email"
                 autocomplete="on"
                 required
+                aria-label="Email:"
                 pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               />
               <br />
-              <fieldset>
-                <legend>Preferred Music Genres</legend>
-                <!-- Checkboxy dla gatunków muzycznych -->
-                <label for="genre-rock">
-                  <input
-                    type="checkbox"
-                    id="genre-rock"
-                    name="genre"
-                    value="Rock"
-                  />
-                  Rock </label
-                ><br />
-
-                <label for="genre-pop">
-                  <input
-                    type="checkbox"
-                    id="genre-pop"
-                    name="genre"
-                    value="Pop"
-                  />
-                  Pop </label
-                ><br />
-
-                <label for="genre-hiphop">
-                  <input
-                    type="checkbox"
-                    id="genre-hiphop"
-                    name="genre"
-                    value="HipHop"
-                  />
-                  Hip Hop </label
-                ><br />
-
-                <label for="genre-metal">
-                  <input
-                    type="checkbox"
-                    id="genre-metal"
-                    name="genre"
-                    value="Metal"
-                  />
-                  Metal </label
-                ><br />
-
-                <label for="genre-wave">
-                  <input
-                    type="checkbox"
-                    id="genre-wave"
-                    name="genre"
-                    value="Wave"
-                  />
-                  Wave </label
-                ><br />
-
-                <label for="genre-indie">
-                  <input
-                    type="checkbox"
-                    id="genre-indie"
-                    name="genre"
-                    value="Indie"
-                  />
-                  Indie </label
-                ><br />
-
-                <label for="genre-disco">
-                  <input
-                    type="checkbox"
-                    id="genre-disco"
-                    name="genre"
-                    value="Disco"
-                  />
-                  Disco </label
-                ><br />
-
-                <label for="genre-country">
-                  <input
-                    type="checkbox"
-                    id="genre-country"
-                    name="genre"
-                    value="Country"
-                  />
-                  Country </label
-                ><br />
-
-                <label for="genre-dance">
-                  <input
-                    type="checkbox"
-                    id="genre-dance"
-                    name="genre"
-                    value="Dance"
-                  />
-                  Dance </label
-                ><br />
-
-                <label for="genre-electronic">
-                  <input
-                    type="checkbox"
-                    id="genre-electronic"
-                    name="genre"
-                    value="Electronic"
-                  />
-                  Electronic </label
-                ><br />
-
-                <label for="genre-reggae">
-                  <input
-                    type="checkbox"
-                    id="genre-reggae"
-                    name="genre"
-                    value="Reggae"
-                  />
-                  Reggae </label
-                ><br />
-                <label for="genre-abstract">
-                  <input
-                    type="checkbox"
-                    id="genre-abstract"
-                    name="genre"
-                    value="Abstract"
-                  />
-                  Abstract </label
-                ><br />
-                <!-- ... -->
-                <label for="genre-custom">
-                  Custom Genre:
-                  <input
-                    type="text"
-                    id="genre-custom"
-                    name="genre-custom"
-                  /> </label
-                ><br />
-              </fieldset>
               <!-- demo -->
-              <label for="demo">Add your demo/portfolio:</label>
+              <label class="label-title-main" id="label-demo-portf" for="demo"
+                >Optional Add Your Demo/Portfolio:</label
+              >
+              <br />
+
               <input
+                class="choose-file"
                 type="file"
                 id="demo"
                 name="demo"
                 accept=".pdf, .doc, .docx, .mp3, .wav"
                 multiple
+                aria-label="Optional add Your demo/portfolio"
               />
-              <br />
-              <label for="reset"></label>
-              <input type="reset" />
 
-              <label for="Submit"></label>
-              <input type="submit" />
+              <!-- test -->
+              <fieldset class="inner-checkboxes">
+                <legend
+                  class="label-title-inner"
+                  id="label-preffered"
+                  aria-label="Preferred Music Genres"
+                >
+                  Preferred Music Genres
+                </legend>
+                <!-- Checkboxy music genres -->
+                <label for="genre-rock" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-rock"
+                    name="genre"
+                    value="Rock"
+                    aria-label="Rock"
+                  />
+                  <div class="checkmark"></div>
+                  Rock </label
+                ><br />
+
+                <label for="genre-pop" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-pop"
+                    name="genre"
+                    value="Pop"
+                    aria-label="Pop "
+                  />
+                  <div class="checkmark"></div>
+                  Pop </label
+                ><br />
+
+                <label for="genre-hiphop" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-hiphop"
+                    name="genre"
+                    value="HipHop"
+                    aria-label="HipHop "
+                  />
+                  <div class="checkmark"></div>
+                  Hip Hop </label
+                ><br />
+
+                <label for="genre-metal" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-metal"
+                    name="genre"
+                    value="Metal"
+                    aria-label="Metal "
+                  />
+                  <div class="checkmark"></div>
+                  Metal </label
+                ><br />
+
+                <label for="genre-wave" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-wave"
+                    name="genre"
+                    value="Wave"
+                    aria-label="Wave "
+                  />
+                  <div class="checkmark"></div>
+                  Wave </label
+                ><br />
+
+                <label for="genre-indie" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-indie"
+                    name="genre"
+                    value="Indie"
+                    aria-label="Indie "
+                  />
+                  <div class="checkmark"></div>
+                  Indie </label
+                ><br />
+
+                <label for="genre-disco" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-disco"
+                    name="genre"
+                    value="Disco"
+                    aria-label="Disco "
+                  />
+                  <div class="checkmark"></div>
+                  Disco </label
+                ><br />
+
+                <label for="genre-country" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-country"
+                    name="genre"
+                    value="Country"
+                    aria-label="Country "
+                  />
+                  <div class="checkmark"></div>
+                  Country </label
+                ><br />
+
+                <label for="genre-dance" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-dance"
+                    name="genre"
+                    value="Dance"
+                    aria-label="Dance "
+                  />
+                  <div class="checkmark"></div>
+                  Dance </label
+                ><br />
+
+                <label for="genre-electronic" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-electronic"
+                    name="genre"
+                    value="Electronic"
+                    aria-label="Electronic "
+                  />
+                  <div class="checkmark"></div>
+                  Electronic </label
+                ><br />
+
+                <label for="genre-reggae" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-reggae"
+                    name="genre"
+                    value="Reggae"
+                    aria-label="Reggae "
+                  />
+                  <div class="checkmark"></div>
+                  Reggae </label
+                ><br />
+                <label for="genre-abstract" class="checkbox-label">
+                  <input
+                    class="checkbox-input"
+                    type="checkbox"
+                    id="genre-abstract"
+                    name="genre"
+                    value="Abstract"
+                    aria-label="Abstract "
+                  />
+                  <div class="checkmark"></div>
+                  Abstract </label
+                ><br />
+                <!-- custom genre -->
+                <label class="label-title-inner" for="genre-custom">
+                  Custom Genre:
+                  <input
+                    class="main-inputs genre-input"
+                    placeholder="Optional"
+                    type="text"
+                    id="genre-custom"
+                    name="genre-custom"
+                    aria-label=" Custom Genre"
+                  /> </label
+                ><br />
+              </fieldset>
+
+              <br />
+              <!-- submit and reset  -->
+              <div class="reset-submit-div">
+                <input id="reset" type="reset" aria-label="reset " />
+
+                <input id="submit" type="submit" aria-label="submit " />
+              </div>
             </fieldset>
           </form>
         </div>
