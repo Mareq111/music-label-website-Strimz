@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
 * {
   margin: 0;
@@ -584,7 +585,7 @@ html {
   height: auto;
   gap: 1.5rem;
   padding-bottom: 2rem;
-  border-bottom: 0.2rem solid #367983;
+  border-bottom: 0.2rem solid #3e3c3c;
 }
 
 .quantity-stats {
@@ -666,13 +667,50 @@ html {
   color: #f2f2f2;
 }
 
+.div-for-contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.ul-contact-list {
+  padding: 0rem;
+  list-style-type: none;
+}
+
+.li-into-ul::before {
+  content: "•";
+  color: #26acac;
+  margin-right: 1rem;
+}
+
+.li-into-ul {
+  color: #f2f2f2;
+  font-weight: 700;
+}
+
+.li-content {
+  color: #8d8c8c;
+  font-weight: 500;
+}
+
+.hr-for-li {
+  margin: 1rem 0;
+  /* height: 0.5rem; */
+  width: 100%;
+  border: 0.1rem solid #3e3c3c;
+}
+
 .form-div {
   margin-top: 2rem;
 }
 
 .main-form {
   border-radius: 0.5rem;
-  border: 0.1rem solid #8d8c8c;
+  border: 0.2rem solid #3e3c3c;
 }
 
 #form-h {
@@ -769,14 +807,14 @@ html {
 }
 
 .inner-checkboxes {
-  width: auto;
-  height: auto;
-  border-radius: 0.25rem;
-  border: 0.1rem solid #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  width: auto;
+  height: auto;
+  border-radius: 0.25rem;
+  border: 0.2rem solid #8d8c8c;
 }
 
 #label-preffered {
