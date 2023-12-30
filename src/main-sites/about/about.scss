@@ -412,7 +412,7 @@ html {
   margin-top: 0.5rem;
 }
 
-//! section 2 tour dates
+//! section 2
 .section-2 {
   display: flex;
   flex-direction: column;
@@ -423,9 +423,10 @@ html {
 
 .h-section {
   font-size: 1.4rem;
+  line-height: 2.8rem;
   text-transform: uppercase;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 //new code
@@ -599,16 +600,6 @@ html {
   z-index: -1;
   border-radius: 0% 100% 0% 100% / 54% 0% 100% 46%;
 }
-#img-artist-center-overview {
-  position: absolute;
-  border-radius: 46% 54% 0% 100% / 100% 0% 100% 54%;
-  width: 60%;
-  max-width: 28rem;
-  height: auto;
-  object-fit: cover;
-  z-index: 1;
-  transform: translateY(20%);
-}
 
 //figcaption
 .unsplash-img-link {
@@ -703,7 +694,7 @@ html {
 .bottom-p-content-div {
   padding: 0.5rem;
 }
-//section 5
+//!section 5
 .section-5 {
   display: flex;
   flex-direction: column;
@@ -762,23 +753,29 @@ html {
   color: $white;
   font-weight: 700;
 }
+.border-bottom-line {
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid $grey-700;
+}
+.without-border-bottom-line {
+  padding: 1rem 0;
+}
 .li-content {
   color: $grey-600;
   font-weight: 500;
 }
-.hr-for-li {
-  margin: 1rem 0;
-  /* height: 0.5rem; */
-  width: 100%;
-  border: 0.1rem solid $grey-700;
-}
+
 // form
 .form-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
 }
 .main-form {
   border-radius: 0.5rem;
   border: 0.2rem solid $grey-700;
+  max-width: 30rem;
 }
 
 #form-h {
@@ -824,9 +821,9 @@ html {
   font-size: 0.9rem;
 }
 #label-demo-portf {
-  line-height: 1.8rem;
-  font-size: 0.9rem;
-  color: $grey-600;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: $amulet-green-400;
   font-weight: 700;
 }
 
@@ -843,8 +840,7 @@ html {
 .choose-file::before {
   content: "Upload Your File";
   display: inline-block;
-  background-color: $ming-blue-600;
-  border: 0.1rem solid $grey-700;
+  background-color: $grey-700;
   padding: 0.5rem;
   outline: none;
   color: $white;
@@ -856,10 +852,9 @@ html {
 }
 
 #demo {
-  padding: 1rem;
-  background-color: $black-700;
+  padding: 0.5rem;
+  background-color: transparent;
   border-radius: 0.5rem;
-  border: 0.1rem solid $grey-700;
 }
 
 // inner fields
@@ -869,6 +864,7 @@ html {
   color: $eastern-blue-500;
   font-weight: 700;
 }
+
 .inner-checkboxes {
   display: flex;
   justify-content: center;
@@ -935,7 +931,7 @@ html {
     // display the checkmark when checkbox is checked
     &::after {
       display: block;
-      left: 0.45rem;
+      left: 0.5rem;
       top: 0.25rem;
       width: 0.25rem;
       height: 0.6rem;
@@ -1246,11 +1242,7 @@ footer {
     font-size: 1.4rem;
   }
 
-  //section 1 +0.2rem or 1rem
-
-  /* .section-1-card {
-    padding: 3rem 2rem;
-} */
+  //section 1
   //name and logo
   .link-to-story {
     text-decoration: none;
@@ -1286,33 +1278,277 @@ footer {
     font-size: 1.6rem;
   }
 
-  //btn discover story
-
-  .btn-discover {
-    /* padding: 0.5rem 1rem; */ //bez zmian
-    width: 18rem;
-    height: auto;
-    margin: 1.5rem 0;
-    font-size: 1.2rem;
-  }
-  //! section 2 tour dates 425px
+  //! section 2 425px
   .section-2 {
+    padding: 2rem;
+  }
+
+  .h-section {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  /* .logo-and-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.logo-strimz {
+  width: 3rem;
+  height: 3rem;
+} 
+.description-strimz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.strimz-h3 {
+  font-size: 1.5rem;
+}
+.strimz-p-description {
+  font-size: 1rem;
+}*/
+
+  //strimz story divs
+
+  .story-strimz {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+  .story-strimz-h4 {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+  }
+  .story-strimz-p {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
   }
 
-  .h-section-2 {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    width: 100%;
-    margin-bottom: 2.4rem;
-    font-weight: 700;
+  //! section 3 our vision
+  .section-3 {
+    padding: 2rem;
   }
+
+  /* .all-our-vision-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+  height: auto;
+} */
+
+  /* .visions-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 25rem;
+  height: 15rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: $black-700;
+  border: $grey-700 0.1rem solid;
+} */
+
+  //! section 4
+  .section-4 {
+    padding: 2rem;
+  }
+  .img-background-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  /* content overview */
+  /* .content-overview-div {
+  margin-top: 2rem;
+} */
+  .h-content-overview {
+    height: auto;
+    width: 100%;
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    /* margin-bottom: 1rem; */
+  }
+  .p-content-overview {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+  //stats div
+  .three-stats-div {
+    /*   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; */
+    max-width: 40rem; //! max width test
+
+    /*  padding: 0.5rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem; */
+  }
+
+  .quantity-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.6rem;
+  }
+  /* .border-for-stats {
+  padding: 0.5rem;
+  border: 0.2rem solid $amulet-green-400;
+  animation: wind 6s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+} */
+
+  .p-description-stats {
+    font-size: 1.1rem;
+  }
+  /* .bottom-p-content-div {
+  padding: 0.5rem;
+} */
 
   //!section 5
+  .section-5 {
+    padding: 2rem;
+  }
+  /* .office-div,
+.join-div {
+  margin-top: 2rem;
+} */
+
+  .h-office-and-join {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+
+    margin-bottom: 1rem;
+  }
+  .p-office-and-join {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+  //contact us
+  .div-for-contact-list {
+    /*  display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin: 2.5rem 0;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+  /*   .li-into-ul::before {
+    margin-right: 1rem;
+  } */
+
+  // form
+  .form-div {
+    margin-top: 2.5rem;
+  }
+
+  #form-h {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    margin: 1.5rem 0;
+  }
+  .label-title-main {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+
+  .main-inputs {
+    border-radius: 0.5rem;
+    width: 80%;
+    max-width: 20rem;
+    height: auto;
+    line-height: 2.2rem;
+    font-size: 1.1rem;
+    /*  
+    padding-left: 0.5rem;
+    margin-bottom: 1rem; */
+  }
+  //choose a file
+
+  #label-demo-portf {
+    line-height: 2.4rem;
+    font-size: 1.2rem;
+  }
+
+  .choose-file {
+    margin: 2rem 0;
+    max-width: 20rem;
+  }
+  .choose-file::before {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  // inner fields
+  .label-title-inner {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+  #label-preffered {
+    margin-bottom: 1.5rem;
+  }
+
+  //! checkbox change to custom checkmark
+
+  .checkbox-label {
+    // styling for the label containing the checkbox
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    gap: 1rem;
+
+    // styling for the custom checkbox
+    .checkmark {
+      height: 1.5rem;
+      width: 1.5rem;
+      transition: background-color 200ms;
+      margin-right: 1rem;
+      margin-left: 1.5rem;
+    }
+
+    // styling for the checked checkbox
+    input:checked ~ .checkmark {
+      // display the checkmark when checkbox is checked
+      &::after {
+        left: 0.5rem;
+        top: 0.2rem;
+        width: 0.3rem;
+        height: 0.7rem;
+      }
+    }
+  }
+  .reset-submit-div {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+  #reset {
+    width: 7rem;
+  }
+  #submit {
+    width: 7rem;
+  }
 
   //footer
   //top footer
