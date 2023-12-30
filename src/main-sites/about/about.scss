@@ -598,7 +598,8 @@ html {
   height: auto;
   object-fit: cover;
   z-index: -1;
-  border-radius: 0% 100% 0% 100% / 54% 0% 100% 46%;
+  /*  border-radius: 0% 100% 0% 100% / 54% 0% 100% 46%  ; */
+  border-radius: 5%;
 }
 
 //figcaption
@@ -707,8 +708,7 @@ html {
   height: auto;
   object-fit: cover;
   z-index: -1;
-  /*   border-radius: 0% 100% 0% 100% / 54% 0% 100% 46%; */
-  border-radius: 100% 0% 100% 0% / 0% 46% 54% 100%;
+  border-radius: 5%;
 }
 
 .office-div,
@@ -775,6 +775,7 @@ html {
 .main-form {
   border-radius: 0.5rem;
   border: 0.2rem solid $grey-700;
+  background-color: $black-700;
   max-width: 30rem;
 }
 
@@ -788,7 +789,7 @@ html {
 .label-title-main {
   font-size: 1.1rem;
   line-height: 2.2rem;
-  color: $amulet-green-400;
+  color: $white;
   font-weight: 700;
 }
 
@@ -798,7 +799,7 @@ html {
   height: auto;
   line-height: 2rem;
   font-size: 1rem;
-  background-color: $black-700;
+  background-color: $black-900;
   color: $white;
   border: 0.1rem solid $grey-700;
   padding-left: 0.5rem;
@@ -823,7 +824,7 @@ html {
 #label-demo-portf {
   line-height: 2rem;
   font-size: 1rem;
-  color: $amulet-green-400;
+  color: $white;
   font-weight: 700;
 }
 
@@ -841,6 +842,7 @@ html {
   content: "Upload Your File";
   display: inline-block;
   background-color: $grey-700;
+  border: 0.1rem solid $grey-600;
   padding: 0.5rem;
   outline: none;
   color: $white;
@@ -856,12 +858,11 @@ html {
   background-color: transparent;
   border-radius: 0.5rem;
 }
-
 // inner fields
 .label-title-inner {
   font-size: 1.1rem;
   line-height: 2.2rem;
-  color: $eastern-blue-500;
+  color: $white;
   font-weight: 700;
 }
 
@@ -877,6 +878,7 @@ html {
 }
 #label-preffered {
   margin-bottom: 1rem;
+  color: $eastern-blue-500;
 }
 
 //! checkbox change to custom checkmark
@@ -963,9 +965,7 @@ html {
     rotate: 0;
   }
 }
-.genre-input {
-  margin: 0;
-}
+
 .reset-submit-div {
   display: flex;
   justify-content: center;

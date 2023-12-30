@@ -518,7 +518,8 @@ html {
   height: auto;
   object-fit: cover;
   z-index: -1;
-  border-radius: 0% 100% 0% 100%/54% 0% 100% 46%;
+  /*  border-radius: 0% 100% 0% 100% / 54% 0% 100% 46%  ; */
+  border-radius: 5%;
 }
 
 .unsplash-img-link {
@@ -631,8 +632,7 @@ html {
   height: auto;
   object-fit: cover;
   z-index: -1;
-  /*   border-radius: 0% 100% 0% 100% / 54% 0% 100% 46%; */
-  border-radius: 100% 0% 100% 0%/0% 46% 54% 100%;
+  border-radius: 5%;
 }
 
 .office-div,
@@ -706,6 +706,7 @@ html {
 .main-form {
   border-radius: 0.5rem;
   border: 0.2rem solid #3e3c3c;
+  background-color: #1c1b1b;
   max-width: 30rem;
 }
 
@@ -720,7 +721,7 @@ html {
 .label-title-main {
   font-size: 1.1rem;
   line-height: 2.2rem;
-  color: #85ab7b;
+  color: #f2f2f2;
   font-weight: 700;
 }
 
@@ -730,7 +731,7 @@ html {
   height: auto;
   line-height: 2rem;
   font-size: 1rem;
-  background-color: #1c1b1b;
+  background-color: #120f10;
   color: #f2f2f2;
   border: 0.1rem solid #3e3c3c;
   padding-left: 0.5rem;
@@ -757,7 +758,7 @@ html {
 #label-demo-portf {
   line-height: 2rem;
   font-size: 1rem;
-  color: #85ab7b;
+  color: #f2f2f2;
   font-weight: 700;
 }
 
@@ -777,6 +778,7 @@ html {
   content: "Upload Your File";
   display: inline-block;
   background-color: #3e3c3c;
+  border: 0.1rem solid #8d8c8c;
   padding: 0.5rem;
   outline: none;
   color: #f2f2f2;
@@ -796,7 +798,7 @@ html {
 .label-title-inner {
   font-size: 1.1rem;
   line-height: 2.2rem;
-  color: #26acac;
+  color: #f2f2f2;
   font-weight: 700;
 }
 
@@ -813,6 +815,7 @@ html {
 
 #label-preffered {
   margin-bottom: 1rem;
+  color: #26acac;
 }
 
 .checkbox-label {
@@ -881,10 +884,6 @@ html {
     rotate: 0;
   }
 }
-.genre-input {
-  margin: 0;
-}
-
 .reset-submit-div {
   display: flex;
   justify-content: center;
