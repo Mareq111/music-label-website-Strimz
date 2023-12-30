@@ -771,10 +771,12 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  width: 100%;
+  height: auto;
 }
 .main-form {
-  border-radius: 0.5rem;
-  border: 0.2rem solid $grey-700;
+  border-radius: 1rem;
+  border: 0.4rem solid $grey-700;
   background-color: $black-700;
   max-width: 30rem;
 }
@@ -856,9 +858,8 @@ html {
 #demo {
   padding: 0.5rem;
   background-color: transparent;
-  border-radius: 0.5rem;
 }
-// inner fields
+//! inner fields
 .label-title-inner {
   font-size: 1.1rem;
   line-height: 2.2rem;
@@ -873,8 +874,9 @@ html {
   flex-direction: column;
   width: auto;
   height: auto;
-  border-radius: 0.25rem;
-  border: 0.2rem solid $grey-600;
+  border-radius: 0.5rem;
+  background-color: $black-600;
+  border: 0.2rem solid $grey-700;
 }
 #label-preffered {
   margin-bottom: 1rem;

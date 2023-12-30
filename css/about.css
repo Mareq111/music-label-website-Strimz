@@ -701,11 +701,13 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  width: 100%;
+  height: auto;
 }
 
 .main-form {
-  border-radius: 0.5rem;
-  border: 0.2rem solid #3e3c3c;
+  border-radius: 1rem;
+  border: 0.4rem solid #3e3c3c;
   background-color: #1c1b1b;
   max-width: 30rem;
 }
@@ -792,7 +794,6 @@ html {
 #demo {
   padding: 0.5rem;
   background-color: transparent;
-  border-radius: 0.5rem;
 }
 
 .label-title-inner {
@@ -809,8 +810,9 @@ html {
   flex-direction: column;
   width: auto;
   height: auto;
-  border-radius: 0.25rem;
-  border: 0.2rem solid #8d8c8c;
+  border-radius: 0.5rem;
+  background-color: #120f10;
+  border: 0.2rem solid #3e3c3c;
 }
 
 #label-preffered {
