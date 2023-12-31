@@ -371,9 +371,68 @@ html {
 }
 
 .strimz-p-description {
+  background-color: transparent;
   font-size: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  gap: 0.2rem;
+  color: transparent;
 }
 
+#first-strimz-p {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid #26acac;
+  animation: fadeInFirstText 9s infinite;
+}
+
+#second-strimz-p {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid #85ab7b;
+  animation: fadeInSecondText 9s infinite;
+}
+
+@keyframes fadeInFirstText {
+  0% {
+    opacity: 1;
+    color: transparent;
+  }
+  25% {
+    opacity: 1;
+    color: #8d8c8c;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeInSecondText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+    color: transparent;
+  }
+  75% {
+    opacity: 1;
+    color: #8d8c8c;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .story-strimz {
   display: flex;
   justify-content: center;

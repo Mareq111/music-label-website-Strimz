@@ -453,9 +453,71 @@ html {
 .strimz-h3 {
   font-size: 1.5rem;
 }
+//!description label animation text
 .strimz-p-description {
+  background-color: transparent;
   font-size: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  gap: 0.2rem;
+  color: transparent;
 }
+#first-strimz-p {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid $eastern-blue-500;
+  animation: fadeInFirstText 9s infinite;
+}
+
+#second-strimz-p {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid $amulet-green-400;
+  animation: fadeInSecondText 9s infinite;
+}
+
+@keyframes fadeInFirstText {
+  0% {
+    opacity: 1;
+    color: transparent;
+  }
+  25% {
+    opacity: 1;
+    color: $grey-600;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInSecondText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+    color: transparent;
+  }
+  75% {
+    opacity: 1;
+    color: $grey-600;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 //strimz story divs
 
 .story-strimz {
