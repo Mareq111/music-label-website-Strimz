@@ -840,7 +840,7 @@ html {
   border-radius: 1rem;
   border: 0.4rem solid $grey-700;
   background-color: $black-700;
-  max-width: 30rem;
+  padding: 0 1rem;
 }
 
 #form-h {
@@ -950,6 +950,7 @@ html {
 //! checkbox change to custom checkmark
 
 .checkbox-label {
+  padding-right: 1rem;
   // styling for the input checkbox
   input {
     position: absolute;
@@ -958,7 +959,6 @@ html {
     height: 0;
     width: 0;
   }
-
   // styling for the label containing the checkbox
   display: flex;
   justify-content: center;
@@ -988,6 +988,10 @@ html {
       position: absolute;
       display: none;
     }
+    &:focus {
+      display: none;
+      outline: none;
+    }
   }
 
   // styling for the checked checkbox
@@ -1008,6 +1012,14 @@ html {
       transform: rotate(45deg);
     }
   }
+}
+//focus-within only for people who check checkbox with tab key
+.user-is-tabbing .checkbox-label:focus-within {
+  outline: 0.2rem solid $eastern-blue-500;
+}
+
+#label-genre-custom {
+  padding-left: 1rem;
 }
 
 //checkbox animation
@@ -1031,6 +1043,8 @@ html {
     rotate: 0;
   }
 }
+
+//!end of test
 
 .reset-submit-div {
   display: flex;
@@ -1056,6 +1070,9 @@ html {
     border-color: $red-500;
     color: $black-900;
   }
+  &:focus {
+    outline: 0.2rem solid $red-500;
+  }
 }
 #submit {
   border-radius: 0.5rem;
@@ -1071,6 +1088,9 @@ html {
     background-color: $amulet-green-400;
     border-color: $amulet-green-400;
     color: $black-900;
+  }
+  &:focus {
+    outline: 0.2rem solid $amulet-green-400;
   }
 }
 // footer
@@ -1530,6 +1550,9 @@ footer {
   .form-div {
     margin-top: 2.5rem;
   }
+  .main-form {
+    padding: 0 2rem;
+  }
 
   #form-h {
     font-size: 1.3rem;
@@ -1604,6 +1627,9 @@ footer {
         height: 0.7rem;
       }
     }
+  }
+  #label-genre-custom {
+    padding-left: 1.5rem;
   }
   .reset-submit-div {
     font-size: 1.1rem;

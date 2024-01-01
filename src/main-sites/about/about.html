@@ -475,35 +475,36 @@
             musicians we have on board.
           </p>
           <div class="wrapper-div-for-768px">
-          <div class="three-stats-div">
-            <div class="stats-div">
-              <div class="border-for-stats">
-                <span class="quantity-stats" id="quantity-albums"></span>
+            <div class="three-stats-div">
+              <div class="stats-div">
+                <div class="border-for-stats">
+                  <span class="quantity-stats" id="quantity-albums"></span>
+                </div>
+                <p class="p-description-stats">Albums</p>
               </div>
-              <p class="p-description-stats">Albums</p>
-            </div>
-            <div class="stats-div">
-              <div class="border-for-stats">
-                <span class="quantity-stats" id="quantity-singles"></span>
+              <div class="stats-div">
+                <div class="border-for-stats">
+                  <span class="quantity-stats" id="quantity-singles"></span>
+                </div>
+                <p class="p-description-stats">Singles</p>
               </div>
-              <p class="p-description-stats">Singles</p>
-            </div>
-            <div class="stats-div">
-              <div class="border-for-stats">
-                <span class="quantity-stats" id="quantity-musicians"></span>
+              <div class="stats-div">
+                <div class="border-for-stats">
+                  <span class="quantity-stats" id="quantity-musicians"></span>
+                </div>
+                <p class="p-description-stats">Musicians</p>
               </div>
-              <p class="p-description-stats">Musicians</p>
             </div>
-          </div>
-          <div class="bottom-p-content-div">
-            <p class="p-content-overview">
-              Here are our numbers - vibrant with life, sound, and passion. Just
-              a glimpse into our musical journey that we want to share with you.
-            </p>
+            <div class="bottom-p-content-div">
+              <p class="p-content-overview">
+                Here are our numbers - vibrant with life, sound, and passion.
+                Just a glimpse into our musical journey that we want to share
+                with you.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
 
     <!-- section 5 -->
@@ -646,6 +647,7 @@
                   Preferred Music Genres
                 </legend>
                 <!-- Checkboxy music genres -->
+
                 <label for="genre-rock" class="checkbox-label">
                   <input
                     class="checkbox-input"
@@ -655,7 +657,14 @@
                     value="Rock"
                     aria-label="Rock"
                   />
-                  <div class="checkmark"></div>
+                  <span
+                    aria-checked="false"
+                    role="checkbox"
+                    tabindex="0"
+                    class="checkmark"
+                    aria-label="Rock"
+                  ></span>
+
                   Rock </label
                 ><br />
 
@@ -668,7 +677,13 @@
                     value="Pop"
                     aria-label="Pop "
                   />
-                  <div class="checkmark"></div>
+                  <span
+                    aria-checked="false"
+                    role="checkbox"
+                    tabindex="0"
+                    class="checkmark"
+                    aria-label="Pop"
+                  ></span>
                   Pop </label
                 ><br />
 
@@ -681,23 +696,15 @@
                     value="HipHop"
                     aria-label="HipHop "
                   />
-                  <div class="checkmark"></div>
+                  <span
+                    aria-checked="false"
+                    role="checkbox"
+                    tabindex="0"
+                    class="checkmark"
+                    aria-label="Hip Hop"
+                  ></span>
                   Hip Hop </label
                 ><br />
-
-                <label for="genre-metal" class="checkbox-label">
-                  <input
-                    class="checkbox-input"
-                    type="checkbox"
-                    id="genre-metal"
-                    name="genre"
-                    value="Metal"
-                    aria-label="Metal "
-                  />
-                  <div class="checkmark"></div>
-                  Metal </label
-                ><br />
-
                 <label for="genre-wave" class="checkbox-label">
                   <input
                     class="checkbox-input"
@@ -707,7 +714,13 @@
                     value="Wave"
                     aria-label="Wave "
                   />
-                  <div class="checkmark"></div>
+                  <span
+                    aria-checked="false"
+                    role="checkbox"
+                    tabindex="0"
+                    class="checkmark"
+                    aria-label="Wave"
+                  ></span>
                   Wave </label
                 ><br />
 
@@ -720,7 +733,13 @@
                     value="Indie"
                     aria-label="Indie "
                   />
-                  <div class="checkmark"></div>
+                  <span
+                    aria-checked="false"
+                    role="checkbox"
+                    tabindex="0"
+                    class="checkmark"
+                    aria-label="Indie"
+                  ></span>
                   Indie </label
                 ><br />
 
@@ -733,7 +752,13 @@
                     value="Disco"
                     aria-label="Disco "
                   />
-                  <div class="checkmark"></div>
+                  <span
+                    aria-checked="false"
+                    role="checkbox"
+                    tabindex="0"
+                    class="checkmark"
+                    aria-label="Disco"
+                  ></span>
                   Disco </label
                 ><br />
 
@@ -746,7 +771,13 @@
                     value="Country"
                     aria-label="Country "
                   />
-                  <div class="checkmark"></div>
+                  <span
+                    aria-checked="false"
+                    role="checkbox"
+                    tabindex="0"
+                    class="checkmark"
+                    aria-label="Country"
+                  ></span>
                   Country </label
                 ><br />
 
@@ -759,7 +790,13 @@
                     value="Dance"
                     aria-label="Dance "
                   />
-                  <div class="checkmark"></div>
+                  <span
+                    aria-checked="false"
+                    role="checkbox"
+                    tabindex="0"
+                    class="checkmark"
+                    aria-label="Dance"
+                  ></span>
                   Dance </label
                 ><br />
 
@@ -772,21 +809,14 @@
                     value="Electronic"
                     aria-label="Electronic "
                   />
-                  <div class="checkmark"></div>
+                  <span
+                    aria-checked="false"
+                    role="checkbox"
+                    tabindex="0"
+                    class="checkmark"
+                    aria-label="Electronic"
+                  ></span>
                   Electronic </label
-                ><br />
-
-                <label for="genre-reggae" class="checkbox-label">
-                  <input
-                    class="checkbox-input"
-                    type="checkbox"
-                    id="genre-reggae"
-                    name="genre"
-                    value="Reggae"
-                    aria-label="Reggae "
-                  />
-                  <div class="checkmark"></div>
-                  Reggae </label
                 ><br />
                 <label for="genre-abstract" class="checkbox-label">
                   <input
@@ -797,11 +827,17 @@
                     value="Abstract"
                     aria-label="Abstract "
                   />
-                  <div class="checkmark"></div>
+                  <span
+                    aria-checked="false"
+                    role="checkbox"
+                    tabindex="0"
+                    class="checkmark"
+                    aria-label="Abstract"
+                  ></span>
                   Abstract </label
                 ><br />
                 <!-- custom genre -->
-                <label class="label-title-inner" for="genre-custom">
+                <label class="label-title-inner" for="genre-custom" id="label-genre-custom">
                   Custom Genre:
                   <input
                     class="main-inputs genre-input"
@@ -809,7 +845,7 @@
                     type="text"
                     id="genre-custom"
                     name="genre-custom"
-                    aria-label=" Custom Genre"
+                    aria-label="Custom Genre"
                   /> </label
                 ><br />
               </fieldset>
@@ -817,9 +853,19 @@
               <br />
               <!-- submit and reset  -->
               <div class="reset-submit-div">
-                <input id="reset" type="reset" aria-label="reset " />
+                <input
+                  id="reset"
+                  type="reset"
+                  aria-label="reset"
+                  tabindex="0"
+                />
 
-                <input id="submit" type="submit" aria-label="submit " />
+                <input
+                  id="submit"
+                  type="submit"
+                  aria-label="submit"
+                  tabindex="0"
+                />
               </div>
             </fieldset>
           </form>

@@ -768,7 +768,7 @@ html {
   border-radius: 1rem;
   border: 0.4rem solid #3e3c3c;
   background-color: #1c1b1b;
-  max-width: 30rem;
+  padding: 0 1rem;
 }
 
 #form-h {
@@ -882,6 +882,7 @@ html {
 }
 
 .checkbox-label {
+  padding-right: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -915,6 +916,10 @@ html {
   position: absolute;
   display: none;
 }
+.checkbox-label .checkmark:focus {
+  display: none;
+  outline: none;
+}
 .checkbox-label input:checked ~ .checkmark {
   background-color: #85ab7b;
   border-radius: 0.5rem;
@@ -929,6 +934,14 @@ html {
   border: solid #f2f2f2;
   border-width: 0 0.15rem 0.15rem 0;
   transform: rotate(45deg);
+}
+
+.user-is-tabbing .checkbox-label:focus-within {
+  outline: 0.2rem solid #26acac;
+}
+
+#label-genre-custom {
+  padding-left: 1rem;
 }
 
 @keyframes clicked-checkbox {
@@ -972,6 +985,9 @@ html {
   border-color: #cd3737;
   color: #120f10;
 }
+#reset:focus {
+  outline: 0.2rem solid #cd3737;
+}
 
 #submit {
   border-radius: 0.5rem;
@@ -987,6 +1003,9 @@ html {
   background-color: #85ab7b;
   border-color: #85ab7b;
   color: #120f10;
+}
+#submit:focus {
+  outline: 0.2rem solid #85ab7b;
 }
 
 .hr-line-footer {
@@ -1419,6 +1438,9 @@ footer {
   .form-div {
     margin-top: 2.5rem;
   }
+  .main-form {
+    padding: 0 2rem;
+  }
   #form-h {
     font-size: 1.3rem;
     line-height: 2.6rem;
@@ -1475,6 +1497,9 @@ footer {
     top: 0.2rem;
     width: 0.3rem;
     height: 0.7rem;
+  }
+  #label-genre-custom {
+    padding-left: 1.5rem;
   }
   .reset-submit-div {
     font-size: 1.1rem;

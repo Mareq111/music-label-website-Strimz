@@ -203,4 +203,13 @@ form.addEventListener("submit", (e) => {
   window.location.href = "/src/other/page-greetings/greetings.html";
 });
 
-//! 10 test
+//! 10 focus-within only for people who check checkbox with tab key for about page ~form with checkbox
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Tab") {
+    document.body.classList.add("user-is-tabbing");
+  }
+});
+
+document.addEventListener("mousedown", function () {
+  document.body.classList.remove("user-is-tabbing");
+});
