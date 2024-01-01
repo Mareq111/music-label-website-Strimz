@@ -1667,47 +1667,26 @@ footer {
     line-height: 2.6rem;
     max-width: 44rem;
   }
-  .wrapper-div-for-768px {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
-    width: 100%;
-    height: auto;
-  }
   .three-stats-div {
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
     width: 100%;
-    max-width: 44rem;
-    /*  margin-right: 2rem; */
-    /*  padding: 0.5rem;
-    margin-top: 2rem;
-    padding-bottom: 1rem; */
+    max-width: 56rem;
+    padding: 1rem;
   }
-  .bottom-p-content-div {
-    padding: 0;
-  }
-  /* .quantity-stats {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3.2rem;
-    height: 3.2rem;
+  .quantity-stats {
+    width: 3.3rem;
+    height: 3.3rem;
     font-size: 1.6rem;
-  } */
-  /* .border-for-stats {
-    padding: 0.5rem;
-    border: 0.2rem solid $amulet-green-400;
-    animation: wind 6s ease-in-out infinite;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  } */
-  /* 
+  }
+  .border-for-stats {
+    padding: 1rem;
+  }
   .p-description-stats {
-    font-size: 1.1rem;
-  } */
+    font-size: 1.2rem;
+  }
   .section-5 {
     padding: 3rem;
   }
@@ -1959,18 +1938,108 @@ footer {
     font-size: 1.9rem;
   }
   .section-2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
     padding: 4rem 4.5rem;
   }
-  .h-section-2 {
+  .h-section {
     font-size: 2rem;
-    text-transform: uppercase;
+    line-height: 4rem;
+    margin-bottom: 1.2rem;
+  }
+  .logo-and-description {
+    margin-bottom: 3rem;
+  }
+  .story-strimz {
+    gap: 3rem;
+  }
+  .story-strimz-h4 {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .story-strimz-p {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    max-width: 46rem;
+  }
+  .section-3 {
+    padding: 4rem 4.5rem;
+  }
+  .all-our-vision-div {
+    gap: 2rem;
+  }
+  .section-4 {
+    padding: 4rem 4.5rem;
+  }
+  .wrapper-for-img-to-1024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-bottom: 2.8rem;
-    font-weight: 700;
+    height: auto;
+    max-width: 56rem;
+  }
+  .img-background-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .h-content-overview {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .p-content-overview {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    max-width: 46rem;
+  }
+  .three-stats-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+  }
+  .quantity-stats {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+  }
+  .border-for-stats {
+    padding: 1.5rem;
+  }
+  .p-description-stats {
+    font-size: 1.3rem;
+  }
+  .section-5 {
+    padding: 4rem 4.5rem;
+  }
+  .only-img-office {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper-for-img-office-to-1024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 56rem;
+  }
+  .h-office-and-join {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .p-office-and-join {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    max-width: 46rem;
   }
   .footer-top {
     display: flex;
