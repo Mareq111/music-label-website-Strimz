@@ -634,8 +634,7 @@ html {
   width: 100%;
   height: auto;
   gap: 1.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 0.2rem solid #3e3c3c;
+  padding-bottom: 0.5rem;
 }
 
 .quantity-stats {
@@ -1283,32 +1282,6 @@ footer {
     font-size: 1.6rem;
     line-height: 3.2rem;
   }
-  /* .logo-and-description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
-  }
-  .logo-strimz {
-    width: 3rem;
-    height: 3rem;
-  } 
-  .description-strimz {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .strimz-h3 {
-    font-size: 1.5rem;
-  }
-  .strimz-p-description {
-    font-size: 1rem;
-  }*/
   .story-strimz {
     display: flex;
     justify-content: center;
@@ -1329,28 +1302,6 @@ footer {
   .section-3 {
     padding: 2rem;
   }
-  /* .all-our-vision-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    width: 100%;
-    height: auto;
-  } */
-  /* .visions-div {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    max-width: 25rem;
-    height: 15rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: $black-700;
-    border: $grey-700 0.1rem solid;
-  } */
   .section-4 {
     padding: 2rem;
   }
@@ -1364,9 +1315,6 @@ footer {
     height: auto;
   }
   /* content overview */
-  /* .content-overview-div {
-    margin-top: 2rem;
-  } */
   .h-content-overview {
     height: auto;
     width: 100%;
@@ -1379,14 +1327,7 @@ footer {
     line-height: 2.2rem;
   }
   .three-stats-div {
-    /*   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; */
     max-width: 40rem;
-    /*  padding: 0.5rem;
-    margin-top: 2rem;
-    padding-bottom: 1rem; */
   }
   .quantity-stats {
     display: flex;
@@ -1396,25 +1337,12 @@ footer {
     height: 3.2rem;
     font-size: 1.6rem;
   }
-  /* .border-for-stats {
-    padding: 0.5rem;
-    border: 0.2rem solid $amulet-green-400;
-    animation: wind 6s ease-in-out infinite;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  } */
   .p-description-stats {
     font-size: 1.1rem;
   }
-  /* .bottom-p-content-div {
-    padding: 0.5rem;
-  } */
   .section-5 {
     padding: 2rem;
   }
-  /* .office-div,
-  .join-div {
-    margin-top: 2rem;
-  } */
   .h-office-and-join {
     font-size: 1.3rem;
     line-height: 2.6rem;
@@ -1425,16 +1353,10 @@ footer {
     line-height: 2.2rem;
   }
   .div-for-contact-list {
-    /*  display: flex;
-    justify-content: center;
-    align-items: center; */
     margin: 2.5rem 0;
     font-size: 1.1rem;
     line-height: 2.2rem;
   }
-  /*   .li-into-ul::before {
-    margin-right: 1rem;
-  } */
   .form-div {
     margin-top: 2.5rem;
   }
@@ -1457,9 +1379,6 @@ footer {
     height: auto;
     line-height: 2.2rem;
     font-size: 1.1rem;
-    /*  
-    padding-left: 0.5rem;
-    margin-bottom: 1rem; */
   }
   #label-demo-portf {
     line-height: 2.4rem;
@@ -1619,28 +1538,6 @@ footer {
   .section-3 {
     padding: 3rem;
   }
-  /* .all-our-vision-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    width: 100%;
-    height: auto;
-  } */
-  /* .visions-div {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    max-width: 25rem;
-    height: 15rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: $black-700;
-    border: $grey-700 0.1rem solid;
-  } */
   .section-4 {
     padding: 3rem;
   }
@@ -1654,9 +1551,6 @@ footer {
     height: auto;
   }
   /* content overview */
-  /* .content-overview-div {
-    margin-top: 2rem;
-  } */
   .h-content-overview {
     font-size: 1.5rem;
     line-height: 3rem;
@@ -1674,6 +1568,14 @@ footer {
     height: auto;
     width: 100%;
     max-width: 56rem;
+    padding: 1.5rem;
+  }
+  .three-stats-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-p-content-div {
     padding: 1rem;
   }
   .quantity-stats {
@@ -1682,7 +1584,7 @@ footer {
     font-size: 1.6rem;
   }
   .border-for-stats {
-    padding: 1rem;
+    padding: 2rem;
   }
   .p-description-stats {
     font-size: 1.2rem;
@@ -1690,11 +1592,6 @@ footer {
   .section-5 {
     padding: 3rem;
   }
-  /*  .office-div,
-  .join-div {
-    margin-top: 2rem;
-  } 
-   */
   .h-office-and-join {
     font-size: 1.5rem;
     line-height: 3rem;
@@ -2000,7 +1897,7 @@ footer {
     align-items: center;
     height: auto;
     width: 100%;
-    padding: 2rem;
+    padding: 3rem;
   }
   .quantity-stats {
     width: 3.5rem;
@@ -2107,18 +2004,37 @@ footer {
     max-width: 52rem;
   }
   .section-2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
     padding: 4rem 8rem;
   }
-  .h-section-2 {
-    font-size: 2.2rem;
-    text-transform: uppercase;
-    width: 100%;
-    margin-bottom: 3.4rem;
-    font-weight: 700;
+  .h-section {
+    margin-bottom: 1.5rem;
+  }
+  .story-strimz-h4 {
+    margin-bottom: 1.5rem;
+  }
+  .story-strimz-p {
+    max-width: 52rem;
+  }
+  .section-3 {
+    padding: 4rem 8rem;
+  }
+  .section-4 {
+    padding: 4rem 8rem;
+  }
+  .h-content-overview {
+    margin-bottom: 1.5rem;
+  }
+  .p-content-overview {
+    max-width: 52rem;
+  }
+  .section-5 {
+    padding: 4rem 8rem;
+  }
+  .h-office-and-join {
+    margin-bottom: 1.5rem;
+  }
+  .p-office-and-join {
+    max-width: 52rem;
   }
   .footer-top {
     display: flex;
