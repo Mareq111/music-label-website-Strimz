@@ -386,13 +386,13 @@ html {
 #first-strimz-p {
   padding-bottom: 0.3rem;
   border-bottom: 0.1rem solid #26acac;
-  animation: fadeInFirstText 9s infinite;
+  animation: fadeInFirstText 8s infinite;
 }
 
 #second-strimz-p {
   padding-bottom: 0.3rem;
   border-bottom: 0.1rem solid #85ab7b;
-  animation: fadeInSecondText 9s infinite;
+  animation: fadeInSecondText 8s infinite;
 }
 
 @keyframes fadeInFirstText {
@@ -836,8 +836,10 @@ html {
 }
 
 .choose-file::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   content: "Upload Your File";
-  display: inline-block;
   background-color: #3e3c3c;
   border: 0.1rem solid #8d8c8c;
   padding: 0.5rem;
@@ -1548,30 +1550,229 @@ footer {
     height: 0.1rem;
     margin: 1.5rem 0;
   }
-  .h2_description {
-    line-height: 3.6rem;
-    font-size: 1.8rem;
-  }
-  .btn-discover {
-    padding: 1rem;
-    width: 22rem;
-    height: auto;
-    margin: 2rem 0;
-    font-size: 1.4rem;
-  }
   .section-2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
     padding: 3rem;
   }
-  .h-section-2 {
+  .h-section {
     font-size: 1.8rem;
-    text-transform: uppercase;
+    line-height: 3.6rem;
+    margin-bottom: 1rem;
+  }
+  .logo-and-description {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .logo-strimz {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .description-strimz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .strimz-h3 {
+    font-size: 1.7rem;
+  }
+  .strimz-p-description {
+    font-size: 1.1rem;
+  }
+  .story-strimz {
+    gap: 2.5rem;
+  }
+  .story-strimz-h4 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+  .story-strimz-p {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    max-width: 44rem;
+  }
+  .section-3 {
+    padding: 3rem;
+  }
+  /* .all-our-vision-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     width: 100%;
-    margin-bottom: 2.6rem;
-    font-weight: 700;
+    height: auto;
+  } */
+  /* .visions-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 25rem;
+    height: 15rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: $black-700;
+    border: $grey-700 0.1rem solid;
+  } */
+  .section-4 {
+    padding: 3rem;
+  }
+  .img-background-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  /* content overview */
+  /* .content-overview-div {
+    margin-top: 2rem;
+  } */
+  .h-content-overview {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+  .p-content-overview {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    max-width: 44rem;
+  }
+  .wrapper-div-for-768px {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: auto;
+  }
+  .three-stats-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    max-width: 44rem;
+    /*  margin-right: 2rem; */
+    /*  padding: 0.5rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem; */
+  }
+  .bottom-p-content-div {
+    padding: 0;
+  }
+  /* .quantity-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.6rem;
+  } */
+  /* .border-for-stats {
+    padding: 0.5rem;
+    border: 0.2rem solid $amulet-green-400;
+    animation: wind 6s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  } */
+  /* 
+  .p-description-stats {
+    font-size: 1.1rem;
+  } */
+  .section-5 {
+    padding: 3rem;
+  }
+  /*  .office-div,
+  .join-div {
+    margin-top: 2rem;
+  } 
+   */
+  .h-office-and-join {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+  .p-office-and-join {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    max-width: 44rem;
+  }
+  .div-for-contact-list {
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+  .border-bottom-line {
+    padding: 1.5rem 0;
+  }
+  .without-border-bottom-line {
+    padding: 1.5rem 0;
+  }
+  .form-div {
+    margin-top: 3rem;
+  }
+  #form-h {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 2rem 0;
+  }
+  .label-title-main {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+  .main-inputs {
+    max-width: 20rem;
+    line-height: 2.4rem;
+    font-size: 1.2rem;
+  }
+  #label-demo-portf {
+    line-height: 2.6rem;
+    font-size: 1.3rem;
+  }
+  .choose-file {
+    margin: 2rem 0;
+    max-width: 20rem;
+  }
+  .choose-file::before {
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+  .label-title-inner {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+  #label-preffered {
+    margin-bottom: 1.5rem;
+  }
+  .checkbox-label {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+  .checkbox-label .checkmark {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: 1.5rem;
+    margin-left: 2rem;
+  }
+  .checkbox-label input:checked ~ .checkmark::after {
+    left: 0.6rem;
+    top: 0.3rem;
+    width: 0.3rem;
+    height: 0.7rem;
+  }
+  .reset-submit-div {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+  #reset {
+    width: 8rem;
+  }
+  #submit {
+    width: 8rem;
   }
 }
 @media (min-width: 1024px) {
