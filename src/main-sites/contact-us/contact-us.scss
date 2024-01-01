@@ -16,6 +16,11 @@ $black-600: #120f10;
 $eastern-blue-500: #26acac;
 $amulet-green-400: #85ab7b;
 $ming-blue-600: #367983;
+//borders for artists image
+$border-el-double-m: rgba(101, 68, 49, 1);
+$border-jackie: rgba(138, 145, 179, 1);
+$border-elKaptn: rgba(247, 232, 141, 1);
+$border-mollyGranoli: rgba(228, 174, 236, 1);
 
 //mini- SINGLES shadows and more
 $shadow-a-horse: rgba(23, 59, 59, 0.5);
@@ -93,112 +98,112 @@ $shadow-black: rgba(30, 29, 29, 0.6);
 $shadow-black-transparent: rgba(0, 0, 0, 0.8);
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 //styling
 
 html {
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 16px;
-    overflow-x: hidden;
-    background-color: $black-900;
-    color: $white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  background-color: $black-900;
+  color: $white;
 }
 
 .top-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $shadow-black-transparent;
-    backdrop-filter: blur(0.5rem);
-    width: 100%;
-    height: 3.5rem;
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $shadow-black-transparent;
+  backdrop-filter: blur(0.5rem);
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 2;
 }
 #logo,
 #dropdown-menu-icon {
-    display: block;
-    width: 1.75rem;
-    height: 1.75rem;
-    font-size: 1.75rem;
-    transition: ease-in-out 0.2s;
-    cursor: pointer;
-    &:hover {
-        color: $grey-500;
-    }
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 1.75rem;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+  &:hover {
+    color: $grey-500;
+  }
 }
 #chevron-to-show-social-menu {
-    display: none;
+  display: none;
 }
 .nav-desktop {
-    display: none;
+  display: none;
 }
 
 //toggle menu
 
 .toggle-menu {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: auto;
-    background-color: $black-600;
-    transform: translateY(3.5rem);
-    color: $grey-500;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: $black-600;
+  transform: translateY(3.5rem);
+  color: $grey-500;
 
-    border-radius: 0 0 5% 5%;
-    box-shadow: 1px 3px 15px $shadow-black-transparent;
-    opacity: 0;
+  border-radius: 0 0 5% 5%;
+  box-shadow: 1px 3px 15px $shadow-black-transparent;
+  opacity: 0;
 }
 
 .toggle-menu.active {
-    transition: 0.2s ease-in-out;
-    opacity: 1;
-    display: block;
-    z-index: 3;
+  transition: 0.2s ease-in-out;
+  opacity: 1;
+  display: block;
+  z-index: 3;
 }
 
 .all-inside {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 1rem;
 }
 
 .toggle_menu-a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: 800;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 .nav-a-toggle-menu {
-    text-decoration: none;
-    color: $amulet-green-400;
-    transition: 0.1s ease-in-out;
-    &:hover {
-        /* text-decoration: underline 0.2rem $eastern-blue-500; */
-        transform: scale(1.05);
-        color: $grey-600;
-    }
+  text-decoration: none;
+  color: $amulet-green-400;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    /* text-decoration: underline 0.2rem $eastern-blue-500; */
+    transform: scale(1.05);
+    color: $grey-600;
+  }
 }
 
 //right side toggle menu
 .toggle-column-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: auto;
-    gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  gap: 0.5rem;
 }
 
 #toggle-menu-a-1,
@@ -210,684 +215,849 @@ html {
 #toggle-menu-a-7,
 #toggle-menu-a-8,
 #toggle-menu-a-9 {
-    color: $white;
-    font-size: 1.75rem;
-    transition: 0.1s ease-in-out;
+  color: $white;
+  font-size: 1.75rem;
+  transition: 0.1s ease-in-out;
 
-    &:hover {
-        transform: scale(1.2);
-        color: $grey-500;
-    }
+  &:hover {
+    transform: scale(1.2);
+    color: $grey-500;
+  }
 }
 
 /* bottom navigation */
 .bottom-navigation-only {
-    height: 49.8%;
-    width: 100vw;
+  height: 49.8%;
+  width: 100vw;
 }
 
 .bottom-nav-ul {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    list-style: none;
-    font-size: 0.9rem;
-    padding: 0 1.5rem;
-    width: 100vw;
-    height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  font-size: 0.9rem;
+  padding: 0 1.5rem;
+  width: 100vw;
+  height: auto;
 }
 
 .bottom-li-nav {
-    margin: 1rem;
-    gap: 1.5rem;
+  margin: 1rem;
+  gap: 1.5rem;
 }
 
 #bottom-li-nav-about,
 #bottom-li-nav-jobs,
 #bottom-li-nav-appren {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #bottom-li-nav-about {
-    color: $amulet-green-400;
+  color: $amulet-green-400;
 }
 .nav-a-social {
-    display: none;
+  display: none;
 }
 //section 1
 
 .section-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 4rem 0.5rem 0 0.5rem;
-    /* z-index: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 4rem 0.5rem 0 0.5rem;
+  /* z-index: 1; */
 }
 
 .section-1-card {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-    /* z-index: 1; */
-    background-color: $shadow-black;
-    border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+  /* z-index: 1; */
+  background-color: $shadow-black;
+  border-radius: 1rem;
 }
 //name and logo
 .link-to-story {
-    text-decoration: none;
-    color: $white;
-    cursor: pointer;
+  text-decoration: none;
+  color: $white;
+  cursor: pointer;
 }
 
 .name-and-logo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    gap: 1.3rem;
-    line-height: 3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  gap: 1.3rem;
+  line-height: 3.8rem;
 }
 .h1-main-name {
-    color: $white;
-    font-weight: 800;
-    width: auto;
-    font-size: 1.9rem;
-    &:hover,
-    :focus,
-    :active {
-        color: $eastern-blue-500;
-    }
+  color: $white;
+  font-weight: 800;
+  width: auto;
+  font-size: 1.9rem;
+  &:hover,
+  :focus,
+  :active {
+    color: $eastern-blue-500;
+  }
 }
 .img-square-section {
-    width: 1.9rem;
-    height: 1.9rem;
+  width: 1.9rem;
+  height: 1.9rem;
 }
 
 //introduction
 .dot-and-introduction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    /*  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /*  width: 100%;
     height: auto; */
-    gap: 0.5rem;
-    line-height: 1.6rem;
+  gap: 0.5rem;
+  line-height: 1.6rem;
 }
 .p_introduction {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    font-size: 0.8rem;
-    color: $grey-600;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: $grey-600;
 }
 #dot-introduction {
-    color: $amulet-green-400;
-    font-size: 0.6rem;
+  color: $amulet-green-400;
+  font-size: 0.6rem;
 }
 //main description
 
 .p_description {
-    line-height: 2rem;
-    font-size: 1rem;
-    font-weight: 500;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 .hr-line-to-p {
-    border: none;
-    width: 100%;
-    background-color: $grey-700;
-    height: 0.05rem;
-    opacity: 0.1;
-    margin: 0.5rem 0;
+  border: none;
+  width: 100%;
+  background-color: $grey-700;
+  height: 0.05rem;
+  opacity: 0.1;
+  margin: 0.5rem 0;
 }
 
 .h2_description {
-    line-height: 2.8rem;
-    font-size: 1.4rem;
-    font-weight: 700;
+  line-height: 2.8rem;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 .name-in-p-green {
-    color: $amulet-green-400;
-    font-weight: 700;
+  color: $amulet-green-400;
+  font-weight: 700;
 }
 .name-in-p-blue {
-    color: $eastern-blue-500;
-    font-weight: 700;
+  color: $eastern-blue-500;
+  font-weight: 700;
 }
 
 //btn discover story
 .discover-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
 }
 .btn-discover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: $grey-700;
-    color: $white;
-    width: 14rem;
-    height: auto;
-    margin: 1rem 0;
-    font-size: 1rem;
-    font-weight: 700;
-    transition: 0.1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: $grey-700;
+  color: $white;
+  width: 14rem;
+  height: auto;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.1s ease-in-out;
 
-    &:hover,
-    :focus,
-    :active {
-        outline: none;
-        transform: scale(1.1);
-        background-color: $grey-600;
-        color: $black-900;
-    }
+  &:hover,
+  :focus,
+  :active {
+    outline: none;
+    transform: scale(1.1);
+    background-color: $grey-600;
+    color: $black-900;
+  }
 }
 .hr-line-to-sections {
-    border: none;
-    width: 100%;
-    background-color: $grey-700;
-    height: 0.05rem;
-    opacity: 0.1;
-    margin-top: 0.5rem;
+  border: none;
+  width: 100%;
+  background-color: $grey-700;
+  height: 0.05rem;
+  opacity: 0.1;
+  margin-top: 0.5rem;
 }
 
-//! section 2 tour dates
+//! section 2
 .section-2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-}
-.month-div {
-    display: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
 }
 
-.month-div.active {
-    display: block;
+.h-section {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
-.btn-month:focus {
-    outline: 0.2rem solid $red-300; 
+//new code
+.logo-and-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.logo-strimz {
+  width: 3rem;
+  height: 3rem;
+}
+.description-strimz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.strimz-h3 {
+  font-size: 1.5rem;
+}
+//!description label animation text
+.strimz-p-description {
+  background-color: transparent;
+  font-size: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  gap: 0.2rem;
+  color: transparent;
+}
+#first-strimz-p {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid $eastern-blue-500;
+  animation: fadeInFirstText 8s infinite;
+}
+
+#second-strimz-p {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid $amulet-green-400;
+  animation: fadeInSecondText 8s infinite;
+}
+
+@keyframes fadeInFirstText {
+  0% {
+    opacity: 1;
+    color: transparent;
+  }
+  25% {
+    opacity: 1;
+    color: $grey-600;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInSecondText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+    color: transparent;
+  }
+  75% {
+    opacity: 1;
+    color: $grey-600;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+//strimz story divs
+
+.story-strimz {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 2rem;
+}
+.story-strimz-h4 {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: $eastern-blue-500;
+  font-weight: 700;
+}
+.story-strimz-p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+//! link styling for artist anchor
+.album-link-styling {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  color: $white;
+  transition: color 500ms;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  &:hover {
+    color: $amulet-green-400;
+  }
+  &:hover::after {
+    transform: scale(1);
+  }
+}
+
+.album-link-styling::before,
+.album-link-styling::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 2px;
+}
+.album-link-styling::before {
+  background-color: $amulet-green-400;
+}
+.album-link-styling::after {
+  background-color: $eastern-blue-500;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 600ms;
+}
+
+//!section 5
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+}
+#img-backgorund-office {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 5%;
+}
+
+.office-div,
+.join-div {
+  margin-top: 2rem;
+}
+
+.h-office-and-join {
+  height: auto;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: $eastern-blue-500;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.p-office-and-join {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: $white;
+}
+//contact us
+.div-for-contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.ul-contact-list {
+  padding: 0rem;
+  list-style-type: none;
+}
+.li-into-ul::before {
+  content: "•";
+  color: $eastern-blue-500;
+  margin-right: 1rem;
+}
+.li-into-ul {
+  color: $white;
+  font-weight: 700;
+}
+.border-bottom-line {
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid $grey-700;
+}
+.without-border-bottom-line {
+  padding: 1rem 0;
+}
+.li-content {
+  color: $grey-600;
+  font-weight: 500;
+}
+
+// form
+.form-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+}
+.main-form {
+  border-radius: 1rem;
+  border: 0.4rem solid $grey-700;
+  background-color: $black-700;
+  padding: 0 1rem;
+}
+
+#form-h {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  margin: 1rem 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.label-title-main {
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  color: $white;
+  font-weight: 700;
+}
+
+.main-inputs {
+  border-radius: 0.5rem;
+  width: 80%;
+  height: auto;
+  line-height: 2rem;
+  font-size: 1rem;
+  background-color: $black-900;
+  color: $white;
+  border: 0.1rem solid $grey-700;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  &:focus {
+    outline: none;
+  }
+}
+//choose a file
+.file-input-container {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+#upload-icon {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 0.9rem;
+}
+#label-demo-portf {
+  line-height: 2rem;
+  font-size: 1rem;
+  color: $white;
+  font-weight: 700;
+}
+
+.choose-file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.choose-file {
+  display: flex;
+  font-family: inherit;
+  margin: 1rem 0;
+  width: 100%;
+  height: auto;
+}
+.choose-file::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "Upload Your File";
+  background-color: $grey-700;
+  border: 0.1rem solid $grey-600;
+  padding: 0.5rem;
+  outline: none;
+  color: $white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+}
+
+#demo {
+  padding: 0.5rem;
+  background-color: transparent;
+}
+//! inner fields
+.label-title-inner {
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  color: $white;
+  font-weight: 700;
+}
+
+.inner-checkboxes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+  background-color: $black-600;
+  border: 0.2rem solid $grey-700;
+}
+#label-preffered {
+  margin-bottom: 1rem;
+  color: $eastern-blue-500;
+}
+
+//! checkbox change to custom checkmark
+
+.checkbox-label {
+  padding-right: 1rem;
+  // styling for the input checkbox
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  // styling for the label containing the checkbox
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  gap: 0.5rem;
+
+  // styling for the custom checkbox
+  .checkmark {
+    background-color: $amulet-green-400;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.4rem;
+    width: 1.4rem;
+    background-color: $white;
+    border-radius: 0.5rem;
+    transition: background-color 200ms;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+
+    // Hidden checkmark (initially)
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    &:focus {
+      display: none;
+      outline: none;
+    }
   }
 
-//btn chooser
-.btns-chooser {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    gap: 0.5rem;
-    padding: 0 0 0.5rem 0;
-    margin-bottom: 1.5rem;
-    background-color: $black-900;
-    border-bottom: 0.4rem solid $black-700;
-    position: sticky;
-    top: 3.5rem;
-    z-index: 1;
-}
-
-.btns-chooser.reached {
-    position: static;
-}
-.hr-line-under-btns {
-    border: none;
-    width: 100%;
-    background-color: $grey-700;
-    height: 0.05rem;
-    opacity: 0.1;
-    margin-bottom: 1.5rem;
-}
-
-.btn-month {
-    width: 25%;
-    height: 2.5rem;
+  // styling for the checked checkbox
+  input:checked ~ .checkmark {
+    background-color: $amulet-green-400;
     border-radius: 0.5rem;
+    animation: clicked-checkbox 400ms ease-in-out;
 
-    outline: none;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-    background-color: transparent;
-    color: $white;
-    border: 0.1rem $grey-600;
-    font-size: 0.8rem;
-    opacity: 0.5;
-    transition: 0.2s ease-in-out;
-    &:hover {
-        background-color: $grey-700;
-        color: $white;
+    // display the checkmark when checkbox is checked
+    &::after {
+      display: block;
+      left: 0.5rem;
+      top: 0.25rem;
+      width: 0.25rem;
+      height: 0.6rem;
+      border: solid $white;
+      border-width: 0 0.15rem 0.15rem 0;
+      transform: rotate(45deg);
     }
+  }
 }
-.btn-month.active {
+//focus-within only for people who check checkbox with tab key
+.user-is-tabbing .checkbox-label:focus-within {
+  outline: 0.2rem solid $eastern-blue-500;
+}
+
+#label-genre-custom {
+  padding-left: 1rem;
+}
+
+//checkbox animation
+
+@keyframes clicked-checkbox {
+  0% {
+    box-shadow: 0 0 0 #a7c89f;
+    rotate: 25deg;
+  }
+
+  50% {
+    rotate: -25deg;
+  }
+
+  75% {
+    box-shadow: 0 0 0 10px #51634b;
+  }
+
+  100% {
+    box-shadow: 0 0 0 13px #35482f;
+    rotate: 0;
+  }
+}
+
+//!end of test
+
+.reset-submit-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+#reset {
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  color: $white;
+  border: 0.1rem solid $grey-600;
+  outline: none;
+  cursor: pointer;
+  &:hover,
+  &:active {
     background-color: $red-300;
+    border-color: $red-500;
     color: $black-900;
-    opacity: 1;
+  }
+  &:focus {
+    outline: 0.2rem solid $red-500;
+  }
 }
-//end
-
-.h-section-2 {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    width: 100%;
-    margin-bottom: 2rem;
-    font-weight: 700;
+#submit {
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 2.5rem;
+  color: $black-900;
+  background-color: $white;
+  border: 0.1rem solid $grey-600;
+  outline: none;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background-color: $amulet-green-400;
+    border-color: $amulet-green-400;
+    color: $black-900;
+  }
+  &:focus {
+    outline: 0.2rem solid $amulet-green-400;
+  }
 }
-.section-2-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    /* margin-bottom: 1rem; */
-    &:hover {
-        border-bottom: 0.1rem solid $grey-700;
-    }
-}
-.a-link-card {
-    color: $white;
-    text-decoration: none;
-}
-.tour-dates-all-info {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    gap: 1rem;
-}
-.date {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.2rem;
-    width: 100%;
-}
-
-.city {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    min-width: 6.3rem;
-    width: auto;
-    height: auto;
-}
-.place {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.2rem;
-}
-.city-place-div {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    font-size: 1rem;
-    width: 100%;
-    gap: 0.5rem;
-    padding-top: 0.5rem;
-    height: auto;
-}
-//btn
-.btn-details-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-}
-
-.btn-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: transparent;
-    border: 0.1rem solid $grey-700;
-    color: $white;
-    width: 14rem;
-    height: auto;
-    /* margin: 1rem 0; */
-    font-size: 1rem;
-    font-weight: 700;
-    transition: 0.1s ease-in-out;
-
-    &:hover,
-    :focus,
-    :active {
-        outline: none;
-        transform: scale(1.1);
-        background-color: $grey-600;
-        color: $black-900;
-    }
-}
-.name-tag-blue {
-    color: $eastern-blue-500;
-}
-.name-tag-green {
-    color: $amulet-green-400;
-}
-
-.hr-line-to-sections-chooser {
-    border: none;
-    width: 100%;
-    background-color: $grey-700;
-    height: 0.05rem;
-    opacity: 0.1;
-    margin-top: 0.5rem;
-}
-
-//section 5 upcoming album
-
-.section5 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-    background-color: $black-900;
-}
-.link-to-upcoming-album {
-    text-decoration: none;
-    color: $white;
-    cursor: pointer;
-}
-.upcoming-album-title {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-//img
-.upcoming-album-img-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1.5rem 0;
-}
-
-.upcoming-album-img {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    border-radius: 1rem;
-}
-.inner-div-upcoming-album {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 1rem;
-    transition: 0.1s ease-in-out;
-    border-radius: 1rem;
-    &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 8px $shadow-red-path-to-zukunft;
-    }
-}
-
-.h-section5 {
-    font-size: 1.4rem;
-    line-height: 2.8rem;
-    text-transform: uppercase;
-    width: 100%;
-    font-weight: 800;
-    color: $white;
-    width: auto;
-    transition: 0.2s ease-in-out;
-    margin-bottom: 0.5rem;
-    &:hover,
-    :focus,
-    :active {
-        color: $eastern-blue-500;
-    }
-}
-
-.title-upcoming-album {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.name-tag-red {
-    color: $red-300;
-    font-weight: 800;
-}
-
-.div_for_p-section5 {
-    margin-top: 1.5rem;
-}
-.p_section5-mini-description {
-    font-size: 0.8rem;
-    color: $grey-600;
-}
-#tour-date-months {
-    margin-right: 0.5rem;
-}
-.p_section5 {
-    font-size: 1rem;
-    line-height: 2rem;
-}
-//hidden p only for 1024px scrrens and bigger
-.p_section5-hidden {
-    display: none;
-}
-
-//btn 1
-.discover-album-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 2rem;
-    gap: 2rem;
-}
-
-.btn-discover-album {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-}
-
-.a-btn-discover-album {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    background-color: $grey-700;
-    color: $white;
-    width: 14rem;
-    height: auto;
-    /*  margin: 1rem 0 */
-    font-size: 1rem;
-    font-weight: 700;
-    transition: 0.1s ease-in-out;
-
-    &:hover,
-    :focus,
-    :active {
-        outline: none;
-        transform: scale(1.1);
-        background-color: $grey-600;
-        color: $black-900;
-    }
-}
-
-//footer new
- // footer
+// footer
 
 //top footer
 
 .hr-line-footer {
-    width: 100%;
-    border: none;
-    background-color: $grey-600;
-    height: 0.05rem;
-    opacity: 0.1;
+  width: 100%;
+  border: none;
+  background-color: $grey-600;
+  height: 0.05rem;
+  opacity: 0.1;
 }
 footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    padding: 0rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding: 0rem 1rem;
 }
 .footer-top {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 2rem 1rem;
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem 1rem;
 }
 .footer-a-1,
 .footer-a-2 {
-    display: flex;
-    flex-direction: column;
-    width: auto;
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
 
 .nav-a-footer {
-    color: $amulet-green-400;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    text-decoration: none;
-    transition: 0.1s ease-in-out;
-    padding: 0.5rem; 
-    &:hover {
-        transform: scale(1.05);
-        color: $grey-600;
-    }
+  color: $amulet-green-400;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: 0.1s ease-in-out;
+  padding: 0.5rem;
+  &:hover {
+    transform: scale(1.05);
+    color: $grey-600;
+  }
 }
 //footer form -newsletter
 .description-and-email-input {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: auto;
-    height: auto;
-    gap: 0.5rem;
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  gap: 0.5rem;
+  width: 100%;
+  height: auto;
 }
 .email-input-description {
-    padding: 2rem 0 1rem 0;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: $grey-600;
-
+  padding: 2rem 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: $grey-600;
 }
 .input-wth-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    border-bottom: 0.1rem solid $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  border-bottom: 0.1rem solid $white;
 }
 
 .input-email {
-    width: 80%;
-    height: auto;
-    line-height: 2rem;
-    font-size: 1.4rem;
-    background-color: transparent;
-    color: $white;
-    border: none;
-    margin-right: 0;
-    padding: 1rem 0;
-    &:focus {
-        outline: none;
-  
-    }
+  width: 80%;
+  height: auto;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: $white;
+  border: none;
+  margin-right: 0;
+  padding: 1rem 0;
+  &:focus {
+    outline: none;
+  }
 }
 .send-btn {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   border-radius: 50%;
-    border: 0.1rem solid ;
-    background-color: transparent;
-    color: $eastern-blue-500;
-    padding: 0;
-    margin-left: 0;
-    width: auto;
-    height: auto;
-    transition: 0.2s ease-in-out;
-    font-size: 1.4rem;
-    padding: 0.5rem;
-    z-index: 1;
-    cursor: pointer;
-    &:hover {
-        transform: scale(1.1);
-        color: $grey-500;
-    }
-    &:focus {
-        transform: scale(1.1);
-        color: $amulet-green-400;
-    }
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.1rem solid;
+  background-color: transparent;
+  color: $eastern-blue-500;
+  padding: 0;
+  margin-left: 0;
+  width: auto;
+  height: auto;
+  transition: 0.2s ease-in-out;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  z-index: 1;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    color: $grey-500;
+  }
+  &:focus {
+    transform: scale(1.1);
+    color: $amulet-green-400;
+  }
 }
-
-
-
 
 //bottom footer
 
 .footer-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
 }
 
 .footer-p-and-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    gap: 1rem;
-    padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+  padding-top: 1rem;
 }
 
 .nav-a-footer-social {
-    padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 #bottom-footer-social-1,
@@ -899,1108 +1069,907 @@ footer {
 #bottom-footer-social-7,
 #bottom-footer-social-8,
 #bottom-footer-social-9 {
-    font-size: 1.4rem;
-    color: $grey-500;
-    cursor: pointer;
+  font-size: 1.4rem;
+  color: $grey-500;
+  cursor: pointer;
 
-    &:hover {
-        transition: 0.1s ease-in-out;
-        transform: scale(1.2);
-        color: $amulet-green-400;
-    }
+  &:hover {
+    transition: 0.1s ease-in-out;
+    transform: scale(1.2);
+    color: $amulet-green-400;
+  }
 }
 .time-and-rights {
-    font-size: 1rem;
-    color: $grey-500;
-    font-size: 600;
+  font-size: 1rem;
+  color: $grey-500;
+  font-size: 600;
 }
 //about me
 .about-me {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    height: auto;
-    padding-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
 }
 #description-about-me {
-    font-size: 1rem;
-    width: 80%;
-    padding-bottom: 1rem;
+  font-size: 1rem;
+  width: 80%;
+  padding-bottom: 1rem;
 }
 #anchor-description-about-me {
-    text-decoration: none;
-    color: $grey-500;
-    font-weight: 800;
-    transition: 0.1s ease-in-out;
-    &:hover {
-        color: $eastern-blue-500;
-    }
+  text-decoration: none;
+  color: $grey-500;
+  font-weight: 800;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    color: $eastern-blue-500;
+  }
 }
 
 #my-name-is {
-    font-size: 1.5rem;
-    padding: 0.5rem 0;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
 }
 .my-social {
-    font-size: 3rem;
-    color: $ming-blue-600;
-    transition: 0.1s ease-in-out;
-    &:hover {
-        color: $amulet-green-400;
-    }
+  font-size: 3rem;
+  color: $ming-blue-600;
+  transition: 0.1s ease-in-out;
+  &:hover {
+    color: $amulet-green-400;
+  }
 }
 
 //media queries for 375px screens
 
 @media (min-width: 375px) {
-    .name-and-logo {
-        gap: 2rem;
-        line-height: 4.2rem;
-    }
-    .h1-main-name {
-        font-size: 2.1rem;
-    }
-    .img-square-section {
-        width: 2.1rem;
-        height: 2.1rem;
-    }
+  .name-and-logo {
+    gap: 2rem;
+    line-height: 4.2rem;
+  }
+  .h1-main-name {
+    font-size: 2.1rem;
+  }
+  .img-square-section {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
 }
 
 //media queries for 425px screens
 
 @media (min-width: 425px) {
-    //toggle menu
-    .all-inside {
-        padding: 2rem;
-    }
-    .toggle_menu-a {
-        font-size: 1.4rem;
+  //toggle menu
+  .all-inside {
+    padding: 2rem;
+  }
+  .toggle_menu-a {
+    font-size: 1.4rem;
+  }
+
+  //section 1
+  //name and logo
+  .link-to-story {
+    text-decoration: none;
+    color: $white;
+    cursor: pointer;
+  }
+
+  .name-and-logo {
+    gap: 2.2rem;
+    line-height: 4.6rem;
+  }
+  .h1-main-name {
+    font-size: 2.3rem;
+  }
+  .img-square-section {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  //main description
+
+  .p_description {
+    line-height: 2.2rem;
+    font-size: 1.1rem;
+    max-width: 36rem;
+  }
+  .hr-line-to-p {
+    height: 0.1rem;
+    margin: 1rem 0;
+  }
+
+  .h2_description {
+    line-height: 3.2rem;
+    font-size: 1.6rem;
+  }
+
+  //! section 2 425px
+  .section-2 {
+    padding: 2rem;
+  }
+
+  .h-section {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  //strimz story divs
+
+  .story-strimz {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+  }
+  .story-strimz-h4 {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+  }
+  .story-strimz-p {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+
+  //!section 5
+  .section-5 {
+    padding: 2rem;
+  }
+
+  .h-office-and-join {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+
+    margin-bottom: 1rem;
+  }
+  .p-office-and-join {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+  //contact us
+  .div-for-contact-list {
+    margin: 2.5rem 0;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+
+  // form
+  .form-div {
+    margin-top: 2.5rem;
+  }
+  .main-form {
+    padding: 0 2rem;
+  }
+
+  #form-h {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    margin: 1.5rem 0;
+  }
+  .label-title-main {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+
+  .main-inputs {
+    border-radius: 0.5rem;
+    width: 80%;
+    max-width: 20rem;
+    height: auto;
+    line-height: 2.2rem;
+    font-size: 1.1rem;
+  }
+  //choose a file
+
+  #label-demo-portf {
+    line-height: 2.4rem;
+    font-size: 1.2rem;
+  }
+
+  .choose-file {
+    margin: 2rem 0;
+    max-width: 20rem;
+  }
+  .choose-file::before {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  // inner fields
+  .label-title-inner {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+  #label-preffered {
+    margin-bottom: 1.5rem;
+  }
+
+  //! checkbox change to custom checkmark
+
+  .checkbox-label {
+    // styling for the label containing the checkbox
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    gap: 1rem;
+
+    // styling for the custom checkbox
+    .checkmark {
+      height: 1.5rem;
+      width: 1.5rem;
+      transition: background-color 200ms;
+      margin-right: 1rem;
+      margin-left: 1.5rem;
     }
 
-    //section 1 +0.2rem or 1rem
+    // styling for the checked checkbox
+    input:checked ~ .checkmark {
+      // display the checkmark when checkbox is checked
+      &::after {
+        left: 0.5rem;
+        top: 0.2rem;
+        width: 0.3rem;
+        height: 0.7rem;
+      }
+    }
+  }
+  #label-genre-custom {
+    padding-left: 1.5rem;
+  }
+  .reset-submit-div {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
+  #reset {
+    width: 7rem;
+  }
+  #submit {
+    width: 7rem;
+  }
 
-    /* .section-1-card {
-    padding: 3rem 2rem;
-} */
-    //name and logo
-    .link-to-story {
-        text-decoration: none;
-        color: $white;
-        cursor: pointer;
-    }
+  //footer
+  //top footer
+  footer {
+    padding: 0rem 2rem;
+  }
+  .nav-a-footer {
+    font-size: 1.6rem;
+  }
+  //footer boottom
 
-    .name-and-logo {
-        gap: 2.2rem;
-        line-height: 4.6rem;
-    }
-    .h1-main-name {
-        font-size: 2.3rem;
-    }
-    .img-square-section {
-        width: 2.3rem;
-        height: 2.3rem;
-    }
-    //main description
-
-    .p_description {
-        line-height: 2.2rem;
-        font-size: 1.1rem;
-        max-width: 36rem;
-    }
-    .hr-line-to-p {
-        height: 0.1rem;
-        margin: 1rem 0;
-    }
-
-    .h2_description {
-        line-height: 3.2rem;
-        font-size: 1.6rem;
-    }
-
-    //btn discover story
-
-    .btn-discover {
-        /* padding: 0.5rem 1rem; */ //bez zmian
-        width: 18rem;
-        height: auto;
-        margin: 1.5rem 0;
-        font-size: 1.2rem;
-    }
-    //! section 2 tour dates 425px
-    .section-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 2rem 1.5rem;
-    }
-
-    //btn chooser
-    .btns-chooser {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 0 1rem 0;
-        margin-bottom: 2rem;
-        width: 100%;
-        /* max-width: 34rem; */
-        /*  top: 3.5rem; */
-    }
-
-    .btn-month {
-        width: 25%;
-        height: 3rem;
-        font-size: 0.9rem;
-    }
-
-    .h-section-2 {
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        width: 100%;
-        margin-bottom: 2.4rem;
-        font-weight: 700;
-    }
-
-    .tour-dates-all-info {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        /*   gap: 1rem; */
-    }
-    .city {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-width: 6.5rem;
-        width: auto;
-        height: auto;
-    }
-    .place {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .row-date-place-location {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        height: auto;
-        width: 100%;
-        /*  gap: 0.5rem; */
-    }
-    .date {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: 1rem;
-        width: auto; //z auto
-        min-width: 5.3rem;
-        /* margin-right: 0.5rem; */
-    }
-    .city-place-div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        font-size: 1rem;
-        width: 100%;
-        /* gap: 0.5rem; */
-        padding: 0;
-        height: auto;
-    }
-    //btn
-
-    .btn-details-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        background-color: transparent;
-    }
-
-    .hr-line-to-sections-chooser {
-        height: 0.1rem;
-    }
-
-    //!section 5 tour
-
-    .section5 {
-        padding: 2rem;
-    }
-    .upcoming-album-title {
-        gap: 0.5rem;
-    }
-
-    .h-section5 {
-        font-size: 1.6rem;
-        line-height: 3.2rem;
-        margin-bottom: 1rem;
-    }
-
-    .title-upcoming-album {
-        font-size: 1.4rem;
-    }
-
-    .p_section5-mini-description {
-        font-size: 0.9rem;
-    }
-    .p_section5 {
-        font-size: 1.1rem;
-        line-height: 2.2rem;
-        max-width: 36rem;
-    }
-    //img
-    .upcoming-album-img-div {
-        /*  display: flex;
-        justify-content: center;
-        align-items: center; */
-        margin: 2rem 0;
-    }
-
-    .upcoming-album-img {
-        width: 100%;
-        height: auto;
-    }
-    .inner-div-upcoming-album {
-        /*  display: flex;
-        justify-content: center;
-        align-items: center; */
-        margin: 0 2rem;
-        max-width: 31rem;
-    }
-
-    //btn 1
-    .discover-album-div {
-        margin-top: 3rem;
-        gap: 2rem;
-    }
-
-    .a-btn-discover-album {
-        width: 18rem;
-        height: auto;
-        /* margin: 1.5rem 0; */
-        font-size: 1.2rem;
-    }
-
-    //footer
-    //top footer
-    footer {
-        padding: 0rem 2rem;
-    }
-    .nav-a-footer {
-        font-size: 1.6rem;
-    }
-    //footer boottom
-
-    #bottom-footer-social-1,
-    #bottom-footer-social-2,
-    #bottom-footer-social-3,
-    #bottom-footer-social-4,
-    #bottom-footer-social-5,
-    #bottom-footer-social-6,
-    #bottom-footer-social-7,
-    #bottom-footer-social-8,
-    #bottom-footer-social-9 {
-        font-size: 1.8rem;
-    }
-    .time-and-rights {
-        font-size: 1.2rem;
-    }
-    //about me
-    #description-about-me {
-        font-size: 1.2rem;
-        width: 80%;
-        padding-bottom: 1.5rem;
-    }
+  #bottom-footer-social-1,
+  #bottom-footer-social-2,
+  #bottom-footer-social-3,
+  #bottom-footer-social-4,
+  #bottom-footer-social-5,
+  #bottom-footer-social-6,
+  #bottom-footer-social-7,
+  #bottom-footer-social-8,
+  #bottom-footer-social-9 {
+    font-size: 1.8rem;
+  }
+  .time-and-rights {
+    font-size: 1.2rem;
+  }
+  //about me
+  #description-about-me {
+    font-size: 1.2rem;
+    width: 80%;
+    padding-bottom: 1.5rem;
+  }
 }
 // media q for 768px screens
 
 @media (min-width: 768px) {
-    //toggle menu
-    .toggle-menu {
-        width: 60%;
-        right: 0;
-    }
-    //section 1
-    .section-1-card {
-        padding: 3rem 2rem;
+  //toggle menu
+  .toggle-menu {
+    width: 60%;
+    right: 0;
+  }
+
+  //section 1
+  .section-1-card {
+    padding: 3rem 2rem;
+  }
+
+  .name-and-logo {
+    gap: 2.4rem;
+    line-height: 5rem;
+  }
+  .h1-main-name {
+    font-size: 2.5rem;
+  }
+  .img-square-section {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  //introduction
+  .dot-and-introduction {
+    gap: 1rem;
+    line-height: 2rem;
+  }
+  .p_introduction {
+    font-size: 1rem;
+  }
+  #dot-introduction {
+    font-size: 0.8rem;
+  }
+
+  //main description
+
+  .p_description {
+    line-height: 2.6rem;
+    font-size: 1.3rem;
+    max-width: 44rem;
+  }
+  .hr-line-to-p {
+    height: 0.1rem;
+    margin: 1.5rem 0;
+  }
+  //! section 2
+  .section-2 {
+    padding: 3rem;
+  }
+
+  .h-section {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    margin-bottom: 1rem;
+  }
+  //logo and description into our story
+  .logo-and-description {
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .logo-strimz {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .description-strimz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .strimz-h3 {
+    font-size: 1.7rem;
+  }
+  .strimz-p-description {
+    font-size: 1.1rem;
+  }
+
+  //strimz story divs
+
+  .story-strimz {
+    gap: 2.5rem;
+  }
+  .story-strimz-h4 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+  .story-strimz-p {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    max-width: 44rem;
+  }
+
+  //!section 5
+  .section-5 {
+    padding: 3rem;
+  }
+
+  .h-office-and-join {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+  .p-office-and-join {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    max-width: 44rem;
+  }
+  //contact us
+  .div-for-contact-list {
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+  .border-bottom-line {
+    padding: 1.5rem 0;
+  }
+  .without-border-bottom-line {
+    padding: 1.5rem 0;
+  }
+
+  // form
+  .form-div {
+    margin-top: 3rem;
+  }
+
+  #form-h {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 2rem 0;
+  }
+  .label-title-main {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+
+  .main-inputs {
+    max-width: 20rem;
+    line-height: 2.4rem;
+    font-size: 1.2rem;
+  }
+  //choose a file
+
+  #label-demo-portf {
+    line-height: 2.6rem;
+    font-size: 1.3rem;
+  }
+
+  .choose-file {
+    margin: 2rem 0;
+    max-width: 20rem;
+  }
+  .choose-file::before {
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+
+  // inner fields
+  .label-title-inner {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+  #label-preffered {
+    margin-bottom: 1.5rem;
+  }
+
+  //! checkbox change to custom checkmark
+
+  .checkbox-label {
+    // styling for the label containing the checkbox
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+
+    // styling for the custom checkbox
+    .checkmark {
+      height: 1.7rem;
+      width: 1.7rem;
+      margin-right: 1.5rem;
+      margin-left: 2rem;
     }
 
-    .name-and-logo {
-        gap: 2.4rem;
-        line-height: 5rem;
+    // styling for the checked checkbox
+    input:checked ~ .checkmark {
+      // display the checkmark when checkbox is checked
+      &::after {
+        left: 0.6rem;
+        top: 0.3rem;
+        width: 0.3rem;
+        height: 0.7rem;
+      }
     }
-    .h1-main-name {
-        font-size: 2.5rem;
-    }
-    .img-square-section {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    //introduction
-    .dot-and-introduction {
-        gap: 1rem;
-        line-height: 2rem;
-    }
-    .p_introduction {
-        font-size: 1rem;
-    }
-    #dot-introduction {
-        font-size: 0.8rem;
-    }
-
-    //main description
-
-    .p_description {
-        line-height: 2.6rem;
-        font-size: 1.3rem;
-        max-width: 44rem;
-    }
-    .hr-line-to-p {
-        height: 0.1rem;
-        margin: 1.5rem 0;
-    }
-
-    .h2_description {
-        line-height: 3.6rem;
-        font-size: 1.8rem;
-    }
-
-    //btn discover story
-
-    .btn-discover {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        margin: 2rem 0;
-        font-size: 1.4rem;
-    }
-    //! section 2
-    .section-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 3rem;
-    }
-    //
-
-    //btn chooser
-    .btns-chooser {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 3rem;
-    }
-    .btn-month {
-        width: 25%;
-        height: 3rem;
-        font-size: 1rem;
-    }
-
-    .h-section-2 {
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        width: 100%;
-        margin-bottom: 2.6rem;
-        font-weight: 700;
-    }
-
-    .tour-dates-all-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        height: 4rem;
-    }
-
-    .row-date-place-location {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        height: auto;
-        width: auto;
-        /* gap: 1rem; */
-    }
-    .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        margin-right: 1rem;
-        width: 8rem;
-    }
-    .city {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-width: 6.5rem;
-        width: auto;
-        height: auto;
-    }
-    .place {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .city-place-div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        font-size: 1rem;
-        width: 100%;
-        height: auto;
-    }
-    //btn
-
-    .btn-details-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        margin-left: auto; //test
-    }
-
-    //!section 5 upcoming album
-
-    .section5 {
-        padding: 3rem;
-    }
-    .upcoming-album-title {
-        gap: 0.7rem;
-    }
-
-    .h-section5 {
-        font-size: 1.8rem;
-        line-height: 3.6rem;
-        margin-bottom: 1rem;
-    }
-
-    .title-upcoming-album {
-        font-size: 1.6rem;
-    }
-
-    .p_section5-mini-description {
-        font-size: 1.1rem;
-    }
-    .p_section5 {
-        font-size: 1.3rem;
-        line-height: 2.6rem;
-        max-width: 44rem;
-    }
-    //img
-    .upcoming-album-img-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 3rem 0;
-    }
-
-    .upcoming-album-img {
-        width: 100%;
-        height: auto;
-    }
-    .inner-div-upcoming-album {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 3rem;
-        max-width: 31rem;
-    }
-
-    //btn 1
-    .discover-album-div {
-        margin-top: 4rem;
-        gap: 3rem;
-    }
-
-    .a-btn-discover-album {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        font-size: 1.4rem;
-    }
-
-    //footer top
+  }
+  .reset-submit-div {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+  #reset {
+    width: 8rem;
+  }
+  #submit {
+    width: 8rem;
+  }
+  //footer top
 }
 
 //media q for 1024px
 
 @media (min-width: 1024px) {
-    //nav top
-    // hide mobile menu and nav for desktop row - 1024+
-    .top-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $shadow-black-transparent;
-        backdrop-filter: blur(0.5rem);
-        width: 100%;
-        height: 3.5rem;
-        padding: 0 2rem;
-        position: fixed;
-        z-index: 2;
+  //nav top
+  // hide mobile menu and nav for desktop row - 1024+
+  .top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $shadow-black-transparent;
+    backdrop-filter: blur(0.5rem);
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 2rem;
+    position: fixed;
+    z-index: 2;
+  }
+  #logo {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.75rem;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+  }
+  #chevron-to-show-social-menu {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 1.75rem;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    border-radius: 50%;
+    &:hover {
+      color: $grey-500;
+      background-color: $black-600;
+      border-radius: 50%;
     }
-    #logo {
-        display: block;
-        width: 1.75rem;
-        height: 1.75rem;
-        font-size: 1.75rem;
-        transition: ease-in-out 0.2s;
-        cursor: pointer;
+    &.rotate {
+      transform: rotate(180deg);
     }
-    #chevron-to-show-social-menu {
-        display: block;
-        width: 1.75rem;
-        height: 1.75rem;
-        font-size: 1.75rem;
-        transition: ease-in-out 0.2s;
-        cursor: pointer;
-        border-radius: 50%;
-        &:hover {
-            color: $grey-500;
-            background-color: $black-600;
-            border-radius: 50%;
-        }
-        &.rotate {
-            transform: rotate(180deg);
-          }
-    }
+  }
 
-    #dropdown-menu-icon {
-        display: none;
-    }
+  #dropdown-menu-icon {
+    display: none;
+  }
 
-    .nav-desktop {
-        display: block;
-        width: 80%;
-    }
-    .desktop_menu-a {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: row;
-        gap: 1.5rem;
-        padding: 1rem 0rem;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        font-weight: 800;
-        margin: 0;
-    }
+  .nav-desktop {
+    display: block;
+    width: 80%;
+  }
+  .desktop_menu-a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem 0rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+  }
 
-    .nav-a-desktop-menu {
-        text-decoration: none;
-        color: $grey-500;
-        transition: 0.1s ease-in-out;
-        &:hover {
-            transform: scale(1.05);
-            color: $grey-600;
-        }
+  .nav-a-desktop-menu {
+    text-decoration: none;
+    color: $grey-500;
+    transition: 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+      color: $grey-600;
     }
+  }
 
-    //toggle menu
-    .toggle-menu {
-        display: none;
-    }
+  //toggle menu
+  .toggle-menu {
+    display: none;
+  }
+  //hide this nav for small screens - social
+  // social icons are hidden
+  .toggle-column-right {
+    display: none;
+  }
 
-    //hide this nav for small screens - social
-    // social icons are hidden
-    .toggle-column-right {
-        display: none;
-    }
+  .top-nav-desktop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 2rem;
+    right: 0;
+    gap: 0.5rem;
+    position: fixed;
+    z-index: 1;
+  }
+  .top-nav-desktop-hidden {
+    display: none;
+  }
 
-    .top-nav-desktop {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
-        margin: 5rem 2rem;
-        right: 0;
-        gap: 0.5rem;
-        position: fixed;
-        z-index: 1;
-    }
-    .top-nav-desktop-hidden {
-        display: none;
-      }
+  .nav-a-social {
+    display: block; //test
+    text-decoration: none;
+    color: $white;
+    margin: 0.2rem 0;
+    cursor: pointer;
+  }
 
-    .nav-a-social {
-        display: block; //test
-        text-decoration: none;
-        color: $white;
-        margin: 0.2rem 0;
-        cursor: pointer;
+  #nav-a-1,
+  #nav-a-2,
+  #nav-a-3 {
+    font-size: 1.75rem;
+    transition: 0.1s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+      color: $grey-500;
     }
+  }
 
-    #nav-a-1,
-    #nav-a-2,
-    #nav-a-3,
-    #nav-a-4,
-    #nav-a-5,
-    #nav-a-6,
-    #nav-a-7,
-    #nav-a-8,
-    #nav-a-9 {
-        font-size: 1.75rem;
-        transition: 0.1s ease-in-out;
-        &:hover {
-            transform: scale(1.2);
-            color: $grey-500;
-        }
-    }
+  //section1 1024px
 
-    //section1 1024px
+  .section-1 {
+    padding: 5rem 1rem 0 1rem;
+  }
+  .section-1-card {
+    padding: 4rem 3rem;
+  }
 
-    .section-1 {
-        padding: 5rem 1rem 0 1rem;
-    }
-    .section-1-card {
-        padding: 4rem 3rem;
-    }
+  .name-and-logo {
+    gap: 2.6rem;
+    line-height: 5.4rem;
+  }
+  .h1-main-name {
+    font-size: 2.7rem;
+  }
+  .img-square-section {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  //introduction
+  .dot-and-introduction {
+    gap: 1.2rem;
+    line-height: 2.4rem;
+  }
+  .p_introduction {
+    font-size: 1.2rem;
+  }
+  #dot-introduction {
+    display: flex;
+    font-size: 0.8rem;
+  }
 
-    .name-and-logo {
-        gap: 2.6rem;
-        line-height: 5.4rem;
-    }
-    .h1-main-name {
-        font-size: 2.7rem;
-    }
-    .img-square-section {
-        width: 2.7rem;
-        height: 2.7rem;
-    }
-    //introduction
-    .dot-and-introduction {
-        gap: 1.2rem;
-        line-height: 2.4rem;
-    }
-    .p_introduction {
-        font-size: 1.2rem;
-    }
-    #dot-introduction {
-        display: flex;
-        font-size: 0.8rem;
-    }
+  //main description
 
-    //main description
+  .p_description {
+    line-height: 2.8rem;
+    font-size: 1.4rem;
+    max-width: 46rem;
+  }
+  .hr-line-to-p {
+    height: 0.1rem;
+    margin: 2rem 0;
+  }
 
-    .p_description {
-        line-height: 2.8rem;
-        font-size: 1.4rem;
-        max-width: 46rem;
-    }
-    .hr-line-to-p {
-        height: 0.1rem;
-        margin: 2rem 0;
-    }
+  .h2_description {
+    line-height: 3.8rem;
+    font-size: 1.9rem;
+  }
+  //! section 2
+  .section-2 {
+    padding: 4rem 4.5rem;
+  }
 
-    .h2_description {
-        line-height: 3.8rem;
-        font-size: 1.9rem;
-    }
-    //! section 2 1024
-    .section-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 4rem 4.5rem;
-    }
+  .h-section {
+    font-size: 2rem;
+    line-height: 4rem;
+    margin-bottom: 1.2rem;
+  }
+  //logo and description into our story
+  .logo-and-description {
+    margin-bottom: 3rem;
+  }
 
-    //btn chooser
-    .btns-chooser {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        margin: 0 1rem 4rem 1rem;
-        z-index: 2;
-    }
-    .btn-month {
-        width: 25%;
-        height: 3rem;
-        font-size: 1rem;
-        margin: 0;
-    }
+  //strimz story divs
 
-    .h-section-2 {
-        font-size: 2rem;
-        text-transform: uppercase;
-        width: 100%;
-        margin-bottom: 2.8rem;
-        font-weight: 700;
-    }
-    .month-div.active {
-        display: block;
-        margin: 0 2rem;
-    }
+  .story-strimz {
+    gap: 3rem;
+  }
+  .story-strimz-h4 {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .story-strimz-p {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    max-width: 46rem;
+  }
 
-    .tour-dates-all-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        height: 5rem;
-    }
+  //!section 5
+  .section-5 {
+    padding: 4rem 4.5rem;
+  }
+  .only-img-office {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper-for-img-office-to-1024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 56rem;
+  }
 
-    .row-date-place-location {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        height: auto;
-        width: auto;
-        gap: 1rem;
-    }
-    .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        margin-right: 0.5rem;
-    }
-    .city {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        min-width: 8rem;
-        width: auto;
-        height: auto;
-    }
-    .place {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
+  .h-office-and-join {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .p-office-and-join {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    max-width: 46rem;
+  }
 
-    .city-place-div {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        font-size: 1rem;
-        width: 100%;
-        height: auto;
-    }
-    //btn
-    .btn-details-div {
-        z-index: 1;
-    }
+  //!footer
+  //footer'top
 
-    //!section 5 upcoming album 1024
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 4rem;
+  }
+  .footer-a-1,
+  .footer-a-2 {
+    gap: 1rem;
+  }
+  .description-and-email-input {
+    width: 40%;
+    gap: 1rem;
+  }
 
-    .section5 {
-        padding: 4rem 4.5rem;
-    }
-    .upcoming-album-title {
-        gap: 0.9rem;
-    }
-
-    .h-section5 {
-        font-size: 2rem;
-        line-height: 4rem;
-        margin-bottom: 1.2rem;
-    }
-
-    .title-upcoming-album {
-        font-size: 1.6rem;
-    }
-
-    .p_section5-mini-description {
-        font-size: 1.2rem;
-    }
-    .p_section5 {
-        display: none;
-        font-size: 1.4rem;
-        line-height: 2.8rem;
-        max-width: 46rem;
-    }
-    .p_section5-hidden {
-        display: block;
-        font-size: 1.4rem;
-        line-height: 2.8rem;
-        /* max-width: 46rem; */
-        max-width: 50vw;
-    }
-    //img
-    .upcoming-album-img-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 3rem 0 0 0;
-    }
-
-    .upcoming-album-img {
-        width: 100%;
-        height: auto;
-    }
-    .inner-div-upcoming-album {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 2rem;
-        max-width: 31rem;
-    }
-
-    //btn 1
-    .btn-discover-album {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        background-color: transparent;
-        padding-left: 2rem;
-    }
-
-    .discover-album-div {
-        margin-top: 3rem;
-        gap: 3rem;
-    }
-
-    .a-btn-discover-album {
-        padding: 1rem;
-        width: 22rem;
-        height: auto;
-        font-size: 1.4rem;
-    }
-
-    //!footer
-    //footer'top
-
-    .footer-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 4rem;
-        padding: 4rem;
-    }
-    .footer-a-1,
-    .footer-a-2 {
-        gap: 1rem;
-    }
-    .description-and-email-input {
-        width: 40%;
-        gap: 1rem;
-    }
-
-   
-    //footer bottom
-    .footer-p-and-nav {
-        padding-top: 2rem;
-    }
-    .nav-a-footer-social {
-        padding: 0 1rem;
-    }
+  //footer bottom
+  .footer-p-and-nav {
+    padding-top: 2rem;
+  }
+  .nav-a-footer-social {
+    padding: 0 1rem;
+  }
 }
 
 //media for 1440 screens
 
 @media (min-width: 1440px) {
-    //nav top
-    #nav-a-1,
-    #nav-a-2,
-    #nav-a-3,
-    #nav-a-4,
-    #nav-a-5,
-    #nav-a-6,
-    #nav-a-7,
-    #nav-a-8,
-    #nav-a-9 {
-        font-size: 2rem;
-    }
-    //toggle menu
-    .toggle-menu {
-        width: 20%;
-        transform: translateY(4rem);
-    }
-    .toggle_menu-a {
-        font-size: 1.6rem;
-    }
-    //! desktop menu 1440
-    .top-content {
-        width: 100%;
-        height: 4rem;
-    }
+  //nav top
+  #nav-a-1,
+  #nav-a-2,
+  #nav-a-3 {
+    font-size: 2rem;
+  }
+  //toggle menu
+  .toggle-menu {
+    width: 20%;
+    transform: translateY(4rem);
+  }
+  .toggle_menu-a {
+    font-size: 1.6rem;
+  }
+  //! desktop menu 1440
+  .top-content {
+    width: 100%;
+    height: 4rem;
+  }
 
-    #logo,
-    #chevron-to-show-social-menu {
-        width: 2rem;
-        height: 2rem;
-        font-size: 2rem;
-    }
-    .desktop_menu-a {
-        gap: 2rem;
-     
-        font-size: 1.2rem;
-    }
-    //! section1 1440px
-    .section-1 {
-        padding: 5rem 1.5rem 0 1.5rem;
-    }
-    .section-1-card {
-        padding: 4rem 6rem;
-    }
-    .p_description {
-        max-width: 52rem;
-    }
-    //! section 2 tour dates
+  #logo,
+  #chevron-to-show-social-menu {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+  }
+  .desktop_menu-a {
+    gap: 2rem;
 
-    //! section 2
-    .section-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 4rem 8rem;
-    }
+    font-size: 1.2rem;
+  }
+  //! section1 1440px
+  .section-1 {
+    padding: 5rem 1.5rem 0 1.5rem;
+  }
+  .section-1-card {
+    padding: 4rem 6rem;
+  }
+  .p_description {
+    max-width: 52rem;
+  }
+  //! section 2
+  .section-2 {
+    padding: 4rem 8rem;
+  }
 
-    //btn chooser
+  .h-section {
+    margin-bottom: 1.5rem;
+  }
 
-    .btns-chooser {
-        margin: 0 1.5rem 4rem 1.5rem;
+  //strimz story divs
+  .story-strimz-h4 {
+    margin-bottom: 1.5rem;
+  }
+  .story-strimz-p {
+    max-width: 52rem;
+  }
+  //!section 5
+  .section-5 {
+    padding: 4rem 8rem;
+  }
 
-        top: 4rem;
-    }
-    .h-section-2 {
-        font-size: 2.2rem;
-        text-transform: uppercase;
-        width: 100%;
-        margin-bottom: 3.4rem;
-        font-weight: 700;
-    }
-    .month-div.active {
-        display: block;
-        margin: 0 3rem;
-    }
+  .h-office-and-join {
+    margin-bottom: 1.5rem;
+  }
+  .p-office-and-join {
+    max-width: 52rem;
+  }
+  //footer'top
 
-    .row-date-place-location {
-        gap: 2rem;
-    }
-    .date {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.4rem;
-        margin-right: 1rem;
-        min-width: 10rem;
-    }
-    .city {
-        min-width: 10rem;
-    }
-    .btn-details {
-        font-size: 1.2rem;
-    }
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6rem;
+    padding: 6rem;
+  }
+  .description-and-email-input {
+    gap: 2rem;
+  }
 
-    .city-place-div {
-        font-size: 1.2rem;
-    }
-    //! section 5 upcoming album 1024
+  //footer bottom
+  .footer-bottom {
+    padding: 0 6rem;
+  }
 
-    .section5 {
-        padding: 4rem 8rem;
-    }
-    .upcoming-album-title {
-        gap: 1rem;
-    }
-    .p_section5 {
-        max-width: 54rem;
-    }
-    //footer'top
-
-    .footer-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 6rem;
-        padding: 6rem;
-    }
-    .description-and-email-input {
-        gap: 2rem;
-    }
-
-   
-    //footer bottom
-    .footer-bottom {
-        padding: 0 6rem;
-    }
-
-    .footer-p-and-nav {
-        padding-top: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 2rem;
-    }
-    .nav-a-footer-social {
-        padding: 0 2rem;
-    }
-    #bottom-nav-a-1,
-    #bottom-nav-a-2,
-    #bottom-nav-a-3,
-    #bottom-nav-a-4,
-    #bottom-nav-a-5,
-    #bottom-nav-a-6,
-    #bottom-nav-a-7,
-    #bottom-nav-a-8,
-    #bottom-nav-a-9 {
-        font-size: 2.5rem;
-    }
-    .time-and-rights {
-        font-size: 1.2rem;
-    }
-    //about me
-    .about-me {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        padding-top: 2rem;
-    }
-    #description-about-me {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 6rem;
-        gap: 0.5rem;
-        font-size: 1.2rem;
-        width: 100%;
-    }
-    .my-name-and-socials {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 6rem;
-        width: 100%;
-        gap: 1rem;
-    }
-    #my-name-is {
-        font-size: 1.6rem;
-        padding: 1rem 0;
-    }
-    .my-social {
-        font-size: 3.2rem;
-        color: $ming-blue-600;
-        transition: 0.1s ease-in-out;
-    }
+  .footer-p-and-nav {
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .nav-a-footer-social {
+    padding: 0 2rem;
+  }
+  #bottom-nav-a-1,
+  #bottom-nav-a-2,
+  #bottom-nav-a-3 {
+    font-size: 2.5rem;
+  }
+  .time-and-rights {
+    font-size: 1.2rem;
+  }
+  //about me
+  .about-me {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+  }
+  #description-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6rem;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .my-name-and-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 6rem;
+    width: 100%;
+    gap: 1rem;
+  }
+  #my-name-is {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+  }
+  .my-social {
+    font-size: 3.2rem;
+    color: $ming-blue-600;
+    transition: 0.1s ease-in-out;
+  }
 }
