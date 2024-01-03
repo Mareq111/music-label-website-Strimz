@@ -4,19 +4,16 @@
   filter: blur(0.3rem);
   transform: translateX(-100%);
   transition: 0.7s all;
-
 }
 
 .album-show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  &:hover {
-    transition: 0.05s linear;
-  }
 }
-
-//album others musicians -homepage
+.album-show:hover {
+  transition: 0.05s linear;
+}
 
 .album-hidden-others {
   opacity: 0;
@@ -29,12 +26,10 @@
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  &:hover {
-    transition: 0.05s linear;
-  }
 }
-
-// singles - el double m
+.album-show-others:hover {
+  transition: 0.05s linear;
+}
 
 .single-hidden {
   opacity: 0;
@@ -47,11 +42,10 @@
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  &:hover {
-    transition: 0.05s linear;
-  }
 }
-// singles - other musicians
+.single-show:hover {
+  transition: 0.05s linear;
+}
 
 .single-hidden-others {
   opacity: 0;
@@ -64,12 +58,11 @@
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  &:hover {
-    transition: 0.05s linear;
-  }
+}
+.single-show-others:hover {
+  transition: 0.05s linear;
 }
 
-//! contact us page social links
 .social-hidden-animation {
   opacity: 0;
   filter: blur(0.3rem);
@@ -81,14 +74,11 @@
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  &:hover {
-    transition: 0.05s linear;
-  }
+}
+.social-show-animation:hover {
+  transition: 0.05s linear;
 }
 
-
-
-//for users who have set reduced motion in browser
 @media (prefers-reduced-motion) {
   .album-hidden,
   .album-hidden-others,
@@ -99,4 +89,4 @@
   .single-show-others {
     transition: none;
   }
-}
+}/*# sourceMappingURL=scrollAnimation.css.map */

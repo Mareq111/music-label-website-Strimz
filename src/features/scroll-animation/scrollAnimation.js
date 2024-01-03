@@ -56,3 +56,17 @@ const hiddenElementsSingleOthers = document.querySelectorAll(
   ".single-hidden-others"
 );
 hiddenElementsSingleOthers.forEach((el) => singleObserverOthers.observe(el));
+
+//! contact us page social links
+const socialObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("social-show-animation");
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+const hiddenSocials = document.querySelectorAll(".social-hidden-animation");
+hiddenSocials.forEach((el) => socialObserver.observe(el));
+
