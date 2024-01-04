@@ -178,7 +178,6 @@ html {
   width: 100%;
   height: auto;
   padding: 4rem 0.5rem 0 0.5rem;
-  /* z-index: 1; */
 }
 
 .section-0-card {
@@ -191,6 +190,29 @@ html {
   padding: 2rem 1rem;
   background-color: rgba(30, 29, 29, 0.6);
   border-radius: 1rem;
+}
+
+/* .slider-active {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+} */
+.slider-active {
+  display: block;
+  opacity: 1;
+  transition: 1s ease-in-out opacity;
+}
+
+.slider-hidden {
+  display: none;
+  opacity: 0;
+  transition: 1s ease-in-out opacity;
 }
 
 .h2-slider-name {
@@ -231,7 +253,7 @@ html {
 
 .slider-dots-div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 1rem 0 0 1rem;
 }

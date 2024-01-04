@@ -264,7 +264,6 @@ html {
   width: 100%;
   height: auto;
   padding: 4rem 0.5rem 0 0.5rem;
-  /* z-index: 1; */
 }
 
 .section-0-card {
@@ -278,7 +277,33 @@ html {
   background-color: $shadow-black;
   border-radius: 1rem;
 }
+//!slider animation classes
+/* .slider-active {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
 
+.slider-hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+} */
+//test
+
+.slider-active {
+  display: block;
+  opacity: 1;
+  transition: 1s ease-in-out opacity;
+}
+
+.slider-hidden {
+  display: none;
+  opacity: 0;
+  transition: 1s ease-in-out opacity;
+}
+
+//end test
 .h2-slider-name {
   color: $white;
   font-weight: 800;
@@ -316,7 +341,7 @@ html {
 
 .slider-dots-div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 1rem 0 0 1rem;
 }
