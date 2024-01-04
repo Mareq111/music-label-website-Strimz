@@ -265,7 +265,37 @@ html {
   height: auto;
   padding: 4rem 0.5rem 0 0.5rem;
 }
-
+.div-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.p-info {
+  font-size: 0.8rem;
+  color: $grey-600;
+  text-transform: uppercase;
+}
+//pause/play btn
+.pause-play-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $white;
+  font-weight: 700;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  font-size: 1rem;
+  padding:  0.5rem;
+}
+.active-info {
+  display: block;
+}
+.hidden-info {
+  display: none;
+}
 .section-0-card {
   display: flex;
   justify-content: center;
@@ -278,18 +308,6 @@ html {
   border-radius: 1rem;
 }
 //!slider animation classes
-/* .slider-active {
-  display: block;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.slider-hidden {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-} */
-//test
 
 .slider-active {
   display: block;
@@ -303,7 +321,6 @@ html {
   transition: 1s ease-in-out opacity;
 }
 
-//end test
 .h2-slider-name {
   color: $white;
   font-weight: 800;
@@ -317,14 +334,14 @@ html {
 }
 //img
 .slider-img {
-  width: 14rem;
-  height: 10rem;
+  width: 16rem;
+  height: 12rem;
   border-radius: 0.5rem;
 }
 #slider-img-fresh-tarck,
 #slider-img-red-path {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 .description-slider-div {

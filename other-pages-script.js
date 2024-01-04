@@ -216,21 +216,20 @@ document.addEventListener("mousedown", function () {
 
 //! 11 slider into homepage
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  const slides = document.querySelectorAll('.section-0-slider > div');
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".section-0-slider > div");
   let currentSlide = 0;
 
   function showSlide(index) {
     // hide all sliders
     for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove('slider-active');
-      slides[i].classList.add('slider-hidden');
+      slides[i].classList.remove("slider-active");
+      slides[i].classList.add("slider-hidden");
     }
 
     // show current slider
-    slides[index].classList.remove('slider-hidden');
-    slides[index].classList.add('slider-active');
+    slides[index].classList.remove("slider-hidden");
+    slides[index].classList.add("slider-active");
   }
 
   function nextSlide() {
@@ -240,4 +239,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //next slider per 4seconds
   setInterval(nextSlide, 4000);
+});
+
+//!12 toggle play /pause button for slider into home page
+
+const pausePlayBtns = document.querySelectorAll(".pause-play-div");
+
+//function for any pause or play btn to change their state with hide it or show it
+pausePlayBtns.forEach((pausePlayBtn) => {
+  const playBtn = pausePlayBtn.querySelector(".p-play-info");
+  const pauseBtn = pausePlayBtn.querySelector(".p-pause-info");
+
+  // event listener to toggle visibility - show or hide state for the any classes
+  pausePlayBtn.addEventListener("click", () => {
+    playBtn?.classList.toggle("hidden-info");
+    pauseBtn?.classList.toggle("hidden-info");
+  });
 });
