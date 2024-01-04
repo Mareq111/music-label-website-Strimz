@@ -86,7 +86,9 @@
   .single-hidden,
   .single-show,
   .single-hidden-others,
-  .single-show-others {
+  .single-show-others,
+  .social-hidden-animation,
+  .social-show-animation {
     transition: none;
   }
 }/*# sourceMappingURL=scrollAnimation.css.map */

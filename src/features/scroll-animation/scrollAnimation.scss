@@ -4,7 +4,6 @@
   filter: blur(0.3rem);
   transform: translateX(-100%);
   transition: 0.7s all;
-
 }
 
 .album-show {
@@ -86,8 +85,6 @@
   }
 }
 
-
-
 //for users who have set reduced motion in browser
 @media (prefers-reduced-motion) {
   .album-hidden,
@@ -96,7 +93,9 @@
   .single-hidden,
   .single-show,
   .single-hidden-others,
-  .single-show-others {
+  .single-show-others,
+  .social-hidden-animation,
+  .social-show-animation {
     transition: none;
   }
 }

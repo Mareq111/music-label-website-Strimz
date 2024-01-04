@@ -470,7 +470,9 @@ html {
     transform: scale(1.3);
   }
 }
-
+.social-description {
+  margin-bottom: 1rem;
+}
 //! section 2
 .section-details {
   display: flex;
@@ -488,8 +490,17 @@ html {
   margin-bottom: 1rem;
   font-weight: 700;
 }
-.social-description {
-  margin-bottom: 1rem;
+//styling for color anchor text
+.color-text {
+  font-weight: 700;
+  color: $amulet-green-400;
+  transition: ease-in-out 0.2s;
+  &:hover {
+    color: $grey-500;
+  }
+}
+.color-text-anchor {
+  text-decoration: none;
 }
 //project description divs
 
