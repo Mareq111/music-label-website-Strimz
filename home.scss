@@ -255,6 +255,91 @@ html {
 .nav-a-social {
   display: none;
 }
+//SECTION 0
+.section-0-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 4rem 0.5rem 0 0.5rem;
+  /* z-index: 1; */
+}
+
+.section-0-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem;
+  background-color: $shadow-black;
+  border-radius: 1rem;
+}
+
+.h2-slider-name {
+  color: $white;
+  font-weight: 800;
+  width: auto;
+  font-size: 1.6rem;
+  &:hover,
+  :focus,
+  :active {
+    color: $eastern-blue-500;
+  }
+}
+//img
+.slider-img {
+  width: 14rem;
+  height: 10rem;
+  border-radius: 0.5rem;
+}
+.description-slider-div {
+  margin-bottom: 1rem;
+}
+.description-slider-p {
+  color: $grey-500;
+  font-size: 0.9rem;
+  max-width: 14rem;
+}
+//slider dots div
+
+.slider-dots-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 0 1rem;
+}
+.dot-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: $grey-600;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  &:hover,
+  :active {
+    background-color: $grey-700;
+    color: $grey-500;
+  } 
+}
+
+
+.dot-active {
+  color: $eastern-blue-500;
+}
+.div-dot-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 
 //section 1
 .section-1 {
@@ -476,7 +561,6 @@ html {
   cursor: pointer;
 
   &:hover {
-    
     transform: scale(1.1);
   }
 }
@@ -2137,8 +2221,6 @@ footer {
   .dots-separator-single {
     font-size: 1.8rem;
   }
-
- 
 
   //section3 music app chooser
 
