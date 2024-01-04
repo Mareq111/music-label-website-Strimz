@@ -296,7 +296,15 @@ html {
   height: 10rem;
   border-radius: 0.5rem;
 }
+#slider-img-fresh-tarck,
+#slider-img-red-path {
+  width: 10rem;
+  height: 10rem;
+}
+
 .description-slider-div {
+  max-width: 100%;
+  height: auto;
   margin-bottom: 1rem;
 }
 .description-slider-p {
@@ -327,9 +335,8 @@ html {
   :active {
     background-color: $grey-700;
     color: $grey-500;
-  } 
+  }
 }
-
 
 .dot-active {
   color: $eastern-blue-500;
