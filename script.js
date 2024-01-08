@@ -75,34 +75,22 @@ let currentSongIndex = 0;
 let currentPlayingSongDiv = null;
 let isSequentialPlaying = false;
 
-// handle to tab and enter click for accessability
- playButtons.forEach((playBtn, index) => {
+// handle to tab and enter click for accessability, new code
+
+playButtons.forEach((playBtn, index) => {
   playBtn.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-      document.querySelector(".play-btn.active")?.classList.remove("active");
-      playBtn.classList.add("active");
-      if (!isPlaying) {
-        playSong(index);
+      if (!playBtn.classList.contains("active")) {
+        document.querySelector(".play-btn.active")?.classList.remove("active");
+        playBtn.classList.add("active");
+        if (!isPlaying) {
+          playSong(index);
+        } else {
+          stopCurrentSong();
+        }
       } else {
         stopCurrentSong();
       }
-    }
-  });
-}); 
-
-//remove active class from any element if you move further to other tracks
-playButtons.forEach((playBtn, index) => {
-  playBtn.addEventListener("click", () => {
-    playButtons.forEach(button => {
-      button.classList.remove("active");
-    });
-    playBtn.classList.add("active");
-
-    if (!isPlaying) {
-      playSong(index);
-    } else {
-      stopCurrentSong();
-      playSong(index);
     }
   });
 });
