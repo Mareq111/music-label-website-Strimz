@@ -395,7 +395,7 @@ html {
  
   position: relative;
   transition: 0.2s ease-in-out;
-  &:hover {
+  &:hover, :active {
     transform: scale(1.1);
   }
 }
@@ -414,13 +414,14 @@ html {
   color: $black-900;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 2rem;
   padding: 0.5rem;
   margin: 0;
 }
 #icon-strimz-storez {
   margin-left: 0.2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 //section 1

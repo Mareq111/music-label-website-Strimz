@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     currentSlide = (currentSlide + 1) % slides.length;
   }
 
-  //next slider per 3seconds
-  setInterval(nextSlide, 3000);
+  //next slider per 3.5seconds
+  setInterval(nextSlide, 3500);
 });
