@@ -288,7 +288,7 @@ html {
   height: auto;
   cursor: pointer;
   font-size: 1rem;
-  padding:  0.5rem;
+  padding: 0.5rem;
 }
 .active-info {
   display: block;
@@ -335,9 +335,8 @@ html {
 //img
 .slider-img {
   width: 18rem;
-  height: 18rem; 
+  height: 18rem;
   border-radius: 0.5rem;
-
 }
 /* #slider-img-fresh-tarck,
 #slider-img-red-path {
@@ -389,7 +388,41 @@ html {
   align-items: center;
   flex-direction: row;
 }
+//for our store slider
+.strimz-storez {
+  width: 18rem;
+  height: 0.5rem;
+ 
+  position: relative;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.strimz-storez-link {
+  text-decoration: none;
+}
 
+.p-strimz-storez {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  background-color: $eastern-blue-500;
+  color: $black-900;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  margin: 0;
+}
+#icon-strimz-storez {
+  margin-left: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 //section 1
 .section-1 {
   display: flex;
