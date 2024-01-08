@@ -252,17 +252,16 @@ html {
 }
 
 .slider-img {
-  width: 16rem;
-  height: 12rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 0.5rem;
 }
 
-#slider-img-fresh-tarck,
+/* #slider-img-fresh-tarck,
 #slider-img-red-path {
   width: 12rem;
   height: 12rem;
-}
-
+} */
 .description-slider-div {
   max-width: 100%;
   height: auto;
