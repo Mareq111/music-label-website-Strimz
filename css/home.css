@@ -206,6 +206,9 @@ html {
   font-size: 1rem;
   padding: 0.5rem;
 }
+.pause-play-div:focus {
+  outline: 0.1rem solid red;
+}
 
 .active-info {
   display: block;

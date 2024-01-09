@@ -148,7 +148,6 @@ html {
   background-color: $black-600;
   transform: translateY(3.5rem);
   color: $grey-500;
-
   border-radius: 0 0 5% 5%;
   box-shadow: 1px 3px 15px $shadow-black-transparent;
   opacity: 0;
@@ -289,9 +288,13 @@ html {
   cursor: pointer;
   font-size: 1rem;
   padding: 0.5rem;
+  &:focus {
+    outline: 0.1rem solid red ;
+  }
 }
 .active-info {
   display: block;
+  
 }
 .hidden-info {
   display: none;
@@ -306,6 +309,8 @@ html {
   padding: 2rem 1rem;
   background-color: $shadow-black;
   border-radius: 1rem;
+
+
 }
 //!slider animation classes
 
@@ -313,12 +318,15 @@ html {
   display: block;
   opacity: 1;
   transition: 1s ease-in-out opacity;
+
 }
 
 .slider-hidden {
   display: none;
   opacity: 0;
   transition: 1s ease-in-out opacity;
+
+
 }
 
 .h2-slider-name {

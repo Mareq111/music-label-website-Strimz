@@ -57,5 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   pausePlayBtns.forEach((pausePlayBtn) => {
     pausePlayBtn.addEventListener("click", toggleSlider);
+
+    //add more accessibility so function to chose pause or play with check by enter
+    pausePlayBtn.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        toggleSlider.call(pausePlayBtn);
+      }
+    });
   });
 });
