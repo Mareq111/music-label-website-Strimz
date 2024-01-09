@@ -204,10 +204,14 @@ html {
   height: auto;
   cursor: pointer;
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 0.6rem;
+  position: relative;
+  background-color: transparent;
+  transition: 0.1s ease-in-out;
 }
-.pause-play-div:focus {
-  outline: 0.1rem solid red;
+.pause-play-div:hover {
+  color: #8d8c8c;
+  transform: scale(1.1);
 }
 
 .active-info {
@@ -1444,6 +1448,13 @@ footer {
     width: 2.1rem;
     height: 2.1rem;
   }
+  .slider-img {
+    width: 18rem;
+    height: 18rem;
+  }
+  .strimz-storez {
+    width: 18rem;
+  }
 }
 @media (min-width: 425px) {
   .all-inside {
@@ -1452,9 +1463,26 @@ footer {
   .toggle_menu-a {
     font-size: 1.4rem;
   }
-  /* .section-1-card {
-      padding: 3rem 2rem;
-  } */
+  .p-info {
+    font-size: 0.9rem;
+  }
+  .pause-play-div {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  .h2-slider-name {
+    font-size: 1.7rem;
+  }
+  .description-slider-div {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .description-slider-p {
+    color: #dcdcdc;
+    font-size: 1rem;
+    max-width: 18rem;
+  }
   .link-to-story {
     text-decoration: none;
     color: #f2f2f2;
@@ -1671,6 +1699,58 @@ footer {
   .toggle-menu {
     width: 60%;
     right: 0;
+  }
+  .wrapper-div-row-768 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .wrapper-div-h2-p-768 {
+    width: 50%;
+    padding-left: 2rem;
+  }
+  .img-with-dots-768 {
+    width: 50%;
+    /*  padding-right: 1rem; */
+    max-width: 35rem;
+  }
+  .slider-img {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  .strimz-storez {
+    width: 100%;
+  }
+  .div-info {
+    margin-bottom: 0.5rem;
+  }
+  .p-info {
+    font-size: 1rem;
+  }
+  .pause-play-div {
+    font-size: 1.2rem;
+  }
+  .section-0-card {
+    padding: 3rem 2rem;
+  }
+  .h2-slider-name {
+    font-size: 1.8rem;
+  }
+  .description-slider-div {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .description-slider-p {
+    font-size: 1.1rem;
+  }
+  .dot-slider {
+    padding: 1rem;
   }
   .section-1-card {
     padding: 3rem 2rem;
@@ -1985,9 +2065,56 @@ footer {
     transform: scale(1.2);
     color: #dcdcdc;
   }
-  /*  .top-content {
-        padding: 0 2rem;
-    } */
+  .section-0-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5rem 1rem 0 1rem;
+  }
+  .wrapper-div-h2-p-768 {
+    padding-left: 2rem;
+  }
+  .slider-img {
+    width: 100%;
+    min-width: 26rem;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  .img-with-dots-768 {
+    width: auto;
+    padding-right: 1rem;
+  }
+  .div-info {
+    margin-bottom: 1rem;
+  }
+  .p-info {
+    font-size: 1.1rem;
+  }
+  .pause-play-div {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+  .section-0-card {
+    padding: 4rem 3rem;
+  }
+  .h2-slider-name {
+    font-size: 2rem;
+  }
+  .description-slider-div {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+  .description-slider-p {
+    font-size: 1.2rem;
+    max-width: 35rem;
+  }
+  .dot-slider {
+    padding: 1rem;
+  }
   .section-1 {
     padding: 5rem 1rem 0 1rem;
   }
@@ -2246,6 +2373,48 @@ footer {
   .desktop_menu-a {
     gap: 2rem;
     font-size: 1.2rem;
+  }
+  .section-0-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5rem 1.5rem 0 1.5rem;
+  }
+  .slider-img {
+    width: 100%;
+    min-width: 27rem;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  .div-info {
+    margin-bottom: 1.5rem;
+  }
+  .p-info {
+    font-size: 1.2rem;
+  }
+  .pause-play-div {
+    font-size: 1.4rem;
+    margin-right: 1.5rem;
+  }
+  .section-0-card {
+    padding: 4rem 6rem;
+  }
+  .h2-slider-name {
+    font-size: 2.2rem;
+  }
+  .description-slider-div {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .description-slider-p {
+    font-size: 1.4rem;
+  }
+  .dot-slider {
+    padding: 1.5rem;
   }
   .section-1 {
     padding: 5rem 1.5rem 0 1.5rem;
