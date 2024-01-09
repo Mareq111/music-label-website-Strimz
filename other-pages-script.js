@@ -214,18 +214,4 @@ document.addEventListener("mousedown", function () {
   document.body.classList.remove("user-is-tabbing");
 });
 
-//!11 toggle play /pause button for slider into home page
 
-const pausePlayBtns = document.querySelectorAll(".pause-play-div");
-
-//function for any pause or play btn to change their state with hide it or show it
-pausePlayBtns.forEach((pausePlayBtn) => {
-  const playBtn = pausePlayBtn.querySelector(".p-play-info");
-  const pauseBtn = pausePlayBtn.querySelector(".p-pause-info");
-
-  // event listener to toggle visibility - show or hide state for the any classes
-  pausePlayBtn.addEventListener("click", () => {
-    playBtn?.classList.toggle("hidden-info");
-    pauseBtn?.classList.toggle("hidden-info");
-  });
-});
