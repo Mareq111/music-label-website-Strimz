@@ -334,15 +334,11 @@ html {
 }
 //img
 .slider-img {
-  width: 18rem;
-  height: 18rem;
+  width: 16rem;
+  height: 16rem;
   border-radius: 0.5rem;
 }
-/* #slider-img-fresh-tarck,
-#slider-img-red-path {
-  width: 12rem;
-  height: 12rem;
-} */
+
 .description-slider-div {
   max-width: 100%;
   height: auto;
@@ -351,7 +347,7 @@ html {
 .description-slider-p {
   color: $grey-500;
   font-size: 0.9rem;
-  max-width: 14rem;
+  max-width: 16rem;
 }
 //slider dots div
 
@@ -390,12 +386,12 @@ html {
 }
 //for our store slider
 .strimz-storez {
-  width: 18rem;
-  height: 0.5rem;
- 
+  width: 16rem;
+  height: auto;
   position: relative;
   transition: 0.2s ease-in-out;
-  &:hover, :active {
+  &:hover,
+  :active {
     transform: scale(1.1);
   }
 }
@@ -408,7 +404,8 @@ html {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 1rem;
+  z-index: 1;
+  bottom: 1.5rem;
   right: 0;
   background-color: $eastern-blue-500;
   color: $black-900;
