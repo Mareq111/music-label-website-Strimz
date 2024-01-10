@@ -323,12 +323,11 @@ html {
 }
 
 .album-description {
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   height: auto;
   padding-top: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 .name-artist-in-p {
@@ -336,7 +335,7 @@ html {
 }
 
 .p-in-details {
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 1%;
   background-color: $black-600;
   box-shadow: $shadow-black;
@@ -1153,7 +1152,11 @@ footer {
     padding: 4rem 2rem 0 2rem;
   }
   .album-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .p-in-details {
+    padding: 1rem;
   }
   // section 2
   .section2 {
@@ -1460,9 +1463,7 @@ footer {
   .album-artist-name {
     font-size: 1.8rem;
   }
-  .album-description {
-    font-size: 1rem;
-  }
+ 
   .album-description {
     width: 90%;
   }
@@ -1597,10 +1598,9 @@ footer {
     font-size: 2rem;
   }
   .album-description {
-    font-size: 1rem;
-  }
-  .album-description {
     width: 85%;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
   }
 
   //section2
