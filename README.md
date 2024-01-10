@@ -1,14 +1,12 @@
 ﻿# Project: Strimz Empire - Music Label
 
-
+**Deployed Website:** [Strimz Empire - Music Label](https://strimz.netlify.app/)
 
 ## Description
 
 The fictional music label project represents my first major adventure in web development. Initially, it was a modest idea to create a single page showcasing a music album. However, over time, it evolved into a complete vision of a virtual music label inspired by streaming platforms. This process lasted from October to January 2024.
 
 Working on this project was an extremely interesting challenge. During this period, I explored the world of web development, learning on the fly and exploring various aspects of building a website. This project consists of several main sections: "Home", "Releases", "Artists", "Tour", "About", and "Contact Us". However, it does not include a “Shop” section. This decision is intentional, as I plan to create a separate store dedicated to this music label. The store will be available soon!
-
-**Deployed Website:** [Strimz Empire - Music Label](https://strimz.netlify.app/)
 
 ## Development Experience
 
