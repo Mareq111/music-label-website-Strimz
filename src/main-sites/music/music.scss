@@ -1013,7 +1013,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 }
 .h2-section3 {
   font-size: 1.4rem;
@@ -1098,7 +1098,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 2rem 1rem 0 1rem;
+  padding: 2rem 1rem;
   background-color: $black-900;
 }
 .link-to-upcoming-album {
@@ -1236,7 +1236,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 2rem 0.5rem;
+  padding: 4rem 0.5rem;
 }
 .div-section6-opacity-bg {
   width: 100%;
@@ -1705,7 +1705,7 @@ footer {
   // section 2 new albums with section 4 latest singles
   .section-2,
   .section-4 {
-    padding: 3rem 2rem;
+    padding: 2rem;
     gap: 1rem;
   }
   .h-section-2,
@@ -1763,7 +1763,7 @@ footer {
   //section3 music app chooser
 
   .section3 {
-    padding: 0 2rem;
+    padding: 2rem;
   }
   .h2-section3 {
     font-size: 1.6rem;
@@ -1786,7 +1786,7 @@ footer {
   //section 5 tour
 
   .section5 {
-    padding: 3rem 2rem 0 2rem;
+    padding: 2rem;
   }
   .upcoming-album-title {
     gap: 0.5rem;
@@ -1837,10 +1837,6 @@ footer {
     font-size: 1.2rem;
   }
   //section6
-
-  .section6 {
-    padding: 2rem 0.5rem;
-  }
 
   .h-section6 {
     font-size: 1.8rem;
@@ -1987,7 +1983,7 @@ footer {
   // section 2 new albums with section 4 latest singles
   .section-2,
   .section-4 {
-    padding: 4rem 3rem;
+    padding: 3rem;
     gap: 1rem;
   }
   .h-section-2,
@@ -2046,7 +2042,7 @@ footer {
   //section3 music app chooser
 
   .section3 {
-    padding: 0 3rem;
+    padding: 3rem;
   }
   .h2-section3 {
     font-size: 1.8rem;
@@ -2078,7 +2074,7 @@ footer {
   //section 5 upcoming album
 
   .section5 {
-    padding: 4rem 3rem;
+    padding: 3rem;
   }
   .upcoming-album-title {
     gap: 0.7rem;
@@ -2136,11 +2132,8 @@ footer {
   }
   //section6
 
-  .section6 {
-    padding: 2rem 0.5rem;
-  }
   .div-section6-opacity-bg {
-    padding: 3rem 2rem 1rem 2rem;
+    padding: 3rem 2rem;
   }
 
   .h-section6 {
@@ -2373,7 +2366,7 @@ footer {
   // section 2 new albums with section 4 latest singles
   .section-2,
   .section-4 {
-    padding: 5.5rem 4.5rem 2rem 5.5rem;
+    padding: 4rem 4.5rem;
     gap: 1.5rem;
   }
   .h-section-2,
@@ -2422,7 +2415,7 @@ footer {
   //section3 music app chooser
 
   .section3 {
-    padding: 0 4.5rem;
+    padding: 4rem 4.5rem;
   }
   .h2-section3 {
     font-size: 2rem;
@@ -2531,10 +2524,10 @@ footer {
   //section6
 
   .section6 {
-    padding: 2rem 1rem;
+    padding: 5rem 1rem;
   }
   .div-section6-opacity-bg {
-    padding: 4rem 3rem 2rem 3rem;
+    padding: 4rem 3rem;
   }
 
   .h-section6 {
@@ -2683,13 +2676,13 @@ footer {
   // section 2 new albums with section 4 latest singles
   .section-2,
   .section-4 {
-    padding: 5.5rem 8rem 0rem 8rem;
+    padding: 4rem 8rem;
     gap: 2rem;
   }
   //! section3 music app chooser
 
   .section3 {
-    padding: 0 8rem;
+    padding: 4rem 8rem;
   }
 
   //! section 5 upcoming album 1024
@@ -2712,9 +2705,11 @@ footer {
   //section6
 
   .section6 {
-    padding: 3rem 1rem;
+    padding: 5rem 1.5rem;
   }
-
+  .div-section6-opacity-bg {
+    padding: 4rem 6rem;
+  }
   //text
 
   .p_section6 {
