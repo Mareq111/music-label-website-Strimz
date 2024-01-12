@@ -805,7 +805,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 }
 
 .h2-section3 {
@@ -814,7 +814,7 @@ html {
   text-transform: uppercase;
   width: 100%;
   /*  padding-bottom: 2rem; */
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .dot-and-introduction-chooser {
@@ -900,7 +900,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 2rem 0.5rem;
+  padding: 4rem 0.5rem;
   background-image: url("/src/img/others/Project Capture.jpg");
   background-repeat: repeat-x;
   background-position: 50% 0%;
@@ -1521,7 +1521,7 @@ footer {
   }
   .section-2,
   .section-4 {
-    padding: 3rem 2rem;
+    padding: 2rem;
     gap: 1rem;
   }
   .h-section-2,
@@ -1570,7 +1570,7 @@ footer {
     font-size: 1.2rem;
   }
   .section3 {
-    padding: 0 2rem;
+    padding: 2rem;
   }
   .h2-section3 {
     font-size: 1.6rem;
@@ -1589,7 +1589,6 @@ footer {
   }
   .hr-line-to-sections-chooser {
     height: 0.1rem;
-    /* margin-top: 2rem ; */
   }
   .h-section5 {
     font-size: 1.8rem;
@@ -1629,7 +1628,7 @@ footer {
     font-size: 1.2rem;
   }
   .section6 {
-    padding: 3rem 2rem;
+    padding: 2rem;
   }
   .tour-and-title {
     gap: 0.5rem;
@@ -1798,7 +1797,7 @@ footer {
   }
   .section-2,
   .section-4 {
-    padding: 4rem 3rem;
+    padding: 3rem;
     gap: 1rem;
   }
   .h-section-2,
@@ -1846,7 +1845,7 @@ footer {
     font-size: 1.4rem;
   }
   .section3 {
-    padding: 0 3rem;
+    padding: 3rem;
   }
   .h2-section3 {
     font-size: 1.8rem;
@@ -1875,7 +1874,7 @@ footer {
     margin-top: 2rem;
   }
   .div-section5-opacity-bg {
-    padding: 3rem 2rem 1rem 2rem;
+    padding: 3rem 2rem;
   }
   .h-section5 {
     font-size: 2rem;
@@ -1909,7 +1908,7 @@ footer {
     font-size: 1.4rem;
   }
   .section6 {
-    padding: 4rem 3rem;
+    padding: 3rem;
   }
   .tour-and-title {
     gap: 0.7rem;
@@ -2158,7 +2157,7 @@ footer {
   }
   .section-2,
   .section-4 {
-    padding: 5.5rem 4.5rem;
+    padding: 4rem 4.5rem;
     gap: 1.5rem;
   }
   .h-section-2,
@@ -2199,7 +2198,7 @@ footer {
     font-size: 1.8rem;
   }
   .section3 {
-    padding: 0 4.5rem;
+    padding: 4rem 4.5rem;
   }
   .h2-section3 {
     font-size: 2rem;
@@ -2228,10 +2227,10 @@ footer {
     margin-top: 3rem;
   }
   .section5 {
-    padding: 4rem 1rem 4rem 1rem;
+    padding: 5rem 1rem;
   }
   .div-section5-opacity-bg {
-    padding: 4rem 3rem 1rem 3rem;
+    padding: 4rem 3rem;
   }
   .h-section5 {
     font-size: 2.2rem;
@@ -2273,9 +2272,6 @@ footer {
   .dream-chasers-fig {
     font-size: 1.1rem;
   }
-  /* .section6 {
-        padding: 4rem 3rem;
-    } */
   .section6 {
     padding: 4rem 4.5rem;
   }
@@ -2427,17 +2423,17 @@ footer {
   }
   .section-2,
   .section-4 {
-    padding: 5.5rem 8rem;
+    padding: 4rem 8rem;
     gap: 2rem;
   }
   .section3 {
-    padding: 0 8rem;
+    padding: 4rem 8rem;
   }
   .section5 {
-    padding: 4rem 1.5rem 4rem 1.5rem;
+    padding: 5rem 1.5rem;
   }
   .div-section5-opacity-bg {
-    padding: 4rem 6rem 2rem 6rem;
+    padding: 4rem 6rem;
   }
   .p_section5 {
     max-width: 54rem;
