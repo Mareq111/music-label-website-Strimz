@@ -1,4 +1,76 @@
-//! 1 toggle menu, and if you click everywhere you close toggle menu without click on icon
+//! 1 dynamic add song-duration for any song
+//!  dynamic sum all songs duration into stats for whole album duration
+
+const songDurations = document.querySelectorAll(".song-duration");
+let totalDurationInSeconds = 0;
+
+const formatTime = (seconds) => {
+  // format loeadmetadata which was with seconds to minutes now
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = Math.floor(seconds % 60);
+  // format time 'minutes : seconds ' and if seconds < 10 seconds add 0 before seconds
+  const formattedTime = `${minutes}:${
+    remainingSeconds < 10 ? "0" : ""
+  }${remainingSeconds}`;
+  return formattedTime;
+};
+
+// listening starts if dom is loaded , site is reload or load
+window.addEventListener("DOMContentLoaded", (event) => {
+  const audioElements = document.querySelectorAll(".audio-song");
+
+  audioElements.forEach((audio) => {
+    // listener loadmetadata for any audio song to find audio duration every song
+    audio.addEventListener("loadedmetadata", () => {
+      const duration = audio.duration;
+      //
+      const formattedDuration = formatTime(duration);
+      // finding a song duration which represents duration  in his 'parent' =  audio-song
+      const songDurationElement =
+        audio.parentElement.querySelector(".song-duration");
+      if (songDurationElement) {
+        songDurationElement.textContent = formattedDuration;
+        updateTotalDuration();
+      }
+    });
+  });
+  //
+  const updateTotalDuration = () => {
+    totalDurationInSeconds = 0;
+    // Extracts song durations from metadata (separated into minutes and seconds) to convert the total duration in seconds
+    songDurations.forEach((song) => {
+      const time = song.textContent.split(":");
+      const min = parseInt(time[0]);
+      const sec = parseInt(time[1]);
+      totalDurationInSeconds += min * 60 + sec;
+    });
+
+    // convert and round duration for minutes:seconds and display total time for any album
+    const totalMin = Math.floor(totalDurationInSeconds / 60);
+    const totalSec = Math.floor(totalDurationInSeconds % 60);
+
+    const displayAllTime =
+      totalMin === 1
+        ? `${totalMin} minute`
+        : totalMin < 1
+        ? `${totalSec} seconds`
+        : `${totalMin} minutes`;
+
+    const allSongsDuration = document.getElementById("all-songs-duration");
+    allSongsDuration.textContent = displayAllTime;
+  };
+});
+
+//! 2 dynamic sum quantity of tracks in any album
+
+const anySong = document.querySelectorAll(".song");
+const showQuantity = document.getElementById("all-songs-quantity");
+const allAnySongs = anySong.length;
+
+showQuantity.textContent =
+  allAnySongs === 1 ? `${allAnySongs} song` : `${allAnySongs} songs`;
+
+//! 3 toggle menu, and if you click everywhere you close toggle menu without click on icon
 
 //react to load our dom structure
 document.addEventListener("DOMContentLoaded", function () {
@@ -36,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//! 2 if logo was clicked go to top
+//! 4 if logo was clicked go to top
 
 const logoClick = document.getElementById("logo");
 
@@ -52,7 +124,7 @@ logoClick.addEventListener("keydown", (e) => {
   }
 });
 
-//! 3 focused on album introduction
+//! 5 focused on album introduction
 
 const summaryFocus = document.querySelector(".album-summary-description");
 let isFocused = false;
@@ -63,7 +135,7 @@ summaryFocus?.addEventListener("click", () => {
     : (summaryFocus?.classList.remove("focused"), (isFocused = false));
 });
 
-//! 4 add audio to song div
+//! 6 add audio to song div
 // fuction when a songDiv is clicked to listen any song, even when only "button" icons is clicked
 
 const songs = document.querySelectorAll(".song");
@@ -175,80 +247,8 @@ bigPlayBtn.addEventListener("click", () => {
   playSong(currentSongIndex);
 });
 
-//! 5 dynamic add song-duration for any song
-//! 6 dynamic sum all songs duration into stats for whole album duration
-
-const songDurations = document.querySelectorAll(".song-duration");
-let totalDurationInSeconds = 0;
-
-const formatTime = (seconds) => {
-  // format loeadmetadata which was with seconds to minutes now
-  const minutes = Math.floor(seconds / 60);
-  const remainingSeconds = Math.floor(seconds % 60);
-  // format time 'minutes : seconds ' and if seconds < 10 seconds add 0 before seconds
-  const formattedTime = `${minutes}:${
-    remainingSeconds < 10 ? "0" : ""
-  }${remainingSeconds}`;
-  return formattedTime;
-};
-
-// listening starts if dom is loaded , site is reload or load
-window.addEventListener("DOMContentLoaded", (event) => {
-  const audioElements = document.querySelectorAll(".audio-song");
-
-  audioElements.forEach((audio) => {
-    // listener loadmetadata for any audio song to find audio duration every song
-    audio.addEventListener("loadedmetadata", () => {
-      const duration = audio.duration;
-      //
-      const formattedDuration = formatTime(duration);
-      // finding a song duration which represents duration  in his 'parent' =  audio-song
-      const songDurationElement =
-        audio.parentElement.querySelector(".song-duration");
-      if (songDurationElement) {
-        songDurationElement.textContent = formattedDuration;
-        updateTotalDuration();
-      }
-    });
-  });
-  //
-  const updateTotalDuration = () => {
-    totalDurationInSeconds = 0;
-    // Extracts song durations from metadata (separated into minutes and seconds) to convert the total duration in seconds
-    songDurations.forEach((song) => {
-      const time = song.textContent.split(":");
-      const min = parseInt(time[0]);
-      const sec = parseInt(time[1]);
-      totalDurationInSeconds += min * 60 + sec;
-    });
-
-    // convert and round duration for minutes:seconds and display total time for any album
-    const totalMin = Math.floor(totalDurationInSeconds / 60);
-    const totalSec = Math.floor(totalDurationInSeconds % 60);
-
-    const displayAllTime =
-      totalMin === 1
-        ? `${totalMin} minute`
-        : totalMin < 1
-        ? `${totalSec} seconds`
-        : `${totalMin} minutes`;
-
-    const allSongsDuration = document.getElementById("all-songs-duration");
-    allSongsDuration.textContent = displayAllTime;
-  };
-});
-
-//! 7 dynamic sum quantity of tracks in any album
-
-const anySong = document.querySelectorAll(".song");
-const showQuantity = document.getElementById("all-songs-quantity");
-const allAnySongs = anySong.length;
-
-showQuantity.textContent =
-  allAnySongs === 1 ? `${allAnySongs} song` : `${allAnySongs} songs`;
-
-//! 8 when you click on the visible dots, the visibility of the information changes
-//! 9 heart click which added song to favorite in any song
+//! 7 when you click on the visible dots, the visibility of the information changes
+//! 8 heart click which added song to favorite in any song
 //const songs = document.querySelectorAll(".song"); was declared
 
 songs.forEach((song) => {
@@ -301,7 +301,7 @@ songs.forEach((song) => {
   }
 });
 
-//! 10 clicking  arrow link enables returning to the previous site that referred to the current page
+//! 9 clicking  arrow link enables returning to the previous site that referred to the current page
 // and this function using a the browser's history to navigate back to the referring page.
 
 const linkReturn = document.querySelector(".arrow-link");
@@ -315,7 +315,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-//! 11 for desktops, chevron icon if clicked, it hide a social nav menu
+//! 10 for desktops, chevron icon if clicked, it hide a social nav menu
 
 const chevronIcon = document.getElementById("chevron-to-show-social-menu");
 const socialMenu = document.querySelector(".top-nav-desktop");
@@ -334,7 +334,7 @@ chevronIcon?.addEventListener("click", () => {
   chevronIcon.classList.toggle("rotate");
 });
 
-//! 12 form in footer to redirect to greetings page if person complete form with correct email
+//! 11 form in footer to redirect to greetings page if person complete form with correct email
 
 const form = document.querySelector(".newsletterForm");
 //listening submit in form
