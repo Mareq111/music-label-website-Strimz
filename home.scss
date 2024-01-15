@@ -372,15 +372,15 @@ html {
   font-size: 1.2rem;
   margin-right: 0.5rem;
   color: $grey-600;
-  cursor: pointer;
+ /*  cursor: pointer; */
   padding: 0.5rem;
   background-color: transparent;
   border-radius: 0.5rem;
-  &:hover,
+/*   &:hover,
   :active {
     background-color: $grey-700;
     color: $grey-500;
-  }
+  } */
 }
 
 .dot-active {
