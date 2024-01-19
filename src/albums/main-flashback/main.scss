@@ -84,7 +84,6 @@ html {
   transition: 0.1s ease-in-out;
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -96,7 +95,6 @@ html {
   background-color: $shadow-black;
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -158,7 +156,6 @@ html {
   background-color: $black-600;
   transform: translateY(3.5rem);
   color: $grey-500;
-
   border-radius: 0 0 5% 5%;
   box-shadow: 1px 3px 15px $shadow-black-transparent;
   opacity: 0;
@@ -195,7 +192,6 @@ html {
   color: $amulet-green-400;
   transition: 0.1s ease-in-out;
   &:hover {
-    /* text-decoration: underline 0.2rem $eastern-blue-500; */
     transform: scale(1.05);
     color: $grey-600;
   }
@@ -397,7 +393,6 @@ html {
 }
 
 //section 3 tracklist
-
 .section3 {
   display: flex;
   flex-direction: column;
@@ -509,7 +504,6 @@ html {
 }
 
 //only tracks test
-
 //only left side song
 .l_side {
   display: flex;
@@ -674,19 +668,15 @@ html {
   justify-content: center;
   align-items: center;
   cursor: auto;
-  /* width: auto; */
   min-width: 20%;
 }
 
 .hidden-info {
   display: none;
-  //moze to ponizej usunac
   justify-content: center;
   align-items: center;
 }
 //heart click in song info
-
-/* .heart-in-song */
 .heart-btn-in-song {
   display: inline-block;
   font-size: 1.3rem;
@@ -885,7 +875,6 @@ html {
   }
 }
 // footer
-
 //top footer
 
 .hr-line-footer {
@@ -1005,7 +994,6 @@ footer {
 }
 
 //bottom footer
-
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -1213,10 +1201,6 @@ footer {
   }
   //! test czy ten display pomaga a chyba nie
   .song-duration {
-    /*   display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; */
     font-size: 1rem;
   }
   .anchor-dots {
@@ -1325,7 +1309,6 @@ footer {
   .bxs-circle {
     font-size: 0.8rem;
   }
-
   //section 4
   #h5-section4 {
     font-size: 1.6rem;
@@ -1438,7 +1421,7 @@ footer {
   }
 
   .nav-a-social {
-    display: block; //test
+    display: block;
     text-decoration: none;
     color: $white;
     margin: 0.2rem 0;

@@ -41,7 +41,6 @@ html {
   transition: 0.1s ease-in-out;
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -53,7 +52,6 @@ html {
   background-color: rgba(30, 29, 29, 0.6);
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -154,7 +152,6 @@ html {
   transition: 0.1s ease-in-out;
 }
 .nav-a-toggle-menu:hover {
-  /* text-decoration: underline 0.2rem $eastern-blue-500; */
   transform: scale(1.05);
   color: #8d8c8c;
 }
@@ -629,7 +626,6 @@ html {
   justify-content: center;
   align-items: center;
   cursor: auto;
-  /* width: auto; */
   min-width: 20%;
 }
 
@@ -639,7 +635,6 @@ html {
   align-items: center;
 }
 
-/* .heart-in-song */
 .heart-btn-in-song {
   display: inline-block;
   font-size: 1.3rem;
@@ -1178,10 +1173,6 @@ footer {
     font-size: 1rem;
   }
   .song-duration {
-    /*   display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; */
     font-size: 1rem;
   }
   .anchor-dots {
@@ -1441,7 +1432,6 @@ footer {
   .list-time-songs {
     padding: 2rem;
   }
-  /*  .heart-in-song */
   .heart-btn-in-song:hover {
     animation: heart-hover-focus 0.3s ease-in-out;
     color: #cd3737;

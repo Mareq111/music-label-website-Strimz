@@ -82,7 +82,6 @@ html {
   transition: 0.1s ease-in-out;
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -94,7 +93,6 @@ html {
   background-color: $shadow-black;
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -156,7 +154,6 @@ html {
   background-color: $black-600;
   transform: translateY(3.5rem);
   color: $grey-500;
-
   border-radius: 0 0 5% 5%;
   box-shadow: 1px 3px 15px $shadow-black-transparent;
   opacity: 0;
@@ -193,7 +190,6 @@ html {
   color: $amulet-green-400;
   transition: 0.1s ease-in-out;
   &:hover {
-    /* text-decoration: underline 0.2rem $eastern-blue-500; */
     transform: scale(1.05);
     color: $grey-600;
   }
@@ -299,7 +295,6 @@ html {
   font-size: 1.6rem;
   font-weight: 800;
   padding-bottom: 0.5rem;
-  /* border-bottom: 0.1rem solid $grey-700 *; */
   width: 100%;
 }
 
@@ -510,7 +505,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 0.5rem; */
 }
 
 .song-number {
@@ -624,7 +618,6 @@ html {
 }
 
 // only right side song
-
 //! add display itp zeby było columnowo te odliczanie
 .song-duration {
   font-size: 0.8rem;
@@ -667,19 +660,17 @@ html {
   justify-content: center;
   align-items: center;
   cursor: auto;
-  /* width: auto; */
+
   min-width: 20%;
 }
 
 .hidden-info {
   display: none;
-  //moze to ponizej usunac
+
   justify-content: center;
   align-items: center;
 }
 //heart click in song info
-
-/* .heart-in-song */
 .heart-btn-in-song {
   display: inline-block;
   font-size: 1.3rem;
@@ -707,7 +698,6 @@ html {
   z-index: 1;
 }
 //section 4 other albums might you like
-
 .section4 {
   display: flex;
   flex-direction: column;
@@ -875,8 +865,7 @@ html {
     background-color: $grey-500;
   }
 }
-// footer
-
+//! footer
 //top footer
 
 .hr-line-footer {
@@ -996,7 +985,6 @@ footer {
 }
 
 //bottom footer
-
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -1391,7 +1379,7 @@ footer {
     display: none;
   }
   .nav-a-social {
-    display: block; //test
+    display: block;
     text-decoration: none;
     color: $white;
     margin: 0.2rem 0;
@@ -1497,20 +1485,6 @@ footer {
   .nav-a-footer-social {
     padding: 0 1rem;
   }
-
-  /*     #bottom-footer-social-1,
-#bottom-footer-social-2,
-#bottom-footer-social-3,
-#bottom-footer-social-4,
-#bottom-footer-social-5,
-#bottom-footer-social-6,
-#bottom-footer-social-7,
-#bottom-footer-social-8,
-#bottom-footer-social-9 {
-    font-size: 2rem;
-    color: $grey-500;
-    cursor: pointer;
-} */
 }
 
 @media (min-width: 1440px) {
@@ -1576,9 +1550,7 @@ footer {
     font-size: 1.1rem;
     line-height: 2.2rem;
   }
-
   //section2
-
   .section2 {
     padding: 6rem 6rem 0 6rem;
   }
@@ -1649,7 +1621,6 @@ footer {
     font-size: 1.8rem;
   }
   //footer'top
-
   .footer-top {
     display: flex;
     flex-direction: row;

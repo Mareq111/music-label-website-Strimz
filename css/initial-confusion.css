@@ -38,7 +38,6 @@ html {
   transition: 0.1s ease-in-out;
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -50,7 +49,6 @@ html {
   background-color: rgba(30, 29, 29, 0.6);
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -625,7 +623,6 @@ html {
   justify-content: center;
   align-items: center;
   cursor: auto;
-  /* width: auto; */
   min-width: 20%;
 }
 
@@ -635,7 +632,6 @@ html {
   align-items: center;
 }
 
-/* .heart-in-song */
 .heart-btn-in-song {
   display: inline-block;
   font-size: 1.3rem;
@@ -1408,19 +1404,6 @@ footer {
   .nav-a-footer-social {
     padding: 0 1rem;
   }
-  /*     #bottom-footer-social-1,
-  #bottom-footer-social-2,
-  #bottom-footer-social-3,
-  #bottom-footer-social-4,
-  #bottom-footer-social-5,
-  #bottom-footer-social-6,
-  #bottom-footer-social-7,
-  #bottom-footer-social-8,
-  #bottom-footer-social-9 {
-      font-size: 2rem;
-      color: $grey-500;
-      cursor: pointer;
-  } */
 }
 @media (min-width: 1440px) {
   #nav-a-1,

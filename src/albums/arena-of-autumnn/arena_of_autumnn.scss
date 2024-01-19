@@ -74,7 +74,6 @@ html {
   }
 }
 //return link arrow
-
 .arrow-link {
   display: flex;
   justify-content: center;
@@ -83,7 +82,6 @@ html {
   transition: 0.1s ease-in-out;
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -95,7 +93,6 @@ html {
   background-color: $shadow-black;
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -157,7 +154,6 @@ html {
   background-color: $black-600;
   transform: translateY(3.5rem);
   color: $grey-500;
-
   border-radius: 0 0 5% 5%;
   box-shadow: 1px 3px 15px $shadow-black-transparent;
   opacity: 0;
@@ -299,7 +295,6 @@ html {
   font-size: 1.6rem;
   font-weight: 800;
   padding-bottom: 0.5rem;
-  /* border-bottom: 0.1rem solid $grey-700 *; */
   width: 100%;
 }
 
@@ -417,7 +412,6 @@ html {
 }
 
 //! The big btn for starting to listen to music at the first one with an animation after click
-
 .play-btn {
   display: flex;
   justify-content: center;
@@ -512,7 +506,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 0.5rem; */
 }
 
 .song-number {
@@ -626,7 +619,6 @@ html {
 }
 
 // only right side song
-
 //! add display itp zeby było columnowo te odliczanie
 .song-duration {
   font-size: 0.8rem;
@@ -670,19 +662,15 @@ html {
   justify-content: center;
   align-items: center;
   cursor: auto;
-  /* width: auto; */
   min-width: 20%;
 }
 
 .hidden-info {
   display: none;
-  //moze to ponizej usunac
   justify-content: center;
   align-items: center;
 }
 //heart click in song info
-
-/* .heart-in-song */
 .heart-btn-in-song {
   display: inline-block;
   font-size: 1.3rem;
@@ -698,7 +686,6 @@ html {
     color: $red-700;
   }
 }
-
 // btn for icons in song in right side
 .btn-3-dots-visible,
 .btn-3-dots-hidden,
@@ -724,7 +711,6 @@ html {
   font-weight: 700;
   padding-bottom: 1rem;
 }
-
 .name-tag {
   color: $eastern-blue-500;
 }
@@ -770,7 +756,7 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 600;
-  font-size: 1.3rem; //!
+  font-size: 1.3rem;
   white-space: wrap;
   width: 100%;
   margin-top: 0.5rem;
@@ -781,7 +767,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.5rem; //!
+  gap: 0.5rem;
   width: 100%;
   height: auto;
   margin-top: auto;
@@ -789,12 +775,12 @@ html {
 
 .date-small {
   font-weight: 400;
-  font-size: 1.1rem; //!
+  font-size: 1.1rem;
 }
 
 .dots-separator-album {
   color: $eastern-blue-500;
-  font-size: 1.7rem; //!
+  font-size: 1.7rem;
 }
 // a - for mini albums
 .album-a-next-page {
@@ -880,8 +866,7 @@ html {
   }
 }
 
-// footer
-
+//! footer
 //top footer
 
 .hr-line-footer {
@@ -1001,7 +986,6 @@ footer {
 }
 
 //bottom footer
-
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -1117,7 +1101,6 @@ footer {
 //media queries for 425px screens
 
 @media (min-width: 425px) {
-
   .top-content {
     padding: 0 2rem;
   }
@@ -1225,7 +1208,6 @@ footer {
 // media q for 768px screens
 
 @media (min-width: 768px) {
- 
   #main-album-cover {
     width: 100%;
     max-width: 28rem;
@@ -1258,9 +1240,6 @@ footer {
   .album-artist-name {
     font-size: 1.4rem;
   }
-  /*  #fig-album-released {
-        color: $black-700;
-    } */
   //section 2
   .section2 {
     background-color: $black-900;
@@ -1402,7 +1381,7 @@ footer {
     display: none;
   }
   .nav-a-social {
-    display: block; //test
+    display: block;
     text-decoration: none;
     color: $white;
     margin: 0.2rem 0;
@@ -1442,7 +1421,7 @@ footer {
   .album-artist-name {
     font-size: 1.8rem;
   }
- 
+
   .album-description {
     width: 90%;
   }
@@ -1473,7 +1452,6 @@ footer {
     padding: 2rem;
   }
   //section 4
-
   .section4 {
     padding: 4rem 4rem;
   }
@@ -1481,7 +1459,6 @@ footer {
     font-size: 2rem;
   }
   //footer'top
-
   .footer-top {
     display: flex;
     flex-direction: row;
@@ -1509,20 +1486,6 @@ footer {
   .nav-a-footer-social {
     padding: 0 1rem;
   }
-
-  /*     #bottom-footer-social-1,
-#bottom-footer-social-2,
-#bottom-footer-social-3,
-#bottom-footer-social-4,
-#bottom-footer-social-5,
-#bottom-footer-social-6,
-#bottom-footer-social-7,
-#bottom-footer-social-8,
-#bottom-footer-social-9 {
-    font-size: 2rem;
-    color: $grey-500;
-    cursor: pointer;
-} */
 }
 
 @media (min-width: 1440px) {
@@ -1647,17 +1610,17 @@ footer {
     font-size: 2.2rem;
   }
   .content-small {
-    gap: 0.6rem; //!
+    gap: 0.6rem;
   }
   .song-title-small {
-    font-size: 1.4rem; //!
+    font-size: 1.4rem;
   }
   .date-small {
     font-weight: 400;
-    font-size: 1.2rem; //!
+    font-size: 1.2rem;
   }
   .dots-separator-album {
-    font-size: 1.8rem; //!
+    font-size: 1.8rem;
   }
   //footer'top
 
