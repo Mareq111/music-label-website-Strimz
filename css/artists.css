@@ -177,7 +177,6 @@ html {
   width: 100%;
   height: auto;
   padding: 4rem 0.5rem 0 0.5rem;
-  /* z-index: 1; */
 }
 
 .section-1-card {
@@ -188,7 +187,6 @@ html {
   width: 100%;
   height: auto;
   padding: 2rem 1rem;
-  /* z-index: 1; */
   background-color: rgba(30, 29, 29, 0.6);
   border-radius: 1rem;
 }
@@ -232,8 +230,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  /*  width: 100%;
-    height: auto; */
   gap: 0.5rem;
   line-height: 1.6rem;
 }
@@ -521,7 +517,6 @@ html {
   color: #f2f2f2;
   width: 14rem;
   height: auto;
-  /*  margin: 1rem 0 */
   font-size: 1rem;
   font-weight: 700;
   transition: 0.1s ease-in-out;
@@ -841,9 +836,6 @@ footer {
   .toggle_menu-a {
     font-size: 1.4rem;
   }
-  /* .section-1-card {
-      padding: 3rem 2rem;
-  } */
   .link-to-story {
     text-decoration: none;
     color: #f2f2f2;
@@ -895,9 +887,6 @@ footer {
     max-width: 36rem;
   }
   .div-artist-img {
-    /*  display: flex;
-        justify-content: center;
-        align-items: center; */
     margin: 2rem 0;
   }
   .artist-img {
@@ -905,9 +894,6 @@ footer {
     height: auto;
   }
   .div-inner-img {
-    /*  display: flex;
-        justify-content: center;
-        align-items: center; */
     margin: 0 2rem;
     max-width: 31rem;
   }
@@ -922,7 +908,6 @@ footer {
   .link-for-cta-btn {
     width: 18rem;
     height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.2rem;
   }
   .btns-chooser {
@@ -1247,15 +1232,11 @@ footer {
   }
   .p_section-for-artist {
     display: none;
-    /*  font-size: 1.4rem;
-        line-height: 2.8rem;
-        max-width: 46rem; */
   }
   .p_section-for-artist-hidden {
     display: block;
     font-size: 1.4rem;
     line-height: 2.8rem;
-    /*  max-width: 46rem;  */
     max-width: 50vw;
   }
   .div-artist-img {
@@ -1300,7 +1281,6 @@ footer {
   }
   .artist-div.active {
     display: block;
-    /* margin: 0 2rem; */
   }
   .btns-chooser {
     display: flex;

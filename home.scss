@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
 
-//colors variety import from  separate color stylesheet
+//colors variety
 $white: #f2f2f2;
 $red-300: #f14343;
 $red-500: #cd3737;
@@ -184,7 +184,6 @@ html {
   color: $amulet-green-400;
   transition: 0.1s ease-in-out;
   &:hover {
-    /* text-decoration: underline 0.2rem $eastern-blue-500; */
     transform: scale(1.05);
     color: $grey-600;
   }
@@ -372,11 +371,11 @@ html {
   font-size: 1.2rem;
   margin-right: 0.5rem;
   color: $grey-600;
- /*  cursor: pointer; */
+  /*  cursor: pointer; */
   padding: 0.5rem;
   background-color: transparent;
   border-radius: 0.5rem;
-/*   &:hover,
+  /*   &:hover,
   :active {
     background-color: $grey-700;
     color: $grey-500;
@@ -438,7 +437,6 @@ html {
   width: 100%;
   height: auto;
   padding: 4rem 0.5rem 0 0.5rem;
-  /* z-index: 1; */
 }
 
 .section-1-card {
@@ -449,7 +447,6 @@ html {
   width: 100%;
   height: auto;
   padding: 2rem 1rem;
-  /* z-index: 1; */
   background-color: $shadow-black;
   border-radius: 1rem;
 }
@@ -492,8 +489,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  /*  width: 100%;
-    height: auto; */
   gap: 0.5rem;
   line-height: 1.6rem;
 }
@@ -623,9 +618,6 @@ html {
   min-height: 20rem;
   gap: 1.5rem;
   z-index: 1;
-  /* &:hover {
-    transition: 0.1s linear;
-  } */
 }
 
 .album-cover,
@@ -883,7 +875,6 @@ html {
 }
 
 //btn for view collection
-//btn
 .btn-view-collection-div {
   display: flex;
   justify-content: center;
@@ -918,10 +909,7 @@ html {
   }
 }
 
-//
-
 //section3 music app chooser
-
 .section3 {
   display: flex;
   flex-direction: column;
@@ -933,7 +921,6 @@ html {
   font-size: 1.4rem;
   text-transform: uppercase;
   width: 100%;
-  /*  padding-bottom: 2rem; */
   font-weight: 700;
 }
 .dot-and-introduction-chooser {
@@ -981,7 +968,6 @@ html {
 #box-5 {
   color: $white;
   padding: 0;
-  /*  font-size: 1.5rem; */
   font-size: 2rem;
   transition: 0.1s ease-in-out;
   cursor: pointer;
@@ -1001,7 +987,6 @@ html {
   height: 0.05rem;
   opacity: 0.1;
   margin-top: 2rem;
-  //
 }
 //section5 shop
 
@@ -1152,12 +1137,7 @@ html {
   text-overflow: ellipsis;
 }
 //end  scroll
-
 //btn for check out shop
-//btn
-
-//
-
 .btn-shop-div {
   display: flex;
   justify-content: center;
@@ -1189,9 +1169,7 @@ html {
     background-color: $grey-500;
   }
 }
-
 //section 6 tour
-
 .section6 {
   display: flex;
   flex-direction: column;
@@ -1284,7 +1262,6 @@ html {
   color: $white;
   width: 14rem;
   height: auto;
-  /*  margin: 1rem 0 */
   font-size: 1rem;
   font-weight: 700;
   transition: 0.1s ease-in-out;
@@ -1319,7 +1296,6 @@ html {
   color: $white;
   width: 14rem;
   height: auto;
-  /* margin: 1rem 0; */
   font-size: 1rem;
   font-weight: 700;
   transition: 0.1s ease-in-out;
@@ -1333,11 +1309,9 @@ html {
     color: $black-900;
   }
 }
-//footer new
 // footer
 
 //top footer
-
 .hr-line-footer {
   width: 100%;
   border: none;
@@ -1454,7 +1428,6 @@ footer {
   }
 }
 //bottom footer
-
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -1556,8 +1529,6 @@ footer {
     height: 2.1rem;
   }
   //section 0 -slider
-  //SECTION 0
-  //img
   .slider-img {
     width: 18rem;
     height: 18rem;
@@ -1623,7 +1594,6 @@ footer {
     height: 2.3rem;
   }
   //main description
-
   .p_description {
     line-height: 2.2rem;
     font-size: 1.1rem;
@@ -1642,7 +1612,6 @@ footer {
   //btn discover story
 
   .btn-discover {
-    /* padding: 0.5rem 1rem; */ //bez zmian
     width: 18rem;
     height: auto;
     margin: 1.5rem 0;
@@ -1665,7 +1634,7 @@ footer {
   //albums thing
   .albums-chooser,
   .singles-chooser {
-    min-height: 22rem; //pocco?
+    min-height: 22rem;
     gap: 2rem;
   }
   .album-cover,
@@ -1700,10 +1669,7 @@ footer {
   }
 
   //btn for view collection
-  //btn
   .btn-view-collection {
-    /* 
-    padding: 0.5rem 1rem; */
     width: 18rem;
     height: auto;
     margin: 1.5rem 0;
@@ -1711,7 +1677,6 @@ footer {
   }
 
   //section3 music app chooser
-
   .section3 {
     padding: 2rem;
   }
@@ -1721,7 +1686,6 @@ footer {
   .dot-and-introduction-chooser {
     gap: 0.5rem;
     line-height: 2rem;
-    /*  margin: 0.5rem 0 2rem 0; */
   }
   .p_introduction-chooser {
     font-size: 1rem;
@@ -1816,14 +1780,12 @@ footer {
   .btn-tour {
     width: 18rem;
     height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.2rem;
   }
   //2 btn album info
   .btn-album-info {
     width: 18rem;
     height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.2rem;
   }
 
@@ -1835,9 +1797,6 @@ footer {
   .nav-a-footer {
     font-size: 1.6rem;
   }
-  /*  .send-btn {
-        padding: 0.5rem 1rem;
-    } */
   //footer boottom
 
   #bottom-footer-social-1,
@@ -1887,7 +1846,6 @@ footer {
 
   .img-with-dots-768 {
     width: 50%;
-    /*  padding-right: 1rem; */
     max-width: 35rem;
   }
   .slider-img {
@@ -1989,7 +1947,6 @@ footer {
     font-size: 1.4rem;
   }
   //! section 2 i 4 padding 4rem 3rem
-
   // section 2 new albums with section 4 latest singles
   .section-2,
   .section-4 {
@@ -2040,7 +1997,6 @@ footer {
   }
 
   //btn for view collection
-  //btn
   .btn-view-collection {
     padding: 1rem;
     width: 22rem;
@@ -2050,7 +2006,6 @@ footer {
   }
 
   //section3 music app chooser
-
   .section3 {
     padding: 3rem;
   }
@@ -2165,7 +2120,6 @@ footer {
     padding: 1rem;
     width: 22rem;
     height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.4rem;
   }
   //footer top
@@ -2357,7 +2311,6 @@ footer {
   }
 
   //section1 1024px
-
   .section-1 {
     padding: 5rem 1rem 0 1rem;
   }
@@ -2390,7 +2343,6 @@ footer {
   }
 
   //main description
-
   .p_description {
     line-height: 2.8rem;
     font-size: 1.4rem;
@@ -2407,8 +2359,6 @@ footer {
   }
 
   //btn discover story
-
-  //! section 2 i 4 padding 5.5 4.5 ma byc wieksze niz section 1 o 0.5rem
 
   // section 2 new albums with section 4 latest singles
   .section-2,
@@ -2460,7 +2410,6 @@ footer {
   }
 
   //section3 music app chooser
-
   .section3 {
     padding: 4rem 4.5rem;
   }
@@ -2536,7 +2485,6 @@ footer {
   }
 
   // div under img
-
   .shop-dream-chasers {
     max-width: 15rem;
     margin-top: 1.5rem;
@@ -2569,9 +2517,6 @@ footer {
     font-size: 1.6rem;
   }
 
-  /* .div_for_p-section6 {
-        margin-top: 1.5rem;
-    } */
   .p_section6-mini-description {
     font-size: 1.2rem;
   }
@@ -2598,7 +2543,6 @@ footer {
     padding: 1rem;
     width: 22rem;
     height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.4rem;
   }
   //!footer
@@ -2731,7 +2675,7 @@ footer {
   .p_description {
     max-width: 52rem;
   }
-  //! section 2 i 4 padding 5.5 4.5 ma byc wieksze niz section 1 o 0.5rem
+  //! section 2 i 4
 
   // section 2 new albums with section 4 latest singles
   .section-2,

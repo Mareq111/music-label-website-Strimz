@@ -94,7 +94,6 @@ html {
   transition: 0.1s ease-in-out;
 }
 .nav-a-toggle-menu:hover {
-  /* text-decoration: underline 0.2rem $eastern-blue-500; */
   transform: scale(1.05);
   color: #8d8c8c;
 }
@@ -179,7 +178,6 @@ html {
   width: 100%;
   height: auto;
   padding: 4rem 0.5rem 0 0.5rem;
-  /* z-index: 1; */
 }
 
 .section-1-card {
@@ -190,7 +188,6 @@ html {
   width: 100%;
   height: auto;
   padding: 2rem 1rem;
-  /* z-index: 1; */
   background-color: rgba(30, 29, 29, 0.6);
   border-radius: 1rem;
 }
@@ -234,8 +231,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  /*  width: 100%;
-    height: auto; */
   gap: 0.5rem;
   line-height: 1.6rem;
 }
@@ -797,7 +792,6 @@ html {
   font-size: 1.4rem;
   text-transform: uppercase;
   width: 100%;
-  /*  padding-bottom: 2rem; */
   font-weight: 700;
 }
 
@@ -848,7 +842,6 @@ html {
 #box-5 {
   color: #f2f2f2;
   padding: 0;
-  /*  font-size: 1.5rem; */
   font-size: 2rem;
   transition: 0.1s ease-in-out;
   cursor: pointer;
@@ -1006,7 +999,6 @@ html {
   color: #f2f2f2;
   width: 14rem;
   height: auto;
-  /*  margin: 1rem 0 */
   font-size: 1rem;
   font-weight: 700;
   transition: 0.1s ease-in-out;
@@ -1444,9 +1436,6 @@ footer {
   .toggle_menu-a {
     font-size: 1.4rem;
   }
-  /* .section-1-card {
-      padding: 3rem 2rem;
-  } */
   .link-to-story {
     text-decoration: none;
     color: #f2f2f2;
@@ -1477,7 +1466,6 @@ footer {
     font-size: 1.6rem;
   }
   .btn-discover {
-    /* padding: 0.5rem 1rem; */
     width: 18rem;
     height: auto;
     margin: 1.5rem 0;
@@ -1846,7 +1834,6 @@ footer {
   .p_section6-mini-description {
     font-size: 1.1rem;
     line-height: 2.2rem;
-    /* margin-bottom: 1rem; */
   }
   .p_section6-top {
     font-size: 1.3rem;
@@ -1865,7 +1852,6 @@ footer {
   .div-dream-chasers {
     padding: 2.5rem 0;
     margin-bottom: 0.5rem;
-    /* gap: 0.5rem; */
   }
   .btn-shop {
     padding: 1rem;
@@ -2130,7 +2116,6 @@ footer {
     display: block;
     font-size: 1.4rem;
     line-height: 2.8rem;
-    /* max-width: 46rem; */
     max-width: 50vw;
   }
   .upcoming-album-img-div {

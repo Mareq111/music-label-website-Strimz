@@ -93,7 +93,6 @@ html {
   transition: 0.1s ease-in-out;
 }
 .nav-a-toggle-menu:hover {
-  /* text-decoration: underline 0.2rem $eastern-blue-500; */
   transform: scale(1.05);
   color: #8d8c8c;
 }
@@ -178,7 +177,6 @@ html {
   width: 100%;
   height: auto;
   padding: 4rem 0.5rem 0 0.5rem;
-  /* z-index: 1; */
 }
 
 .section-1-card {
@@ -189,7 +187,6 @@ html {
   width: 100%;
   height: auto;
   padding: 2rem 1rem;
-  /* z-index: 1; */
   background-color: rgba(30, 29, 29, 0.6);
   border-radius: 1rem;
 }
@@ -233,8 +230,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  /*  width: 100%;
-    height: auto; */
   gap: 0.5rem;
   line-height: 1.6rem;
 }

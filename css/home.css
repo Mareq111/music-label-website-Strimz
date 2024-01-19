@@ -93,7 +93,6 @@ html {
   transition: 0.1s ease-in-out;
 }
 .nav-a-toggle-menu:hover {
-  /* text-decoration: underline 0.2rem $eastern-blue-500; */
   transform: scale(1.05);
   color: #8d8c8c;
 }
@@ -295,10 +294,10 @@ html {
   background-color: transparent;
   border-radius: 0.5rem;
   /*   &:hover,
-    :active {
-      background-color: $grey-700;
-      color: $grey-500;
-    } */
+  :active {
+    background-color: $grey-700;
+    color: $grey-500;
+  } */
 }
 
 .dot-active {
@@ -359,7 +358,6 @@ html {
   width: 100%;
   height: auto;
   padding: 4rem 0.5rem 0 0.5rem;
-  /* z-index: 1; */
 }
 
 .section-1-card {
@@ -370,7 +368,6 @@ html {
   width: 100%;
   height: auto;
   padding: 2rem 1rem;
-  /* z-index: 1; */
   background-color: rgba(30, 29, 29, 0.6);
   border-radius: 1rem;
 }
@@ -414,8 +411,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  /*  width: 100%;
-    height: auto; */
   gap: 0.5rem;
   line-height: 1.6rem;
 }
@@ -551,9 +546,6 @@ html {
   min-height: 20rem;
   gap: 1.5rem;
   z-index: 1;
-  /* &:hover {
-    transition: 0.1s linear;
-  } */
 }
 
 .album-cover,
@@ -812,7 +804,6 @@ html {
   font-size: 1.4rem;
   text-transform: uppercase;
   width: 100%;
-  /*  padding-bottom: 2rem; */
   font-weight: 700;
 }
 
@@ -863,7 +854,6 @@ html {
 #box-5 {
   color: #f2f2f2;
   padding: 0;
-  /*  font-size: 1.5rem; */
   font-size: 2rem;
   transition: 0.1s ease-in-out;
   cursor: pointer;
@@ -1168,7 +1158,6 @@ html {
   color: #f2f2f2;
   width: 14rem;
   height: auto;
-  /*  margin: 1rem 0 */
   font-size: 1rem;
   font-weight: 700;
   transition: 0.1s ease-in-out;
@@ -1202,7 +1191,6 @@ html {
   color: #f2f2f2;
   width: 14rem;
   height: auto;
-  /* margin: 1rem 0; */
   font-size: 1rem;
   font-weight: 700;
   transition: 0.1s ease-in-out;
@@ -1512,7 +1500,6 @@ footer {
     font-size: 1.6rem;
   }
   .btn-discover {
-    /* padding: 0.5rem 1rem; */
     width: 18rem;
     height: auto;
     margin: 1.5rem 0;
@@ -1561,8 +1548,6 @@ footer {
     font-size: 1.6rem;
   }
   .btn-view-collection {
-    /* 
-    padding: 0.5rem 1rem; */
     width: 18rem;
     height: auto;
     margin: 1.5rem 0;
@@ -1577,7 +1562,6 @@ footer {
   .dot-and-introduction-chooser {
     gap: 0.5rem;
     line-height: 2rem;
-    /*  margin: 0.5rem 0 2rem 0; */
   }
   .p_introduction-chooser {
     font-size: 1rem;
@@ -1654,13 +1638,11 @@ footer {
   .btn-tour {
     width: 18rem;
     height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.2rem;
   }
   .btn-album-info {
     width: 18rem;
     height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.2rem;
   }
   footer {
@@ -1669,9 +1651,6 @@ footer {
   .nav-a-footer {
     font-size: 1.6rem;
   }
-  /*  .send-btn {
-        padding: 0.5rem 1rem;
-    } */
   #bottom-footer-social-1,
   #bottom-footer-social-2,
   #bottom-footer-social-3,
@@ -1711,7 +1690,6 @@ footer {
   }
   .img-with-dots-768 {
     width: 50%;
-    /*  padding-right: 1rem; */
     max-width: 35rem;
   }
   .slider-img {
@@ -1940,7 +1918,6 @@ footer {
     padding: 1rem;
     width: 22rem;
     height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.4rem;
   }
 }
@@ -2282,9 +2259,6 @@ footer {
   .title-name-tour {
     font-size: 1.6rem;
   }
-  /* .div_for_p-section6 {
-        margin-top: 1.5rem;
-    } */
   .p_section6-mini-description {
     font-size: 1.2rem;
   }
@@ -2307,7 +2281,6 @@ footer {
     padding: 1rem;
     width: 22rem;
     height: auto;
-    /* margin: 1.5rem 0; */
     font-size: 1.4rem;
   }
   .footer-top {
