@@ -703,7 +703,14 @@ html {
   height: auto;
   padding: 0.5rem;
   margin-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
+  max-width: 100rem;
+}
+.three-stats-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
 }
 .stats-div {
   display: flex;
@@ -1092,6 +1099,18 @@ html {
     outline: 0.2rem solid $amulet-green-400;
   }
 }
+//div conditions
+
+.div-conditions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+#p-conditions {
+  font-size: 0.8rem;
+  color: $grey-500;
+}
 // footer
 
 //top footer
@@ -1419,15 +1438,10 @@ footer {
     width: 100%;
     font-size: 1.3rem;
     line-height: 2.6rem;
-    /* margin-bottom: 1rem; */
   }
   .p-content-overview {
     font-size: 1.1rem;
     line-height: 2.2rem;
-  }
-  //stats div
-  .three-stats-div {
-    max-width: 40rem;
   }
 
   .quantity-stats {
@@ -1723,13 +1737,7 @@ footer {
     align-items: center;
     height: auto;
     width: 100%;
-    max-width: 56rem;
-    padding: 1.5rem;
-  }
-  .three-stats-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1.5rem 1.5rem 0 1.5rem;
   }
   .bottom-p-content-div {
     padding: 1rem;
@@ -2109,7 +2117,7 @@ footer {
     align-items: center;
     height: auto;
     width: 100%;
-    padding: 3rem;
+    padding: 3rem 3rem 0 3rem;
   }
   .quantity-stats {
     width: 3.5rem;
