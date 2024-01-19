@@ -2,9 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
 
-/* //colors variety import from  separate color stylesheet
-@import "/css/ColorsVariety.css";
- */
 $white: #f2f2f2;
 $red-500: #cd3737;
 $red-700: #b61a1a;
@@ -880,8 +877,8 @@ html {
   &:hover,
   :focus,
   :active {
-      transform: scale(1.1);
-      background-color: $grey-500;
+    transform: scale(1.1);
+    background-color: $grey-500;
   }
 }
 // footer
@@ -1147,7 +1144,6 @@ footer {
 //media queries for 425px screens
 
 @media (min-width: 425px) {
- 
   .top-content {
     padding: 0 2rem;
   }
@@ -1264,7 +1260,6 @@ footer {
 // media q for 768px screens
 
 @media (min-width: 768px) {
- 
   #main-album-cover {
     width: 100%;
     max-width: 28rem;
