@@ -2,9 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
 
-/* //colors variety import from  separate color stylesheet
-@import "/css/ColorsVariety.css";
- */
 $white: #f2f2f2;
 $red-500: #cd3737;
 $red-700: #b61a1a;
@@ -81,7 +78,6 @@ html {
   transition: 0.1s ease-in-out;
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -93,7 +89,6 @@ html {
   background-color: $shadow-black;
   width: 1.75rem;
   height: 1.75rem;
-  /* margin: 0.5rem 0; */
   padding: 1rem;
 }
 
@@ -155,7 +150,6 @@ html {
   background-color: $black-600;
   transform: translateY(3.5rem);
   color: $grey-500;
-
   border-radius: 0 0 5% 5%;
   box-shadow: 1px 3px 15px $shadow-black-transparent;
   opacity: 0;
@@ -192,7 +186,6 @@ html {
   color: $amulet-green-400;
   transition: 0.1s ease-in-out;
   &:hover {
-    /* text-decoration: underline 0.2rem $eastern-blue-500; */
     transform: scale(1.05);
     color: $grey-600;
   }
@@ -279,11 +272,11 @@ html {
   height: auto;
   box-shadow: 0px 2px 8px 1px $shadow-black;
   border-radius: 5%;
-  max-width: 23rem; //!
+  max-width: 23rem;
 }
 
 #fig-album-released {
-  padding: 0.5rem 0; //!
+  padding: 0.5rem 0;
 
   position: relative;
   font-size: 0.8rem;
@@ -393,7 +386,6 @@ html {
     transform: scale(1.3);
   }
 }
-
 //section 3 tracklist
 
 .section3 {
@@ -506,14 +498,11 @@ html {
   margin: 0.5rem 0;
 }
 
-//only tracks test
-
 //only left side song
 .l_side {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 0.5rem; */
 }
 
 .song-number {
@@ -672,19 +661,16 @@ html {
   justify-content: center;
   align-items: center;
   cursor: auto;
-  /* width: auto; */
   min-width: 20%;
 }
 
 .hidden-info {
   display: none;
-  //moze to ponizej usunac
   justify-content: center;
   align-items: center;
 }
 //heart click in song info
 
-/* .heart-in-song */
 .heart-btn-in-song {
   display: inline-block;
   font-size: 1.3rem;
@@ -713,7 +699,6 @@ html {
 }
 
 //section 4 other albums might you like
-
 .section4 {
   display: flex;
   flex-direction: column;
@@ -877,7 +862,6 @@ html {
   }
 }
 // footer
-
 //top footer
 
 .hr-line-footer {
@@ -1204,16 +1188,11 @@ footer {
   }
   //! test czy ten display pomaga a chyba nie
   .song-duration {
-    /*   display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; */
     font-size: 1rem;
   }
   .anchor-dots {
     font-size: 1.6rem;
   }
-  /* .heart-in-song */
   .heart-btn-in-song {
     font-size: 1.6rem;
   }
@@ -1256,7 +1235,7 @@ footer {
 @media (min-width: 768px) {
   #main-album-cover {
     width: 100%;
-    max-width: 28rem; //!
+    max-width: 28rem;
   }
   //toggle menu
   .toggle-menu {
@@ -1274,7 +1253,7 @@ footer {
   .album-and-figcaption {
     width: 100%;
     padding: 0;
-    max-width: 28rem; //!
+    max-width: 28rem;
   }
   .title-name-artist {
     padding-top: 6rem;
@@ -1426,7 +1405,7 @@ footer {
     display: none;
   }
   .nav-a-social {
-    display: block; //test
+    display: block;
     text-decoration: none;
     color: $white;
     margin: 0.2rem 0;
@@ -1456,7 +1435,6 @@ footer {
     padding: 4rem 4rem 0 4rem;
   }
   #fig-album-released {
-    //!
     font-size: 0.9rem;
     padding: 1rem 0 0.5rem 0;
   }
@@ -1497,7 +1475,6 @@ footer {
     padding: 2rem;
   }
   // hover for heart in div song
-  /*  .heart-in-song */
   .heart-btn-in-song {
     &:hover {
       animation: heart-hover-focus 0.3s ease-in-out;
@@ -1609,7 +1586,6 @@ footer {
     line-height: 2.2rem;
   }
   //section2
-
   .section2 {
     padding: 6rem 6rem 0 6rem;
   }
