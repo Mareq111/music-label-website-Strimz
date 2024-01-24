@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  //next slider per 3.5seconds
-  const sliderInterval = setInterval(nextSlide, 3500);
+  //next slider per 3seconds
+  const sliderInterval = setInterval(nextSlide, 3000);
 
   //!2 toggle play / pause button for slider into home page
 
@@ -65,5 +65,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-
 });
