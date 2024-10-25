@@ -18,7 +18,7 @@ With each new challenge, new possibilities opened up to me, which allowed me to 
 
 Today, looking back, I see this project as a milestone in my journey in front-end development. This experience made me realize how much I still have to discover and how passionate an area web development is.
 
-## Creative Approach
+## ✨🚀 Creative Approach
 
 I enriched the project with a number of sub-pages showcasing albums and singles by various artists, giving users the opportunity to listen to albums or singles. I first started by creating unconventional album covers, using only my own photos, which I then reworked in graphics applications such as PicsArt and Photoshop to give them a unique feel. The results of this work were unusual, underground/abstract music covers.
 
