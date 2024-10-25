@@ -2,13 +2,13 @@
 
 **Deployed Website:** [Strimz Empire - Music Label](https://strimz.netlify.app/)
 
-## Description
+## 📀🎶 Description
 
 The fictional music label project represents my first major adventure in web development. Initially, it was a modest idea to create a single page showcasing a music album. However, over time, it evolved into a complete vision of a virtual music label inspired by streaming platforms. This process lasted from October to January 2024.
 
 Working on this project was an extremely interesting challenge. During this period, I explored the world of web development, learning on the fly and exploring various aspects of building a website. This project consists of several main sections: "Home", "Releases", "Artists", "Tour", "About", and "Contact Us". However, it does not include a “Shop” section. This decision is intentional, as I plan to create a separate store dedicated to this music label. The store will be available soon!
 
-## Development Experience
+## 💻🔧 Development Experience
 
 During the development of this project, I focused on learning and experimenting with HTML, SCSS, and JavaScript.
 
@@ -24,19 +24,19 @@ I enriched the project with a number of sub-pages showcasing albums and singles 
 
 In addition, I wanted each album/single to have a unique "tracks" that would make it stand out. Then I started experimenting with FL Studio Mobile, taking my first steps in creating abstract, experimental "tracks".
 
-## Reflections
+## 💡📈 Reflections
 
 I have some thoughts about my first project. I realized that earlier and more thorough planning could have made the whole process go more smoothly. Perhaps I could have planned the details better, which would have helped avoid problems and speed up the project. In future projects, I plan to make improvements in the styling and standardization of elements, for example, by using components. This will allow me to more systematize the appearance of individual pages, which I hope will help achieve greater visual consistency throughout the site and increase the readability of its elements.
 
-## Tech Stack
+## 🛠️💻 Tech Stack
 
-**Client:** Html, SCSS, JavaScript
+**Frontend:** HTML, SCSS, JavaScript
 
-## 🚀 About Me
+## 🙋‍♂️💼 About Me
 
 My Name is Marek Szulc, aspiring Front-End Developer. To build user-friendly web applications, I am currently learning HTML, CSS, JavaScript, React, and UI design with Figma.
 
-## 🔗 Links
+## 🔗🌐 Links
 
 - [Github @Mareq111](https://github.com/Mareq111)
 - [Linkedin @Marek Szulc](https://www.linkedin.com/in/marek-szulc-156307247/)
